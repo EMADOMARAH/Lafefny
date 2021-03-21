@@ -212,7 +212,7 @@
             android:background="@drawable/btnborder"
             android:ems="10"
             android:hint="@string/passwords"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:padding="10dp"
             android:textColor="@color/black" />
 
@@ -414,6 +414,7 @@
             android:textColor="@color/Lafefny2"
             android:fontFamily="sans-serif"
             android:textSize="30sp"
+            android:onClick="SignUpMethod"
             />
 
         <TextView

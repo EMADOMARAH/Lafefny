@@ -9,8 +9,12 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.bis.lafefny.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity2 extends AppCompatActivity {
+
+
     private Button button;
     private Button buttonn;
 
@@ -18,7 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Toast.makeText(getBaseContext(),"Welcome to Lafefny, hope you enjoy <3", Toast.LENGTH_LONG).show();
+       // Toast.makeText(getBaseContext(),"Welcome to Lafefny, hope you enjoy <3", Toast.LENGTH_LONG).show();
 
         setContentView(R.layout.activity_main2);
 
@@ -40,12 +44,13 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void openSign_In() {
-        Intent intent = new Intent(this, Sign_In.class);
+        Intent intent = new Intent(getApplicationContext(), Sign_In.class);
         startActivity(intent);
     }
     public void openSign_Up(){
-        Intent intent = new Intent(this, Sign_Up.class);
+        Intent intent = new Intent(getApplicationContext(), Sign_Up.class);
         startActivity(intent);
     }
 
-    }
+
+}
