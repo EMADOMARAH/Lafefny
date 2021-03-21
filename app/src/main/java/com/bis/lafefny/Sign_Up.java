@@ -30,8 +30,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     private Button button;  //connection
 
     private Button button_capture;  //image
-    ImageView iv_image;
-    //image
+    ImageView iv_image;    //image
     private FirebaseAuth mAuth;
 
 
