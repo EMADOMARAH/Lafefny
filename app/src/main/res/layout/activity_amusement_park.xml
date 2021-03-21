@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bis.lafefny.AmusementPark"
+    tools:ignore="RelativeOverlap">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whatsapp_image_2021_03_15_at_1_25_20_pm__1_">
+        <!-- change drawable to purple btn color -->
+        <TextView
+            android:id="@+id/amusementpark_header"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@drawable/btnborder2" />
+
+        <Button
+            android:id="@+id/btn_filter"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="9dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_baseline_filter_alt2_24"
+             />
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Lafefny1"
+            android:drawableEnd="@drawable/ic_baseline_arrow_back2_24" />
+
+        <TextView
+            android:id="@+id/txt_amusement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="87dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="@string/amusement_parks"
+            android:textAlignment="center"
+            android:textColor="@color/Purple"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/dreampark_Background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/amusementpark_header"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_dreampark"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/dream" />
+
+            <TextView
+                android:id="@+id/txt_dreampark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dream_park"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/txt_location_dreampark"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:textSize="11sp"
+                android:shadowColor="@color/Grey"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <TextView
+                android:id="@+id/txt_loc_dreampark"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_loc_dreampark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_rating_dreampark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/_90_100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_dreampark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="@string/_16949_ratings"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey"/>
+
+            <Button
+                android:id="@+id/btn_dreampark"
+                android:layout_width="145dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_details_dreampark"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details" />
+
+            <ImageView
+                android:id="@+id/img_details_dreampark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/aquapark_Background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/fabyland_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_aquapark"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/aquapark"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_aquapark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aqua_park"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/txt_location_aquapark"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:textSize="11sp"
+                android:shadowColor="@color/Grey"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <TextView
+                android:id="@+id/txt_loc_aquapark"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_loc_aquapark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_rating_aquapark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/_90_100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_aquapark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="@string/_16949_ratings"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey"/>
+
+            <Button
+                android:id="@+id/btn_aquapark"
+                android:layout_width="145dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_details_aquapark"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details" />
+
+            <ImageView
+                android:id="@+id/img_details_aquapark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/geroland_Background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/aquapark_Background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_geroland"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/geroland"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_geroland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gero_land"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/txt_location_geroland"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:textSize="11sp"
+                android:shadowColor="@color/Grey"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <TextView
+                android:id="@+id/txt_loc_geroland"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_loc_geroland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_rating_geroland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/_90_100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_geroland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="@string/_16949_ratings"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey"/>
+
+            <Button
+                android:id="@+id/btn_geroland"
+                android:layout_width="145dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_details_geroland"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details" />
+
+            <ImageView
+                android:id="@+id/img_details_geroland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/fabyland_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/dreampark_Background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_fabyland"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fabyland"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_fabyland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faby_land"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_rating_fabyland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/_90_100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_fabyland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="@string/_16949_ratings"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey"/>
+
+            <Button
+                android:id="@+id/btn_fabyland"
+                android:layout_width="145dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+            <Button
+                android:id="@+id/txt_location_fabyland"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:textSize="11sp"
+                android:shadowColor="@color/Grey"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <TextView
+                android:id="@+id/txt_loc_fabyland"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_loc_fabyland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_details_fabyland"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details" />
+
+            <ImageView
+                android:id="@+id/img_details_fabyland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/amusementpark_header"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="980dp"
+            android:background="@drawable/btnborder2">
+
+            <Button
+                android:id="@+id/btn_home1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amusementpark_header"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_home2_24" />
+
+            <Button
+                android:id="@+id/btn_loc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/amusementpark_header"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_location2_on_24" />
+
+            <Button
+                android:id="@+id/btn_user"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amusementpark_header"
+                android:layout_marginStart="200dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_profile_user2"
+                android:layout_marginTop="2dp"/>
+
+            <Button
+                android:id="@+id/btn_sort"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_below="@id/amusementpark_header"
+                android:layout_marginStart="290dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/sort" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

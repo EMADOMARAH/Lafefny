@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "379778099846",
+    "project_id": "lafefny",
+    "storage_bucket": "lafefny.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379778099846:android:46e8bf0afdb7e090d47f07",
+        "android_client_info": {
+          "package_name": "com.bis.lafefny"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379778099846-aq5aa7877uo2s9n8bh7o8bk2aac9jms7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc2hUEJuqP5FisoQGLPH_3ot6Llrloapg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379778099846-aq5aa7877uo2s9n8bh7o8bk2aac9jms7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

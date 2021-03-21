@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whatsapp_image_2021_03_15_at_1_25_20_pm__1_"
+    tools:ignore="RelativeOverlap">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@drawable/btnborder2"
+            android:id="@+id/booking_background">
+            <Button
+                android:id="@+id/btn_search"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginStart="325dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_search_24"
+                android:paddingEnd="10dp" />
+
+            <TextView
+                android:id="@+id/txt_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:text="@string/booking"
+                android:textColor="@color/Lafefny2"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <TextView
+            android:id="@+id/txt_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="@string/ticket_id"
+            android:textColor="@color/Lafefny2"
+            android:textSize="31sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/booking_background"/>
+        <TextView
+            android:id="@+id/txt_ticket_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="serif"
+            android:text="@string/_221999"
+            android:textColor="@color/Lafefny2"
+            android:textSize="27sp"
+            android:layout_below="@+id/booking_background"/>
+
+        <TextView
+            android:id="@+id/txt_ticket_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:text="@string/ticket_type"
+            android:textColor="@color/Lafefny2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_ticket_id"/>
+
+        <TextView
+            android:id="@+id/txt_ticket_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:text="@string/price"
+            android:textColor="@color/Lafefny2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_ticket_id"/>
+        <TextView
+            android:id="@+id/txt_ticket_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:text="@string/quantity"
+            android:textColor="@color/Lafefny2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_ticket_id"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/line"
+            android:layout_below="@id/txt_ticket_id"
+            android:id="@+id/line1"
+            android:backgroundTint="@color/Grey"
+            android:contentDescription="@string/todo" />
+
+
+        <TextView
+            android:id="@+id/txt_ticket_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-49dp"
+            android:fontFamily="serif"
+            android:text="@string/regular"
+            android:textColor="@color/Lafefny2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_ticket_regular_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="-49dp"
+            android:fontFamily="serif"
+            android:text="@string/_300_le"
+            android:textColor="@color/Lafefny2"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/txt_ticket_regular_quantity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_ticket_regular"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="-27dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/_1"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/Grey"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:autofillHints="" />
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt_ticket_regular"
+            android:layout_marginEnd="1dp"
+            android:layout_marginTop="-49dp"
+            android:background="@drawable/line"
+            android:backgroundTint="@color/Grey"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/txt_ticket_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_ticket_regular"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:text="@string/vip"
+            android:textColor="@color/Lafefny2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_ticket_vip_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_ticket_regular_price"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:text="@string/_350_le"
+            android:textColor="@color/Lafefny2"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txt_ticket_vip_quantity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_ticket_regular_quantity"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="56dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/_1"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/Grey"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:importantForAutofill="no" />
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt_ticket_regular_quantity"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/line"
+            android:backgroundTint="@color/Grey"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/txt_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line3"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-31dp"
+            android:fontFamily="serif"
+            android:text="@string/comment"
+            android:textColor="@color/Lafefny2"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/pt_comment"
+            android:layout_width="379dp"
+            android:layout_height="297dp"
+            android:layout_below="@id/txt_comment"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints=""
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/write_your_comment_here"
+            android:inputType="text"
+            android:lineSpacingExtra="2dp"
+            android:singleLine="false"
+            android:textColor="@color/Grey"
+            android:textSize="17sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pt_comment"
+            android:layout_marginStart="106dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif"
+            android:text="@string/send_your_booking"
+            android:textColor="@color/Lafefny2"
+            android:textSize="15sp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/booking_background"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="820dp"
+            android:background="@drawable/btnborder">
+
+            <Button
+                android:id="@+id/btn_home1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_emg"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_home_24" />
+
+            <Button
+                android:id="@+id/btn_loc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/btn_emg"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_location_on_24" />
+
+            <Button
+                android:id="@+id/btn_user"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_emg"
+                android:layout_marginStart="300dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_profile_user" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+    </RelativeLayout>
+</ScrollView>

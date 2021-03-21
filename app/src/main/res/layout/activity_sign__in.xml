@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="RelativeOverlap"
+    android:background="@color/Lafefny1">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="830dp"
+    tools:context="com.bis.lafefny.Sign_In">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/welcomeback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/imageView3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/welcome_back"
+        android:textColor="@color/Lafefny2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/hellothere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/welcomeback"
+        android:layout_marginTop="20dp"
+        android:text="@string/hello_there_sign_in_to_continue"
+        android:fontFamily="serif"
+        android:textColor="@color/Lafefny2"
+        android:layout_marginStart="35dp"
+        android:textSize="23sp"/>
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/hellothere"
+        android:layout_marginTop="30dp"
+        android:text="@string/username"
+        android:fontFamily="serif"
+        android:textColor="@color/Lafefny2"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/pt_username"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_username"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@drawable/btnborder"
+        android:ems="10"
+        android:hint="@string/malak_hesham99"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/txt_passwords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/pt_username"
+        android:layout_marginTop="30dp"
+        android:text="@string/password"
+        android:fontFamily="serif"
+        android:textColor="@color/Lafefny2"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxremember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="30dp"
+        android:button="@drawable/checkbox2"
+        android:fontFamily="serif"
+        android:textColor="@color/Lafefny2"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/txt_remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/pt_passwords"
+        android:layout_marginTop="24dp"
+        android:text="Remember Me"
+        android:fontFamily="serif"
+        android:textColor="@color/Lafefny2"
+        android:layout_marginStart="55dp"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/txt_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/pt_passwords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="264dp"
+        android:fontFamily="serif"
+        android:text="Forgot your password?"
+        android:textColor="@color/Lafefny2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txt_connect_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/pt_passwords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="153dp"
+        android:fontFamily="serif"
+        android:text="Or Connect with"
+        android:textAlignment="center"
+        android:textColor="@color/Lafefny2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pt_passwords"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_passwords"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@drawable/btnborder"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+
+    <Button
+        android:id="@+id/btn_signin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pt_passwords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="73dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:text="@string/sign_inn"
+        android:textColor="@color/Lafefny2"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/btn_signin2"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="63dp"
+        android:backgroundTint="#3B5998"
+        android:fontFamily="sans-serif"
+        android:text="Facebook"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/btn_signin2"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="63dp"
+        android:backgroundTint="#FF3E30"
+        android:fontFamily="sans-serif"
+        android:text="Google +"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Lafefny1"
+        android:drawableEnd="@drawable/ic_baseline_arrow_back_24" />
+
+</RelativeLayout>
+</ScrollView>

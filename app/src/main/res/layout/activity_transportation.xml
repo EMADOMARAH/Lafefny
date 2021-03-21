@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transportation"
+    tools:context="com.bis.lafefny.Transportation">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/transportation_header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/btnborder5">
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Grey"
+                android:drawableEnd="@drawable/ic_baseline_arrow_back4_24" />
+
+            <TextView
+                android:id="@+id/txt_dreampark"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Transportation"
+                android:textAlignment="center"
+                android:textColor="#33446A"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <TextView
+            android:id="@+id/txt_uber"
+            android:layout_width="77dp"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="106dp"
+            android:fontFamily="serif"
+            android:text="Uber"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/uber_ride"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/txt_uber"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="157dp"
+            android:background="@drawable/btnborder6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="35dp"
+                android:paddingRight="4dp"
+                android:paddingTop="9dp"
+                android:text="Car Ride"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_car_ride"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/desc8"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="6dp"
+                android:alpha="0.3"
+                android:backgroundTint="@color/cardview_shadow_start_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:text="Book a ride"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/uber_bus"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/uber_bus"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="240dp"
+            android:background="@drawable/btnborder6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="35dp"
+                android:paddingRight="4dp"
+                android:paddingTop="9dp"
+                android:text="Bus Ride"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_bus_ride"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/desc8"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="6dp"
+                android:alpha="0.3"
+                android:backgroundTint="@color/cardview_shadow_start_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Book a ride"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="50dp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <TextView
+            android:id="@+id/txt_laet"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="330dp"
+            android:fontFamily="serif"
+            android:text="Look At Egypt Tours"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/laet_ride"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/txt_laet"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/btnborder6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="18dp"
+                android:paddingRight="4dp"
+                android:paddingTop="9dp"
+                android:text="SteampShip Ride"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_steampship_ride"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/desc8"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="6dp"
+                android:alpha="0.3"
+                android:backgroundTint="@color/cardview_shadow_start_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:text="Book a ride"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/laet_airplan"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/laet_ride"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="490dp"
+            android:background="@drawable/btnborder6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="18dp"
+                android:paddingRight="4dp"
+                android:paddingTop="9dp"
+                android:text="Airplane Ride"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/btn_airplane_ride"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/desc8"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="6dp"
+                android:alpha="0.3"
+                android:backgroundTint="@color/cardview_shadow_start_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Book a ride"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="50dp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/transportation_header"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="680dp"
+            android:background="@drawable/btnborder5">
+
+            <Button
+                android:id="@+id/btn_home1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_emg"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_home3_24" />
+
+            <Button
+                android:id="@+id/btn_loc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/btn_emg"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_location4_on_24" />
+
+            <Button
+                android:id="@+id/btn_user"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_emg"
+                android:layout_marginStart="300dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_profile_user3" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </RelativeLayout>
+
+</ScrollView>

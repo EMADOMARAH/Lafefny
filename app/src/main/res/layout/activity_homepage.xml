@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="RelativeOverlap">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="665dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="62dp"
+            android:alpha="0.5"
+            android:background="@drawable/background"
+            android:contentDescription="@string/todo11" />
+        <TextView
+            android:id="@+id/home_page"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@drawable/btnborder" />
+
+        <Button
+            android:id="@+id/menu"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="@color/black"
+            android:drawableEnd="@drawable/ic_baseline_menu_24" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="117dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="@string/home_page"
+            android:textAlignment="center"
+            android:textColor="@color/Lafefny2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/search"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="67dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="335dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/Lafefny2"
+            android:drawableEnd="@drawable/ic_baseline_search_24" />
+
+        <Button
+            android:id="@+id/btn_entertainment"
+            android:layout_width="344dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@color/white"
+            android:layout_below="@id/home_page"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="38dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/entertainment"
+            android:textAlignment="center"
+            android:textColor="@color/Lafefny2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_events"
+            android:layout_width="344dp"
+            android:backgroundTint="@color/white"
+            android:layout_height="65dp"
+            android:layout_below="@id/btn_entertainment"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="276dp"
+            android:layout_marginEnd="37dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/events"
+            android:textAlignment="center"
+            android:textColor="@color/Lafefny2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_plans"
+            android:layout_width="344dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/btn_events"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="426dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/plans"
+            android:backgroundTint="@color/white"
+            android:textAlignment="center"
+            android:textColor="@color/Lafefny2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_emg"
+            android:layout_width="344dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/btn_plans"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="572dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/emergency"
+            android:textAlignment="center"
+            android:textColor="@color/Lafefny2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/btn_emg"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="680dp"
+            android:background="@drawable/btnborder">
+
+            <Button
+                android:id="@+id/btn_home1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_emg"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_home_24" />
+
+            <Button
+                android:id="@+id/btn_loc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/btn_emg"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_location_on_24" />
+
+            <Button
+                android:id="@+id/btn_user"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_emg"
+                android:layout_marginStart="300dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_profile_user" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+</ScrollView>

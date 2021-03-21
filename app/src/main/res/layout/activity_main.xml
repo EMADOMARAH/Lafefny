@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Lafefny1"
+    tools:context="com.bis.lafefny.MainActivity">
+
+    <TableRow
+        android:layout_width="381dp"
+        android:layout_height="319dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/welclogo" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_welc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/we_pursue_a_rleaxed_experience"
+            android:textAlignment="center"
+            android:textColor="@color/Lafefny2"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_welc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/get_sarted"
+            android:textAlignment="center"
+            android:textColor="@color/Lafefny2"
+            android:textSize="36sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="375dp"
+        android:layout_height="149dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/btn_creatAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:fontFamily="serif"
+            android:padding="20dp"
+            android:text="@string/create_account"
+            android:textColor="@color/Lafefny2"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/Lafefny2"
+            android:textStyle="bold" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bis.lafefny">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lafefny">
+        <activity android:name=".Sport_Events"></activity>
+        <activity android:name=".Cinema" />
+        <activity android:name=".Restaurants" />
+        <activity android:name=".Tourism_Area" />
+        <activity android:name=".GamingArea" />
+        <activity android:name=".Ticket" />
+        <activity android:name=".Promocode" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Booking" />
+        <activity android:name=".Transportation" />
+        <activity android:name=".DreamPark" />
+        <activity android:name=".AmusementPark" />
+        <activity android:name=".Ent_Categories" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".Sign_Up" />
+        <activity android:name=".Sign_In" />
+        <activity android:name=".MainActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

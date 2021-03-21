@@ -1,0 +1,273 @@
+<resources>
+    <string name="app_name">Lafefny</string>
+    <string name="we_pursue_a_rleaxed_experience">We pursue a rleaxed experience</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="get_sarted">Get Sarted</string>
+    <string name="welcome">welcome</string>
+    <string name="Sign_in">Sign In</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="hello_there_sign_in_to_continuee">Hello there, sign in to continue!</string>
+    <string name="todoo">TODO</string>
+    <string name="user_name">User Name</string>
+    <string name="passwordss">Password</string>
+    <string name="malak_Hesham">Malak Hesham...</string>
+    <string name="Password">Password</string>
+    <string name="title_activity_sign__in2">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_there_sign_in_to_continue">Hello there, sign in to continue!</string>
+    <string name="username">Username</string>
+    <string name="malak_hesham">Malak Hesham...</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="it_s_free_and_always_will_be">It\'s free and always will be.</string>
+    <string name="Todo">TODO</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="todO">TODO</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last Name</string>
+    <string name="hesham">Hesham...</string>
+    <string name="malakhesham99_gmail_com">MalakHesham99@Gmail.com</string>
+    <string name="nationality">Nationality</string>
+    <string name="malak">Malak...</string>
+    <string name="Hesham">Hesham...</string>
+    <string name="malakhesham98_gmail_com">MalakHesham99@Gmail.Com</string>
+    <string name="password">Password</string>
+    <string name="passwords">***************</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="conpasswords">***************</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="_01091792866">01091792866</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="_2_2_1999">2/2/1999</string>
+    <string name="malak_heshamm">Malak Hesham</string>
+    <string name="sign_inn">Sign in</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="egyptian">Egyptian</string>
+    <string name="i_agree_to_the_terms_and_conditions">I agree to the terms and conditions.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="first_name">First Name</string>
+    <string name="Malak_hesham99">Malak Hesham99</string>
+    <string name="malak_hesham99">Malak Hesham99</string>
+    <string name="home_page">Home Page</string>
+    <string name="todo11">todo11</string>
+    <string name="Entertainment">Entertainment</string>
+    <string name="events">Events</string>
+    <string name="plans">Plans</string>
+    <string name="emergency">Emergency</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="amusement_parks">Amusement Parks</string>
+    <string name="cinema">Cinema</string>
+    <string name="gaming">Gaming</string>
+    <string name="tourism">Tourism</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="view_all_details">View All Details</string>
+    <string name="_1337_1_km_from_your_location">1337.1 Km from your location</string>
+    <string name="todo">TODO</string>
+    <string name="Amusement_parks">Amusement Parks</string>
+    <string name="dream_park">Dream Park</string>
+    <string name="_90_100">90/100</string>
+    <string name="_16949_ratings">16949 Ratings</string>
+    <string name="toDo">TODO</string>
+    <string name="Get_location">Get location</string>
+    <string name="get_location">Get location</string>
+    <string name="faby_land">Faby Land</string>
+    <string name="gEt_location">Get location</string>
+    <string name="aqua_park">Aqua Park</string>
+    <string name="geT_location">Get location</string>
+    <string name="gero_land">Gero Land</string>
+    <string name="super_spin_tornado_top_spin_stimulator_shoot_and_drop_roller_coaster">Super Spin - Tornado - Top Spin - Stimulator - Shoot and Drop - Roller Coaster</string>
+    <string name="_40_l_e_for_the_following_rides">40 L.E. for the following rides:</string>
+    <string name="all_free_rides_two_adults_two_kids_max_10_years_old">All free Rides (Two Adults + Two Kids Max - 10 years old)</string>
+    <string name="vip_ticket_150_le">VIP ticket: 150 LE</string>
+    <string name="all_free_rides_except_8_paid_rides">(All free Rides Except 8 Paid Rides)</string>
+    <string name="regular_ticket_150_le">Regular ticket: 150 LE</string>
+    <string name="up_to_09_00_pm">Up to 09:00 PM</string>
+    <string name="From_10_00_am">From 10:00 AM</string>
+    <string name="on_friday_start">On friday start</string>
+    <string name="up_to_07_00_pm">Up to 07:00 PM</string>
+    <string name="from_10_00_am">From 10:00 AM</string>
+    <string name="all_days_start">All days start</string>
+    <string name="dream_park_is_an_amusement_park_located_on_al_wahat_road_in_the_6th_of_october_in_giza_governorate_8_km_from_the_giza_pyramids_it_is_one_of_the_largest_amusement_parks_in_the_middle_east">Dream Park is an amusement park located on Al- Wahat Road, in the 6th of October in Giza Governorate, 8 km from the Giza Pyramids. It is one of the largest amusement parks in the Middle East.</string>
+    <string name="Dream_park">Dream Park</string>
+    <string name="additional_information">Additional Information:</string>
+    <string name="notes">Notes:</string>
+    <string name="paid_rides">Paid Rides:</string>
+    <string name="ticket_type_and_price">Ticket type and price:</string>
+    <string name="operation_hours">Operation Hours:</string>
+    <string name="transportation">Transportation</string>
+    <string name="ticket">Ticket</string>
+    <string name="_50_l_e_for_the_following_rides">50 L.E. for the following rides:</string>
+    <string name="go_cart_car_race_discovery">Go Cart (Car Race) - Discovery</string>
+    <string name="children_of_3_years_old_or_over_must_pay_a_ticket_while_children_under_3_years_old_are_free_it_is_not_allowed_to_take_external_meals_and_family_meals_inside_dream_park_as_there_is_an_area_designated_for_events_in_the_miramar_area_or_to_place_it_in_the_safety_areas_before_the_entrance_gates_in_dream_park">Children of 3 years old or over must pay a ticket, while children under 3 years old are free. It is not allowed to take external meals and family meals inside Dream Park, as there is an area designated for events in the Miramar area, or to place it in the safety areas before the entrance gates in Dream Park</string>
+    <string name="dream_park_having_34_rides_suitable_for_kids_and_families_in_addition_to_teens_who_will_enjoy_our_thrill_rides_it_includes_a_wide_range_of_fast_food_outlets_restaurants_and_cafes_plus_many_souvenir_shops_for_guest_comfortable_a_train_encircles_the_whole_park_putting_everything_within_an_easy_reach_it_cares_about_client_s_safety_so_safety_on_all_rides_and_equipment_is_assured_with_an_international_safety_certification_from_the_world_famous_tuv_rhineland_except_for_the_newest_adult_rides_7_rides_the_ticket_price_gives_an_unlimited_access_to_all_rides_and_games_day_after_day_dream_park_has_become_a_major_destination_for_group_school_and_university_students_in_addition_to_a_selection_mix_of_individual_guest">Dream park having 34 rides suitable for kids and families in addition to teens who will enjoy our Thrill rides. it includes a wide range of fast-food outlets, restaurants and cafes plus many souvenir shops. For guest comfortable a train encircles the whole park putting everything within an easy reach. It cares about client\'s safety so safety on all rides and equipment is assured with an International Safety Certification from the world famous TUV Rhineland. Except for the newest adult rides (7 Rides), the ticket price gives an unlimited access to all rides and games. Day after day, dream park has become a major destination for group school and university students in addition to a selection mix of individual guest.</string>
+    <string name="your_feedback_matters">Your Feedback Matters</string>
+    <string name="rate">Rate</string>
+    <string name="review">Review</string>
+    <string name="give_your_review">Give your review...</string>
+    <string name="comment">Comment :)</string>
+    <string name="write_your_comment_here">Write your comment here....</string>
+    <string name="_01">1</string>
+    <string name="_350_le">350 LE</string>
+    <string name="vip">VIP</string>
+    <string name="sign_in_if_you_already_have_an_account_with_us">Sign in if you already have an account with us..</string>
+    <string name="_1">1</string>
+    <string name="_300_le">300 LE</string>
+    <string name="regular">Regular</string>
+    <string name="t0odo">TODO</string>
+    <string name="quantity">Quantity</string>
+    <string name="price">Price</string>
+    <string name="ticket_type">Ticket Type</string>
+    <string name="send_your_booking">Send your booking</string>
+    <string name="ticket_id">Ticket ID</string>
+    <string name="booking">Booking</string>
+    <string name="_221999"># 221999</string>
+    <string name="toddo">TODO</string>
+    <string name="tododo">TODO</string>
+    <string name="toodo">TODO</string>
+    <string name="x_x_x_x_x_x">X X X X X X</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="cancel">Cancel</string>
+    <string name="todddo">TODO</string>
+    <string name="sound_and_light_show">Sound and Light Show</string>
+    <string name="_650_egp">650 EGP</string>
+    <string name="february_2_1999">February 2.1999</string>
+    <string name="expiration_date">* Expiration Date</string>
+    <string name="promocode">* Promocode</string>
+    <string name="card_holder_name">* Card Holder Name</string>
+    <string name="malak_heeshamm">Malak Hesham</string>
+    <string name="security_code_cvv">* Security Code (CVV)</string>
+    <string name="mm_yy">MM/ YY</string>
+    <string name="enter_your_card_number_here">Enter your card number here...</string>
+    <string name="card_number">* Card Number</string>
+    <string name="lafa98">Lafa98</string>
+    <string name="credit_debit_card">Credit/ Debit Card</string>
+    <string name="payment_info">Payment info</string>
+    <string name="todddddo">TODO</string>
+    <string name="todooo">TODO</string>
+    <string name="toddodo">TODO</string>
+    <string name="toddddo">TODO</string>
+    <string name="toooodo">TODO</string>
+    <string name="tod000o">TODO</string>
+    <string name="_09_03_pm">09.03 PM</string>
+    <string name="get_promocode">Get Promocode</string>
+
+    <!-- nationality array -->
+    <string-array name="nationality">
+        <item>Egyptian</item>
+        <item>Jordanian</item>
+        <item>Moroccan</item>
+        <item>Omani</item>
+        <item>Tunisian</item>
+        <item>Turkish</item>
+        <item>Lebanese</item>
+        <item>Iraqi</item>
+        <item>Iranian</item>
+        <item>Palestinian</item>
+        <item>Yemeni</item>
+        <item>Syrian</item>
+        <item>Bahrain</item>
+        <item>Persian</item>
+        <item>Emirates</item>
+        <item>Saudis</item>
+        <item>Turkish</item>
+        <item>European</item>
+        <item>Australian</item>
+        <item>American</item>
+        <item>Asian</item>
+        <item>North American</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tourism_background"
+    tools:context="com.bis.lafefny.AmusementPark"
+    tools:ignore="RelativeOverlap">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- change drawable to purple btn color -->
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/tourism_area_header"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/btn_filter"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginStart="330dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_filter_alt5_24" />
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8F520C"
+                android:drawableEnd="@drawable/ic_baseline_arrow_back6_24" />
+
+            <TextView
+                android:id="@+id/txt_tourism_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentTop="false"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:text="Tourism Area"
+                android:textAlignment="center"
+                android:textColor="#CF8B74"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/fun_topia_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/tourism_area_header"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/txt_location_fun_topia"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <Button
+                android:id="@+id/btn_fun_topia"
+                android:layout_width="145dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/img_fun_topia"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/egyptian_museum" />
+
+            <ImageView
+                android:id="@+id/img_loc_fun_topia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location7_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_next_fun_topia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext3"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_egyptian_museum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Egyptian Museum"
+                android:textColor="#CF8B74"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_get_loc_egyptian_museum"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_rating_egyptian_museum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/_90_100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface3" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_egyptian_museum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="@string/_16949_ratings"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_details_egyptian_museum"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/saint_catherine_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/karnak_temple_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/txt_location_saint_catherine"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <Button
+                android:id="@+id/btn_saint_catherine"
+                android:layout_width="145dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/img_saint_catherine"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/saint_catherine_s"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_loc_saint_catherine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location7_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_next_saint_catherine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext3"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_saint_catherine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="123dp"
+                android:layout_marginTop="5dp"
+                android:text="Saint Catherine's Monastery"
+                android:textColor="#CF8B74"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_loc_saint_catherine"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_rating_saint_catherine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/_90_100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface3" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_saint_catherine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="@string/_16949_ratings"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_details_saint_catherine"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/montazah_palace_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/saint_catherine_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/txt_location_montazah_palace"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <Button
+                android:id="@+id/btn_montazah_palace"
+                android:layout_width="145dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/img_montazah_palace"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/montazah_park"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_loc_montazah_palace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location7_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_next_montazah_palace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext3"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_montazah_palace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Montazah Park"
+                android:textColor="#CF8B74"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_loc_montazah_palace"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_rating_montazah_palace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/_90_100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface3" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_montazah_palace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="@string/_16949_ratings"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_details_montazah_palace"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/karnak_temple_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/fun_topia_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/btn_karnak_temple"
+                android:layout_width="145dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/txt_location_karnak_temple"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location7_on_24" />
+
+            <ImageView
+                android:id="@+id/img_karnak_temple"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/karnak_temple"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_loc_karnak_temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location7_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_details_karnak_temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext3"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_karnak_temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Karnak Temple"
+                android:textColor="#CF8B74"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_rating_karnak_temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/_90_100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface3" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_karnak_temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="@string/_16949_ratings"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_karnak_temple"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_details_karnak_temple"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/tourism_area_header"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="980dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/btn_home1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gaming_area_header"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_home5_24" />
+
+            <Button
+                android:id="@+id/btn_loc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/gaming_area_header"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_location8_on_24" />
+
+            <Button
+                android:id="@+id/btn_user"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gaming_area_header"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_profile_user5" />
+
+            <Button
+                android:id="@+id/btn_sort"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_below="@id/gaming_area_header"
+                android:layout_marginStart="290dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/sort3" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</ScrollView>
