@@ -10,7 +10,7 @@ import android.widget.Button;
 public class Restaurants extends AppCompatActivity {
     private Button button_back;
     private Button button_home;
-
+    private Button button_the_smokery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,13 @@ public class Restaurants extends AppCompatActivity {
                 openHomepage();
             }
         });
+        button_the_smokery = (Button) findViewById(R.id.btn_smokery); //button smokery
+        button_the_smokery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTheSmokery();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class);  //open back
@@ -38,6 +45,10 @@ public class Restaurants extends AppCompatActivity {
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+    public void openTheSmokery(){
+        Intent intent = new Intent(this, TheSmokery.class);  //open smokery
         startActivity(intent);
     }
 }

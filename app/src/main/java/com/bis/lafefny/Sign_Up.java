@@ -52,6 +52,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     private Uri filePath;;
     //store the new user id
     private  String profileimageneme;
+    private String uId;
 
     //buttons for back ,adding image, signup
     private Button back_btn , add_img_btn ,signUp_btn;
@@ -228,7 +229,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         user.put("dateOfBirth" , dateOfBirth);
         user.put("nationality" , nationality);
         user.put("gender" , gender);
-        user.put("profileImageName" , profileimageneme)
+        user.put("profileImageName" , profileimageneme);
     }
 
     private void createNewUser(){

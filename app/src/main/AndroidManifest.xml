@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lafefny">
-        <activity android:name=".Sport_Events"></activity>
+        <activity android:name=".VoxCinema"></activity>
+        <activity android:name=".EgyptianMuseum" />
+        <activity android:name=".TheSmokery" />
+        <activity android:name=".FunTopia" />
+        <activity android:name=".Sport_Events" />
         <activity android:name=".Cinema" />
         <activity android:name=".Restaurants" />
         <activity android:name=".Tourism_Area" />
