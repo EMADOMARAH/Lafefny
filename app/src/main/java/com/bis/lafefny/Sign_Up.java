@@ -4,41 +4,68 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.bis.lafefny.R;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
 
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.UUID;
 
 public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    private Button button;  //connection
 
-    private Button button_capture;  //image
-    ImageView iv_image;    //image
     private FirebaseAuth mAuth;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    // Create a Cloud Storage reference from the app
+    FirebaseStorage storage;
+    StorageReference storageReference;
+    ProgressDialog progress ;
+    Map<String, Object> user = new HashMap<>();
+    //create filepath to upload profile image to sorage
+    private Uri filePath;;
+    //store the new user id
+    private  String profileimageneme;
 
+    //buttons for back ,adding image, signup
+    private Button back_btn , add_img_btn ,signUp_btn;
+    RadioGroup radioGroup;
+    CheckBox agreeCheckBox;
+    CheckBox rememberCheckBox;
+    ImageView profile_image;
+    EditText firstNameEditText,lastNameEditText,userNameEditText,emailEditText;
+    EditText passwordEditText,confirmEditText,mobileEditText,dateOBEditText;
+    EditText nationalityEditText;
+    Spinner spinner;
 
-    EditText email_txt;
-    EditText password_txt;
-    EditText confirm_pw ;
-
-    private Button signUp_btn; //sign Up
+    String firstName,lastName,userName,email,password,confirmPassword,mobile,dateOfBirth,nationality,gender;
+    boolean allDataChecked = false;
 
     final static int CAPTURE_REQUEST_CORE = 1;
 
@@ -53,62 +80,53 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign__up);
 
-        email_txt = findViewById(R.id.pt_email);
-        password_txt = findViewById(R.id.pt_passwords);
-        confirm_pw = findViewById(R.id.pt_conpasswords);
-
-
+        initViews();
+        progress= new ProgressDialog(getApplicationContext());
 
         mAuth = FirebaseAuth.getInstance();
-
-        signUp_btn = (Button) findViewById(R.id.btn_signup); //sign Up
-
-
-        Toast.makeText(getBaseContext(),"Start Signing up process...",Toast.LENGTH_LONG);
-
-        button =  (Button) findViewById(R.id.btn_back);                 //connection
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMainActivity2();
-            }
-        });
-
-
-        Spinner spinner = findViewById(R.id.spinnerNatio);            //Spinner for nationality (list)
+        storage = FirebaseStorage.getInstance();
+        storageReference = storage.getReference();
+            //Nationality select
           ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.nationality, android.R.layout.simple_spinner_item);
           adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
           spinner.setAdapter(adapter);
           spinner.setOnItemSelectedListener(this);
 
-        button_capture = findViewById(R.id.btn_addphoto);                  //image
-        iv_image = findViewById(R.id.profileimage);
-        button_capture.setOnClickListener(new View.OnClickListener() {
+          add_img_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Camera button is clicked", Toast.LENGTH_LONG).show();
-              Intent intentt = new Intent();
-              intentt.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
-              if(intentt.resolveActivity(getPackageManager()) != null)
-                  startActivityForResult(intentt,CAPTURE_REQUEST_CORE);
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Select Picture"), CAPTURE_REQUEST_CORE);
             }
         });
+
     }
 
-    public void openMainActivity2() {                                           //connection
-        Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
-        startActivity(intent);
-    }
+
+
+
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {  //image
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==CAPTURE_REQUEST_CORE && requestCode==RESULT_OK){
-            Bitmap b = (Bitmap) data.getExtras().get("data");
-            iv_image.setImageBitmap(b);
-        }
-        else {
-            Toast.makeText(getApplicationContext(),"Result Cancelled", Toast.LENGTH_LONG).show();   //image
+        if (resultCode == RESULT_OK) {
+            if (requestCode == CAPTURE_REQUEST_CORE) {
+
+                filePath = data.getData();
+
+
+                Picasso.get()
+                        .load(filePath)
+                        .noPlaceholder().
+                        centerCrop()
+                        .fit()
+                        .into((ImageView) findViewById(R.id.profileimage));
+            }
+
         }
     }
 
@@ -129,33 +147,188 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
-    public void openHomepage(){
-        Intent intent = new Intent(getApplicationContext(), Homepage.class); //Sign Up
-        startActivity(intent);
-    }
 
     public void SignUpMethod(View view) {
-        String email = email_txt.getText().toString();
-        String password = password_txt.getText().toString();
-        String confirm = confirm_pw.getText().toString();
 
-        mAuth.createUserWithEmailAndPassword(email , password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        getDataFromViews();
+        checkForDataExist();
+        if (allDataChecked == true){
+            createNewUser();
+            storeUserDataToFireStore();
+        }
+
+    }
+    private void storeUserDataToFireStore(){
+        makeUserDataIntoMap();
+        db.collection("users")
+                .add(user)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful())
-                        {
-                            System.out.println("Sign up DONE");
-                            openHomepage();
+                    public void onSuccess(DocumentReference documentReference) {
+                      //  Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                        uId = documentReference.getId();
 
-                        }else{
-                            System.out.println("Sign up Failed");
-                        }
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                      //  Log.w(TAG, "Error adding document", e);
+
                     }
                 });
 
-
+        uploadProfileImage();
 
 
     }
+
+    private void uploadProfileImage() {
+        if(filePath != null)
+        {
+            profileimageneme = UUID.randomUUID().toString();
+            final ProgressDialog progressDialog = new ProgressDialog(this);
+            progressDialog.setTitle("Adding New member to our family...");
+            progressDialog.show();
+
+            StorageReference ref = storageReference.child("usersImages/"+ profileimageneme);
+            ref.putFile(filePath)
+                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            progressDialog.dismiss();
+                            Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                           progressDialog.dismiss();
+                            Toast.makeText(getApplicationContext(), "Failed "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                            double progress = (100.0*taskSnapshot.getBytesTransferred()/taskSnapshot
+                                    .getTotalByteCount());
+                            progressDialog.setMessage("Adding.... "+(int)progress+"%");
+                        }
+                    });
+        }
+    }
+
+    private void makeUserDataIntoMap() {
+        user.put("firstName" , firstName);
+        user.put("lastName" , lastName);
+        user.put("userName" , userName);
+        user.put("email" , email);
+        //user.put("password" , password);
+        user.put("mobile" , mobile);
+        user.put("dateOfBirth" , dateOfBirth);
+        user.put("nationality" , nationality);
+        user.put("gender" , gender);
+        user.put("profileImageName" , profileimageneme)
+    }
+
+    private void createNewUser(){
+       
+        mAuth.createUserWithEmailAndPassword(email , password)
+                .addOnSuccessListener(this, new OnSuccessListener<AuthResult>() {
+
+                    @Override
+                    public void onSuccess(AuthResult authResult) {
+                        System.out.println("Sign up Done");
+                    }
+                }).addOnFailureListener(this, new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                System.out.println("Sign up Failed");
+                System.out.println(e.toString());
+            }
+        });
+
+
+    }
+
+    private void checkForDataExist() {
+        if (firstName.isEmpty()){
+            firstNameEditText.requestFocus();
+            firstNameEditText.setError("Enter Valid Name");
+        }else if (lastName.isEmpty()){
+            lastNameEditText.requestFocus();
+            lastNameEditText.setError("Enter Valid Name");
+        }else if (userName.isEmpty()){
+            userNameEditText.requestFocus();
+            userNameEditText.setError("Enter Valid User Name");
+        }else if (email.isEmpty()){
+            emailEditText.requestFocus();
+            emailEditText.setError("Enter Valid Email");
+        }else if (password.isEmpty()){
+            passwordEditText.requestFocus();
+            passwordEditText.setError("Enter Valid Password");
+        }else if (!confirmPassword.equals(password)){
+            confirmEditText.requestFocus();
+            confirmEditText.setError("Password Don't Match");
+        }else if (mobile.isEmpty()){
+            mobileEditText.requestFocus();
+            mobileEditText.setError("Enter Valid mobile number");
+        }else if (dateOfBirth.isEmpty()){
+            dateOBEditText.requestFocus();
+            dateOBEditText.setError("Enter Valid Date of birth");
+        }else  if (gender.isEmpty()){
+            radioGroup.requestFocus();
+            Toast.makeText(this, "Choose Gender", Toast.LENGTH_SHORT).show();
+        }else{
+            allDataChecked =true ;
+        }
+    }
+
+    private void getDataFromViews() {
+        firstName = firstNameEditText.getText().toString().trim();;
+        lastName = lastNameEditText.getText().toString().trim();;
+        userName = userNameEditText.getText().toString().trim();
+        email = emailEditText.getText().toString().trim();
+        password = passwordEditText.getText().toString().trim();
+        confirmPassword = confirmEditText.getText().toString().trim();
+        mobile= mobileEditText.getText().toString().trim();
+        dateOfBirth=dateOBEditText.getText().toString().trim();
+        nationality=spinner.getSelectedItem().toString();
+        getUserGender();
+    }
+
+    public  void  getUserGender(){
+        int selectedId = radioGroup.getCheckedRadioButtonId();
+
+        // find the radiobutton by returned id
+            RadioButton radioButton = (RadioButton) findViewById(selectedId);
+            gender = radioButton.getText().toString().trim();
+    }
+
+    public  void initViews(){
+        firstNameEditText = findViewById(R.id.pt_firstname);
+        lastNameEditText = findViewById(R.id.pt_lastname);
+        userNameEditText = findViewById(R.id.pt_username);
+        emailEditText = findViewById(R.id.pt_email);
+        passwordEditText = findViewById(R.id.pt_passwords);
+        confirmEditText = findViewById(R.id.pt_conpasswords);
+        mobileEditText = findViewById(R.id.pt_mobile);
+        dateOBEditText = findViewById(R.id.pt_dob);
+
+        radioGroup = findViewById(R.id.gender_group);
+        agreeCheckBox = findViewById(R.id.checkboxagree);
+        rememberCheckBox = findViewById(R.id.checkboxremember);
+        signUp_btn = (Button) findViewById(R.id.btn_signup);
+        back_btn =  (Button) findViewById(R.id.btn_back);
+        spinner = findViewById(R.id.spinnerNatio);
+
+        add_img_btn = findViewById(R.id.btn_addphoto);                  //image
+        profile_image = findViewById(R.id.profileimage);
+    }
+
+    public void backScreen(){
+        startActivity(new Intent(getApplicationContext(), MainActivity2.class));
+    }
+
 }
+
