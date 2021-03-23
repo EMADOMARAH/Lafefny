@@ -267,6 +267,9 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         }else if (password.isEmpty()){
             passwordEditText.requestFocus();
             passwordEditText.setError("Enter Valid Password");
+        }else if (password.length()<6){
+            passwordEditText.requestFocus();
+            passwordEditText.setError("Enter Valid Password more than 6 chars");
         }else if (!confirmPassword.equals(password)){
             confirmEditText.requestFocus();
             confirmEditText.setError("Password Don't Match");
