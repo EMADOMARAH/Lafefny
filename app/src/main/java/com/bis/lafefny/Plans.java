@@ -7,20 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Sport_Events extends AppCompatActivity {
+public class Plans extends AppCompatActivity {
+
     private Button button_back;
     private Button button_home;
-    private Button button_running;
-
+    private Button button_adv;
+    private Button button_rom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sport__events);
+        setContentView(R.layout.activity_adventurous_plans);
+
+
         button_back = (Button) findViewById(R.id.btn_back); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openEvents();
+                openHomepage();
             }
         });
 
@@ -31,27 +34,31 @@ public class Sport_Events extends AppCompatActivity {
                 openHomepage();
             }
         });
-
-        button_running = (Button) findViewById(R.id.btn_running); //button running event
-        button_running.setOnClickListener(new View.OnClickListener() {
+        button_adv = (Button) findViewById(R.id.btn_adventure); //button adventure plans
+        button_adv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openRunningEvent();
+                openAdventurousPlans();
             }
         });
-
-
-    }
-    public void openEvents(){
-        Intent intent = new Intent(this, Events.class);  //button back
-        startActivity(intent);
+        button_rom = (Button) findViewById(R.id.btn_romantic); //button romantic plans
+        button_rom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRomanticPlan();
+            }
+        });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
         startActivity(intent);
     }
-    public void openRunningEvent(){
-        Intent intent = new Intent(this, RunningEvent.class);  //open running event
+    public void openAdventurousPlans(){
+        Intent intent = new Intent(this, AdventurousPlans.class);  //open adventure plans
+        startActivity(intent);
+    }
+    public void openRomanticPlan(){
+        Intent intent = new Intent(this, RomanticPlan.class);  //open romantic plans
         startActivity(intent);
     }
 }

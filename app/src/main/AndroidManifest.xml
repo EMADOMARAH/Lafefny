@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lafefny">
-        <activity android:name=".VoxCinema"></activity>
+        <activity android:name=".CairoBookFair"></activity>
+        <activity android:name=".RunningEvent" />
+        <activity android:name=".Events" />
+        <activity android:name=".RomanticPlan" />
+        <activity android:name=".AdventurousPlans" />
+        <activity android:name=".Plans" />
+        <activity android:name=".VoxCinema" />
         <activity android:name=".EgyptianMuseum" />
         <activity android:name=".TheSmokery" />
         <activity android:name=".FunTopia" />
