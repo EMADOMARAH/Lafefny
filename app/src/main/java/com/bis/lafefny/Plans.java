@@ -13,6 +13,7 @@ public class Plans extends AppCompatActivity {
     private Button button_home;
     private Button button_adv;
     private Button button_rom;
+    private Button button_family;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +49,13 @@ public class Plans extends AppCompatActivity {
                 openRomanticPlan();
             }
         });
+        button_family = (Button) findViewById(R.id.btn_family); //button family plans
+        button_family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFamilyPlan();
+            }
+        });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
@@ -59,6 +67,10 @@ public class Plans extends AppCompatActivity {
     }
     public void openRomanticPlan(){
         Intent intent = new Intent(this, RomanticPlan.class);  //open romantic plans
+        startActivity(intent);
+    }
+    public void openFamilyPlan(){
+        Intent intent = new Intent(this, FamilyPlan.class);  //open family plans
         startActivity(intent);
     }
 }

@@ -12,6 +12,7 @@ public class Events extends AppCompatActivity {
     private Button button_home;
     private Button button_sports;
     private Button button_book_fair;
+    private Button button_sound_light;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +48,13 @@ public class Events extends AppCompatActivity {
                 openCairoBookFair();
             }
         });
+        button_sound_light = (Button) findViewById(R.id.btn_sound_and_light_show); //button spund and light show
+        button_sound_light.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSoundLightEvent();
+            }
+        });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
@@ -57,7 +65,11 @@ public class Events extends AppCompatActivity {
         startActivity(intent);
     }
     public void openCairoBookFair(){
-        Intent intent = new Intent(this, CairoBookFair.class);  //open cairo book faire
+        Intent intent = new Intent(this, CairoBookFair.class);  //open cairo book fair
+        startActivity(intent);
+    }
+    public void openSoundLightEvent(){
+        Intent intent = new Intent(this, SoundLightEvent.class);  //open sound and light show
         startActivity(intent);
     }
 }

@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lafefny">
-        <activity android:name=".CairoBookFair"></activity>
+        <activity android:name=".FamilyPlan"></activity>
+        <activity android:name=".SiwaOasis_AdvPlan2" />
+        <activity android:name=".SiwaOasis_AdvPlan" />
+        <activity android:name=".SoundLightEvent" />
+        <activity android:name=".CairoBookFair" />
         <activity android:name=".RunningEvent" />
         <activity android:name=".Events" />
         <activity android:name=".RomanticPlan" />
