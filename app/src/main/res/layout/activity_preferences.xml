@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="RelativeOverlap">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whatsapp_image_2021_03_15_at_1_25_20_pm__1_">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/header_preferences"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/btnborder">
+
+            <Button
+                android:id="@+id/btn_search"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="9dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_search_24"
+                android:paddingEnd="10dp" /> <!-- edit in margin again  -->
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@color/Lafefny1"
+                android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" /> <!-- edit in margin again  -->
+
+            <TextView
+                android:id="@+id/txt_Preferences"
+                android:layout_width="391dp"
+                android:layout_height="54dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="serif"
+                android:text="@string/preferences"
+                android:textAlignment="center"
+                android:textColor="@color/Lafefny2"
+                android:textSize="39sp"
+                android:textStyle="bold" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/preference_ques1"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_preferences"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/btnborder7">
+
+            <TextView
+                android:id="@+id/txt_located"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/where_are_you_located"
+                android:textAlignment="gravity"
+                android:textColor="@color/Lafefny2"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/governorates_group"
+                android:layout_width="400dp"
+                android:layout_height="840dp"
+                android:layout_below="@id/txt_located"
+                android:layout_marginTop="27dp">
+
+                <RadioButton
+                    android:id="@+id/radio_cairo"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:text="@string/cairo"
+                    android:textColor="@color/Lafefny2"
+                    android:textColorHint="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_Giza"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/giza"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_Alex"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/alexandria"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_luxor"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/luxor"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_aswan"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/aswan"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_october"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/_6th_of_october"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_suez"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/suez"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_helwan"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/helwan"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_dakahlia"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/dakahlia"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_monufia"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/monufia"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_faiyum"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/faiyum"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_asyut"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/asyut"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_ismailia"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/ismailia"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_beniSuef"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/beni_suef"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_qalyubia"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/qalyubia"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_RedSea"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/red_sea"
+                    android:textColor="@color/Lafefny2" />
+            </RadioGroup>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/preference_ques2"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preference_ques1"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/btnborder7">
+
+            <TextView
+                android:id="@+id/txt_category"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/what_category_that_you_belong_to"
+                android:textAlignment="gravity"
+                android:textColor="@color/Lafefny2"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/category_group"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_category"
+                android:layout_marginTop="27dp">
+
+                <RadioButton
+                    android:id="@+id/radio_catg1"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:text="@string/family_with_kids"
+                    android:textColor="@color/Lafefny2"
+                    android:textColorHint="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_catg2"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/family_with_teens"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_catg3"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/teenage_friends"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_catg4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/young_adult_friends"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_catg5"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/couples"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_catg6"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/elders"
+                    android:textColor="@color/Lafefny2" />
+            </RadioGroup>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/preference_ques3"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preference_ques2"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/btnborder7">
+
+            <TextView
+                android:id="@+id/txt_budget"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/what_s_your_budget_range"
+                android:textAlignment="gravity"
+                android:textColor="@color/Lafefny2"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/budget_group"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_budget"
+                android:layout_marginTop="27dp">
+
+                <RadioButton
+                    android:id="@+id/radio_bugdet1"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:text="@string/less_than_100"
+                    android:textColor="@color/Lafefny2"
+                    android:textColorHint="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_bugdet2"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/from_100_to_300"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_bugdet3"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/from_300_to_500"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_bugdet4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/from_500_to_700"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_bugdet5"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/from_700_to_1000"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_bugdet6"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/from_1000_to_3000"
+                    android:textColor="@color/Lafefny2" />
+
+                <RadioButton
+                    android:id="@+id/radio_bugdet7"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="@string/above_3000"
+                    android:textColor="@color/Lafefny2" />
+            </RadioGroup>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/preference_ques3"
+            android:textColor="@color/Lafefny2"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/save_and_close" />
+
+        <Button
+            android:id="@+id/btn_go_to_questionnaire"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/preference_ques3"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/btn_close"
+            android:backgroundTint="@color/white"
+            android:text="@string/save_and_procced_to_questionnaire"
+            android:textColor="@color/Lafefny2"
+            android:textSize="12sp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/btn_close"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="1930dp"
+            android:background="@drawable/btnborder">
+
+            <Button
+                android:id="@+id/btn_home1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_close"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_home6_24" />
+
+            <Button
+                android:id="@+id/btn_loc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/btn_go_to_questionnaire"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
+            <Button
+                android:id="@+id/btn_user"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_go_to_questionnaire"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_profile_user6" />
+
+            <Button
+                android:id="@+id/btn_sort"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_below="@id/btn_go_to_questionnaire"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/sort4" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lafefny">
-        <activity android:name=".FamilyPlan"></activity>
+        <activity android:name=".ProvideData"/>
+        <activity android:name=".preferences"/>
+        <activity android:name=".FamilyPlan" />
         <activity android:name=".SiwaOasis_AdvPlan2" />
         <activity android:name=".SiwaOasis_AdvPlan" />
         <activity android:name=".SoundLightEvent" />
@@ -41,7 +43,7 @@
         <activity android:name=".Homepage" />
         <activity android:name=".Sign_Up" />
         <activity android:name=".Sign_In" />
-        <activity android:name=".MainActivity2">
+        <activity android:name=".MainActivity2" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
