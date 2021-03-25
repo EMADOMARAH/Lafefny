@@ -290,7 +290,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:text="Watching the image he saw above the stars, then enjoying the view of the sunset over the sun, watching the image covered by the stars. * Visit the lakes of Bir One, and you can go down to the hot springs (37 ° C)."
+                android:text="Watching the image he saw above the stars, then enjoying the view of the sunset over the sun, watching the image covered by the stars. Visit the lakes of Bir One, and you can go down to the hot springs (37 ° C)."
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:paddingLeft="4dp"
@@ -353,6 +353,33 @@
                 android:textColor="@color/Grey"
                 android:textSize="15sp"
                 android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Visit the lakes of Bir One, and you can go down to the hot springs (37 ° C)."
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="440dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="443dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
@@ -538,6 +565,84 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="233dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="257dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Reception service in accommodation and trade destinations, in Nabona."
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="260dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="310dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Fees and tickets to enter tourism places in Siwa, such as the Temple of Amun Ra, the coronation area of ​​Alexander the Great, Ain Cleopatra, the island of Fatnas, the salt mines (salt lakes), Mount Dakrour, the Well One area, visiting the cold lake, and the ancient city of Shali."
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="313dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="495dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Our prices are all taxes levied on services."
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="498dp"
                 android:textColor="@color/Grey"
                 android:textSize="15sp"
                 android:layout_marginBottom="15dp"/>
