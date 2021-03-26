@@ -323,8 +323,26 @@
     <string name="save_and_procced_to_questionnaire">Save and procced to Questionnaire</string>
     <string name="provide_data">Provide Data</string>
     <string name="if_you_haven_t_already_taken_the_questionnaire_and_preferences_forms_please_procced_to_the_next_step_of_taking_them_in_order_to_be_able_to_use_the_filtering_option">If you haven\'t already taken the Questionnaire and preferences forms, Please Procced to the next step of taking them in order to be able to use the filtering option.</string>
-    <string name="questionnaire">Questionnaire</string>
+    <string name="questionnaire1">Questionnaire</string>
     <string name="preferences">Preferences</string>
+    <string name="next1">Next</string>
+    <string name="skip1">Skip</string>
+    <string name="disagree1">Disagree</string>
+    <string name="agree1">Agree</string>
+    <string name="_12_pets_lover">12. Pets lover ?</string>
+    <string name="_13_do_you_like_a_day_full_of_events_and_adventures">13. Do you like a day full of events and adventures ?</string>
+    <string name="disagree">Disagree</string>
+    <string name="agree2">Agree</string>
+    <string name="questionnaire2">Questionnaire</string>
+    <string name="_10_would_you_rather">10. Would you Rather:</string>
+    <string name="chic_restaurant_with_music_and_candles">Chic restaurant with music and candles</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="downtown_and_shopping">Downtown and shopping</string>
+    <string name="quiet_coastal_cities">Quiet coastal cities</string>
+    <string name="_11_would_you_rather">11. Would you Rather:</string>
+    <string name="desert_tours_and_bedouin_dinner">Desert tours and Bedouin dinner</string>
+    <string name="questionnaire">Questionnaire</string>
 
     <!-- nationality array -->
     <string-array name="nationality">
