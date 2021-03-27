@@ -7,16 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class preferences extends AppCompatActivity {
-    private Button button_home;
-    private Button button_close;
+public class Question10_11 extends AppCompatActivity {
     private Button button_back;
-    private Button button_questionnaire;
+    private Button button_next;
+    private Button button_skip;
+    private Button button_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_preferences);
+        setContentView(R.layout.activity_question10_11);
 
         button_home = (Button) findViewById(R.id.btn_home1);           //button homepage
         button_home.setOnClickListener(new View.OnClickListener() {
@@ -24,36 +24,35 @@ public class preferences extends AppCompatActivity {
             public void onClick(View v) { openHomepage(); }
         });
 
-        button_close=(Button) findViewById(R.id.btn_close);           //button Save & Close
-        button_close.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { openHomepage(); }
-
-        });
-
         button_back=(Button) findViewById(R.id.btn_back);            //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { openProvideData(); }
-
+            public void onClick(View v) { openQuestion8_9(); }
         });
 
-        button_questionnaire = (Button) findViewById(R.id.btn_questionnaire);           //button questionnaire
-        button_questionnaire.setOnClickListener(new View.OnClickListener() {
+        button_next = (Button) findViewById(R.id.btn_next);           //button next
+        button_next.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { openquestionnaire(); }
+            public void onClick(View v) { openQuestion12_13(); }
+        });
+
+        button_skip = (Button) findViewById(R.id.btn_skip);           //button skip
+        button_skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openQuestion12_13(); }
         });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
         startActivity(intent);
     }
-    public void openProvideData(){
-        Intent intent = new Intent(this, ProvideData.class);  //open Providedata
+    public void  openQuestion8_9(){
+        Intent intent = new Intent(this, Question8_9.class);  //open Question8_9
         startActivity(intent);
     }
-    public void openquestionnaire(){
-        Intent intent = new Intent(this, Questionnaire1.class);  //open Questionnaire
+
+    public void openQuestion12_13(){
+        Intent intent = new Intent(this, Question12_13.class);  //open Question12_13
         startActivity(intent);
     }
 }

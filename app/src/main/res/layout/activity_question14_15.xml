@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question14_15">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whatsapp_image_2021_03_15_at_1_25_20_pm__1_">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/header_questionnaire8"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/btnborder">
+
+            <Button
+                android:id="@+id/btn_search"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="9dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_search_24"
+                android:paddingEnd="10dp" />
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@color/Lafefny1"
+                android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" />
+
+            <TextView
+                android:id="@+id/txt_questionnaire8"
+                android:layout_width="391dp"
+                android:layout_height="54dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="serif"
+                android:text="@string/questionnaire"
+                android:textAlignment="center"
+                android:textColor="@color/Lafefny2"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/question14"
+            android:layout_width="386dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_questionnaire8"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/btnborder7">
+
+            <TextView
+                android:id="@+id/txt_Question14"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.3"
+                android:text="14. Are you a fan of diving and water activities ?"
+                android:textAlignment="textStart"
+                android:textColor="@color/Lafefny2"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:id="@+id/Ques14_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_Question14"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radio_agree7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="serif"
+                    android:text="Agree"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/Lafefny2"
+                    android:textColorHint="@color/Lafefny2"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_disagree7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="Disagree"
+                    android:textColor="@color/Lafefny2"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/question15"
+            android:layout_width="386dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question14"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/btnborder7">
+
+            <TextView
+                android:id="@+id/txt_Question15"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.3"
+                android:text="15. Do you have a date ?"
+                android:textAlignment="textStart"
+                android:textColor="@color/Lafefny2"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:id="@+id/Ques15_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_Question15"
+                android:layout_marginTop="-5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_agree8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="serif"
+                    android:text="Agree"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/Lafefny2"
+                    android:textColorHint="@color/Lafefny2"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_disagree8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="serif"
+                    android:text="Disagree"
+                    android:textColor="@color/Lafefny2"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/question15"
+            android:textColor="@color/Lafefny2"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/save_and_close" />
+
+        <Button
+            android:id="@+id/btn_go_to_preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/question15"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/btn_close"
+            android:backgroundTint="@color/white"
+            android:text="save and procced to preferences"
+            android:textColor="@color/Lafefny2"
+            android:textSize="12sp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:layout_below="@id/question15"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="730dp"
+            android:background="@drawable/btnborder">
+
+            <Button
+                android:id="@+id/btn_home1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question15"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_home6_24" />
+
+            <Button
+                android:id="@+id/btn_loc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/question15"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
+            <Button
+                android:id="@+id/btn_user"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_skip"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_profile_user6" />
+
+            <Button
+                android:id="@+id/btn_sort"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_below="@id/btn_next"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/sort4" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+
+</ScrollView>

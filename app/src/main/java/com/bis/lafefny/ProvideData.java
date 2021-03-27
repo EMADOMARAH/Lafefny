@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class ProvideData extends AppCompatActivity {
     private Button button_home;
+    private Button button_questionnaire;
     private Button button_preference;
     private Button button_back;
 
@@ -21,6 +22,12 @@ public class ProvideData extends AppCompatActivity {
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openHomepage(); }
+        });
+
+        button_questionnaire = (Button) findViewById(R.id.btn_questionnaire);           //button questionnaire
+        button_questionnaire.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openquestionnaire(); }
         });
 
         button_preference = (Button) findViewById(R.id.btn_preference);           //button preferences
@@ -37,6 +44,10 @@ public class ProvideData extends AppCompatActivity {
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+    public void openquestionnaire(){
+        Intent intent = new Intent(this, Questionnaire1.class);  //open Questionnaire
         startActivity(intent);
     }
     public void openPreferences(){

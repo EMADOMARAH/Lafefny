@@ -51,6 +51,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     //create filepath to upload profile image to sorage
     private Uri filePath;;
     //store the new user id
+    private String uId;
     private  String profileimageneme;
     private String uId;
 
@@ -105,12 +106,6 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
 
     }
 
-
-
-
-
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {  //image
         super.onActivityResult(requestCode, resultCode, data);
@@ -159,6 +154,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         }
 
     }
+
     private void storeUserDataToFireStore(){
         makeUserDataIntoMap();
         db.collection("users")
@@ -312,9 +308,9 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     public  void initViews(){
         firstNameEditText = findViewById(R.id.pt_firstname);
         lastNameEditText = findViewById(R.id.pt_lastname);
-        userNameEditText = findViewById(R.id.pt_username);
-        emailEditText = findViewById(R.id.pt_email);
-        passwordEditText = findViewById(R.id.pt_passwords);
+        userNameEditText = findViewById(R.id.pt_email_in);
+        emailEditText = findViewById(R.id.pt_email_in);
+        passwordEditText = findViewById(R.id.pt_passwords_in);
         confirmEditText = findViewById(R.id.pt_conpasswords);
         mobileEditText = findViewById(R.id.pt_mobile);
         dateOBEditText = findViewById(R.id.pt_dob);

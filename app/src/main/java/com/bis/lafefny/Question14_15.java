@@ -7,21 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class preferences extends AppCompatActivity {
+public class Question14_15 extends AppCompatActivity {
+    private Button button_back;
     private Button button_home;
     private Button button_close;
-    private Button button_back;
-    private Button button_questionnaire;
+    private Button button_preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_preferences);
+        setContentView(R.layout.activity_question14_15);
 
         button_home = (Button) findViewById(R.id.btn_home1);           //button homepage
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openHomepage(); }
+        });
+
+        button_back=(Button) findViewById(R.id.btn_back);            //button back
+        button_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openQuestion12_13(); }
         });
 
         button_close=(Button) findViewById(R.id.btn_close);           //button Save & Close
@@ -31,29 +37,24 @@ public class preferences extends AppCompatActivity {
 
         });
 
-        button_back=(Button) findViewById(R.id.btn_back);            //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
+        button_preferences = (Button) findViewById(R.id.btn_go_to_preferences);           //button preferences
+        button_preferences.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { openProvideData(); }
-
+            public void onClick(View v) { openPreferences(); }
         });
 
-        button_questionnaire = (Button) findViewById(R.id.btn_questionnaire);           //button questionnaire
-        button_questionnaire.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { openquestionnaire(); }
-        });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
         startActivity(intent);
     }
-    public void openProvideData(){
-        Intent intent = new Intent(this, ProvideData.class);  //open Providedata
+    public void  openQuestion12_13(){
+        Intent intent = new Intent(this, Question12_13.class);  //open Question12_13
         startActivity(intent);
     }
-    public void openquestionnaire(){
-        Intent intent = new Intent(this, Questionnaire1.class);  //open Questionnaire
-        startActivity(intent);
+    public void openPreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
+        startActivity(intent); // not working
     }
+
 }
