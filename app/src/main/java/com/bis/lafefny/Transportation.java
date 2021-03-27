@@ -17,7 +17,7 @@ public class Transportation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transportation);
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_trans); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +25,7 @@ public class Transportation extends AppCompatActivity {
             }
         });
 
-        button_back_icon = (Button) findViewById(R.id.btn_home1); //button back icon
+        button_back_icon = (Button) findViewById(R.id.btn_home1_trans); //button back icon
         button_back_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

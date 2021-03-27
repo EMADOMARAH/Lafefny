@@ -13,7 +13,7 @@
 
 
         <Button
-            android:id="@+id/btn_ticket"
+            android:id="@+id/btn_ticket_smokery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/desc9"
@@ -27,10 +27,10 @@
 
 
         <Button
-            android:id="@+id/btn_transportation"
+            android:id="@+id/btn_transportation_smokery"
             android:layout_width="355dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_ticket"
+            android:layout_below="@id/btn_ticket_smokery"
             android:layout_marginStart="25dp"
             android:layout_marginTop="6dp"
             android:backgroundTint="@color/white"
@@ -44,7 +44,7 @@
             android:id="@+id/txt_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc1"
+            android:layout_below="@id/desc1_smokery"
             android:layout_marginStart="18dp"
             android:layout_marginTop="45dp"
             android:fontFamily="serif"
@@ -70,7 +70,7 @@
             android:id="@+id/txt_type_of_rest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc7"
+            android:layout_below="@id/desc7_smokery"
             android:layout_marginStart="18dp"
             android:layout_marginTop="40dp"
             android:fontFamily="serif"
@@ -83,7 +83,7 @@
             android:id="@+id/txt_features"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc8"
+            android:layout_below="@id/desc8_smokery"
             android:layout_marginStart="18dp"
             android:layout_marginTop="40dp"
             android:fontFamily="serif"
@@ -103,7 +103,7 @@
             android:background="@drawable/btnborder7">
 
             <Button
-                android:id="@+id/btn_filter"
+                android:id="@+id/btn_filter_smokery"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                 android:drawableEnd="@drawable/ic_baseline_filter_alt8_24" />
 
             <Button
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_back_smokery"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc1"
+            android:id="@+id/desc1_smokery"
             android:layout_width="389dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -172,10 +172,10 @@
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
         <TextView
-            android:id="@+id/txt_locations"
+            android:id="@+id/txt_locations_smokery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc1"
+            android:layout_below="@id/desc1_smokery"
             android:layout_marginStart="18dp"
             android:layout_marginTop="43dp"
             android:fontFamily="serif"
@@ -186,10 +186,10 @@
             android:textStyle="bold" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc2"
+            android:id="@+id/desc2_smokery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txt_locations"
+            android:layout_below="@id/txt_locations_smokery"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="20dp"
@@ -308,7 +308,7 @@
             android:id="@+id/desc4"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc2"
+            android:layout_below="@id/desc2_smokery"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="15dp"
@@ -349,10 +349,10 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc10"
+            android:id="@+id/desc10_somkery"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc2"
+            android:layout_below="@id/desc2_smokery"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="220dp"
@@ -404,7 +404,7 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc7"
+            android:id="@+id/desc7_smokery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_cuisines"
@@ -523,7 +523,7 @@
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc12"
+            android:id="@+id/desc12_smokery"
             android:layout_width="wrap_content"
             android:layout_height="186dp"
             android:layout_below="@id/txt_cuisines"
@@ -631,7 +631,7 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc8"
+            android:id="@+id/desc8_smokery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_type_of_rest"
@@ -891,17 +891,17 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_smokery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_transportation"
+            android:layout_below="@id/btn_transportation_smokery"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btnborder7">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextTextPersonName_smokery"
                 android:layout_width="265dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="125dp"
@@ -919,7 +919,7 @@
                 android:backgroundTint="#33446A" />
 
             <ImageView
-                android:id="@+id/user_profile_image"
+                android:id="@+id/user_profile_image_smokery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -927,7 +927,7 @@
                 android:background="@drawable/ic_profile_user7" />
 
             <RatingBar
-                android:id="@+id/ratingBar"
+                android:id="@+id/ratingBar_smokery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="95dp"
@@ -936,7 +936,7 @@
                 android:paddingTop="97dp" />
 
             <RatingBar
-                android:id="@+id/user_rate"
+                android:id="@+id/user_rate_smokery"
                 android:layout_width="332dp"
                 android:layout_height="wrap_content"
                 android:paddingLeft="100dp"
@@ -944,7 +944,7 @@
                 android:paddingTop="360dp" />
 
             <TextView
-                android:id="@+id/txt_feedback"
+                android:id="@+id/txt_feedback_smokery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/desc7"
@@ -983,7 +983,7 @@
                 android:textSize="30sp" />
 
             <TextView
-                android:id="@+id/txt_others_feedback"
+                android:id="@+id/txt_others_feedback_smokery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/editTextTextPersonName"
@@ -996,7 +996,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/username"
+                android:id="@+id/username_smokery"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -1020,7 +1020,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/user_review"
+                android:id="@+id/user_review_smokery"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
