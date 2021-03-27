@@ -12,13 +12,13 @@
         android:background="@drawable/whatsapp_image_2021_03_15_at_1_25_20_pm__1_">
         <!-- change drawable to purple btn color -->
         <TextView
-            android:id="@+id/amusementpark_header"
+            android:id="@+id/amusementpark_header_amusPark"
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:background="@drawable/btnborder2" />
 
         <Button
-            android:id="@+id/btn_filter"
+            android:id="@+id/btn_filter_amusPark"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="66dp"
             android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
              />
 
         <Button
-            android:id="@+id/btn_back"
+            android:id="@+id/btn_back_amusPark"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="45dp"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:drawableEnd="@drawable/ic_baseline_arrow_back2_24" />
 
         <TextView
-            android:id="@+id/txt_amusement"
+            android:id="@+id/txt_amusement_amusPark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -55,10 +55,10 @@
             android:textStyle="bold" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/dreampark_Background"
+            android:id="@+id/dreampark_Background_amusPark"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/amusementpark_header"
+            android:layout_below="@id/amusementpark_header_amusPark"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder2">
@@ -164,10 +164,10 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/aquapark_Background"
+            android:id="@+id/aquapark_Background_amusPark"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/fabyland_background"
+            android:layout_below="@id/fabyland_background_amusPark"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder2">
@@ -273,10 +273,10 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/geroland_Background"
+            android:id="@+id/geroland_Background_amusPark"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/aquapark_Background"
+            android:layout_below="@id/aquapark_Background_amusPark"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder2">
@@ -382,10 +382,10 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/fabyland_background"
+            android:id="@+id/fabyland_background_amusPark"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/dreampark_Background"
+            android:layout_below="@id/dreampark_Background_amusPark"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder2">
@@ -490,33 +490,33 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_amusPark"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/amusementpark_header"
+            android:layout_below="@id/amusementpark_header_amusPark"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
             android:layout_marginTop="980dp"
             android:background="@drawable/btnborder2">
 
             <Button
-                android:id="@+id/btn_home1"
+                android:id="@+id/btn_home1_amusPark"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/amusementpark_header"
+                android:layout_below="@id/amusementpark_header_amusPark"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home2_24" />
 
             <Button
-                android:id="@+id/btn_loc"
+                android:id="@+id/btn_loc_amusPark"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
                 android:layout_alignParentEnd="true"
-                android:layout_below="@id/amusementpark_header"
+                android:layout_below="@id/amusementpark_header_amusPark"
                 android:layout_marginBottom="11dp"
                 android:layout_marginEnd="170dp"
                 android:layout_marginStart="100dp"
@@ -525,22 +525,22 @@
                 android:drawableEnd="@drawable/ic_baseline_location2_on_24" />
 
             <Button
-                android:id="@+id/btn_user"
+                android:id="@+id/btn_user_amusPark"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/amusementpark_header"
+                android:layout_below="@id/amusementpark_header_amusPark"
                 android:layout_marginStart="200dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user2"
                 android:layout_marginTop="2dp"/>
 
             <Button
-                android:id="@+id/btn_sort"
+                android:id="@+id/btn_sort_amusPark"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="47dp"
-                android:layout_below="@id/amusementpark_header"
+                android:layout_below="@id/amusementpark_header_amusPark"
                 android:layout_marginStart="290dp"
                 android:layout_marginTop="3dp"
                 android:backgroundTint="@color/white"

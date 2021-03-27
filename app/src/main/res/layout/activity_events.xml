@@ -22,7 +22,7 @@
             android:background="@drawable/btnborder" />
 
         <Button
-            android:id="@+id/btn_search"
+            android:id="@+id/btn_search_event"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="66dp"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             android:paddingRight="10dp" />
 
         <Button
-            android:id="@+id/btn_back"
+            android:id="@+id/btn_back_event"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="45dp"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             android:drawableEnd="@drawable/ic_baseline_arrow_back_24" />
 
         <TextView
-            android:id="@+id/txt_events"
+            android:id="@+id/txt_events_event"
             android:layout_width="391dp"
             android:layout_height="54dp"
             android:layout_alignParentEnd="false"
@@ -59,7 +59,7 @@
             android:layout_marginLeft="15dp"/>
 
         <Button
-            android:id="@+id/btn_sports_events"
+            android:id="@+id/btn_sports_events_event"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:layout_alignParentEnd="true"
@@ -79,12 +79,12 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btn_sound_and_light_show"
+            android:id="@+id/btn_sound_and_light_show_event"
             android:layout_width="344dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="false"
             android:layout_alignParentTop="false"
-            android:layout_below="@id/btn_sports_events"
+            android:layout_below="@id/btn_sports_events_event"
             android:layout_centerHorizontal="true"
             android:layout_marginEnd="37dp"
             android:layout_marginTop="65dp"
@@ -99,12 +99,12 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btn_cairo_international_book_fair"
+            android:id="@+id/btn_cairo_international_book_fair_event"
             android:layout_width="344dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="false"
             android:layout_alignParentTop="false"
-            android:layout_below="@id/btn_sound_and_light_show"
+            android:layout_below="@id/btn_sound_and_light_show_event"
             android:layout_centerHorizontal="true"
             android:layout_marginEnd="32dp"
             android:layout_marginTop="65dp"
@@ -129,19 +129,19 @@
             android:contentDescription="@string/todo11" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/btn_cairo_international_book_fair"
+            android:layout_below="@id/btn_cairo_international_book_fair_event"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
             android:layout_marginTop="620dp"
             android:background="@drawable/btnborder">
 
             <Button
-                android:id="@+id/btn_home1"
+                android:id="@+id/btn_home1_event"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
                 android:drawableEnd="@drawable/ic_baseline_home_24" />
 
             <Button
-                android:id="@+id/btn_loc"
+                android:id="@+id/btn_loc_event"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
@@ -164,7 +164,7 @@
                 android:drawableEnd="@drawable/ic_baseline_location_on_24" />
 
             <Button
-                android:id="@+id/btn_user"
+                android:id="@+id/btn_user_event"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
                 android:drawableEnd="@drawable/ic_profile_user" />
 
             <Button
-                android:id="@+id/btn_filter"
+                android:id="@+id/btn_filter_event"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"

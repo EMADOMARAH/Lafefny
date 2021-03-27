@@ -14,10 +14,10 @@
 
 
         <Button
-            android:id="@+id/btn_ticket"
+            android:id="@+id/btn_ticket_dreamP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc8"
+            android:layout_below="@id/desc8_dreamP"
             android:layout_marginStart="130dp"
             android:layout_marginTop="35dp"
             android:backgroundTint="@color/white"
@@ -28,10 +28,10 @@
 
 
         <Button
-            android:id="@+id/btn_transportation"
+            android:id="@+id/btn_transportation_dreamP"
             android:layout_width="355dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_ticket"
+            android:layout_below="@id/btn_ticket_dreamP"
             android:layout_marginStart="25dp"
             android:layout_marginTop="6dp"
             android:backgroundTint="@color/white"
@@ -42,10 +42,10 @@
 
 
         <TextView
-            android:id="@+id/txt_operation_hours"
+            android:id="@+id/txt_operation_hours_dreamP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc1"
+            android:layout_below="@id/desc1_dreamP"
             android:layout_marginStart="18dp"
             android:layout_marginTop="35dp"
             android:fontFamily="serif"
@@ -55,10 +55,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txt_ticket_type_price"
+            android:id="@+id/txt_ticket_type_price_dreamP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc2"
+            android:layout_below="@id/desc2_dreamP"
             android:layout_marginStart="18dp"
             android:layout_marginTop="43dp"
             android:fontFamily="serif"
@@ -68,10 +68,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txt_paidrides"
+            android:id="@+id/txt_paidrides_dreamP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc5"
+            android:layout_below="@id/desc5_dreamP"
             android:layout_marginStart="18dp"
             android:layout_marginTop="40dp"
             android:fontFamily="serif"
@@ -81,10 +81,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txt_notes"
+            android:id="@+id/txt_note_dreamPs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc6"
+            android:layout_below="@id/desc6_dreamP"
             android:layout_marginStart="18dp"
             android:layout_marginTop="25dp"
             android:fontFamily="serif"
@@ -95,10 +95,10 @@
 
 
         <TextView
-            android:id="@+id/txt_add_info"
+            android:id="@+id/txt_add_info_dreamP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc7"
+            android:layout_below="@id/desc7_dreamP"
             android:layout_marginStart="18dp"
             android:layout_marginTop="40dp"
             android:fontFamily="serif"
@@ -108,7 +108,7 @@
             android:textStyle="bold" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/dreampark_header"
+            android:id="@+id/dreampark_header_dreamP"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_alignParentEnd="true"
@@ -118,7 +118,7 @@
             android:background="@drawable/btnborder2">
 
             <Button
-                android:id="@+id/btn_filter"
+                android:id="@+id/btn_filter_dreamP"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
                 android:drawableEnd="@drawable/ic_baseline_filter_alt2_24" />
 
             <Button
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_back_dreamP"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_back3_24" />
 
             <TextView
-                android:id="@+id/txt_dreampark"
+                android:id="@+id/txt_dreampark_dreamP"
                 android:layout_width="249dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -158,12 +158,12 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc1"
+            android:id="@+id/desc1_dreamP"
             android:layout_width="389dp"
             android:layout_height="168dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/dreampark_header"
+            android:layout_below="@id/dreampark_header_dreamP"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="15dp"
             android:layout_marginTop="110dp"
@@ -184,12 +184,12 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc2"
+            android:id="@+id/desc2_dreamP"
             android:layout_width="189dp"
             android:layout_height="148dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/txt_operation_hours"
+            android:layout_below="@id/txt_operation_hours_dreamP"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="209dp"
             android:layout_marginTop="360dp"
@@ -238,12 +238,12 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc3"
+            android:id="@+id/desc3_dreamP"
             android:layout_width="186dp"
             android:layout_height="148dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/txt_operation_hours"
+            android:layout_below="@id/txt_operation_hours_dreamP"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="13dp"
             android:layout_marginTop="360dp"
@@ -291,12 +291,12 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc4"
+            android:id="@+id/desc4_dreamP"
             android:layout_width="390dp"
             android:layout_height="115dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/txt_ticket_type_price"
+            android:layout_below="@id/txt_ticket_type_price_dreamP"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="596dp"
@@ -344,12 +344,12 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc5"
+            android:id="@+id/desc5_dreamP"
             android:layout_width="390dp"
             android:layout_height="115dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/desc4"
+            android:layout_below="@id/desc4_dreamP"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="735dp"
@@ -385,12 +385,12 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc6"
+            android:id="@+id/desc6_dreamP"
             android:layout_width="400dp"
             android:layout_height="193dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/txt_paidrides"
+            android:layout_below="@id/txt_paidrides_dreamP"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="5dp"
             android:layout_marginTop="925dp"
@@ -453,12 +453,12 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc7"
+            android:id="@+id/desc7_dreamP"
             android:layout_width="400dp"
             android:layout_height="260dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/txt_notes"
+            android:layout_below="@id/txt_notes_dreamP"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="5dp"
             android:layout_marginTop="1180dp"
@@ -480,12 +480,12 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc8"
+            android:id="@+id/desc8_dreamP"
             android:layout_width="398dp"
             android:layout_height="595dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/txt_add_info"
+            android:layout_below="@id/txt_add_info_dreamP"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="7dp"
             android:layout_marginTop="1530dp"
@@ -507,12 +507,12 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_dreamP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/btn_transportation"
+            android:layout_below="@id/btn_transportation_dreamP"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
             android:layout_marginTop="2300dp"
@@ -522,7 +522,7 @@
                 android:id="@+id/txt_feedback"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/desc7"
+                android:layout_below="@id/desc7_dreamP"
                 android:layout_marginTop="25dp"
                 android:fontFamily="serif"
                 android:text="@string/your_feedback_matters"
@@ -544,7 +544,7 @@
                 android:layout_marginStart="8dp"/>
 
             <RatingBar
-                android:id="@+id/ratingBar"
+                android:id="@+id/ratingBar_dreamP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="4dp"
@@ -567,7 +567,7 @@
                 android:layout_marginStart="8dp"/>
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextTextPersonName_dreamP"
                 android:layout_width="265dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="125dp"
@@ -584,7 +584,7 @@
                 android:backgroundTint="@color/Grey"
                 android:alpha="0.5"/>
             <TextView
-                android:id="@+id/txt_others_feedback"
+                android:id="@+id/txt_others_feedback_dreamP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/editTextTextPersonName"
@@ -596,7 +596,7 @@
                 android:textSize="33sp"
                 android:textStyle="bold" />
             <ImageView
-                android:id="@+id/user_profile_image"
+                android:id="@+id/user_profile_image_dreamP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_profile_user7"
@@ -604,7 +604,7 @@
                 android:layout_marginLeft="20dp"/>
 
             <RatingBar
-                android:id="@+id/user_rate"
+                android:id="@+id/user_rate_dreamP"
                 android:layout_width="332dp"
                 android:layout_height="wrap_content"
                 android:paddingLeft="100dp"
@@ -612,7 +612,7 @@
                 android:paddingTop="360dp" />
 
             <TextView
-                android:id="@+id/username"
+                android:id="@+id/username_dreamP"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -635,7 +635,7 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/user_review"
+                android:id="@+id/user_review_dreamP"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"

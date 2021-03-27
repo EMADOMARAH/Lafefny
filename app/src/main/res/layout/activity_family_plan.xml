@@ -21,7 +21,7 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/btn_filter"
+                android:id="@+id/btn_filter_fam"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:drawableEnd="@drawable/ic_baseline_filter_alt6_24" />
 
             <Button
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_back_fam"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc"
+            android:id="@+id/desc_fam"
             android:layout_width="380dp"
             android:layout_height="250dp"
             android:layout_below="@id/family_header"
@@ -95,16 +95,16 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/ras_mohammed_camping_background"
+            android:id="@+id/stereo_background_fam"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/blue_hole_background"
+            android:layout_below="@id/egyptian_museum_background_fam"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/btn_stereo"
+                android:id="@+id/btn_stereo_fam"
                 android:layout_width="145dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="120dp"
@@ -115,7 +115,7 @@
                 android:textSize="11sp" />
 
             <Button
-                android:id="@+id/txt_location_stereo"
+                android:id="@+id/txt_location_stereo_fam"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -127,7 +127,7 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location10_on_24" />
 
             <ImageView
-                android:id="@+id/img_stereo"
+                android:id="@+id/img_stereo_fam"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
@@ -136,7 +136,7 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_loc_stereo"
+                android:id="@+id/img_loc_stereo_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -145,7 +145,7 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_details_stereo"
+                android:id="@+id/img_details_stereo_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -154,7 +154,7 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_stereo"
+                android:id="@+id/txt_stereo_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
@@ -164,7 +164,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_rating_stereo"
+                android:id="@+id/txt_rating_stereo_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
@@ -175,7 +175,7 @@
                 app:drawableLeftCompat="@drawable/happyface3" />
 
             <TextView
-                android:id="@+id/txt_rating_count_stereo"
+                android:id="@+id/txt_rating_count_stereo_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
@@ -185,7 +185,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/txt_loc_stereo"
+                android:id="@+id/txt_loc_stereo_fam"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="275dp"
@@ -194,7 +194,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/txt_details_stereo"
+                android:id="@+id/txt_details_stereo_fam"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="129dp"
@@ -204,16 +204,16 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/hot_air_balloons_background"
+            android:id="@+id/bounceinc_background_fam"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@+id/ras_mohammed_camping_background"
+            android:layout_below="@+id/stereo_background_fam"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/btn_bounceinc"
+                android:id="@+id/btn_bounceinc_fam"
                 android:layout_width="145dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="120dp"
@@ -224,7 +224,7 @@
                 android:textSize="11sp" />
 
             <Button
-                android:id="@+id/txt_location_bounceinc"
+                android:id="@+id/txt_location_bounceinc_fam"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -236,7 +236,7 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <ImageView
-                android:id="@+id/img_bounceinc"
+                android:id="@+id/img_bounceinc_fam"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
@@ -245,7 +245,7 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_loc_bounceinc"
+                android:id="@+id/img_loc_bounceinc_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -254,7 +254,7 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_details_bounceinc"
+                android:id="@+id/img_details_bounceinc_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -263,7 +263,7 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_bouncenic"
+                android:id="@+id/txt_bouncenic_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
@@ -273,7 +273,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_rating_bounceinc"
+                android:id="@+id/txt_rating_bounceinc_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
@@ -284,7 +284,7 @@
                 app:drawableLeftCompat="@drawable/happyface3" />
 
             <TextView
-                android:id="@+id/txt_rating_count_bounceinc"
+                android:id="@+id/txt_rating_count_bounceinc_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
@@ -294,7 +294,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/txt_loc_bounceinc"
+                android:id="@+id/txt_loc_bounceinc_fam"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="275dp"
@@ -303,7 +303,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/txt_details_bounceinc"
+                android:id="@+id/txt_details_bounceinc_fam"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="129dp"
@@ -312,16 +312,16 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/blue_hole_background"
+            android:id="@+id/egyptian_museum_background_fam"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/desc"
+            android:layout_below="@id/desc_fam"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/txt_location_fun_topia"
+                android:id="@+id/txt_location_fun_topia_fam"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -333,7 +333,7 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <Button
-                android:id="@+id/btn_egyptian_museum"
+                android:id="@+id/btn_egyptian_museum_fam"
                 android:layout_width="145dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="120dp"
@@ -344,7 +344,7 @@
                 android:textSize="11sp" />
 
             <ImageView
-                android:id="@+id/img_egyptian_museum"
+                android:id="@+id/img_egyptian_museum_fam"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
@@ -353,7 +353,7 @@
                 app:srcCompat="@drawable/egyptian_museum" />
 
             <ImageView
-                android:id="@+id/img_loc_egyptian_museum"
+                android:id="@+id/img_loc_egyptian_museum_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -362,7 +362,7 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_next_egyptian_museum"
+                android:id="@+id/img_next_egyptian_museum_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -371,7 +371,7 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_egyptian_museum"
+                android:id="@+id/txt_egyptian_museum_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
@@ -381,7 +381,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_get_loc_egyptian_museum"
+                android:id="@+id/txt_get_loc_egyptian_museum_fam"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="275dp"
@@ -390,7 +390,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/txt_rating_egyptian_museum"
+                android:id="@+id/txt_rating_egyptian_museum_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
@@ -401,7 +401,7 @@
                 app:drawableLeftCompat="@drawable/happyface3" />
 
             <TextView
-                android:id="@+id/txt_rating_count_egyptian_museum"
+                android:id="@+id/txt_rating_count_egyptian_museum_fam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
@@ -411,7 +411,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/txt_details_egyptian_museum"
+                android:id="@+id/txt_details_egyptian_museum_fam"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="129dp"
@@ -422,7 +422,7 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_fam"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_alignParentEnd="false"
@@ -434,7 +434,7 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/btn_home1"
+                android:id="@+id/btn_home1_fam"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -443,7 +443,7 @@
                 android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
             <Button
-                android:id="@+id/btn_loc"
+                android:id="@+id/btn_loc_fam"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
@@ -457,7 +457,7 @@
                 android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
 
             <Button
-                android:id="@+id/btn_user"
+                android:id="@+id/btn_use_famr"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -468,7 +468,7 @@
                 android:drawableEnd="@drawable/ic_profile_user6" />
 
             <Button
-                android:id="@+id/btn_sort"
+                android:id="@+id/btn_sort_fam"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="47dp"

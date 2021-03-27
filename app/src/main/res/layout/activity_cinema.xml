@@ -15,13 +15,13 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/cinema_header"
+            android:id="@+id/cinema_header_cinema"
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:background="@drawable/btnborder7">
 
             <Button
-                android:id="@+id/btn_filter"
+                android:id="@+id/btn_filter_cinema"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:drawableEnd="@drawable/ic_baseline_filter_alt4_24" />
 
             <Button
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_back_cinema"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_back5_24" />
 
             <TextView
-                android:id="@+id/txt_cinema"
+                android:id="@+id/txt_cinema_cinema"
                 android:layout_width="179dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="false"
@@ -60,10 +60,10 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/vox_background"
+            android:id="@+id/vox_background_cinema"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/cinema_header"
+            android:layout_below="@id/cinema_header_cinema"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder6">
@@ -390,7 +390,7 @@
             android:id="@+id/family_background"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/vox_background"
+            android:layout_below="@id/cinema_header_cinema"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder6">
@@ -496,19 +496,19 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_cinema"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/cinema_header"
+            android:layout_below="@id/renaissance_background"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="980dp"
+            android:layout_marginTop="780dp"
             android:background="@drawable/btnborder7">
 
             <Button
-                android:id="@+id/btn_home1"
+                android:id="@+id/btn_home1_cinema"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -518,7 +518,7 @@
                 />
 
             <Button
-                android:id="@+id/btn_loc"
+                android:id="@+id/btn_loc_cinema"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
@@ -532,7 +532,7 @@
                 android:drawableEnd="@drawable/ic_baseline_location6_on_24" />
 
             <Button
-                android:id="@+id/btn_user"
+                android:id="@+id/btn_user_cinema"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -543,7 +543,7 @@
                 android:drawableEnd="@drawable/ic_profile_user4" />
 
             <Button
-                android:id="@+id/btn_sort"
+                android:id="@+id/btn_sort_cinema"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="47dp"

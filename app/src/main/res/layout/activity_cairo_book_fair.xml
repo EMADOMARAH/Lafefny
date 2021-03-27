@@ -13,10 +13,10 @@
 
 
         <Button
-            android:id="@+id/btn_transportation"
+            android:id="@+id/btn_transportation_cbf"
             android:layout_width="355dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_ticket"
+            android:layout_below="@id/btn_ticket_cbf"
             android:layout_marginStart="25dp"
             android:layout_marginTop="6dp"
             android:backgroundTint="@color/white"
@@ -26,10 +26,10 @@
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/btn_ticket"
+            android:id="@+id/btn_ticket_cbf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc2"
+            android:layout_below="@id/desc2_cbf"
             android:layout_marginStart="130dp"
             android:layout_marginTop="35dp"
             android:backgroundTint="@color/white"
@@ -40,10 +40,10 @@
 
 
         <TextView
-            android:id="@+id/txt_address"
+            android:id="@+id/txt_address_cbf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc1"
+            android:layout_below="@id/desc1_cbf"
             android:layout_marginStart="18dp"
             android:layout_marginTop="45dp"
             android:fontFamily="serif"
@@ -52,7 +52,7 @@
             android:textStyle="bold" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/the_smokery_header"
+            android:id="@+id/cbf_header"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_alignParentEnd="true"
@@ -62,7 +62,7 @@
             android:background="@drawable/btnborder7">
 
             <Button
-                android:id="@+id/btn_filter"
+                android:id="@+id/btn_filter_cbf"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 android:drawableEnd="@drawable/ic_baseline_filter_alt6_24" />
 
             <Button
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_back_cbf"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
@@ -102,12 +102,12 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc1"
+            android:id="@+id/desc1_cbf"
             android:layout_width="389dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/the_smokery_header"
+            android:layout_below="@id/cbf_header"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="110dp"
@@ -133,10 +133,10 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc2"
+            android:id="@+id/desc2_cbf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc1"
+            android:layout_below="@id/desc1_cbf"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
@@ -279,17 +279,17 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_cbf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_transportation"
+            android:layout_below="@id/btn_transportation_cbf"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btnborder7">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextTextPersonName_cbf"
                 android:layout_width="265dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="125dp"
@@ -307,7 +307,7 @@
                 android:backgroundTint="#33446A" />
 
             <ImageView
-                android:id="@+id/user_profile_image"
+                android:id="@+id/user_profile_image_cbf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -315,7 +315,7 @@
                 android:background="@drawable/ic_profile_user7" />
 
             <RatingBar
-                android:id="@+id/ratingBar"
+                android:id="@+id/ratingBar_cbf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="95dp"
@@ -324,7 +324,7 @@
                 android:paddingTop="97dp" />
 
             <RatingBar
-                android:id="@+id/user_rate"
+                android:id="@+id/user_rate_cbf"
                 android:layout_width="332dp"
                 android:layout_height="wrap_content"
                 android:paddingLeft="100dp"
@@ -332,10 +332,9 @@
                 android:paddingTop="360dp" />
 
             <TextView
-                android:id="@+id/txt_feedback"
+                android:id="@+id/txt_feedback_cbf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/desc7"
                 android:layout_marginTop="25dp"
                 android:fontFamily="serif"
                 android:text="@string/your_feedback_matters"
@@ -371,10 +370,10 @@
                 android:textSize="30sp" />
 
             <TextView
-                android:id="@+id/txt_others_feedback"
+                android:id="@+id/txt_others_feedback_cbf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/editTextTextPersonName"
+                android:layout_below="@id/editTextTextPersonName_cbf"
                 android:layout_marginTop="255dp"
                 android:fontFamily="serif"
                 android:text="Other's Feedback"
@@ -384,7 +383,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/username"
+                android:id="@+id/username_cbf"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -408,7 +407,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/user_review"
+                android:id="@+id/user_review_cbf"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"

@@ -18,7 +18,7 @@
             android:background="@drawable/btnborder2"
             android:id="@+id/booking_background">
             <Button
-                android:id="@+id/btn_search"
+                android:id="@+id/btn_search_booking"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <TextView
-            android:id="@+id/txt_ticket"
+            android:id="@+id/txt_ticket_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -58,7 +58,7 @@
             android:textStyle="bold"
             android:layout_below="@+id/booking_background"/>
         <TextView
-            android:id="@+id/txt_ticket_id"
+            android:id="@+id/txt_ticket_id_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="170dp"
@@ -70,7 +70,7 @@
             android:layout_below="@+id/booking_background"/>
 
         <TextView
-            android:id="@+id/txt_ticket_type"
+            android:id="@+id/txt_ticket_type_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -83,7 +83,7 @@
             android:layout_below="@+id/txt_ticket_id"/>
 
         <TextView
-            android:id="@+id/txt_ticket_price"
+            android:id="@+id/txt_ticket_pric_bookinge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="185dp"
@@ -95,7 +95,7 @@
             android:textStyle="bold"
             android:layout_below="@+id/txt_ticket_id"/>
         <TextView
-            android:id="@+id/txt_ticket_quantity"
+            android:id="@+id/txt_ticket_quantity_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="295dp"
@@ -105,20 +105,20 @@
             android:textColor="@color/Lafefny2"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_below="@+id/txt_ticket_id"/>
+            android:layout_below="@+id/txt_ticket_id_booking"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@drawable/line"
-            android:layout_below="@id/txt_ticket_id"
+            android:layout_below="@id/txt_ticket_id_booking"
             android:id="@+id/line1"
             android:backgroundTint="@color/Grey"
             android:contentDescription="@string/todo" />
 
 
         <TextView
-            android:id="@+id/txt_ticket_regular"
+            android:id="@+id/txt_ticket_regular_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/line1"
@@ -130,7 +130,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txt_ticket_regular_price"
+            android:id="@+id/txt_ticket_regular_price_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/line1"
@@ -143,10 +143,10 @@
 
 
         <EditText
-            android:id="@+id/txt_ticket_regular_quantity"
+            android:id="@+id/txt_ticket_regular_quantity_booking"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txt_ticket_regular"
+            android:layout_below="@id/txt_ticket_regular_booking"
             android:layout_marginStart="285dp"
             android:layout_marginTop="-27dp"
             android:background="@color/white"
@@ -164,7 +164,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_alignParentEnd="true"
-            android:layout_below="@id/txt_ticket_regular"
+            android:layout_below="@id/txt_ticket_regular_booking"
             android:layout_marginEnd="1dp"
             android:layout_marginTop="-49dp"
             android:background="@drawable/line"
@@ -172,10 +172,10 @@
             android:contentDescription="@string/todo" />
 
         <TextView
-            android:id="@+id/txt_ticket_vip"
+            android:id="@+id/txt_ticket_vip_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_ticket_regular"
+            android:layout_below="@+id/txt_ticket_regular_booking"
             android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
             android:fontFamily="serif"
@@ -184,10 +184,10 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txt_ticket_vip_price"
+            android:id="@+id/txt_ticket_vip_price_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_ticket_regular_price"
+            android:layout_below="@+id/txt_ticket_regular_price_booking"
             android:layout_marginStart="180dp"
             android:layout_marginTop="50dp"
             android:fontFamily="serif"
@@ -196,10 +196,10 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/txt_ticket_vip_quantity"
+            android:id="@+id/txt_ticket_vip_quantity_booking"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txt_ticket_regular_quantity"
+            android:layout_below="@id/txt_ticket_regular_quantity_booking"
             android:layout_marginStart="285dp"
             android:layout_marginTop="56dp"
             android:background="@color/white"
@@ -217,7 +217,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_alignParentEnd="true"
-            android:layout_below="@id/txt_ticket_regular_quantity"
+            android:layout_below="@id/txt_ticket_regular_quantity_booking"
             android:layout_marginEnd="3dp"
             android:layout_marginTop="22dp"
             android:background="@drawable/line"
@@ -225,7 +225,7 @@
             android:contentDescription="@string/todo" />
 
         <TextView
-            android:id="@+id/txt_comment"
+            android:id="@+id/txt_comment_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/line3"
@@ -237,10 +237,10 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/pt_comment"
+            android:id="@+id/pt_comment_booking"
             android:layout_width="379dp"
             android:layout_height="297dp"
-            android:layout_below="@id/txt_comment"
+            android:layout_below="@id/txt_comment_booking"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:autofillHints=""
@@ -255,10 +255,10 @@
             android:textAlignment="center"/>
 
         <Button
-            android:id="@+id/btn_booking"
+            android:id="@+id/btn_booking_booking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/pt_comment"
+            android:layout_below="@id/pt_comment_booking"
             android:layout_marginStart="106dp"
             android:layout_marginTop="22dp"
             android:backgroundTint="@color/white"
@@ -268,7 +268,7 @@
             android:textSize="15sp" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_booking"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
@@ -280,7 +280,7 @@
             android:background="@drawable/btnborder">
 
             <Button
-                android:id="@+id/btn_home1"
+                android:id="@+id/btn_home1_booking"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -289,7 +289,7 @@
                 android:drawableEnd="@drawable/ic_baseline_home_24" />
 
             <Button
-                android:id="@+id/btn_loc"
+                android:id="@+id/btn_loc_booking"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
@@ -303,7 +303,7 @@
                 android:drawableEnd="@drawable/ic_baseline_location_on_24" />
 
             <Button
-                android:id="@+id/btn_user"
+                android:id="@+id/btn_user_booking"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
