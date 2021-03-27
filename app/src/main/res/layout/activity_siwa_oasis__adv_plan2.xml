@@ -15,10 +15,10 @@
 
 
         <Button
-            android:id="@+id/btn_ticket"
+            android:id="@+id/btn_ticket_siwa_prog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc5_background"
+            android:layout_below="@id/desc5_background_siwa_prog"
             android:layout_marginStart="130dp"
             android:layout_marginTop="35dp"
             android:backgroundTint="@color/white"
@@ -28,10 +28,10 @@
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/btn_tour_guide"
+            android:id="@+id/btn_tour_guide_siwa_prog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_ticket"
+            android:layout_below="@id/btn_ticket_siwa_prog"
             android:layout_marginStart="85dp"
             android:layout_marginTop="15dp"
             android:backgroundTint="@color/white"
@@ -42,10 +42,10 @@
 
 
         <Button
-            android:id="@+id/btn_transportation"
+            android:id="@+id/btn_transportation_siwa_prog"
             android:layout_width="355dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_tour_guide"
+            android:layout_below="@id/btn_tour_guide_siwa_prog"
             android:layout_marginStart="25dp"
             android:layout_marginTop="6dp"
             android:backgroundTint="@color/white"
@@ -61,7 +61,7 @@
             android:background="@drawable/btnborder9">
 
             <Button
-                android:id="@+id/btn_filter"
+                android:id="@+id/btn_filter_siwa_prog"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                 android:drawableEnd="@drawable/ic_baseline_filter_alt9_24" />
 
             <Button
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_back_siwa_prog"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc"
+            android:id="@+id/desc_siwa_prog"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/siwa_oasis_header"
@@ -181,10 +181,10 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc3_background"
+            android:id="@+id/desc3_background_siwa_prog"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc2_background"
+            android:layout_below="@id/desc2_background_siwa_prog"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder10">
@@ -384,10 +384,10 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc5_background"
+            android:id="@+id/desc5_background_siwa_prog"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/desc3_background"
+            android:layout_below="@+id/desc3_background_siwa_prog"
             android:layout_marginStart="15dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder10">
@@ -651,10 +651,10 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc2_background"
+            android:id="@+id/desc2_background_siwa_prog"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc"
+            android:layout_below="@id/desc_siwa_prog"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder10">
@@ -836,17 +836,17 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_siwa_prog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_transportation"
+            android:layout_below="@id/btn_transportation_siwa_prog"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btnborder7">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextTextPersonName_siwa_prog"
                 android:layout_width="265dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="125dp"
@@ -864,7 +864,7 @@
                 android:backgroundTint="#33446A" />
 
             <ImageView
-                android:id="@+id/user_profile_image"
+                android:id="@+id/user_profile_image_siwa_prog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -872,7 +872,7 @@
                 android:background="@drawable/ic_profile_user7" />
 
             <RatingBar
-                android:id="@+id/ratingBar"
+                android:id="@+id/ratingBar_siwa_prog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="95dp"
@@ -881,7 +881,7 @@
                 android:paddingTop="97dp" />
 
             <RatingBar
-                android:id="@+id/user_rate"
+                android:id="@+id/user_rate_siwa_prog"
                 android:layout_width="332dp"
                 android:layout_height="wrap_content"
                 android:paddingLeft="100dp"
@@ -889,7 +889,7 @@
                 android:paddingTop="360dp" />
 
             <TextView
-                android:id="@+id/txt_feedback"
+                android:id="@+id/txt_feedback_siwa_prog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/desc7"
@@ -928,7 +928,7 @@
                 android:textSize="30sp" />
 
             <TextView
-                android:id="@+id/txt_others_feedback"
+                android:id="@+id/txt_others_feedback_siwa_prog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/editTextTextPersonName"
@@ -941,7 +941,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/username"
+                android:id="@+id/username_siwa_prog"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -965,7 +965,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/user_review"
+                android:id="@+id/user_review_siwa_prog"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"

@@ -21,7 +21,7 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/btn_filter"
+                android:id="@+id/btn_filter_rom"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:drawableEnd="@drawable/ic_baseline_filter_alt6_24" />
 
             <Button
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_back_rom"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc"
+            android:id="@+id/desc_rom"
             android:layout_width="380dp"
             android:layout_height="250dp"
             android:layout_below="@id/romantic_header"
@@ -95,16 +95,16 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/ras_mohammed_camping_background"
+            android:id="@+id/smokery_background_rom"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/blue_hole_background"
+            android:layout_below="@id/funtopia_background_rom"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/txt_location_smokery"
+                android:id="@+id/txt_location_smokery_rom"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -116,7 +116,7 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <Button
-                android:id="@+id/btn_smokery"
+                android:id="@+id/btn_smokery_rom"
                 android:layout_width="145dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="120dp"
@@ -127,7 +127,7 @@
                 android:textSize="11sp" />
 
             <ImageView
-                android:id="@+id/img_smokery"
+                android:id="@+id/img_smokery_rom"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
@@ -136,7 +136,7 @@
                 app:srcCompat="@drawable/smokery" />
 
             <ImageView
-                android:id="@+id/img_loc_smokery"
+                android:id="@+id/img_loc_smokery_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -145,7 +145,7 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_next_smokery"
+                android:id="@+id/img_next_smokery_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -154,7 +154,7 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_smokery"
+                android:id="@+id/txt_smokery_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
@@ -164,7 +164,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_get_loc_smokery"
+                android:id="@+id/txt_get_loc_smokery_rom"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="275dp"
@@ -173,7 +173,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/txt_rating_smokery"
+                android:id="@+id/txt_rating_smokery_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
@@ -184,7 +184,7 @@
                 app:drawableLeftCompat="@drawable/happyface3" />
 
             <TextView
-                android:id="@+id/txt_rating_count_smokery"
+                android:id="@+id/txt_rating_count_smokery_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
@@ -194,7 +194,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/txt_details_smokery"
+                android:id="@+id/txt_details_smokery_rom"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="129dp"
@@ -204,16 +204,16 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/hot_air_balloons_background"
+            android:id="@+id/vox_background_rom"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@+id/ras_mohammed_camping_background"
+            android:layout_below="@+id/smokery_background_rom"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder6">
 
            <Button
-                android:id="@+id/txt_location_vox"
+                android:id="@+id/txt_location_vox_rom"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -225,7 +225,7 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <Button
-                android:id="@+id/btn_vox"
+                android:id="@+id/btn_vox_rom"
                 android:layout_width="145dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="120dp"
@@ -236,7 +236,7 @@
                 android:textSize="11sp" />
 
             <ImageView
-                android:id="@+id/img_vox"
+                android:id="@+id/img_vox_rom"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
@@ -245,7 +245,7 @@
                 app:srcCompat="@drawable/vox_cinema" />
 
             <ImageView
-                android:id="@+id/img_loc_vox"
+                android:id="@+id/img_loc_vox_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -254,7 +254,7 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_next_vox"
+                android:id="@+id/img_next_vox_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -263,7 +263,7 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_vox"
+                android:id="@+id/txt_vox_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
@@ -273,7 +273,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_get_loc_vox"
+                android:id="@+id/txt_get_loc_vox_rom"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="275dp"
@@ -282,7 +282,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/txt_rating_vox"
+                android:id="@+id/txt_rating_vox_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
@@ -293,7 +293,7 @@
                 app:drawableLeftCompat="@drawable/happyface3" />
 
             <TextView
-                android:id="@+id/txt_rating_count_vox"
+                android:id="@+id/txt_rating_count_vox_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
@@ -303,7 +303,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/txt_details_vox"
+                android:id="@+id/txt_details_vox_rom"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="129dp"
@@ -313,16 +313,16 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/blue_hole_background"
+            android:id="@+id/funtopia_background_rom"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/desc"
+            android:layout_below="@id/desc_rom"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/txt_location_fun_topia"
+                android:id="@+id/txt_location_fun_topia_rom"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -334,7 +334,7 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <Button
-                android:id="@+id/btn_fun_topia"
+                android:id="@+id/btn_fun_topia_rom"
                 android:layout_width="145dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="120dp"
@@ -345,7 +345,7 @@
                 android:textSize="11sp" />
 
             <ImageView
-                android:id="@+id/img_fun_topia"
+                android:id="@+id/img_fun_topia_rom"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
@@ -354,7 +354,7 @@
                 app:srcCompat="@drawable/fun_topia" />
 
             <ImageView
-                android:id="@+id/img_loc_fun_topia"
+                android:id="@+id/img_loc_fun_topia_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -363,7 +363,7 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_next_fun_topia"
+                android:id="@+id/img_next_fun_topia_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -372,7 +372,7 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_fun_topia"
+                android:id="@+id/txt_fun_topia_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
@@ -382,7 +382,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_get_loc_fun_topia"
+                android:id="@+id/txt_get_loc_fun_topia_rom"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="275dp"
@@ -391,7 +391,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/txt_rating_fun_topia"
+                android:id="@+id/txt_rating_fun_topia_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
@@ -402,7 +402,7 @@
                 app:drawableLeftCompat="@drawable/happyface3" />
 
             <TextView
-                android:id="@+id/txt_rating_count_fun_topia"
+                android:id="@+id/txt_rating_count_fun_topia_rom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
@@ -412,7 +412,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/txt_details_fun_topia"
+                android:id="@+id/txt_details_fun_topia_rom"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="129dp"
@@ -422,7 +422,7 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_rom"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_alignParentEnd="false"
@@ -434,7 +434,7 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/btn_home1"
+                android:id="@+id/btn_home1_rom"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -443,7 +443,7 @@
                 android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
             <Button
-                android:id="@+id/btn_loc"
+                android:id="@+id/btn_loc_rom"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
@@ -457,7 +457,7 @@
                 android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
 
             <Button
-                android:id="@+id/btn_user"
+                android:id="@+id/btn_user_rom"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -468,7 +468,7 @@
                 android:drawableEnd="@drawable/ic_profile_user6" />
 
             <Button
-                android:id="@+id/btn_sort"
+                android:id="@+id/btn_sort_rom"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="47dp"

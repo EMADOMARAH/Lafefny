@@ -53,7 +53,6 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     //store the new user id
     private String uId;
     private  String profileimageneme;
-    private String uId;
 
     //buttons for back ,adding image, signup
     private Button back_btn , add_img_btn ,signUp_btn;

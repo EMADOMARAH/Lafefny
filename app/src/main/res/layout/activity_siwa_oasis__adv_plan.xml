@@ -15,10 +15,10 @@
 
 
         <Button
-            android:id="@+id/btn_ticket"
+            android:id="@+id/btn_ticket_siwa_intro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc6_background"
+            android:layout_below="@id/desc6_background_siwa_intro"
             android:layout_marginStart="130dp"
             android:layout_marginTop="35dp"
             android:backgroundTint="@color/white"
@@ -28,10 +28,10 @@
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/btn_tour_guide"
+            android:id="@+id/btn_tour_guide_siwa_intro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_ticket"
+            android:layout_below="@id/btn_ticket_siwa_intro"
             android:layout_marginStart="85dp"
             android:layout_marginTop="15dp"
             android:backgroundTint="@color/white"
@@ -42,10 +42,10 @@
 
 
         <Button
-            android:id="@+id/btn_transportation"
+            android:id="@+id/btn_transportation_siwa_intro"
             android:layout_width="355dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_tour_guide"
+            android:layout_below="@id/btn_tour_guide_siwa_intro"
             android:layout_marginStart="25dp"
             android:layout_marginTop="6dp"
             android:backgroundTint="@color/white"
@@ -61,7 +61,7 @@
             android:background="@drawable/btnborder9">
 
             <Button
-                android:id="@+id/btn_filter"
+                android:id="@+id/btn_filter_siwa_intro"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                 android:drawableEnd="@drawable/ic_baseline_filter_alt9_24" />
 
             <Button
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_back_siwa_intro"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc"
+            android:id="@+id/desc_siwa_intro"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/siwa_oasis_header"
@@ -108,7 +108,7 @@
             android:background="@drawable/btnborder10">
 
             <TextView
-                android:id="@+id/txt_desc"
+                android:id="@+id/txt_desc_siwa_intro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -125,10 +125,10 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc3_background"
+            android:id="@+id/desc3_background_siwa_intro"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc2_background"
+            android:layout_below="@id/desc2_background_siwa_intro"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder10">
@@ -269,24 +269,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:layout_marginStart="35dp"
-                android:text="Children from Six to Twelve years have 50% off"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="193dp"
+                android:text="Children from Six to Twelve years have 50% off"
                 android:textColor="@color/Grey"
-                android:textSize="15sp"
-                android:layout_marginBottom="15dp"/>
+                android:textSize="15sp" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc5_background"
+            android:id="@+id/desc5_background_siwa_intro"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/desc3_background"
+            android:layout_below="@+id/desc3_background_siwa_intro"
             android:layout_marginStart="15dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder10">
@@ -389,10 +389,10 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc6_background"
+            android:id="@+id/desc6_background_siwa_intro"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/desc5_background"
+            android:layout_below="@+id/desc5_background_siwa_intro"
             android:layout_marginStart="15dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder10">
@@ -473,10 +473,10 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/desc2_background"
+            android:id="@+id/desc2_background_siwa_intro"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/desc"
+            android:layout_below="@id/desc_siwa_intro"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder10">

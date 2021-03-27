@@ -15,7 +15,7 @@
         android:layout_height="330dp"
         android:id="@+id/booking_background">
         <Button
-            android:id="@+id/btn_search"
+            android:id="@+id/btn_search_pay"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="66dp"
             android:layout_height="wrap_content"
@@ -23,8 +23,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginEnd="9dp"
             android:layout_marginStart="335dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/white"
+           android:backgroundTint="@color/white"
             android:drawableEnd="@drawable/ic_baseline_search_24"
             android:paddingEnd="10dp" />
 
@@ -148,7 +147,7 @@
             android:textSize="35sp"
             android:textStyle="bold" />
         <Button
-            android:id="@+id/btn_back"
+            android:id="@+id/btn_back_pay"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="45dp"
             android:layout_height="wrap_content"

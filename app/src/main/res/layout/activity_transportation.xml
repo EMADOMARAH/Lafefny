@@ -22,7 +22,7 @@
             android:background="@drawable/btnborder5">
 
             <Button
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_back_trans"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
@@ -279,7 +279,7 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/footer_trans"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
@@ -291,7 +291,7 @@
             android:background="@drawable/btnborder5">
 
             <Button
-                android:id="@+id/btn_home1"
+                android:id="@+id/btn_home1_trans"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -300,7 +300,7 @@
                 android:drawableEnd="@drawable/ic_baseline_home3_24" />
 
             <Button
-                android:id="@+id/btn_loc"
+                android:id="@+id/btn_loc_trans"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
@@ -314,7 +314,7 @@
                 android:drawableEnd="@drawable/ic_baseline_location4_on_24" />
 
             <Button
-                android:id="@+id/btn_user"
+                android:id="@+id/btn_user_trans"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
