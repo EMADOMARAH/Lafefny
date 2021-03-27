@@ -10,7 +10,8 @@ import android.widget.Button;
 public class VoxCinema extends AppCompatActivity {
     private Button button_back; //button back
     private Button button_transportation; //button transportation
-    private Button button_booking; //button booking
+    private Button button_booking1; //button booking1
+    private Button button_booking2; //button booking2
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,8 +29,13 @@ public class VoxCinema extends AppCompatActivity {
             public void onClick(View v) {openTransportation();}
         });
 
-        button_booking = (Button) findViewById(R.id.btn_ticket); //button booking
-        button_booking.setOnClickListener(new View.OnClickListener() {
+        button_booking1 = (Button) findViewById(R.id.btn_book1); //button booking1
+        button_booking1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openBooking();}
+        });
+        button_booking2 = (Button) findViewById(R.id.btn_book2); //button booking2
+        button_booking2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {openBooking();}
         });

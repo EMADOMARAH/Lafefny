@@ -9,7 +9,8 @@ import android.widget.Button;
 
 public class SoundLightEvent extends AppCompatActivity {
     private Button button_back;
-    private Button button_home;
+    private Button button_transportation; //button transportation
+    private Button button_booking; //button booking
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +23,19 @@ public class SoundLightEvent extends AppCompatActivity {
                 openEvents();
             }
         });
-
-        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
-        button_home.setOnClickListener(new View.OnClickListener() {
+        button_transportation = (Button) findViewById(R.id.btn_transportation); //button transportation
+        button_transportation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openHomepage();
+                openTransportation();
+            }
+        });
+
+        button_booking = (Button) findViewById(R.id.btn_ticket); //button booking
+        button_booking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openBooking();
             }
         });
 
@@ -36,8 +44,13 @@ public class SoundLightEvent extends AppCompatActivity {
         Intent intent = new Intent(this, Events.class);  //button back
         startActivity(intent);
     }
-    public void openHomepage(){
-        Intent intent = new Intent(this, Homepage.class);  //open homepage
+ public void openTransportation(){
+    Intent intent = new Intent(this, Transportation.class);  //button transportation
+    startActivity(intent);
+}
+
+    public void openBooking(){
+        Intent intent = new Intent(this, Booking.class);  //button booking
         startActivity(intent);
     }
 }

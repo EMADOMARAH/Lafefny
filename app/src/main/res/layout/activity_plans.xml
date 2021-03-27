@@ -72,6 +72,7 @@
             android:fontFamily="serif"
             android:gravity="center"
             android:lineSpacingExtra="10sp"
+            android:onClick="openAdventurousPlans"
             android:text="Adventurous Plans"
             android:textAlignment="center"
             android:textColor="@color/Lafefny2"
@@ -96,7 +97,8 @@
             android:textAlignment="center"
             android:textColor="@color/Lafefny2"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="openRomanticPlan"/>
 
         <Button
             android:id="@+id/btn_family"
@@ -116,14 +118,15 @@
             android:textAlignment="center"
             android:textColor="@color/Lafefny2"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="openFamilyPlan"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="435dp"
             android:layout_alignParentBottom="false"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="0dp"
+            android:layout_marginEnd="-3dp"
             android:layout_marginTop="62dp"
             android:alpha="0.5"
             android:contentDescription="@string/todo11" />

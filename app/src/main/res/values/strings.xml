@@ -324,7 +324,7 @@
     <string name="provide_data">Provide Data</string>
     <string name="if_you_haven_t_already_taken_the_questionnaire_and_preferences_forms_please_procced_to_the_next_step_of_taking_them_in_order_to_be_able_to_use_the_filtering_option">If you haven\'t already taken the Questionnaire and preferences forms, Please Procced to the next step of taking them in order to be able to use the filtering option.</string>
     <string name="questionnaire">Questionnaire</string>
-    <string name="preferences">Preferences</string>
+    <string name="preferrences">Preferences</string>
 
     <!-- nationality array -->
     <string-array name="nationality">

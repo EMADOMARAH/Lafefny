@@ -35,27 +35,27 @@ public class Plans extends AppCompatActivity {
                 openHomepage();
             }
         });
-        button_adv = (Button) findViewById(R.id.btn_adventure); //button adventure plans
-        button_adv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openAdventurousPlans();
-            }
-        });
-        button_rom = (Button) findViewById(R.id.btn_romantic); //button romantic plans
-        button_rom.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRomanticPlan();
-            }
-        });
-        button_family = (Button) findViewById(R.id.btn_family); //button family plans
-        button_family.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFamilyPlan();
-            }
-        });
+//        button_adv = (Button) findViewById(R.id.btn_adventure); //button adventure plans
+//        button_adv.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openAdventurousPlans();
+//            }
+//        });
+//        button_rom = (Button) findViewById(R.id.btn_romantic); //button romantic plans
+//        button_rom.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openRomanticPlan();
+//            }
+//        });
+//        button_family = (Button) findViewById(R.id.btn_family); //button family plans
+//        button_family.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openFamilyPlan();
+//            }
+//        });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage

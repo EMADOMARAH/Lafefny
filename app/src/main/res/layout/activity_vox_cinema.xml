@@ -518,6 +518,7 @@
                 android:background="@drawable/whatsapp_image_2021_03_20_at_6_10_51_pm"
                 android:contentDescription="@string/todo" />
             <Button
+                android:id="@+id/btn_book1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="230dp"
@@ -703,6 +704,7 @@
                 android:background="@drawable/whatsapp_image_2021_03_20_at_6_11_09_pm"
                 android:contentDescription="@string/todo" />
             <Button
+                android:id="@+id/btn_book2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="230dp"

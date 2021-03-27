@@ -33,12 +33,12 @@ public class Cinema extends AppCompatActivity  {
             }
         });
         button_vox_cinema = (Button) findViewById(R.id.btn_vox); //button vox cinema
-//      button_vox_cinema.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openVoxCinema();
-//            }
-//        });
+      button_vox_cinema.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openVoxCinema();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class);  //open back

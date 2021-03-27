@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class FamilyPlan extends AppCompatActivity {
     private Button button_back;
-    private Button button_home;
+//    private Button button_home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,20 +23,20 @@ public class FamilyPlan extends AppCompatActivity {
             }
         });
 
-        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
-        button_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHomepage();
-            }
-        });
+//        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
+//        button_home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openHomepage();
+//            }
+//        });
     }
     public void openPlans(){
         Intent intent = new Intent(this, Plans.class);  //open back
         startActivity(intent);
     }
-    public void openHomepage(){
-        Intent intent = new Intent(this, Homepage.class);  //open homepage
-        startActivity(intent);
-    }
+//    public void openHomepage(){
+//        Intent intent = new Intent(this, Homepage.class);  //open homepage
+//        startActivity(intent);
+//    }
 }
