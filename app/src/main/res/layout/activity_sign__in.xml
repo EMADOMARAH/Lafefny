@@ -65,7 +65,7 @@
         android:textSize="25sp"/>
 
     <EditText
-        android:id="@+id/pt_username"
+        android:id="@+id/pt_email_in"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_below="@id/txt_email"
@@ -75,7 +75,7 @@
         android:background="@drawable/btnborder"
         android:ems="10"
         android:hint="malakhesham@gmail.com"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="@color/black" />
     <TextView
@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/pt_username"
+        android:layout_below="@id/pt_email_in"
         android:layout_marginTop="30dp"
         android:text="@string/password"
         android:fontFamily="serif"
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/pt_passwords"
+        android:layout_below="@id/pt_passwords_in"
         android:layout_marginTop="24dp"
         android:text="Remember Me"
         android:fontFamily="serif"
@@ -122,7 +122,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/pt_passwords"
+        android:layout_below="@id/pt_passwords_in"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="95dp"
         android:layout_marginStart="81dp"
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/pt_passwords"
+        android:layout_below="@id/pt_passwords_in"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="57dp"
         android:layout_marginStart="119dp"
@@ -153,7 +153,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/pt_passwords"
+        android:id="@+id/pt_passwords_in"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_below="@id/txt_passwords"
@@ -171,7 +171,7 @@
         android:id="@+id/btn_signin2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/pt_passwords"
+        android:layout_below="@id/pt_passwords_in"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="80dp"
         android:layout_marginStart="130dp"
