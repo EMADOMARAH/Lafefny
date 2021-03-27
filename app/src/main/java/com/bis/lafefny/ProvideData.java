@@ -8,36 +8,36 @@ import android.view.View;
 import android.widget.Button;
 
 public class ProvideData extends AppCompatActivity {
-    private Button button_home;
-    private Button button_questionnaire;
-    private Button button_preference;
-    private Button button_back;
+    private Button button_home_data;
+    private Button button_questionnaire_data;
+    private Button button_preference_data;
+    private Button button_back_data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provide_data);
 
-        button_home = (Button) findViewById(R.id.btn_home1);           //button homepage
-        button_home.setOnClickListener(new View.OnClickListener() {
+        button_home_data = (Button) findViewById(R.id.btn_data_home);           //button homepage
+        button_home_data.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openHomepage(); }
         });
 
-        button_questionnaire = (Button) findViewById(R.id.btn_questionnaire);           //button questionnaire
-        button_questionnaire.setOnClickListener(new View.OnClickListener() {
+        button_questionnaire_data = (Button) findViewById(R.id.btn_questionnaire);           //button questionnaire
+        button_questionnaire_data.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openquestionnaire(); }
         });
 
-        button_preference = (Button) findViewById(R.id.btn_preference);           //button preferences
-        button_preference.setOnClickListener(new View.OnClickListener() {
+        button_preference_data = (Button) findViewById(R.id.btn_preference);           //button preferences
+        button_preference_data.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openPreferences(); }
         });
 
-        button_back = (Button) findViewById(R.id.btn_back);           //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
+        button_back_data = (Button) findViewById(R.id.btn_data_back);           //button back
+        button_back_data.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openHomepage(); }
         });

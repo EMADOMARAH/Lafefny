@@ -11,22 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lafefny">
-        <activity android:name=".Question14_15"></activity>
+        <activity android:name=".Emergency" />
+        <activity android:name=".Question14_15" />
         <activity android:name=".Question12_13" />
         <activity android:name=".Question10_11" />
         <activity android:name=".Question8_9" />
         <activity android:name=".Question6_7" />
         <activity android:name=".Question4_5" />
         <activity android:name=".Question2_3" />
-        <activity android:name=".Questionnaire1"/>
+        <activity android:name=".Questionnaire1" />
         <activity android:name=".ProvideData" />
-        <activity android:name=".preferences" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".preferences"/>
         <activity android:name=".FamilyPlan" />
         <activity android:name=".SiwaOasis_AdvPlan2" />
         <activity android:name=".SiwaOasis_AdvPlan" />

@@ -21,7 +21,7 @@
             android:background="@drawable/btnborder">
 
         <Button
-            android:id="@+id/btn_search"
+            android:id="@+id/btn_data_search"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="98dp"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:paddingRight="10dp" /> <!-- edit in margin again  -->
 
         <Button
-            android:id="@+id/btn_back"
+            android:id="@+id/btn_data_back"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="45dp"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
             android:text="@string/preferences" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer"
+            android:id="@+id/provide_data_footer"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
@@ -121,7 +121,7 @@
             android:background="@drawable/btnborder">
 
             <Button
-                android:id="@+id/btn_home1"
+                android:id="@+id/btn_data_home"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
                 android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
             <Button
-                android:id="@+id/btn_loc"
+                android:id="@+id/btn_data_loc"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
@@ -143,7 +143,7 @@
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
             <Button
-                android:id="@+id/btn_user"
+                android:id="@+id/btn_data_user"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                 android:drawableEnd="@drawable/ic_profile_user6" />
 
             <Button
-                android:id="@+id/btn_sort"
+                android:id="@+id/btn_data_sort"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="47dp"

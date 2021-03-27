@@ -8,38 +8,38 @@ import android.view.View;
 import android.widget.Button;
 
 public class preferences extends AppCompatActivity {
-    private Button button_home;
-    private Button button_close;
-    private Button button_back;
-    private Button button_questionnaire;
+    private Button button_home_preferences;
+    private Button button_close_preferences;
+    private Button button_back_preferences;
+    private Button button_questionnaire_preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preferences);
 
-        button_home = (Button) findViewById(R.id.btn_home1);           //button homepage
-        button_home.setOnClickListener(new View.OnClickListener() {
+        button_home_preferences = (Button) findViewById(R.id.btn_preferences_home);           //button homepage
+        button_home_preferences.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openHomepage(); }
         });
 
-        button_close=(Button) findViewById(R.id.btn_close);           //button Save & Close
-        button_close.setOnClickListener(new View.OnClickListener() {
+        button_close_preferences=(Button) findViewById(R.id.btn_close);           //button Save & Close
+        button_close_preferences.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openHomepage(); }
 
         });
 
-        button_back=(Button) findViewById(R.id.btn_back);            //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
+        button_back_preferences=(Button) findViewById(R.id.btn_prefe_back);            //button back
+        button_back_preferences.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openProvideData(); }
 
         });
 
-        button_questionnaire = (Button) findViewById(R.id.btn_questionnaire);           //button questionnaire
-        button_questionnaire.setOnClickListener(new View.OnClickListener() {
+        button_questionnaire_preferences = (Button) findViewById(R.id.btn_go_to_questionnaire);           //button questionnaire
+        button_questionnaire_preferences.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openquestionnaire(); }
         });

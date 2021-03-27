@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 public class Questionnaire1 extends AppCompatActivity {
-    private Button button_back;
+    private Button button_questionnaire1_back;
     private Button button_next;
     private Button button_skip;
-    private Button button_home;
+    private Button button_questionnaire1_home;
 
 
     @Override
@@ -19,8 +19,8 @@ public class Questionnaire1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questionnaire1);
 
-        button_home = (Button) findViewById(R.id.btn_home1);           //button homepage
-        button_home.setOnClickListener(new View.OnClickListener() {
+        button_questionnaire1_home = (Button) findViewById(R.id.btn_questionnaire1_home);           //button homepage
+        button_questionnaire1_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openHomepage(); }
         });
@@ -37,8 +37,8 @@ public class Questionnaire1 extends AppCompatActivity {
             public void onClick(View v) { openQuestion2_3(); }
         });
 
-        button_back=(Button) findViewById(R.id.btn_back);            //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
+        button_questionnaire1_back=(Button) findViewById(R.id.btn_questionnaire1_back);            //button back
+        button_questionnaire1_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openProvideData(); }
 
