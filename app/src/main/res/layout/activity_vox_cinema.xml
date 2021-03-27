@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp_image_2021_03_20_at_6_09_28_pm"
+    tools:context="com.bis.lafefny.DreamPark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_transportation"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc8"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="@string/transportation"
+            android:textColor="#33446A"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc1"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="serif"
+            android:textColor="@color/Grey"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_about_vox_cinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc2"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="serif"
+            android:text="@string/string_about_vox_cinema"
+            android:textColor="#33446A"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_top_movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc4"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:text="@string/top_movies"
+            android:textColor="#33446A"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/vox_cinema_header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/btnborder8">
+
+            <Button
+                android:id="@+id/btn_filter"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_filter_alt7_24" />
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Grey"
+                android:drawableEnd="@drawable/ic_baseline_arrow_back7_24" />
+
+            <TextView
+                android:id="@+id/txt_vox_cinema"
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="@string/vox_cienma"
+                android:textAlignment="center"
+                android:textColor="#394DB5"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc1"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/vox_cinema_header"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/btnborder8">
+
+            <TextView
+                android:id="@+id/txt_vox_cinema_desc1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/vox_cinemas_features_high_resolution_digital_projection_systems_immersive_digital_3d_content_expansive_max_screens_dolby_atmos_and_7_1_multidimensional_surround_sound_systems_as_well_as_premium_experiences_such_as_imax_with_laser_theatre_gold_4dx_and_kids_designed_especially_for_all_little_movie_fans"
+                android:textAlignment="center"
+                android:textColor="#33446A"
+                android:textSize="17.5sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc2"
+            android:layout_width="350dp"
+            android:layout_height="148dp"
+            android:layout_below="@id/txt_address"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/btnborder7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingStart="0dp"
+                android:paddingTop="10dp"
+                android:layout_marginStart="15dp"
+                android:textAlignment="center"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                app:drawableStartCompat="@drawable/ic_baseline_circle_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingStart="0dp"
+                android:paddingTop="10dp"
+                android:layout_marginStart="55dp"
+                android:text="@string/mall_of_egypt"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingStart="0dp"
+                android:layout_marginStart="15dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="55dp"
+                android:textAlignment="center"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                app:drawableStartCompat="@drawable/ic_baseline_circle_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="55dp"
+                android:text="@string/city_center_almaza"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingTop="100dp"
+                android:layout_marginStart="15dp"
+                android:textAlignment="center"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                app:drawableStartCompat="@drawable/ic_baseline_circle_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="100dp"
+                android:text="@string/city_center_alexandria"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <TextView
+            android:id="@+id/txt_locations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vox_cinema_header"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="335dp"
+            android:fontFamily="serif"
+            android:text="@string/locations"
+            android:textColor="#33446A "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_baseline_location5_on_24" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc4"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_about_vox_cinema"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnborder7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:layout_marginStart="60dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="25dp"
+                android:text="@string/_16002"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="25dp"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                app:drawableStartCompat="@drawable/ic_baseline_call_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="80dp"
+                android:layout_marginStart="60dp"
+                android:text="@string/_12_00_pm_3_00_am_all_days"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="80dp"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                app:drawableLeftCompat="@drawable/ic_baseline_watch_later_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:layout_marginStart="60dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="125dp"
+                android:text="@string/type_of_cinema"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="125dp"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                app:drawableStartCompat="@drawable/ic_baseline_circle2_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:layout_marginStart="60dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="170dp"
+                android:text="@string/regular_vip"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc7"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_top_movies"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnborder7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="185dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="19dp"
+                android:text="@string/the_reckoning"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="150dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/genre"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="230dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/horror"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="150dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="100dp"
+                android:text="@string/running_time"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="300dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="100dp"
+                android:text="@string/_110_min"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="150dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/release_date"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="300dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/_11_6_21"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="150dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="185dp"
+                android:text="@string/vippp"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="190dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="190dp"
+                android:text="@string/_110_le"
+                android:textColor="#33446A"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="250dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="185dp"
+                android:text="@string/regularrr"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="338dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="190dp"
+                android:text="@string/_80_le"
+                android:textColor="#33446A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/whatsapp_image_2021_03_20_at_6_10_51_pm"
+                android:contentDescription="@string/todo" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp"
+                android:layout_marginStart="156dp"
+                android:text="@string/book_now"
+                android:fontFamily="serif"
+                android:backgroundTint="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#33446A"/>
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc8"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc7"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btnborder7"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="185dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="19dp"
+                android:text="@string/tom_and_jerry"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="150dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/genre"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="230dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/animation"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="150dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="100dp"
+                android:text="@string/running_time"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="300dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="100dp"
+                android:text="@string/_100_min"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="150dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/release_date"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="300dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/_11_6_21"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="150dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="185dp"
+                android:text="@string/vipp"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="190dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="190dp"
+                android:text="@string/_110_le"
+                android:textColor="#33446A"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="250dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="185dp"
+                android:text="@string/regularr"
+                android:textColor="#33446A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="338dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="190dp"
+                android:text="@string/_80_le"
+                android:textColor="#33446A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/whatsapp_image_2021_03_20_at_6_11_09_pm"
+                android:contentDescription="@string/todo" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp"
+                android:layout_marginStart="156dp"
+                android:text="@string/book_now"
+                android:fontFamily="serif"
+                android:backgroundTint="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#33446A"/>
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_transportation"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnborder8">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="265dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="135dp"
+                android:autofillHints=""
+                android:hint="@string/give_your_review"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:alpha="0.5"
+                android:background="@drawable/line_png_27963"
+                android:backgroundTint="#33446A"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="330dp"
+                android:background="@drawable/ic_profile_user7"
+                android:contentDescription="@string/todo" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="97dp" />
+
+            <RatingBar
+                android:id="@+id/user_rate"
+                android:layout_width="332dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="100dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="360dp" />
+
+            <TextView
+                android:id="@+id/txt_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc7"
+                android:layout_marginTop="25dp"
+                android:fontFamily="serif"
+                android:text="@string/your_feedback_matters"
+                android:textAlignment="center"
+                android:textColor="#33446A"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="100dp"
+                android:text="@string/rate"
+                android:textColor="#33446A"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="180dp"
+                android:text="@string/review"
+                android:textColor="#33446A"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txt_others_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextTextPersonName"
+                android:layout_marginTop="255dp"
+                android:fontFamily="serif"
+                android:text="@string/other_s_feedback"
+                android:textAlignment="center"
+                android:textColor="#33446A"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="serif"
+                android:paddingStart="110dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="325dp"
+                android:text="@string/malakhesham99"
+                android:textColor="#33446A"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="serif"
+                android:paddingStart="20dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="425dp"
+                android:text="@string/commentt"
+                android:textColor="#33446A"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_review"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="serif"
+                android:lineSpacingExtra="3dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="475dp"
+                android:text="@string/commentttt"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

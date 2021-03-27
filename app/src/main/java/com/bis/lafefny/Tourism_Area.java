@@ -10,6 +10,7 @@ import android.widget.Button;
 public class Tourism_Area extends AppCompatActivity {
     private Button button_back;
     private Button button_home;
+    private Button button_egyptian_museum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,14 @@ public class Tourism_Area extends AppCompatActivity {
                 openHomepage();
             }
         });
+
+        button_egyptian_museum = (Button) findViewById(R.id.btn_egyptian_museum); //button egyptian museum
+        button_egyptian_museum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEgyptianMuseum();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class);  //open back
@@ -38,6 +47,10 @@ public class Tourism_Area extends AppCompatActivity {
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+    public void openEgyptianMuseum(){
+        Intent intent = new Intent(this, EgyptianMuseum.class);  //open egyptian museum
         startActivity(intent);
     }
 }

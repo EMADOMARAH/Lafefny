@@ -17,7 +17,6 @@ public class Homepage extends AppCompatActivity {
     private Button button_plan;
     private Button button_emg;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,12 +31,32 @@ public class Homepage extends AppCompatActivity {
             }
         });
 
+        button_plan = (Button) findViewById(R.id.btn_plans); //button plans
+        button_plan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPlans();
+            }
+        });
 
+        button_event = (Button) findViewById(R.id.btn_events); //button events
+        button_event.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEvents();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class); //open entertainment categories
         startActivity(intent);
     }
-
-
+    public void openPlans(){
+        Intent intent = new Intent(this, Plans.class); //open plans
+        startActivity(intent);
+    }
+    public void openEvents(){
+        Intent intent = new Intent(this, Events.class); //open events
+        startActivity(intent);
+    }
 }

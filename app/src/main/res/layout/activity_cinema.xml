@@ -514,7 +514,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/gaming_area_header"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_home4_24" />
+                android:drawableEnd="@drawable/ic_baseline_home4_24"
+                android:onClick="goTo"
+                />
 
             <Button
                 android:id="@+id/btn_loc"

@@ -31,7 +31,7 @@
                 android:layout_marginStart="330dp"
                 android:layout_marginTop="2dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt5_24" />
+                android:drawableEnd="@drawable/ic_baseline_filter_alt6_24" />
 
             <Button
                 android:id="@+id/btn_back"
@@ -39,7 +39,7 @@
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#8F520C"
-                android:drawableEnd="@drawable/ic_baseline_arrow_back6_24" />
+                android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" />
 
             <TextView
                 android:id="@+id/txt_tourism_area"
@@ -81,7 +81,7 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <Button
-                android:id="@+id/btn_fun_topia"
+                android:id="@+id/btn_egyptian_museum"
                 android:layout_width="145dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="120dp"
@@ -92,7 +92,7 @@
                 android:textSize="11sp" />
 
             <ImageView
-                android:id="@+id/img_fun_topia"
+                android:id="@+id/img_egyptian_museum"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
@@ -101,21 +101,21 @@
                 app:srcCompat="@drawable/egyptian_museum" />
 
             <ImageView
-                android:id="@+id/img_loc_fun_topia"
+                android:id="@+id/img_loc_egyptian_museum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
                 android:layout_marginTop="105dp"
-                android:background="@drawable/ic_baseline_location7_on_24"
+                android:background="@drawable/ic_baseline_location10_on_24"
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_next_fun_topia"
+                android:id="@+id/img_next_egyptian_museum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
                 android:layout_marginTop="108dp"
-                android:background="@drawable/clicknext3"
+                android:background="@drawable/clicknext4"
                 android:contentDescription="@string/todo" />
 
             <TextView
@@ -215,7 +215,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
                 android:layout_marginTop="105dp"
-                android:background="@drawable/ic_baseline_location7_on_24"
+                android:background="@drawable/ic_baseline_location10_on_24"
                 android:contentDescription="@string/todo" />
 
             <ImageView
@@ -224,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
                 android:layout_marginTop="108dp"
-                android:background="@drawable/clicknext3"
+                android:background="@drawable/clicknext4"
                 android:contentDescription="@string/todo" />
 
             <TextView
@@ -325,7 +325,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
                 android:layout_marginTop="105dp"
-                android:background="@drawable/ic_baseline_location7_on_24"
+                android:background="@drawable/ic_baseline_location10_on_24"
                 android:contentDescription="@string/todo" />
 
             <ImageView
@@ -334,7 +334,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
                 android:layout_marginTop="108dp"
-                android:background="@drawable/clicknext3"
+                android:background="@drawable/clicknext4"
                 android:contentDescription="@string/todo" />
 
             <TextView
@@ -434,7 +434,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
                 android:layout_marginTop="105dp"
-                android:background="@drawable/ic_baseline_location7_on_24"
+                android:background="@drawable/ic_baseline_location10_on_24"
                 android:contentDescription="@string/todo" />
 
             <ImageView
@@ -443,7 +443,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
                 android:layout_marginTop="108dp"
-                android:background="@drawable/clicknext3"
+                android:background="@drawable/clicknext4"
                 android:contentDescription="@string/todo" />
 
             <TextView
@@ -515,7 +515,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/gaming_area_header"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_home5_24" />
+                android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
             <Button
                 android:id="@+id/btn_loc"
@@ -529,7 +529,7 @@
                 android:layout_marginStart="100dp"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location8_on_24" />
+                android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
 
             <Button
                 android:id="@+id/btn_user"
@@ -540,7 +540,7 @@
                 android:layout_marginStart="200dp"
                 android:layout_marginTop="2dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_profile_user5" />
+                android:drawableEnd="@drawable/ic_profile_user6" />
 
             <Button
                 android:id="@+id/btn_sort"
@@ -551,7 +551,7 @@
                 android:layout_marginStart="290dp"
                 android:layout_marginTop="3dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort3" />
+                android:drawableEnd="@drawable/sort4" />
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

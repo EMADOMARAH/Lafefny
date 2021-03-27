@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_siwa"
+    tools:context="com.bis.lafefny.AmusementPark"
+    tools:ignore="RelativeOverlap">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- change drawable to purple btn color -->
+
+
+        <Button
+            android:id="@+id/btn_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc6_background"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="@string/ticket"
+            android:textColor="#A97A44"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_tour_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_ticket"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="Tour Guide"
+            android:textColor="#A97A44"
+            android:textSize="30sp" />
+
+
+        <Button
+            android:id="@+id/btn_transportation"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_tour_guide"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="@string/transportation"
+            android:textColor="#A97A44"
+            android:textSize="30sp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/siwa_oasis_header"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@drawable/btnborder9">
+
+            <Button
+                android:id="@+id/btn_filter"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginStart="340dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_filter_alt9_24" />
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8F520C"
+                android:drawableEnd="@drawable/ic_baseline_arrow_back10_24" />
+
+            <TextView
+                android:id="@+id/txt_sound_light_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentTop="false"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Siwa Oasis"
+                android:textAlignment="center"
+                android:textColor="#A97A44"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/siwa_oasis_header"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder10">
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="8dp"
+                android:text="View is the most watched oasis in Egypt. Sayyid Siwa people have their own culture and customs, they speak Arabic, the Berber language (Amazigh) with them. Filled, the traditional way, full-bodied the traditional way.Take a desert safari tour, and the beauty space in Siwa's hidden treasures, take a dip in one of the many refreshing springs, sample traditional foods in Siwa, and enjoy an unforgettable and unique cultural experience."
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc3_background"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc2_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder10">
+
+            <TextView
+                android:id="@+id/txt_desc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="8dp"
+                android:text="Trip Prices"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="50dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="One Person / Single Room --> 3300 EGP"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="53dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="85dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="One Person / Double Room --> 3500 EGP"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="88dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="120dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="One Person / Triple Room --> 3900 EGP"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="123dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="155dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Children up tp six years --> Free"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="158dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="190dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Children from Six to Twelve years have 50% off"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="193dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"/>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc5_background"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc3_background"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder10">
+
+            <TextView
+                android:id="@+id/txt_desc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="8dp"
+                android:text="Trip Requirements"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="50dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="A copy of the national number"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="53dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="85dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="10% off if reservation is before 1/14/21"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="88dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="120dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Deadline for reservation is 1/20/21 or until the reserved rooms expire"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="123dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"/>
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc6_background"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc5_background"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder10">
+
+
+            <TextView
+                android:id="@+id/txt_desc8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="8dp"
+                android:text="Important Information"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="50dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="You can travel with your sedan if you wish and rent a 4x4 car on the day of the safari"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="53dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="110dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="If you do not own a car, you can share one of our friends with his private car from cairo for an extra fees of 800 pounds"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="113dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"/>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/desc2_background"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder10">
+            <TextView
+                android:id="@+id/txt_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="8dp"
+                android:text="Siwa Oasis Program"
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="50dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="One Safari Trip - Siwa Oasis"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="53dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="85dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Three Days / Two Nights"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="88dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_baseline_circle3_24"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="120dp"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Jan 25 - Jan 31, 2021"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="123dp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_oasis_more_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="View Full Program"
+                android:textSize="15sp"
+                android:layout_marginTop="155dp"
+                android:layout_marginLeft="150dp"
+                android:textColor="#5D5A5A"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

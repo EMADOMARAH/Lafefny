@@ -11,7 +11,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lafefny">
-        <activity android:name=".Sport_Events"></activity>
+        <activity android:name=".Question14_15"></activity>
+        <activity android:name=".Question12_13" />
+        <activity android:name=".Question10_11" />
+        <activity android:name=".Question8_9" />
+        <activity android:name=".Question6_7" />
+        <activity android:name=".Question4_5" />
+        <activity android:name=".Question2_3" />
+        <activity android:name=".Questionnaire1"/>
+        <activity android:name=".ProvideData" />
+        <activity android:name=".preferences" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FamilyPlan" />
+        <activity android:name=".SiwaOasis_AdvPlan2" />
+        <activity android:name=".SiwaOasis_AdvPlan" />
+        <activity android:name=".SoundLightEvent" />
+        <activity android:name=".CairoBookFair" />
+        <activity android:name=".RunningEvent" />
+        <activity android:name=".Events" />
+        <activity android:name=".RomanticPlan" />
+        <activity android:name=".AdventurousPlans" />
+        <activity android:name=".Plans" />
+        <activity android:name=".VoxCinema" />
+        <activity android:name=".EgyptianMuseum" />
+        <activity android:name=".TheSmokery" />
+        <activity android:name=".FunTopia" />
+        <activity android:name=".Sport_Events" />
         <activity android:name=".Cinema" />
         <activity android:name=".Restaurants" />
         <activity android:name=".Tourism_Area" />
@@ -27,13 +57,7 @@
         <activity android:name=".Homepage" />
         <activity android:name=".Sign_Up" />
         <activity android:name=".Sign_In" />
-        <activity android:name=".MainActivity2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity2" />
         <activity android:name=".MainActivity" />
     </application>
 

@@ -10,6 +10,7 @@ import android.widget.Button;
 public class GamingArea extends AppCompatActivity {
     private Button button_back;
     private Button button_home;
+    private Button button_funtopia;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,13 @@ public class GamingArea extends AppCompatActivity {
                 openHomepage();
             }
         });
+        button_funtopia = (Button) findViewById(R.id.btn_fun_topia); //button funtopia
+        button_funtopia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFunTopia();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class);  //open back
@@ -37,6 +45,10 @@ public class GamingArea extends AppCompatActivity {
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+    public void openFunTopia(){
+        Intent intent = new Intent(this, FunTopia.class);  //open funtopia
         startActivity(intent);
     }
 }

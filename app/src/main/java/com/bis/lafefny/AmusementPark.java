@@ -58,4 +58,6 @@ public class AmusementPark extends AppCompatActivity {
         Intent intent = new Intent(this, Homepage.class);  //button dream park
         startActivity(intent);
     }
+
+
 }
