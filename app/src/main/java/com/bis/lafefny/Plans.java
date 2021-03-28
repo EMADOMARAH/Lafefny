@@ -20,21 +20,21 @@ public class Plans extends AppCompatActivity {
         setContentView(R.layout.activity_adventurous_plans);
 
 
-        button_back = (Button) findViewById(R.id.btn_back_plan_categ); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHomepage();
-            }
-        });
-
-        button_home = (Button) findViewById(R.id.btn_home1_plan_categ_plan_categ); //button homepage
-        button_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHomepage();
-            }
-        });
+//        button_back = (Button) findViewById(R.id.btn_back_plan_categ); //button back
+//        button_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openHomepage();
+//            }
+//        });
+//
+//        button_home = (Button) findViewById(R.id.btn_home1_plan_categ_plan_categ); //button homepage
+//        button_home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openHomepage();
+//            }
+//        });
 //        button_adv = (Button) findViewById(R.id.btn_adventure); //button adventure plans
 //        button_adv.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -72,5 +72,17 @@ public class Plans extends AppCompatActivity {
     public void openFamilyPlan(){
         Intent intent = new Intent(this, FamilyPlan.class);  //open family plans
         startActivity(intent);
+    }
+
+    void onClickAll(View v){
+        switch (v.getId())
+        {
+            case R.id.btn_back_plan_categ :
+                openHomepage();
+                break;
+            case R.id.btn_home1_plan_categ_plan_categ :
+                openHomepage();
+                break;
+        }
     }
 }

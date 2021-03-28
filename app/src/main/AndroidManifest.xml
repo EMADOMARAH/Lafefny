@@ -49,11 +49,19 @@
         <activity android:name=".DreamPark" />
         <activity android:name=".AmusementPark" />
         <activity android:name=".Ent_Categories" />
-        <activity android:name=".Homepage" />
+        <activity android:name=".Homepage" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Sign_Up" />
         <activity android:name=".Sign_In" />
-        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity2" >
+
+        </activity>
         <activity android:name=".MainActivity" />
+
     </application>
 
 </manifest>

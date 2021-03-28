@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -46,7 +45,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     // Create a Cloud Storage reference from the app
     FirebaseStorage storage;
     StorageReference storageReference;
-    ProgressDialog progress ;
+    //ProgressDialog progress ;
     Map<String, Object> user = new HashMap<>();
     //create filepath to upload profile image to sorage
     private Uri filePath;;
@@ -82,7 +81,8 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         setContentView(R.layout.activity_sign__up);
 
         initViews();
-        progress= new ProgressDialog(getApplicationContext());
+
+       // progress= new ProgressDialog(getApplicationContext());
 
         mAuth = FirebaseAuth.getInstance();
         storage = FirebaseStorage.getInstance();
@@ -116,8 +116,8 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
 
                 Picasso.get()
                         .load(filePath)
-                        .noPlaceholder().
-                        centerCrop()
+                        .noPlaceholder()
+                        .centerCrop()
                         .fit()
                         .into((ImageView) findViewById(R.id.profileimage));
             }
@@ -183,32 +183,32 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         if(filePath != null)
         {
             profileimageneme = UUID.randomUUID().toString();
-            final ProgressDialog progressDialog = new ProgressDialog(this);
-            progressDialog.setTitle("Adding New member to our family...");
-            progressDialog.show();
+//            final ProgressDialog progressDialog = new ProgressDialog(this);
+//            progressDialog.setTitle("Adding New member to our family...");
+//            progressDialog.show();
 
             StorageReference ref = storageReference.child("usersImages/"+ profileimageneme);
             ref.putFile(filePath)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            progressDialog.dismiss();
+                            //progressDialog.dismiss();
                             Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                           progressDialog.dismiss();
+                          // progressDialog.dismiss();
                             Toast.makeText(getApplicationContext(), "Failed "+e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     })
                     .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
-                            double progress = (100.0*taskSnapshot.getBytesTransferred()/taskSnapshot
-                                    .getTotalByteCount());
-                            progressDialog.setMessage("Adding.... "+(int)progress+"%");
+                            //double progress = (100.0*taskSnapshot.getBytesTransferred()/taskSnapshot
+                                //    .getTotalByteCount());
+                            //progressDialog.setMessage("Adding.... "+(int)progress+"%");
                         }
                     });
         }
@@ -228,7 +228,6 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     }
 
     private void createNewUser(){
-       
         mAuth.createUserWithEmailAndPassword(email , password)
                 .addOnSuccessListener(this, new OnSuccessListener<AuthResult>() {
 
@@ -243,8 +242,6 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
                 System.out.println(e.toString());
             }
         });
-
-
     }
 
     private void checkForDataExist() {
@@ -307,9 +304,9 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     public  void initViews(){
         firstNameEditText = findViewById(R.id.pt_firstname);
         lastNameEditText = findViewById(R.id.pt_lastname);
-        userNameEditText = findViewById(R.id.pt_email_in);
-        emailEditText = findViewById(R.id.pt_email_in);
-        passwordEditText = findViewById(R.id.pt_passwords_in);
+        userNameEditText = findViewById(R.id.pt_user_name_up);
+        emailEditText = findViewById(R.id.pt_email_up);
+        passwordEditText = findViewById(R.id.pt_passwords_up);
         confirmEditText = findViewById(R.id.pt_conpasswords);
         mobileEditText = findViewById(R.id.pt_mobile);
         dateOBEditText = findViewById(R.id.pt_dob);
@@ -325,9 +322,10 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         profile_image = findViewById(R.id.profileimage);
     }
 
-    public void backScreen(){
-        startActivity(new Intent(getApplicationContext(), MainActivity2.class));
-    }
 
+    public void backScreen(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity2.class));
+
+    }
 }
 

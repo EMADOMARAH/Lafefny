@@ -216,7 +216,9 @@
         android:layout_width="45dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/Lafefny1"
-        android:drawableEnd="@drawable/ic_baseline_arrow_back_24" />
+        android:drawableEnd="@drawable/ic_baseline_arrow_back_24"
+
+        />
 
 </RelativeLayout>
 </ScrollView>

@@ -17,7 +17,7 @@ public class Tourism_Area extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tourism__area);
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_tourism); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +25,7 @@ public class Tourism_Area extends AppCompatActivity {
             }
         });
 
-        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
+        button_home = (Button) findViewById(R.id.btn_home1_tourism); //button homepage
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

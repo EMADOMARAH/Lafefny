@@ -325,6 +325,17 @@
     <string name="if_you_haven_t_already_taken_the_questionnaire_and_preferences_forms_please_procced_to_the_next_step_of_taking_them_in_order_to_be_able_to_use_the_filtering_option">If you haven\'t already taken the Questionnaire and preferences forms, Please Procced to the next step of taking them in order to be able to use the filtering option.</string>
     <string name="questionnaire">Questionnaire</string>
     <string name="preferrences">Preferences</string>
+    <string name="_10_would_you_rather">10.would you rather</string>
+    <string name="desert_tours_and_bedouin_dinner">desert tours and bedouin dinner</string>
+    <string name="chic_restaurant_with_music_and_candles">chic restaurant with musiv and candles</string>
+    <string name="_11_would_you_rather">11.would you rather</string>
+    <string name="quiet_coastal_cities">quiet coastal cities</string>
+    <string name="downtown_and_shopping">downtown and shopping</string>
+    <string name="skip">skip</string>
+    <string name="next">next</string>
+    <string name="_12_pets_lover">12.pets lover</string>
+    <string name="disagree">disagree</string>
+    <string name="_13_do_you_like_a_day_full_of_events_and_adventures">13.do you like a day full of events and adventures</string>
 
     <!-- nationality array -->
     <string-array name="nationality">
