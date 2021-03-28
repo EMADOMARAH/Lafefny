@@ -240,7 +240,7 @@
             android:background="@drawable/btnborder"
             android:ems="10"
             android:hint="@string/conpasswords"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:padding="10dp"
             android:textColor="@color/black" />
 
