@@ -46,6 +46,14 @@ public class Homepage extends AppCompatActivity {
                 openEvents();
             }
         });
+
+        button_emg = (Button) findViewById(R.id.btn_emg); //button emergency
+        button_emg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEmergency();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class); //open entertainment categories
@@ -57,6 +65,11 @@ public class Homepage extends AppCompatActivity {
     }
     public void openEvents(){
         Intent intent = new Intent(this, Events.class); //open events
+        startActivity(intent);
+    }
+
+    public void openEmergency(){
+        Intent intent = new Intent(this, Emergency.class); //open emergency
         startActivity(intent);
     }
 }
