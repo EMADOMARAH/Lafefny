@@ -234,6 +234,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
                     @Override
                     public void onSuccess(AuthResult authResult) {
                         System.out.println("Sign up Done");
+                        startActivity(new Intent(getApplicationContext() , Homepage.class));
                     }
                 }).addOnFailureListener(this, new OnFailureListener() {
             @Override

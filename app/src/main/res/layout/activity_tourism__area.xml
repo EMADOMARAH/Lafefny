@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/tourism_background"
-    tools:context="com.bis.lafefny.AmusementPark"
+    tools:context="com.bis.lafefny.Tourism_Area"
     tools:ignore="RelativeOverlap">
 
     <RelativeLayout
