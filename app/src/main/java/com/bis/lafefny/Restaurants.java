@@ -16,7 +16,7 @@ public class Restaurants extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurants);
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_res); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +24,7 @@ public class Restaurants extends AppCompatActivity {
             }
         });
 
-        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
+        button_home = (Button) findViewById(R.id.btn_home1_res); //button homepage
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

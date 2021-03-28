@@ -15,7 +15,7 @@ public class EgyptianMuseum extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_egyptian_museum);
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_egyM); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,7 +23,7 @@ public class EgyptianMuseum extends AppCompatActivity {
             }
         });
 
-        button_transportation = (Button) findViewById(R.id.btn_transportation); //button transportation
+        button_transportation = (Button) findViewById(R.id.btn_transportation_egyM); //button transportation
         button_transportation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +31,7 @@ public class EgyptianMuseum extends AppCompatActivity {
             }
         });
 
-        button_booking = (Button) findViewById(R.id.btn_ticket); //button booking
+        button_booking = (Button) findViewById(R.id.btn_ticket_egyM); //button booking
         button_booking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

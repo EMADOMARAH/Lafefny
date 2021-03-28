@@ -17,7 +17,7 @@ public class Cinema extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cinema);
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_cinema); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +25,7 @@ public class Cinema extends AppCompatActivity  {
             }
         });
 
-        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
+        button_home = (Button) findViewById(R.id.btn_home1_cinema); //button homepage
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

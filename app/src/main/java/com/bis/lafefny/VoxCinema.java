@@ -17,13 +17,13 @@ public class VoxCinema extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vox_cinema);
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_vox); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {openCinema();}
         });
 
-        button_transportation = (Button) findViewById(R.id.btn_transportation); //button transportation
+        button_transportation = (Button) findViewById(R.id.btn_transportation_vox); //button transportation
         button_transportation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {openTransportation();}

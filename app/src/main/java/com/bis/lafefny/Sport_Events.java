@@ -8,32 +8,32 @@ import android.view.View;
 import android.widget.Button;
 
 public class Sport_Events extends AppCompatActivity {
-    private Button button_back;
-    private Button button_home;
-    private Button button_running;
+    private Button button_back_Sport;
+    private Button button_home_Sport;
+    private Button button_running_Sport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport__events);
-        button_back = (Button) findViewById(R.id.btn_back); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
+        button_back_Sport = (Button) findViewById(R.id.btn_back_sport); //button back
+        button_back_Sport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openEvents();
             }
         });
 
-        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
-        button_home.setOnClickListener(new View.OnClickListener() {
+        button_home_Sport = (Button) findViewById(R.id.btn_home1_sport); //button homepage
+        button_home_Sport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openHomepage();
             }
         });
 
-        button_running = (Button) findViewById(R.id.btn_running); //button running event
-        button_running.setOnClickListener(new View.OnClickListener() {
+        button_running_Sport = (Button) findViewById(R.id.btn_running); //button running event
+        button_running_Sport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openRunningEvent();

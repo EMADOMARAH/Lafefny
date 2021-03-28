@@ -18,7 +18,7 @@ public class DreamPark extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dream_park);
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_dreamP); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,7 +26,7 @@ public class DreamPark extends AppCompatActivity {
             }
         });
 
-        button_transportation = (Button) findViewById(R.id.btn_transportation); //button transportation
+        button_transportation = (Button) findViewById(R.id.btn_transportation_dreamP); //button transportation
         button_transportation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +34,7 @@ public class DreamPark extends AppCompatActivity {
             }
         });
 
-        button_booking = (Button) findViewById(R.id.btn_ticket); //button booking
+        button_booking = (Button) findViewById(R.id.btn_ticket_dreamP); //button booking
         button_booking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -8,31 +8,31 @@ import android.view.View;
 import android.widget.Button;
 
 public class SoundLightEvent extends AppCompatActivity {
-    private Button button_back;
-    private Button button_transportation; //button transportation
-    private Button button_booking; //button booking
+    private Button button_back_SL;     //button back
+    private Button button_transportation_SL; //button transportation
+    private Button button_booking_SL; //button booking
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sound_light_event);
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
+        button_back_SL = (Button) findViewById(R.id.btn_back_SLshow); //button back
+        button_back_SL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openEvents();
             }
         });
-        button_transportation = (Button) findViewById(R.id.btn_transportation); //button transportation
-        button_transportation.setOnClickListener(new View.OnClickListener() {
+        button_transportation_SL = (Button) findViewById(R.id.btn_transportation_SLshow); //button transportation
+        button_transportation_SL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openTransportation();
             }
         });
 
-        button_booking = (Button) findViewById(R.id.btn_ticket); //button booking
-        button_booking.setOnClickListener(new View.OnClickListener() {
+        button_booking_SL = (Button) findViewById(R.id.btn_ticket_SLshow); //button booking
+        button_booking_SL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openBooking();

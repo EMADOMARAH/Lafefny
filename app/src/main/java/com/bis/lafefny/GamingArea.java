@@ -16,7 +16,7 @@ public class GamingArea extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gaming_area);
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_ga); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +24,7 @@ public class GamingArea extends AppCompatActivity {
             }
         });
 
-        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
+        button_home = (Button) findViewById(R.id.btn_home1_ga); //button homepage
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -9,33 +9,34 @@ import android.widget.Button;
 
 public class TheSmokery extends AppCompatActivity {
 
-    private Button button_back; //button back
-    private Button button_transportation; //button transportation
-    private Button button_booking; //button booking
+    private Button button_back_smokery; //button back
+    private Button button_transportation_smokery; //button transportation
+    private Button button_booking_smokery; //button booking
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_the_smokery);
-        button_back = (Button) findViewById(R.id.btn_back); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
+
+        button_back_smokery = (Button) findViewById(R.id.btn_back_smokery); //button back
+        button_back_smokery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openRestaurants();
             }
         });
 
-        button_transportation = (Button) findViewById(R.id.btn_transportation); //button transportation
-        button_transportation.setOnClickListener(new View.OnClickListener() {
+        button_transportation_smokery = (Button) findViewById(R.id.btn_transportation_smokery); //button transportation
+        button_transportation_smokery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openTransportation();
             }
         });
 
-        button_booking = (Button) findViewById(R.id.btn_ticket); //button booking
-        button_booking.setOnClickListener(new View.OnClickListener() {
+        button_booking_smokery = (Button) findViewById(R.id.btn_ticket_smokery); //button booking
+        button_booking_smokery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openBooking();

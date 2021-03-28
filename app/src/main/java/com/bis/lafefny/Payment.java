@@ -12,7 +12,7 @@ import com.bis.lafefny.R;
 public class Payment extends AppCompatActivity {
 
     private Button button_cancel; //button home icon
-    private Button button_back; //button booking icon
+    private Button button_back_pay; //button booking icon
     private Button button_promo; //button promo icon
     private Button button_ticket; //button ticket
 
@@ -30,8 +30,8 @@ public class Payment extends AppCompatActivity {
             }
         });
 
-        button_back = (Button) findViewById(R.id.btn_back); //button booking icon
-        button_back.setOnClickListener(new View.OnClickListener() {
+        button_back_pay = (Button) findViewById(R.id.btn_back_pay); //button booking icon
+        button_back_pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openBooking();

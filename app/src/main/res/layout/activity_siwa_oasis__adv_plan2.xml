@@ -82,7 +82,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_back10_24" />
 
             <TextView
-                android:id="@+id/txt_sound_light_show"
+                android:id="@+id/txt_siwa_oasis_program"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="false"
@@ -892,7 +892,6 @@
                 android:id="@+id/txt_feedback_siwa_prog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/desc7"
                 android:layout_marginTop="25dp"
                 android:fontFamily="serif"
                 android:text="@string/your_feedback_matters"
@@ -931,7 +930,7 @@
                 android:id="@+id/txt_others_feedback_siwa_prog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/editTextTextPersonName"
+                android:layout_below="@id/editTextTextPersonName_siwa_prog"
                 android:layout_marginTop="255dp"
                 android:fontFamily="serif"
                 android:text="Other's Feedback"

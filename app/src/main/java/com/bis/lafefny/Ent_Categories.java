@@ -22,7 +22,7 @@ public class Ent_Categories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ent__categories);
 
-        button_home = (Button) findViewById(R.id.btn_back); //button homepage
+        button_home = (Button) findViewById(R.id.btn_back_entcateg); //button homepage
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +30,7 @@ public class Ent_Categories extends AppCompatActivity {
             }
         });
 
-        button_park = (Button) findViewById(R.id.btn_amusement_park); //button amusement park
+        button_park = (Button) findViewById(R.id.btn_amusement_park_entcateg); //button amusement park
         button_park.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +38,7 @@ public class Ent_Categories extends AppCompatActivity {
             }
         });
 
-        button_home_icon = (Button) findViewById(R.id.btn_home1); //button homepage
+        button_home_icon = (Button) findViewById(R.id.btn_home1_entcateg); //button homepage
         button_home_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +46,7 @@ public class Ent_Categories extends AppCompatActivity {
             }
         });
 
-        button_gaming_area = (Button) findViewById(R.id.btn_gaming_area); //button gaming area
+        button_gaming_area = (Button) findViewById(R.id.btn_gaming_area_entcateg); //button gaming area
         button_gaming_area.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +54,7 @@ public class Ent_Categories extends AppCompatActivity {
             }
         });
 
-        button_tourism_area = (Button) findViewById(R.id.btn_toursim_area); //button tourism area
+        button_tourism_area = (Button) findViewById(R.id.btn_toursim_area_entcateg); //button tourism area
         button_tourism_area.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +62,7 @@ public class Ent_Categories extends AppCompatActivity {
             }
         });
 
-        button_restaurant = (Button) findViewById(R.id.btn_restaurant); //button restaurants
+        button_restaurant = (Button) findViewById(R.id.btn_restaurant_entcateg); //button restaurants
         button_restaurant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +70,7 @@ public class Ent_Categories extends AppCompatActivity {
             }
         });
 
-        button_cinema = (Button) findViewById(R.id.btn_cinema); //button cinema
+        button_cinema = (Button) findViewById(R.id.btn_cinema_entcateg); //button cinema
         button_cinema.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

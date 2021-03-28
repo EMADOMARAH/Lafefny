@@ -20,7 +20,7 @@ public class Booking extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
 
-        button_home = (Button) findViewById(R.id.btn_home1); //button home icon
+        button_home = (Button) findViewById(R.id.btn_home1_booking); //button home icon
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +28,7 @@ public class Booking extends AppCompatActivity {
             }
         });
 
-              button_payment = (Button) findViewById(R.id.btn_booking); //button payment
+              button_payment = (Button) findViewById(R.id.btn_booking_booking); //button payment
         button_payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

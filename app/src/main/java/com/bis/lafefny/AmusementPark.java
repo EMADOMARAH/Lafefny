@@ -19,7 +19,7 @@ public class AmusementPark extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_amusement_park);
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_amusPark); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,7 +35,7 @@ public class AmusementPark extends AppCompatActivity {
             }
         });
 
-        button_homepage = (Button) findViewById(R.id.btn_home1); //button back icon
+        button_homepage = (Button) findViewById(R.id.btn_home1_amusPark); //button back icon
         button_homepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

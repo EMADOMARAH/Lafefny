@@ -10,14 +10,14 @@ import android.widget.Button;
 public class AdventurousPlans extends AppCompatActivity {
     private Button button_back;
     private Button button_siwa;
-//    private Button button_home;
+    private Button button_home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adventurous_plans);
 
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_adv); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,13 +32,13 @@ public class AdventurousPlans extends AppCompatActivity {
             }
         });
 
-//        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
-//        button_home.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openHomepage();
-//            }
-//        });
+  button_home = (Button) findViewById(R.id.btn_home1_adv); //button homepage
+     button_home.setOnClickListener(new View.OnClickListener() {
+           @Override
+          public void onClick(View v) {
+              openHomepage();
+           }
+        });
     }
     public void openPlans(){
         Intent intent = new Intent(this, Plans.class);  //open plans
@@ -48,8 +48,8 @@ public class AdventurousPlans extends AppCompatActivity {
         Intent intent = new Intent(this, SiwaOasis_AdvPlan.class);  //open siwa
         startActivity(intent);
     }
-//    public void openHomepage(){
-//        Intent intent = new Intent(this, Homepage.class);  //open homepage
-//        startActivity(intent);
-//    }
+    public void openHomepage(){
+        Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+   }
 }

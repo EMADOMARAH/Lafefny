@@ -18,7 +18,7 @@ public class Events extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
 
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+        button_back = (Button) findViewById(R.id.btn_back_event); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,7 +26,7 @@ public class Events extends AppCompatActivity {
             }
         });
 
-        button_home = (Button) findViewById(R.id.btn_home1); //button homepage
+        button_home = (Button) findViewById(R.id.btn_home1_event); //button homepage
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,21 +34,21 @@ public class Events extends AppCompatActivity {
             }
         });
 
-        button_sports = (Button) findViewById(R.id.btn_sports_events); //button sports events
+        button_sports = (Button) findViewById(R.id.btn_sports_events_event); //button sports events
         button_sports.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openSport_Events();
             }
         });
-        button_book_fair = (Button) findViewById(R.id.btn_cairo_international_book_fair); //button cairo book fair
+        button_book_fair = (Button) findViewById(R.id.btn_cairo_international_book_fair_event); //button cairo book fair
         button_book_fair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCairoBookFair();
             }
         });
-        button_sound_light = (Button) findViewById(R.id.btn_sound_and_light_show); //button spund and light show
+        button_sound_light = (Button) findViewById(R.id.btn_sound_and_light_show_event); //button spund and light show
         button_sound_light.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

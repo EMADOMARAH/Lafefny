@@ -16,7 +16,8 @@ public class FunTopia extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fun_topia);
-        button_back = (Button) findViewById(R.id.btn_back); //button back
+
+        button_back = (Button) findViewById(R.id.btn_back_ft); //button back
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +25,7 @@ public class FunTopia extends AppCompatActivity {
             }
         });
 
-        button_transportation = (Button) findViewById(R.id.btn_transportation); //button transportation
+        button_transportation = (Button) findViewById(R.id.btn_transportation_ft); //button transportation
         button_transportation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +33,7 @@ public class FunTopia extends AppCompatActivity {
             }
         });
 
-        button_booking = (Button) findViewById(R.id.btn_ticket); //button booking
+        button_booking = (Button) findViewById(R.id.btn_ticket_ft); //button booking
         button_booking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
