@@ -9,15 +9,15 @@ import android.widget.Button;
 
 public class Plans extends AppCompatActivity {
 
-    private Button button_back;
-    private Button button_home;
-    private Button button_adv;
-    private Button button_rom;
-    private Button button_family;
+//    private Button button_back;
+//    private Button button_home;
+//    private Button button_adv;
+//    private Button button_rom;
+//    private Button button_family;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adventurous_plans);
+        setContentView(R.layout.activity_plans);
 
 
 //        button_back = (Button) findViewById(R.id.btn_back_plan_categ); //button back
@@ -57,32 +57,39 @@ public class Plans extends AppCompatActivity {
 //            }
 //        });
     }
-    public void openHomepage(){
-        Intent intent = new Intent(this, Homepage.class);  //open homepage
-        startActivity(intent);
-    }
-    public void openAdventurousPlans(){
-        Intent intent = new Intent(this, AdventurousPlans.class);  //open adventure plans
-        startActivity(intent);
-    }
-    public void openRomanticPlan(){
-        Intent intent = new Intent(this, RomanticPlan.class);  //open romantic plans
-        startActivity(intent);
-    }
-    public void openFamilyPlan(){
-        Intent intent = new Intent(this, FamilyPlan.class);  //open family plans
-        startActivity(intent);
-    }
+//    public void openHomepage(){
+//         startActivity(new Intent(this, Homepage.class));
+//    }
+//    public void openAdventurousPlans(){
+//        startActivity(new Intent(this, AdventurousPlans.class));
+//    }
+//    public void openRomanticPlan(){
+//         startActivity(new Intent(this, RomanticPlan.class));
+//    }
+//    public void openFamilyPlan(){
+//        startActivity(new Intent(this, FamilyPlan.class));
+//    }
 
-    void onClickAll(View v){
-        switch (v.getId())
+
+    public void onClickAll(View view) {
+        switch (view.getId())
         {
             case R.id.btn_back_plan_categ :
-                openHomepage();
+                startActivity(new Intent(this, Homepage.class));
                 break;
             case R.id.btn_home1_plan_categ_plan_categ :
-                openHomepage();
+                startActivity(new Intent(this, Homepage.class));
                 break;
+            case R.id.btn_adventure:
+                startActivity(new Intent(this, AdventurousPlans.class));
+                break;
+            case R.id.btn_romantic:
+                startActivity(new Intent(this, RomanticPlan.class));
+                break;
+            case R.id.btn_family:
+                startActivity(new Intent(this, FamilyPlan.class));
+                break;
+
         }
     }
 }
