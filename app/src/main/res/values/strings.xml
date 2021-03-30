@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Lafefny</string>
+    <string name="navigation_drawer_open"> open navigation drawer</string>
+    <string name="navigation_drawer_close"> close navigation drawer</string>
     <string name="we_pursue_a_rleaxed_experience">We pursue a rleaxed experience</string>
     <string name="create_account">Create Account</string>
     <string name="sign_in">Sign In</string>
