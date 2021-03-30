@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lafefny">
+        <activity android:name=".Help"></activity>
+        <activity android:name=".About" />
         <activity android:name=".Emergency" />
         <activity android:name=".Question14_15" />
         <activity android:name=".Question12_13" />
@@ -21,7 +23,7 @@
         <activity android:name=".Question2_3" />
         <activity android:name=".Questionnaire1" />
         <activity android:name=".ProvideData" />
-        <activity android:name=".preferences"/>
+        <activity android:name=".preferences" />
         <activity android:name=".FamilyPlan" />
         <activity android:name=".SiwaOasis_AdvPlan2" />
         <activity android:name=".SiwaOasis_AdvPlan" />
@@ -49,21 +51,17 @@
         <activity android:name=".DreamPark" />
         <activity android:name=".AmusementPark" />
         <activity android:name=".Ent_Categories" />
-        <activity android:name=".Homepage" >
-
-        </activity>
+        <activity android:name=".Homepage" />
         <activity android:name=".Sign_Up" />
-        <activity android:name=".Sign_In" >
-
-        </activity>
-        <activity android:name=".MainActivity2" >
+        <activity android:name=".Sign_In" />
+        <activity android:name=".MainActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-
     </application>
 
 </manifest>
