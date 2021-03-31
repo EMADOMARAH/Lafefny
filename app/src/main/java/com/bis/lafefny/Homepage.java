@@ -103,7 +103,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
             }
         });
 
-        button_plan = (Button) findViewById(R.id.btn_plans); //button plans
+        button_plan = (Button) findViewById(R.id.btn_plans_home); //button plans
         button_plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
