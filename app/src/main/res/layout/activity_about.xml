@@ -28,7 +28,7 @@
             android:layout_height="54dp"
             android:layout_alignParentTop="false"
             android:layout_alignParentEnd="false"
-            android:layout_marginStart="9dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:fontFamily="serif"
             android:text="About Lafefny"
