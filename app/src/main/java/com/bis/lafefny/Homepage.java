@@ -45,7 +45,7 @@ public class Homepage extends AppCompatActivity{
             }
         });
 
-        button_plan = (Button) findViewById(R.id.btn_plans_home); //button plans
+        button_plan = (Button) findViewById(R.id.btn_plans); //button plans
         button_plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,6 +58,14 @@ public class Homepage extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 openEvents();
+            }
+        });
+
+       button_emg = (Button) findViewById(R.id.btn_emg); //button emg
+        button_emg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEmergency();
             }
         });
 
@@ -74,6 +82,11 @@ public class Homepage extends AppCompatActivity{
     }
     public void openEvents(){
         Intent intent = new Intent(this, Events.class); //open events
+        startActivity(intent);
+    }
+
+    public void  openEmergency(){
+        Intent intent = new Intent(this, Emergency.class); //open emergecy
         startActivity(intent);
     }
 
