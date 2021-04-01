@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bis.lafefny">
+    package="com.bis.lafefny" >
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,12 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Lafefny">
+        android:theme="@style/Theme.Lafefny" >
+        <activity
+            android:name=".HomePage1"
+            android:label="@string/title_activity_home_page1"
+            android:theme="@style/Theme.Lafefny.NoActionBar" >
+        </activity>
         <activity android:name=".Emergency" />
         <activity android:name=".Question14_15" />
         <activity android:name=".Question12_13" />
@@ -21,7 +26,7 @@
         <activity android:name=".Question2_3" />
         <activity android:name=".Questionnaire1" />
         <activity android:name=".ProvideData" />
-        <activity android:name=".preferences"/>
+        <activity android:name=".preferences" />
         <activity android:name=".FamilyPlan" />
         <activity android:name=".SiwaOasis_AdvPlan2" />
         <activity android:name=".SiwaOasis_AdvPlan" />
@@ -52,18 +57,16 @@
         <activity android:name=".Homepage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Sign_Up" />
         <activity android:name=".Sign_In" >
-
         </activity>
         <activity android:name=".MainActivity2" >
-
         </activity>
         <activity android:name=".MainActivity" />
-
     </application>
 
 </manifest>

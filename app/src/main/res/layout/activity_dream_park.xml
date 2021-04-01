@@ -23,6 +23,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/ticket"
+            android:onClick="DreamParkOnClick"
             android:textColor="@color/Grey"
             android:textSize="30sp" />
 
@@ -37,6 +38,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/transportation"
+            android:onClick="DreamParkOnClick"
             android:textColor="@color/Grey"
             android:textSize="30sp" />
 
@@ -136,10 +138,11 @@
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/Grey"
+                android:onClick="DreamParkOnClick"
                 android:drawableEnd="@drawable/ic_baseline_arrow_back3_24" />
 
             <TextView
-                android:id="@+id/txt_dreampark_dreamP"
+                android:id="@+id/dreamParkName"
                 android:layout_width="249dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -149,7 +152,7 @@
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
-                android:text="@string/dream_park"
+                android:text="ParkName"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="35sp"
@@ -170,6 +173,7 @@
             android:background="@drawable/btnborder4">
 
             <TextView
+                android:id="@+id/dreamParkDescription"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -177,7 +181,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="4dp"
-                android:text="@string/dream_park_is_an_amusement_park_located_on_al_wahat_road_in_the_6th_of_october_in_giza_governorate_8_km_from_the_giza_pyramids_it_is_one_of_the_largest_amusement_parks_in_the_middle_east"
+                android:text="DESCRIPTION"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="17sp" />
@@ -210,6 +214,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/dreamParkStartTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -217,12 +222,13 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="50dp"
-                android:text="@string/from_10_00_am"
+                android:text="StartTime"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/dreamParkEndTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -230,7 +236,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="90dp"
-                android:text="@string/up_to_07_00_pm"
+                android:text="EndTime"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="20sp" />
@@ -263,6 +269,7 @@
                 android:textSize="17sp"
                 android:textStyle="bold" />
             <TextView
+                android:id="@+id/dreamParkFridayStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -270,23 +277,25 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="50dp"
-                android:text="@string/from_10_00_am"
+                android:text="FriStartTime"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/dreamParkFridayEnd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:paddingLeft="4dp"
-                android:paddingRight="4dp"
                 android:paddingTop="90dp"
-                android:text="@string/up_to_09_00_pm"
+                android:paddingRight="4dp"
+                android:text="FriEndTime"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -315,6 +324,7 @@
                 android:textColor="@color/Grey"
                 android:textSize="17sp" />
             <TextView
+                android:id="@+id/dreamParkRegTicket"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -322,13 +332,14 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="10dp"
-                android:text="@string/regular_ticket_150_le"
+                android:text="RegTicket"
                 android:textAlignment="textStart"
                 android:textColor="@color/Grey"
                 android:textSize="25sp"
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/dreamParkVipticket"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -363,7 +374,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="10dp"
-                android:text="@string/vip_ticket_150_le"
+                android:text="VipTicket"
                 android:textAlignment="textStart"
                 android:textColor="@color/Grey"
                 android:textSize="25sp"
@@ -411,6 +422,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/dreamParkMinPaid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -418,7 +430,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="55dp"
-                android:text="@string/super_spin_tornado_top_spin_stimulator_shoot_and_drop_roller_coaster"
+                android:text="minPaid"
                 android:textColor="@color/Grey"
                 android:textAlignment="center"
                 android:textSize="16sp" />
@@ -437,6 +449,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/dreamParkMaxPaid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -444,7 +457,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="155dp"
-                android:text="@string/go_cart_car_race_discovery"
+                android:text="maxPaid"
                 android:textColor="@color/Grey"
                 android:textAlignment="center"
                 android:textSize="16sp" />
@@ -464,6 +477,7 @@
             android:background="@drawable/btnborder4">
 
             <TextView
+                android:id="@+id/dreamParkNotes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -471,7 +485,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="9dp"
-                android:text="@string/children_of_3_years_old_or_over_must_pay_a_ticket_while_children_under_3_years_old_are_free_it_is_not_allowed_to_take_external_meals_and_family_meals_inside_dream_park_as_there_is_an_area_designated_for_events_in_the_miramar_area_or_to_place_it_in_the_safety_areas_before_the_entrance_gates_in_dream_park"
+                android:text="notes"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="17sp" />

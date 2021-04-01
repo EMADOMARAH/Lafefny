@@ -20,18 +20,13 @@ import android.widget.Toast;
 import com.bis.lafefny.R;
 import com.google.android.material.navigation.NavigationView;
 
-public class Homepage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Homepage extends AppCompatActivity{
 
     //Buttons
     private Button button_ent;
     private Button button_event;
     private Button button_plan;
     private Button button_emg;
-
-    //Menu
-    DrawerLayout drawerLayout;
-    NavigationView navigationView;
-    Toolbar toolbar;
 
 
     @Override
@@ -40,59 +35,6 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         setContentView(R.layout.activity_homepage);
         Toast.makeText(getBaseContext(),"Process Success..",Toast.LENGTH_LONG);
 
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-
-                int id = menuItem.getItemId();
-
-                switch (id) {
-                    case R.id.nav_home:
-
-                        Intent aboutusintent = new Intent(getApplicationContext(), Cinema.class);
-                        aboutusintent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(aboutusintent);
-                        break;
-                    case R.id.nav_cycle:
-                        Toast.makeText(getApplicationContext(), "Training Programmes", Toast.LENGTH_SHORT).show();
-                        drawerLayout.closeDrawers();
-
-                        break;
-
-
-//                        SharedPreferences preferences = getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE);
-//                        if (preferences.contains("password")) {
-//                            SharedPreferences.Editor editor = preferences.edit();
-//                            editor.remove("password");
-//                            editor.commit();
-//                        }
-                        //finish(); // Call once you redirect to another activity.
-
-
-                }
-                return true;
-            }
-        });
-
-        //Menu
-
-        /*--------------------Hooks-----------------------------*/
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
-        toolbar = findViewById(R.id.toolbar);
-
-        /*--------------------Tool Bar-----------------------------*/
-        setSupportActionBar(toolbar);
-
-        /*--------------------Navigation Drawer Menu-----------------------------*/
-        navigationView.bringToFront();
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-
-        navigationView.setNavigationItemSelectedListener(this);
 
         //Buttons
         button_ent = (Button) findViewById(R.id.btn_entertainment); //button amusement park
@@ -135,18 +77,5 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         startActivity(intent);
     }
 
-    @Override
-    public void onBackPressed() {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
-            drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else{
-            super.onBackPressed();
-        }
-    }
-//Menu
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return true;
-    }
+
 }
