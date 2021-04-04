@@ -164,13 +164,14 @@
             android:id="@+id/desc1_dreamP"
             android:layout_width="389dp"
             android:layout_height="168dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
             android:layout_below="@id/dreampark_header_dreamP"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="false"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="110dp"
-            android:background="@drawable/btnborder4">
+            android:layout_marginTop="109dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/btnborder4"
+            >
 
             <TextView
                 android:id="@+id/dreamParkDescription"
@@ -179,12 +180,13 @@
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:paddingLeft="4dp"
-                android:paddingRight="4dp"
                 android:paddingTop="4dp"
-                android:text="DESCRIPTION"
+                android:paddingRight="4dp"
+                android:text="dream park is an amusement park located on al Wahat road in the 6th of October in Giza governorate 8 km from the Giza pyramids it is one of the largest amusement parks in the middle east. Dream park having 34 rides suitable for kids and families in addition to teens who will enjoy our thrill rides it includes a wide range of fast food outlets restaurants and cafes plus many souvenir shops for guest comfortable a train encircles the whole park putting everything within an easy reach it cares about clients safety so safety on all rides and equipment is assured with an international safety certification from the world famous tuv-rhineland except for the newest adult rides 7 rides the ticket price gives an unlimited access to all rides and games day after day dream park has become a major destination for group school and university students in addition to a selection mix of individual guest"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
-                android:textSize="17sp" />
+                android:textSize="15sp"
+                />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

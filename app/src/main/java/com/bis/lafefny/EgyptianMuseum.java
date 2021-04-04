@@ -1,56 +1,103 @@
 package com.bis.lafefny;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class EgyptianMuseum extends AppCompatActivity {
-    private Button button_back; //button back
-    private Button button_transportation; //button transportation
-    private Button button_booking; //button booking
+    private TextView egyName, egyDisc, egyLocation, egyOpenNormal, egyOpenFriday1, egyOpenFriday2;
+    private TextView egyTicketType1, egyTicketType2, info1, info2, info3, info4;
+
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private DocumentReference MuseumDoRef = db.document("entertainment/categories/tourism/EgyptianMuseum");
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        MuseumDoRef.get()
+                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        if (documentSnapshot.exists()) {
+                            egyName.setText(documentSnapshot.getString("name"));
+                            egyDisc.setText(documentSnapshot.getString("description"));
+                            egyLocation.setText(documentSnapshot.getString("location"));
+                            egyOpenNormal.setText(documentSnapshot.getString("openNormal"));
+                            egyOpenFriday1.setText(documentSnapshot.getString("openFriday1"));
+                            egyOpenFriday2.setText(documentSnapshot.getString("openFriday2"));
+                            egyTicketType1.setText(documentSnapshot.getString("ticket1"));
+                            egyTicketType2.setText(documentSnapshot.getString("ticket2"));
+                            info1.setText(documentSnapshot.getString("importantInfo1"));
+                            info2.setText(documentSnapshot.getString("importantInfo2"));
+                            info3.setText(documentSnapshot.getString("importantInfo3"));
+                            info4.setText(documentSnapshot.getString("importantInfo4"));
+
+                        } else {
+                            Toast.makeText(EgyptianMuseum.this, "DataBase is Empty", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(EgyptianMuseum.this, "Faild To Get Data", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_egyptian_museum);
-        button_back = (Button) findViewById(R.id.btn_back_egyM); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openTourism_Area();
-            }
-        });
 
-        button_transportation = (Button) findViewById(R.id.btn_transportation_egyM); //button transportation
-        button_transportation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openTransportation();
-            }
-        });
+        EgyptianMuseumInitViews();
 
-        button_booking = (Button) findViewById(R.id.btn_ticket_egyM); //button booking
-        button_booking.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openBooking();
-            }
-        });
-    }
-    public void openTourism_Area(){
-        Intent intent = new Intent(this, Tourism_Area.class);  //button back
-        startActivity(intent);
     }
 
-    public void openTransportation(){
-        Intent intent = new Intent(this, Transportation.class);  //button transportation
-        startActivity(intent);
+    private void EgyptianMuseumInitViews() {
+        egyName = findViewById(R.id.txt_egyptian_museum_egyM);
+        egyDisc = findViewById(R.id.txt_egyM_desc1);
+        egyLocation = findViewById(R.id.egy_location);
+        egyOpenNormal = findViewById(R.id.open_alldays);
+        egyOpenFriday1 = findViewById(R.id.open_friday1);
+        egyOpenFriday2 = findViewById(R.id.open_friday2);
+        egyTicketType1 = findViewById(R.id.egy_ticket_egy);
+        egyTicketType2 = findViewById(R.id.egy_ticket_forg);
+        info1 = findViewById(R.id.egy_important_info1);
+        info2 = findViewById(R.id.egy_important_info2);
+        info3 = findViewById(R.id.egy_important_info3);
+        info4 = findViewById(R.id.egy_important_info4);
     }
 
-    public void openBooking(){
-        Intent intent = new Intent(this, Booking.class);  //button booking
-        startActivity(intent);
+
+    public void EgyptionMuseumOnClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_back_egyM:
+                startActivity(new Intent(getApplicationContext(), Tourism_Area.class));
+                break;
+            case R.id.btn_transportation_egyM:
+                startActivity(new Intent(getApplicationContext(), Transportation.class));
+                break;
+            case R.id.btn_ticket_egyM:
+                startActivity(new Intent(getApplicationContext(), Booking.class));
+                break;
+        }
     }
+
+
 }

@@ -1,3 +1,4 @@
+
 package com.bis.lafefny;
 
 import androidx.annotation.NonNull;
@@ -25,9 +26,7 @@ public class DreamPark extends AppCompatActivity {
     private TextView title,description,startTime,endTime,fridayStart,fridayEnd,regTicket,vipTicket,paidRideMin,paidRideMax,notes;
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private CollectionReference parkCoRef = db.collection("entertainment/categories/parks");
     private DocumentReference parkDoRef = db.document("entertainment/categories/parks/DreamPark");
-
 
     @Override
     protected void onStart() {
@@ -61,9 +60,6 @@ public class DreamPark extends AppCompatActivity {
 
                     }
                 });
-
-
-
     }
 
     @Override
@@ -104,4 +100,7 @@ public class DreamPark extends AppCompatActivity {
                 break;
         }
     }
+
+
+
 }

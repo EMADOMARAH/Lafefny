@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_the_smokery"
-    tools:context="com.bis.lafefny.DreamPark">
+    tools:context="com.bis.lafefny.TheSmokery">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,7 +23,8 @@
             android:fontFamily="serif"
             android:text="@string/ticket"
             android:textColor="#CF8B74"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:onClick="TheSmokeryOnClick"/>
 
 
         <Button
@@ -196,6 +197,7 @@
             android:background="@drawable/btnborder6">
 
             <TextView
+                android:id="@+id/the_smokery_location1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -223,6 +225,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_location2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -249,6 +252,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_location3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -275,6 +279,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_location4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -315,6 +320,7 @@
             android:layout_marginTop="40dp"
             android:background="@drawable/btnborder7">
             <TextView
+                android:id="@+id/the_smokery_phone1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="11511"
@@ -329,6 +335,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/ic_baseline_cal2l_24"/>
             <TextView
+                android:id="@+id/the_smokery_phone2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0102691975"
@@ -337,6 +344,7 @@
                 android:textSize="20sp"
                 android:textColor="#CF8B74"/>
             <TextView
+                android:id="@+id/the_smokery_phone3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="01220110657"
@@ -359,6 +367,7 @@
             android:layout_marginTop="40dp"
             android:background="@drawable/btnborder7">
             <TextView
+                android:id="@+id/the_smokery_open"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12PM:12AM"
@@ -373,6 +382,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/ic_baseline_watch_later2_24"/>
             <TextView
+                android:id="@+id/the_smokery_site"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Website"
@@ -387,6 +397,7 @@
                 android:layout_marginTop="40dp"
                 android:background="@drawable/ic_baseline_computer_24"/>
             <TextView
+                android:id="@+id/the_smokery_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"
@@ -416,6 +427,7 @@
 
 
             <TextView
+                android:id="@+id/the_smokery_cuisines1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -443,6 +455,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_cuisines2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -469,6 +482,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_cuisines3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -495,6 +509,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_cuisines4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -535,6 +550,7 @@
 
 
             <TextView
+                android:id="@+id/the_smokery_meal1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -562,6 +578,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_meal2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -588,6 +605,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_meal3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -641,6 +659,7 @@
             android:background="@drawable/btnborder7">
 
             <TextView
+                android:id="@+id/the_smokery_type1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -667,6 +686,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_type2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -706,6 +726,7 @@
             android:background="@drawable/btnborder7">
 
             <TextView
+                android:id="@+id/the_smokery_feature1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -732,6 +753,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_feature2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -758,6 +780,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_feature3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -785,6 +808,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_feature4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -811,6 +835,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_feature5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -837,6 +862,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_feature6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -863,6 +889,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_feature7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"

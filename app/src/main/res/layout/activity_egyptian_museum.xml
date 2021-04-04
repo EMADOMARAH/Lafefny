@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/musum_background"
-    tools:context="com.bis.lafefny.DreamPark">
+    tools:context="com.bis.lafefny.EgyptianMuseum">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,6 +22,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/ticket"
+            android:onClick="EgyptionMuseumOnClick"
             android:textColor="#CF8B74"
             android:textSize="30sp" />
 
@@ -37,7 +38,8 @@
             android:fontFamily="serif"
             android:text="@string/transportation"
             android:textColor="#CF8B74"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:onClick="EgyptionMuseumOnClick"/>
 
 
         <TextView
@@ -137,6 +139,7 @@
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/Grey"
+                android:onClick="EgyptionMuseumOnClick"
                 android:drawableEnd="@drawable/ic_baseline_arrow_back8_24" />
 
             <TextView
@@ -213,6 +216,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/egy_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -252,6 +256,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/open_alldays"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -309,6 +314,7 @@
 
 
             <TextView
+                android:id="@+id/open_friday1"
                 android:layout_width="178dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -318,6 +324,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/open_friday2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -343,6 +350,7 @@
             android:background="@drawable/btnborder7">
 
             <TextView
+                android:id="@+id/egy_ticket_egy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -369,6 +377,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/egy_ticket_forg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -408,6 +417,7 @@
             android:background="@drawable/btnborder7">
 
             <TextView
+                android:id="@+id/egy_important_info1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -434,6 +444,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/egy_important_info2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -460,6 +471,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/egy_important_info3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -487,6 +499,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/egy_important_info4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
