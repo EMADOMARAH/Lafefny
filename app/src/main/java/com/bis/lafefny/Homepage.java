@@ -27,6 +27,7 @@ public class Homepage extends AppCompatActivity{
     private Button button_event;
     private Button button_plan;
     private Button button_emg;
+    private Button button_account_hp;
 
 
     @Override
@@ -69,6 +70,14 @@ public class Homepage extends AppCompatActivity{
             }
         });
 
+        button_account_hp = (Button) findViewById(R.id.btn_user_hp); //button account
+        button_account_hp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAccount1();
+            }
+        });
+
 
     }
 
@@ -86,7 +95,12 @@ public class Homepage extends AppCompatActivity{
     }
 
     public void  openEmergency(){
-        Intent intent = new Intent(this, Emergency.class); //open emergecy
+        Intent intent = new Intent(this, Emergency.class); //open emergency
+        startActivity(intent);
+    }
+
+    public void  openAccount1(){
+        Intent intent = new Intent(this, Account.class); //open account
         startActivity(intent);
     }
 
