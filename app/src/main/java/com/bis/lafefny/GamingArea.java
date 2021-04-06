@@ -11,6 +11,7 @@ public class GamingArea extends AppCompatActivity {
     private Button button_back;
     private Button button_home;
     private Button button_funtopia;
+    private Button button_account_GA;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +39,14 @@ public class GamingArea extends AppCompatActivity {
                 openFunTopia();
             }
         });
+
+        button_account_GA = (Button) findViewById(R.id.btn_user_ga); //button user account
+        button_account_GA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAccount6();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class);  //open back
@@ -49,6 +58,10 @@ public class GamingArea extends AppCompatActivity {
     }
     public void openFunTopia(){
         Intent intent = new Intent(this, FunTopia.class);  //open funtopia
+        startActivity(intent);
+    }
+    public void openAccount6(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
 }

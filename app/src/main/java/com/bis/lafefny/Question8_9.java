@@ -12,6 +12,7 @@ public class Question8_9 extends AppCompatActivity {
     private Button button_next_QS5;
     private Button button_skip_QS5;
     private Button button_home_QS5;
+    private Button button_account_QS5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,12 @@ public class Question8_9 extends AppCompatActivity {
             @Override
             public void onClick(View v) { openQuestion10_11(); }
         });
+
+        button_account_QS5 = (Button) findViewById(R.id.btn_questionnaire5_user);           //button account
+        button_account_QS5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openAccount15(); }
+        });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
@@ -55,6 +62,11 @@ public class Question8_9 extends AppCompatActivity {
 
     public void openQuestion10_11(){
         Intent intent = new Intent(this, Question10_11.class);  //open Question10_11
+        startActivity(intent);
+    }
+
+    public void openAccount15(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
 }
