@@ -23,7 +23,7 @@ import java.util.Map;
 
 public class DreamPark extends AppCompatActivity {
 
-    private TextView title,description,startTime,endTime,fridayStart,fridayEnd,regTicket,vipTicket,paidRideMin,paidRideMax,notes;
+    private TextView title,description,startTime,endTime,fridayStart,fridayEnd,regTicket,vipTicket,paidRideMin,paidRideMax,notes,extraInfo;
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference parkDoRef = db.document("entertainment/categories/parks/DreamPark");
@@ -48,6 +48,8 @@ public class DreamPark extends AppCompatActivity {
                             paidRideMin.setText(documentSnapshot.getString("paidRideMin"));
                             paidRideMax.setText(documentSnapshot.getString("paidRideMax"));
                             notes.setText(documentSnapshot.getString("notes"));
+                            extraInfo.setText(documentSnapshot.getString("extraInfo"));
+
                         }else {
                             Toast.makeText(DreamPark.this, "DataBase is Empty", Toast.LENGTH_SHORT).show();
                         }
@@ -83,6 +85,7 @@ public class DreamPark extends AppCompatActivity {
         paidRideMin = findViewById(R.id.dreamParkMinPaid);
         paidRideMax = findViewById(R.id.dreamParkMaxPaid);
         notes       = findViewById(R.id.dreamParkNotes);
+        extraInfo   = findViewById(R.id.extraInfo);
     }
 
 

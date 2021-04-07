@@ -17,7 +17,7 @@
             android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/desc8_vox"
-            android:layout_marginStart="25dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="6dp"
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
@@ -254,11 +254,11 @@
             android:id="@+id/desc4_vox"
             android:layout_width="390dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txt_about_vox_cinema"
+            android:layout_below="@id/desc2_vox"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/btnborder7">
 
             <TextView
@@ -738,151 +738,6 @@
                 android:textColor="#33446A"
                 android:onClick="VoxCinemaOnClick"/>
 
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer_vox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn_transportation_vox"
-            android:layout_centerHorizontal="false"
-            android:layout_marginEnd="0dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btnborder8">
-
-            <EditText
-                android:id="@+id/editTextTextPersonName_vox"
-                android:layout_width="265dp"
-                android:layout_height="90dp"
-                android:layout_marginStart="125dp"
-                android:layout_marginTop="135dp"
-                android:autofillHints=""
-                android:hint="@string/give_your_review"
-                android:inputType="textPersonName" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="90dp"
-                android:alpha="0.5"
-                android:background="@drawable/line_png_27963"
-                android:backgroundTint="#33446A"
-                android:contentDescription="@string/todo" />
-
-            <ImageView
-                android:id="@+id/user_profile_image_vox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="330dp"
-                android:background="@drawable/ic_profile_user7"
-                android:contentDescription="@string/todo" />
-
-            <RatingBar
-                android:id="@+id/ratingBar_vox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="95dp"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="97dp" />
-
-            <RatingBar
-                android:id="@+id/user_rate_vox"
-                android:layout_width="332dp"
-                android:layout_height="wrap_content"
-                android:paddingStart="100dp"
-                android:paddingEnd="4dp"
-                android:paddingTop="360dp" />
-
-            <TextView
-                android:id="@+id/txt_feedback_vox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/desc7_vox"
-                android:layout_marginTop="25dp"
-                android:fontFamily="serif"
-                android:text="@string/your_feedback_matters"
-                android:textAlignment="center"
-                android:textColor="#33446A"
-                android:textSize="33sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="100dp"
-                android:text="@string/rate"
-                android:textColor="#33446A"
-                android:textSize="30sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="180dp"
-                android:text="@string/review"
-                android:textColor="#33446A"
-                android:textSize="30sp" />
-
-            <TextView
-                android:id="@+id/txt_others_feedback_vox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/editTextTextPersonName_vox"
-                android:layout_marginTop="255dp"
-                android:fontFamily="serif"
-                android:text="@string/other_s_feedback"
-                android:textAlignment="center"
-                android:textColor="#33446A"
-                android:textSize="33sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/username_vox"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:paddingStart="110dp"
-                android:paddingEnd="4dp"
-                android:paddingTop="325dp"
-                android:text="@string/malakhesham99"
-                android:textColor="#33446A"
-                android:textSize="25sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:paddingStart="20dp"
-                android:paddingEnd="4dp"
-                android:paddingTop="425dp"
-                android:text="@string/commentt"
-                android:textColor="#33446A"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/user_review_vox"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:lineSpacingExtra="3dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="4dp"
-                android:paddingTop="475dp"
-                android:text="@string/commentttt"
-                android:textColor="#33446A"
-                android:textSize="20sp" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 

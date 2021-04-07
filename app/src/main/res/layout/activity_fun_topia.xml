@@ -98,24 +98,9 @@
             android:id="@+id/dreampark_header"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="0dp"
-            android:layout_marginTop="-5dp"
             android:background="@drawable/btnborder7">
 
-            <Button
-                android:id="@+id/btn_filter_ft"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="15dp"
-                android:layout_marginStart="345dp"
-                android:layout_marginTop="7dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt7_24" />
+
 
             <Button
                 android:id="@+id/btn_back_ft"
@@ -129,7 +114,7 @@
             <TextView
                 android:id="@+id/txt_funtopia"
                 android:layout_width="249dp"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="80dp"
@@ -623,150 +608,6 @@
                 android:paddingTop="145dp"
                 android:textColor="#33446A"
                 android:textSize="20sp" />
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer_ft"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn_transportation_ft"
-            android:layout_centerHorizontal="false"
-            android:layout_marginEnd="0dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btnborder7">
-
-            <EditText
-                android:id="@+id/editTextTextPersonName_ft"
-                android:layout_width="265dp"
-                android:layout_height="90dp"
-                android:layout_marginStart="125dp"
-                android:layout_marginTop="135dp"
-                android:autofillHints=""
-                android:hint="@string/give_your_review"
-                android:inputType="textPersonName" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="90dp"
-                android:alpha="0.5"
-                android:background="@drawable/line_png_27963"
-                android:backgroundTint="#33446A" />
-
-            <ImageView
-                android:id="@+id/user_profile_image_ft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="330dp"
-                android:background="@drawable/ic_profile_user7" />
-
-            <RatingBar
-                android:id="@+id/ratingBar_ft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="95dp"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="97dp" />
-
-            <RatingBar
-                android:id="@+id/user_rate_ft"
-                android:layout_width="332dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="100dp"
-                android:paddingRight="4dp"
-                android:paddingTop="360dp" />
-
-            <TextView
-                android:id="@+id/txt_feedback_ft"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/desc7_ft"
-                android:layout_marginTop="25dp"
-                android:fontFamily="serif"
-                android:text="@string/your_feedback_matters"
-                android:textAlignment="center"
-                android:textColor="#33446A"
-                android:textSize="33sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="100dp"
-                android:text="@string/rate"
-                android:textColor="#33446A"
-                android:textSize="30sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="180dp"
-                android:text="@string/review"
-                android:textColor="#33446A"
-                android:textSize="30sp" />
-
-            <TextView
-                android:id="@+id/txt_others_feedback_ft"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/editTextTextPersonName_ft"
-                android:layout_marginTop="255dp"
-                android:fontFamily="serif"
-                android:text="Other's Feedback"
-                android:textAlignment="center"
-                android:textColor="#33446A"
-                android:textSize="33sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/username_ft"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:paddingLeft="110dp"
-                android:paddingRight="4dp"
-                android:paddingTop="325dp"
-                android:text="MalakHesham99"
-                android:textColor="#33446A"
-                android:textSize="25sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:paddingLeft="20dp"
-                android:paddingRight="4dp"
-                android:paddingTop="425dp"
-                android:text="Comment"
-                android:textColor="#33446A"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/user_review_ft"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:lineSpacingExtra="3dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="4dp"
-                android:paddingTop="475dp"
-                android:text="comment.............................................."
-                android:textColor="#33446A"
-                android:textSize="20sp" />
-
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 

@@ -91,17 +91,18 @@
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:textSize="11sp"
-                android:shadowColor="@color/Grey"
-                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+                android:shadowColor="@color/Grey" />
 
             <TextView
                 android:id="@+id/txt_loc_dreampark"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
                 />
 
             <ImageView
@@ -136,9 +137,9 @@
 
             <Button
                 android:id="@+id/btn_dreampark"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
@@ -149,9 +150,12 @@
                 android:id="@+id/txt_details_dreampark"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/img_details_dreampark"
@@ -201,17 +205,18 @@
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:textSize="11sp"
-                android:shadowColor="@color/Grey"
-                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+                android:shadowColor="@color/Grey" />
 
             <TextView
                 android:id="@+id/txt_loc_aquapark"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/img_loc_aquapark"
@@ -241,13 +246,14 @@
                 android:text="@string/_16949_ratings"
                 android:layout_marginTop="68dp"
                 android:textSize="15sp"
-                android:textColor="@color/Grey"/>
+                android:textColor="@color/Grey"
+                />
 
             <Button
                 android:id="@+id/btn_aquapark"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
@@ -258,9 +264,12 @@
                 android:id="@+id/txt_details_aquapark"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/img_details_aquapark"
@@ -304,23 +313,24 @@
             <Button
                 android:id="@+id/txt_location_geroland"
                 android:layout_width="105dp"
-                android:layout_height="51dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="270dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
-                android:textSize="11sp"
                 android:shadowColor="@color/Grey"
-                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+                android:textSize="11sp" />
 
             <TextView
                 android:id="@+id/txt_loc_geroland"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/img_loc_geroland"
@@ -350,13 +360,14 @@
                 android:text="@string/_16949_ratings"
                 android:layout_marginTop="68dp"
                 android:textSize="15sp"
-                android:textColor="@color/Grey"/>
+                android:textColor="@color/Grey"
+                />
 
             <Button
                 android:id="@+id/btn_geroland"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
@@ -367,9 +378,12 @@
                 android:id="@+id/txt_details_geroland"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/img_details_geroland"
@@ -433,9 +447,9 @@
 
             <Button
                 android:id="@+id/btn_fabyland"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
@@ -451,16 +465,18 @@
                 android:backgroundTint="@color/Grey"
                 android:textSize="11sp"
                 android:shadowColor="@color/Grey"
-                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+               />
 
             <TextView
                 android:id="@+id/txt_loc_fabyland"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/img_loc_fabyland"
@@ -475,9 +491,12 @@
                 android:id="@+id/txt_details_fabyland"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/img_details_fabyland"
