@@ -131,8 +131,8 @@
 
             <TextView
                 android:id="@+id/txt_vox_cinema_desc1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -151,8 +151,9 @@
             android:id="@+id/desc2_vox"
             android:layout_width="350dp"
             android:layout_height="148dp"
-            android:layout_below="@id/txt_address_vox"
+            android:layout_below="@id/txt_locations_vox"
             android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/btnborder7">
 
             <TextView
@@ -240,9 +241,9 @@
             android:id="@+id/txt_locations_vox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/vox_cinema_header"
+            android:layout_below="@id/desc1_vox"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="335dp"
+            android:layout_marginTop="25dp"
             android:fontFamily="serif"
             android:text="@string/locations"
             android:textColor="#33446A "

@@ -337,6 +337,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="01220110657"
+                android:layout_marginBottom="10dp"
                 android:layout_marginTop="75dp"
                 android:layout_marginLeft="35dp"
                 android:textSize="20sp"
@@ -399,7 +400,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="75dp"
-                android:background="@drawable/ic_baseline_email_24"/>
+                android:background="@drawable/ic_baseline_email_24"
+                android:layout_marginBottom="10dp"/>
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -639,7 +641,7 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/desc8_smokery"
-            android:layout_width="wrap_content"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_type_of_rest"
             android:layout_marginEnd="10dp"
