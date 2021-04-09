@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    tools:context=".Booking"
     android:background="@drawable/whatsapp_image_2021_03_15_at_1_25_20_pm__1_"
     tools:ignore="RelativeOverlap">
 
@@ -151,7 +152,7 @@
             android:layout_marginTop="-27dp"
             android:background="@color/white"
             android:ems="10"
-            android:hint="@string/_1"
+            android:text="0"
             android:inputType="number"
             android:textAlignment="center"
             android:textColor="@color/Grey"
@@ -204,7 +205,7 @@
             android:layout_marginTop="56dp"
             android:background="@color/white"
             android:ems="10"
-            android:hint="@string/_1"
+            android:text="0"
             android:inputType="number"
             android:textAlignment="center"
             android:textColor="@color/Grey"
@@ -265,6 +266,7 @@
             android:fontFamily="sans-serif"
             android:text="@string/send_your_booking"
             android:textColor="@color/Lafefny2"
+            android:onClick="BookingOnClick"
             android:textSize="15sp" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -286,6 +288,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/btn_emg"
                 android:backgroundTint="@color/white"
+                android:onClick="BookingOnClick"
                 android:drawableEnd="@drawable/ic_baseline_home_24" />
 
             <Button

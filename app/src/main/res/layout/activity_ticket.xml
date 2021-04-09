@@ -19,6 +19,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="DONE"
+            android:onClick="TicketOnClick"
             android:textColor="#8A3665"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -114,7 +115,7 @@
             android:layout_marginStart="115dp"
             android:layout_marginTop="10dp"
             android:fontFamily="serif"
-            android:text="By the egyptian musem"
+            android:text=""
             android:textColor="@color/Grey"
             android:textSize="15sp" />
 
@@ -315,6 +316,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="Get a ride"
+            android:onClick="TicketOnClick"
             android:textColor="@color/Purple"
             android:textSize="25sp"
             android:textStyle="bold"/>

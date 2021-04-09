@@ -4,17 +4,23 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GetTokenResult;
 
 public class Sign_In extends AppCompatActivity {
     private Button back_btn, signIn_btn; //back btn ,signIn
@@ -25,6 +31,28 @@ public class Sign_In extends AppCompatActivity {
     ProgressDialog progressDialog;
     private String uId;
 
+    SharedPreferences preferences;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser fUser = FirebaseAuth.getInstance().getCurrentUser();
+        fUser.getIdToken(true)
+               .addOnCompleteListener(new OnCompleteListener<GetTokenResult>() {
+                   @Override
+                   public void onComplete(@NonNull Task<GetTokenResult> task) {
+                        if (task.isSuccessful()){
+                            uId = task.getResult().getToken();
+                            preferences.edit().putString("userId" , uId).apply();
+                            preferences.edit().commit();
+                            openHomepage();
+                        } else{
+                            System.out.println("No user Sign IN");
+                        }
+                   }
+               });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +61,7 @@ public class Sign_In extends AppCompatActivity {
         initViews();
         //progressDialog= new ProgressDialog(getApplicationContext());
         mAuth = FirebaseAuth.getInstance();
-
-//        email = emailEditText.getText().toString().trim();
-//        password = emailEditText.getText().toString().trim();
-
-
+        preferences = getSharedPreferences("Lafefny_App" , Context.MODE_PRIVATE);
         back_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

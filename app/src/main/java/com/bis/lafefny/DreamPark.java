@@ -99,7 +99,13 @@ public class DreamPark extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext() , Transportation.class));
                 break;
             case R.id.btn_ticket_dreamP:
-                startActivity(new Intent(getApplicationContext() , Booking.class));
+                Intent intent = new Intent(getApplicationContext() , Booking.class);
+                intent.putExtra("vipPrice" , 560);
+                intent.putExtra("regularPrice" , 150);
+                intent.putExtra("source" , "Dream Park");
+                intent.putExtra("startTime" , "10:00 AM");
+                intent.putExtra("startDate" , "All Days");
+                startActivity(intent);
                 break;
         }
     }

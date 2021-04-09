@@ -329,7 +329,6 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/dreamParkVipticket"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -357,6 +356,7 @@
             android:background="@drawable/btnborder4">
 
             <TextView
+                android:id="@+id/dreamParkVipticket"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
