@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".Emergency">
 
     <RelativeLayout
@@ -21,29 +21,16 @@
             android:layout_marginEnd="0dp"
             android:background="@drawable/btnborder">
 
-            <Button
-                android:id="@+id/btn_emg_search"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="98dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="310dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="9dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_search_24"
-                android:paddingEnd="10dp" />
 
             <Button
                 android:id="@+id/menu2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="-20dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginStart="-30dp"
+                android:layout_marginTop="3dp"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:backgroundTint="@color/black"
-                android:drawableEnd="@drawable/ic_baseline_menu_24"/>
+                android:drawableEnd="@drawable/ic_baseline_menu2_24"/>
 
             <TextView
                 android:id="@+id/txt_emergency"
@@ -51,7 +38,7 @@
                 android:layout_height="54dp"
                 android:layout_alignParentTop="false"
                 android:layout_alignParentEnd="false"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="1dp"
                 android:fontFamily="serif"
                 android:text="Emergency"
@@ -90,7 +77,7 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/policy"
-            android:layout_width="200dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_emg2"
             android:layout_alignParentTop="false"
@@ -106,14 +93,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
-                android:layout_marginStart="83dp"
+                android:layout_marginStart="95dp"
                 app:srcCompat="@drawable/ic_baseline_local_police_24" />
 
             <TextView
                 android:id="@+id/txt_policy"
                 android:layout_width="362dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="-75dp"
+                android:layout_marginStart="-60dp"
                 android:layout_marginTop="45dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
@@ -127,8 +114,8 @@
                 android:id="@+id/txt_num"
                 android:layout_width="362dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="-75dp"
-                android:layout_marginTop="85dp"
+                android:layout_marginStart="-63dp"
+                android:layout_marginTop="88dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:text="122"
@@ -141,17 +128,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_below="@id/txt_num"
-                android:textColor="@color/Lafefny2"
+                android:textColor="@color/black"
                 android:backgroundTint="@color/white"
-                android:layout_marginTop="119dp"
-                android:layout_marginStart="52dp"
+                android:layout_marginTop="122dp"
+                android:layout_marginStart="60dp"
                 android:textSize="14sp"
                 android:text="Call Now" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/amb"
-            android:layout_width="200dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/policy"
             android:layout_alignParentTop="false"
@@ -167,7 +154,7 @@
                 android:layout_width="59dp"
                 android:layout_height="64dp"
                 android:layout_margin="-10dp"
-                android:layout_marginStart="77dp"
+                android:layout_marginStart="83dp"
                 android:layout_marginTop="-6dp"
                 app:srcCompat="@drawable/ic_emergency_ambulance"
                 app:tint="@color/white" />
@@ -176,7 +163,7 @@
                 android:id="@+id/txt_ambulance"
                 android:layout_width="362dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="-75dp"
+                android:layout_marginStart="-63dp"
                 android:layout_marginTop="50dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
@@ -190,8 +177,8 @@
                 android:id="@+id/txt_num2"
                 android:layout_width="362dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="-75dp"
-                android:layout_marginTop="85dp"
+                android:layout_marginStart="-66dp"
+                android:layout_marginTop="88dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:text="123"
@@ -204,17 +191,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_below="@id/txt_num2"
-                android:textColor="@color/Lafefny2"
+                android:textColor="@color/black"
                 android:backgroundTint="@color/white"
-                android:layout_marginTop="119dp"
-                android:layout_marginStart="52dp"
+                android:layout_marginTop="122dp"
+                android:layout_marginStart="60dp"
                 android:textSize="14sp"
                 android:text="Call Now" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/safety"
-            android:layout_width="200dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/amb"
             android:layout_alignParentTop="false"
@@ -230,7 +217,7 @@
                 android:layout_width="59dp"
                 android:layout_height="64dp"
                 android:layout_margin="-10dp"
-                android:layout_marginStart="75dp"
+                android:layout_marginStart="80dp"
                 android:layout_marginTop="7dp"
                 app:srcCompat="@drawable/ic_fire_extinguisher__1_"
                 app:tint="@color/white" />
@@ -239,7 +226,7 @@
                 android:id="@+id/txt_safety"
                 android:layout_width="362dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="-79dp"
+                android:layout_marginStart="-64dp"
                 android:layout_marginTop="68dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
@@ -253,8 +240,8 @@
                 android:id="@+id/txt_num3"
                 android:layout_width="362dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="-75dp"
-                android:layout_marginTop="98dp"
+                android:layout_marginStart="-70dp"
+                android:layout_marginTop="100dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:text="180"
@@ -267,10 +254,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_below="@id/txt_num3"
-                android:textColor="@color/Lafefny2"
+                android:textColor="@color/black"
                 android:backgroundTint="@color/white"
-                android:layout_marginTop="130dp"
-                android:layout_marginStart="52dp"
+                android:layout_marginTop="133dp"
+                android:layout_marginStart="59dp"
                 android:textSize="14sp"
                 android:text="Call Now" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
@@ -284,7 +271,7 @@
             android:layout_below="@id/safety"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="1930dp"
+            android:layout_marginTop="930dp"
             android:background="@drawable/btnborder">
 
             <Button

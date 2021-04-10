@@ -8,35 +8,45 @@ import android.view.View;
 import android.widget.Button;
 
 public class Cinema extends AppCompatActivity  {
-    private Button button_back;
-    private Button button_home;
-    // error in connecting cinema with voxCinema
+    private Button button_back_cinema;
+    private Button button_home_cinema;
+    private Button button_account_cinema;
     private Button button_vox_cinema;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cinema);
 
-        button_back = (Button) findViewById(R.id.btn_back_cinema); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
+        button_back_cinema = (Button) findViewById(R.id.btn_back_cinema); //button back
+        button_back_cinema.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openEnt_Categories();
             }
         });
 
-        button_home = (Button) findViewById(R.id.btn_home1_cinema); //button homepage
-        button_home.setOnClickListener(new View.OnClickListener() {
+        button_home_cinema = (Button) findViewById(R.id.btn_home1_cinema); //button homepage
+        button_home_cinema.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openHomepage();
             }
         });
+
         button_vox_cinema = (Button) findViewById(R.id.btn_vox); //button vox cinema
       button_vox_cinema.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openVoxCinema();
+            }
+        });
+
+        button_account_cinema = (Button) findViewById(R.id.btn_user_cinema); //button user account
+        button_account_cinema.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAccount5();
             }
         });
     }
@@ -50,6 +60,11 @@ public class Cinema extends AppCompatActivity  {
     }
     public void openVoxCinema(){
         Intent intent = new Intent(this, VoxCinema.class);  //open vox cinema
+        startActivity(intent);
+    }
+
+    public void openAccount5(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
 

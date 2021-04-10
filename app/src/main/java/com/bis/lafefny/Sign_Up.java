@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -69,11 +71,9 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
 
     final static int CAPTURE_REQUEST_CORE = 1;
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-    }
+
+    SharedPreferences authPreferences ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +87,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         mAuth = FirebaseAuth.getInstance();
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
+        authPreferences = getSharedPreferences("Lafefny_App" , Context.MODE_PRIVATE);
             //Nationality select
           ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.nationality, android.R.layout.simple_spinner_item);
           adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -163,19 +164,18 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
                     public void onSuccess(DocumentReference documentReference) {
                       //  Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
                         uId = documentReference.getId();
-
+                        authPreferences.edit().putString("userId" , uId).apply();
+                        authPreferences.edit().commit();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                       //  Log.w(TAG, "Error adding document", e);
-
                     }
                 });
 
         uploadProfileImage();
-
 
     }
 
@@ -230,16 +230,16 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     private void createNewUser(){
         mAuth.createUserWithEmailAndPassword(email , password)
                 .addOnSuccessListener(this, new OnSuccessListener<AuthResult>() {
-
                     @Override
                     public void onSuccess(AuthResult authResult) {
-                        System.out.println("Sign up Done");
+                        Toast.makeText(Sign_Up.this, "New member to our family", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getApplicationContext() , Homepage.class));
+                        finish();
                     }
                 }).addOnFailureListener(this, new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                System.out.println("Sign up Failed");
+                Toast.makeText(Sign_Up.this, e.toString(), Toast.LENGTH_SHORT).show();
                 System.out.println(e.toString());
             }
         });

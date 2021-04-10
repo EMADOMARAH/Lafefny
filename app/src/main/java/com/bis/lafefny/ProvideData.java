@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class ProvideData extends AppCompatActivity {
     private Button button_home_data;
+    private Button button_account_data;
     private Button button_questionnaire_data;
     private Button button_preference_data;
     private Button button_back_data;
@@ -41,6 +42,12 @@ public class ProvideData extends AppCompatActivity {
             @Override
             public void onClick(View v) { openHomepage(); }
         });
+
+        button_account_data = (Button) findViewById(R.id.btn_data_user);           //button user account
+        button_account_data.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openAccount10(); }
+        });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
@@ -52,6 +59,11 @@ public class ProvideData extends AppCompatActivity {
     }
     public void openPreferences(){
         Intent intent = new Intent(this, preferences.class);  //open preferences
+        startActivity(intent);
+    }
+
+    public void openAccount10(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
 }

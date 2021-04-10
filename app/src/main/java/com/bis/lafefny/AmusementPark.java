@@ -14,6 +14,8 @@ public class AmusementPark extends AppCompatActivity {
     private Button button_back; //button back
     private Button button_homepage; //button back icon
     private Button button_dream_park; //button dream park
+    private Button button_account_amuspark;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,19 +45,32 @@ public class AmusementPark extends AppCompatActivity {
             }
         });
 
+        button_account_amuspark = (Button) findViewById(R.id.btn_user_amusPark); //button user account
+        button_account_amuspark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAccount3();
+            }
+        });
+
     }
 
     public void openEnt_Categories(){
-        Intent intent = new Intent(this, Ent_Categories.class);  //button back
+        Intent intent = new Intent(this, Ent_Categories.class);  //open entertainment
         startActivity(intent);
     }
 
     public void openDreamPark(){
-        Intent intent = new Intent(this, DreamPark.class);  //button dream park
+        Intent intent = new Intent(this, DreamPark.class);  //open dream park
         startActivity(intent);
     }
     public void openHomepage(){
-        Intent intent = new Intent(this, Homepage.class);  //button dream park
+        Intent intent = new Intent(this, Homepage.class);  //open home page
+        startActivity(intent);
+    }
+
+    public void openAccount3(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
 

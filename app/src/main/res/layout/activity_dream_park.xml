@@ -23,6 +23,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/ticket"
+            android:onClick="DreamParkOnClick"
             android:textColor="@color/Grey"
             android:textSize="30sp" />
 
@@ -37,6 +38,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/transportation"
+            android:onClick="DreamParkOnClick"
             android:textColor="@color/Grey"
             android:textSize="30sp" />
 
@@ -117,18 +119,6 @@
             android:layout_marginTop="-5dp"
             android:background="@drawable/btnborder2">
 
-            <Button
-                android:id="@+id/btn_filter_dreamP"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="15dp"
-                android:layout_marginStart="345dp"
-                android:layout_marginTop="7dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt2_24" />
 
             <Button
                 android:id="@+id/btn_back_dreamP"
@@ -136,10 +126,11 @@
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/Grey"
+                android:onClick="DreamParkOnClick"
                 android:drawableEnd="@drawable/ic_baseline_arrow_back3_24" />
 
             <TextView
-                android:id="@+id/txt_dreampark_dreamP"
+                android:id="@+id/dreamParkName"
                 android:layout_width="249dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -149,7 +140,7 @@
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
-                android:text="@string/dream_park"
+                android:text="ParkName"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="35sp"
@@ -161,26 +152,29 @@
             android:id="@+id/desc1_dreamP"
             android:layout_width="389dp"
             android:layout_height="168dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
             android:layout_below="@id/dreampark_header_dreamP"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="false"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="110dp"
-            android:background="@drawable/btnborder4">
+            android:layout_marginTop="109dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/btnborder4"
+            >
 
             <TextView
+                android:id="@+id/dreamParkDescription"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:paddingLeft="4dp"
+                android:paddingTop="25dp"
                 android:paddingRight="4dp"
-                android:paddingTop="4dp"
-                android:text="@string/dream_park_is_an_amusement_park_located_on_al_wahat_road_in_the_6th_of_october_in_giza_governorate_8_km_from_the_giza_pyramids_it_is_one_of_the_largest_amusement_parks_in_the_middle_east"
+                android:text="des"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
-                android:textSize="17sp" />
+                android:textSize="15sp"
+                />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -210,6 +204,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/dreamParkStartTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -217,12 +212,13 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="50dp"
-                android:text="@string/from_10_00_am"
+                android:text="StartTime"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/dreamParkEndTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -230,7 +226,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="90dp"
-                android:text="@string/up_to_07_00_pm"
+                android:text="EndTime"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="20sp" />
@@ -263,6 +259,7 @@
                 android:textSize="17sp"
                 android:textStyle="bold" />
             <TextView
+                android:id="@+id/dreamParkFridayStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -270,23 +267,25 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="50dp"
-                android:text="@string/from_10_00_am"
+                android:text="FriStartTime"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/dreamParkFridayEnd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:paddingLeft="4dp"
-                android:paddingRight="4dp"
                 android:paddingTop="90dp"
-                android:text="@string/up_to_09_00_pm"
+                android:paddingRight="4dp"
+                android:text="FriEndTime"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -315,6 +314,7 @@
                 android:textColor="@color/Grey"
                 android:textSize="17sp" />
             <TextView
+                android:id="@+id/dreamParkRegTicket"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -322,7 +322,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="10dp"
-                android:text="@string/regular_ticket_150_le"
+                android:text="RegTicket"
                 android:textAlignment="textStart"
                 android:textColor="@color/Grey"
                 android:textSize="25sp"
@@ -356,6 +356,7 @@
             android:background="@drawable/btnborder4">
 
             <TextView
+                android:id="@+id/dreamParkVipticket"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -363,7 +364,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="10dp"
-                android:text="@string/vip_ticket_150_le"
+                android:text="VipTicket"
                 android:textAlignment="textStart"
                 android:textColor="@color/Grey"
                 android:textSize="25sp"
@@ -411,6 +412,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/dreamParkMinPaid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -418,7 +420,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="55dp"
-                android:text="@string/super_spin_tornado_top_spin_stimulator_shoot_and_drop_roller_coaster"
+                android:text="minPaid"
                 android:textColor="@color/Grey"
                 android:textAlignment="center"
                 android:textSize="16sp" />
@@ -437,6 +439,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/dreamParkMaxPaid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
@@ -444,7 +447,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="155dp"
-                android:text="@string/go_cart_car_race_discovery"
+                android:text="maxPaid"
                 android:textColor="@color/Grey"
                 android:textAlignment="center"
                 android:textSize="16sp" />
@@ -464,6 +467,7 @@
             android:background="@drawable/btnborder4">
 
             <TextView
+                android:id="@+id/dreamParkNotes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -471,7 +475,7 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="9dp"
-                android:text="@string/children_of_3_years_old_or_over_must_pay_a_ticket_while_children_under_3_years_old_are_free_it_is_not_allowed_to_take_external_meals_and_family_meals_inside_dream_park_as_there_is_an_area_designated_for_events_in_the_miramar_area_or_to_place_it_in_the_safety_areas_before_the_entrance_gates_in_dream_park"
+                android:text="notes"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="17sp" />
@@ -491,6 +495,7 @@
             android:background="@drawable/btnborder4">
 
             <TextView
+                android:id="@+id/extraInfo"
                 android:layout_width="392dp"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -498,153 +503,10 @@
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:paddingTop="4dp"
-                android:text="@string/dream_park_having_34_rides_suitable_for_kids_and_families_in_addition_to_teens_who_will_enjoy_our_thrill_rides_it_includes_a_wide_range_of_fast_food_outlets_restaurants_and_cafes_plus_many_souvenir_shops_for_guest_comfortable_a_train_encircles_the_whole_park_putting_everything_within_an_easy_reach_it_cares_about_client_s_safety_so_safety_on_all_rides_and_equipment_is_assured_with_an_international_safety_certification_from_the_world_famous_tuv_rhineland_except_for_the_newest_adult_rides_7_rides_the_ticket_price_gives_an_unlimited_access_to_all_rides_and_games_day_after_day_dream_park_has_become_a_major_destination_for_group_school_and_university_students_in_addition_to_a_selection_mix_of_individual_guest"
+                android:text="extraInfo"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="17sp" />
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer_dreamP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_below="@id/btn_transportation_dreamP"
-            android:layout_centerHorizontal="false"
-            android:layout_marginEnd="0dp"
-            android:layout_marginTop="2300dp"
-            android:background="@drawable/btnborder2">
-
-            <TextView
-                android:id="@+id/txt_feedback"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/desc7_dreamP"
-                android:layout_marginTop="25dp"
-                android:fontFamily="serif"
-                android:text="@string/your_feedback_matters"
-                android:textAlignment="center"
-                android:textColor="@color/Grey"
-                android:textSize="33sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="100dp"
-                android:text="@string/rate"
-                android:textColor="@color/Grey"
-                android:textSize="30sp"
-                android:layout_marginStart="8dp"/>
-
-            <RatingBar
-                android:id="@+id/ratingBar_dreamP"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="97dp"
-                android:layout_marginStart="95dp"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="180dp"
-                android:text="@string/review"
-                android:textColor="@color/Grey"
-                android:textSize="30sp"
-                android:layout_marginStart="8dp"/>
-
-            <EditText
-                android:id="@+id/editTextTextPersonName_dreamP"
-                android:layout_width="265dp"
-                android:layout_height="90dp"
-                android:layout_marginStart="125dp"
-                android:layout_marginTop="135dp"
-                android:hint="@string/give_your_review"
-                android:inputType="textPersonName"
-                android:autofillHints="" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="90dp"
-                android:background="@drawable/line_png_27963"
-                android:backgroundTint="@color/Grey"
-                android:alpha="0.5"/>
-            <TextView
-                android:id="@+id/txt_others_feedback_dreamP"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/editTextTextPersonName_dreamP"
-                android:layout_marginTop="255dp"
-                android:fontFamily="serif"
-                android:text="Other's Feedback"
-                android:textAlignment="center"
-                android:textColor="@color/Grey"
-                android:textSize="33sp"
-                android:textStyle="bold" />
-            <ImageView
-                android:id="@+id/user_profile_image_dreamP"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_profile_user7"
-                android:layout_marginTop="330dp"
-                android:layout_marginLeft="20dp"/>
-
-            <RatingBar
-                android:id="@+id/user_rate_dreamP"
-                android:layout_width="332dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="100dp"
-                android:paddingRight="4dp"
-                android:paddingTop="360dp" />
-
-            <TextView
-                android:id="@+id/username_dreamP"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:paddingLeft="110dp"
-                android:paddingRight="4dp"
-                android:paddingTop="325dp"
-                android:text="MalakHesham99"
-                android:textColor="@color/Grey"
-                android:textSize="25sp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:paddingLeft="20dp"
-                android:paddingRight="4dp"
-                android:paddingTop="425dp"
-                android:text="Comment"
-                android:textColor="@color/Grey"
-                android:textSize="30sp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/user_review_dreamP"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:lineSpacingExtra="3dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="4dp"
-                android:paddingTop="475dp"
-                android:text="comment.............................................."
-                android:textColor="@color/Grey"
-                android:textSize="20sp" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 

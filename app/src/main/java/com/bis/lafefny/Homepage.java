@@ -1,21 +1,34 @@
 package com.bis.lafefny;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.bis.lafefny.R;
+import com.google.android.material.navigation.NavigationView;
 
-public class Homepage extends AppCompatActivity {
+public class Homepage extends AppCompatActivity{
 
+    //Buttons
     private Button button_ent;
     private Button button_event;
     private Button button_plan;
     private Button button_emg;
+    private Button button_account_hp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +36,8 @@ public class Homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
         Toast.makeText(getBaseContext(),"Process Success..",Toast.LENGTH_LONG);
 
+
+        //Buttons
         button_ent = (Button) findViewById(R.id.btn_entertainment); //button amusement park
         button_ent.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +61,26 @@ public class Homepage extends AppCompatActivity {
                 openEvents();
             }
         });
+
+       button_emg = (Button) findViewById(R.id.btn_emg); //button emg
+        button_emg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEmergency();
+            }
+        });
+
+        button_account_hp = (Button) findViewById(R.id.btn_user_hp); //button account
+        button_account_hp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAccount1();
+            }
+        });
+
+
     }
+
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class); //open entertainment categories
         startActivity(intent);
@@ -58,5 +92,23 @@ public class Homepage extends AppCompatActivity {
     public void openEvents(){
         Intent intent = new Intent(this, Events.class); //open events
         startActivity(intent);
+    }
+
+    public void  openEmergency(){
+        Intent intent = new Intent(this, Emergency.class); //open emergency
+        startActivity(intent);
+    }
+
+    public void  openAccount1(){
+        Intent intent = new Intent(this, Account.class); //open account
+        startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent a = new Intent(Intent.ACTION_MAIN);
+        a.addCategory(Intent.CATEGORY_HOME);
+        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(a);
     }
 }

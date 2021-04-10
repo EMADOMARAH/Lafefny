@@ -151,6 +151,7 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="45dp"
             android:layout_height="wrap_content"
+            android:onClick="PaymentOnClick"
             android:backgroundTint="@color/Lafefny1"
             android:drawableEnd="@drawable/ic_baseline_arrow_back_24" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
@@ -308,6 +309,7 @@
         android:layout_marginTop="125dp"
         android:backgroundTint="@color/white"
         android:fontFamily="serif"
+        android:onClick="PaymentOnClick"
         android:text="@string/get_promocode"
         android:textColor="@color/Grey"
         android:textSize="10sp" />
@@ -334,6 +336,7 @@
         android:backgroundTint="@color/white"
         android:fontFamily="serif"
         android:text="@string/pay_now"
+        android:onClick="PaymentOnClick"
         android:textColor="@color/Lafefny2"
         android:textSize="20sp" />
 
@@ -349,7 +352,8 @@
         android:text="@string/cancel"
         android:layout_marginEnd="0dp"
         android:textColor="@color/Lafefny2"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:onClick="PaymentOnClick"/>
 
 </RelativeLayout>
 </ScrollView>

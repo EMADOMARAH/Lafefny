@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_the_smokery"
-    tools:context="com.bis.lafefny.DreamPark">
+    tools:context="com.bis.lafefny.TheSmokery">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,7 +23,8 @@
             android:fontFamily="serif"
             android:text="@string/ticket"
             android:textColor="#CF8B74"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:onClick="TheSmokeryOnClick"/>
 
 
         <Button
@@ -58,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/desc4"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:text="Cuisines"
             android:textColor="#8F520C"
@@ -72,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/desc7_smokery"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:text="Type of Restaurant"
             android:textColor="#8F520C"
@@ -85,7 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/desc8_smokery"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:text="For Kids"
             android:textColor="#8F520C"
@@ -102,18 +103,7 @@
             android:layout_marginTop="-5dp"
             android:background="@drawable/btnborder7">
 
-            <Button
-                android:id="@+id/btn_filter_smokery"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="15dp"
-                android:layout_marginStart="345dp"
-                android:layout_marginTop="7dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt8_24" />
+
 
             <Button
                 android:id="@+id/btn_back_smokery"
@@ -152,7 +142,7 @@
             android:layout_below="@id/the_smokery_header"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="10dp"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="100dp"
             android:background="@drawable/btnborder6">
 
             <TextView
@@ -177,7 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/desc1_smokery"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="43dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:text="Locations"
             android:textColor="#8F520C"
@@ -192,10 +182,11 @@
             android:layout_below="@id/txt_locations_smokery"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/btnborder6">
 
             <TextView
+                android:id="@+id/the_smokery_location1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -223,6 +214,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_location2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -249,6 +241,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_location3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -275,6 +268,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_location4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -312,9 +306,10 @@
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/btnborder7">
             <TextView
+                android:id="@+id/the_smokery_phone1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="11511"
@@ -329,6 +324,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/ic_baseline_cal2l_24"/>
             <TextView
+                android:id="@+id/the_smokery_phone2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0102691975"
@@ -337,9 +333,11 @@
                 android:textSize="20sp"
                 android:textColor="#CF8B74"/>
             <TextView
+                android:id="@+id/the_smokery_phone3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="01220110657"
+                android:layout_marginBottom="10dp"
                 android:layout_marginTop="75dp"
                 android:layout_marginLeft="35dp"
                 android:textSize="20sp"
@@ -356,9 +354,10 @@
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="220dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/btnborder7">
             <TextView
+                android:id="@+id/the_smokery_open"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12PM:12AM"
@@ -373,6 +372,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/ic_baseline_watch_later2_24"/>
             <TextView
+                android:id="@+id/the_smokery_site"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Website"
@@ -387,6 +387,7 @@
                 android:layout_marginTop="40dp"
                 android:background="@drawable/ic_baseline_computer_24"/>
             <TextView
+                android:id="@+id/the_smokery_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"
@@ -399,7 +400,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="75dp"
-                android:background="@drawable/ic_baseline_email_24"/>
+                android:background="@drawable/ic_baseline_email_24"
+                android:layout_marginBottom="10dp"/>
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -416,6 +418,7 @@
 
 
             <TextView
+                android:id="@+id/the_smokery_cuisines1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -443,6 +446,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_cuisines2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -469,6 +473,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_cuisines3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -495,6 +500,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_cuisines4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -535,6 +541,7 @@
 
 
             <TextView
+                android:id="@+id/the_smokery_meal1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -562,6 +569,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_meal2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -588,6 +596,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_meal3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -622,7 +631,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/desc4"
             android:layout_marginStart="225dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:text="Meals"
             android:textColor="#8F520C"
@@ -632,7 +641,7 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/desc8_smokery"
-            android:layout_width="wrap_content"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_type_of_rest"
             android:layout_marginEnd="10dp"
@@ -641,6 +650,7 @@
             android:background="@drawable/btnborder7">
 
             <TextView
+                android:id="@+id/the_smokery_type1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -667,6 +677,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_type2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -706,6 +717,7 @@
             android:background="@drawable/btnborder7">
 
             <TextView
+                android:id="@+id/the_smokery_feature1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -732,6 +744,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_feature2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -758,6 +771,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_feature3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -785,6 +799,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/the_smokery_feature4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -811,6 +826,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_feature5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -837,6 +853,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_feature6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -863,6 +880,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/the_smokery_feature7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -890,149 +908,6 @@
                 android:textSize="20sp" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/footer_smokery"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn_transportation_smokery"
-            android:layout_centerHorizontal="false"
-            android:layout_marginEnd="0dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btnborder7">
-
-            <EditText
-                android:id="@+id/editTextTextPersonName_smokery"
-                android:layout_width="265dp"
-                android:layout_height="90dp"
-                android:layout_marginStart="125dp"
-                android:layout_marginTop="135dp"
-                android:autofillHints=""
-                android:hint="@string/give_your_review"
-                android:inputType="textPersonName" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="90dp"
-                android:alpha="0.5"
-                android:background="@drawable/line_png_27963"
-                android:backgroundTint="#33446A" />
-
-            <ImageView
-                android:id="@+id/user_profile_image_smokery"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="330dp"
-                android:background="@drawable/ic_profile_user7" />
-
-            <RatingBar
-                android:id="@+id/ratingBar_smokery"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="95dp"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="97dp" />
-
-            <RatingBar
-                android:id="@+id/user_rate_smokery"
-                android:layout_width="332dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="100dp"
-                android:paddingRight="4dp"
-                android:paddingTop="360dp" />
-
-            <TextView
-                android:id="@+id/txt_feedback_smokery"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/desc7_smokery"
-                android:layout_marginTop="25dp"
-                android:fontFamily="serif"
-                android:text="@string/your_feedback_matters"
-                android:textAlignment="center"
-                android:textColor="#CF8B74"
-                android:textSize="33sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="100dp"
-                android:text="@string/rate"
-                android:textColor="#CF8B74"
-                android:textSize="30sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="180dp"
-                android:text="@string/review"
-                android:textColor="#CF8B74"
-                android:textSize="30sp" />
-
-            <TextView
-                android:id="@+id/txt_others_feedback_smokery"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/editTextTextPersonName_smokery"
-                android:layout_marginTop="255dp"
-                android:fontFamily="serif"
-                android:text="Other's Feedback"
-                android:textAlignment="center"
-                android:textColor="#CF8B74"
-                android:textSize="33sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/username_smokery"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:paddingLeft="110dp"
-                android:paddingRight="4dp"
-                android:paddingTop="325dp"
-                android:text="MalakHesham99"
-                android:textColor="#CF8B74"
-                android:textSize="25sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:paddingLeft="20dp"
-                android:paddingRight="4dp"
-                android:paddingTop="425dp"
-                android:text="Comment"
-                android:textColor="#CF8B74"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/user_review_smokery"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="serif"
-                android:lineSpacingExtra="3dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="4dp"
-                android:paddingTop="475dp"
-                android:text="comment.............................................."
-                android:textColor="#CF8B74"
-                android:textSize="20sp" />
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
     </RelativeLayout>

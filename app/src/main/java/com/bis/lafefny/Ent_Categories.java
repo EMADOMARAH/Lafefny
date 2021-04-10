@@ -17,6 +17,8 @@ public class Ent_Categories extends AppCompatActivity {
     private Button button_tourism_area;
     private Button button_restaurant;
     private Button button_cinema;
+    private Button button_account_ent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,6 +79,14 @@ public class Ent_Categories extends AppCompatActivity {
                 openCinema();
             }
         });
+
+        button_account_ent = (Button) findViewById(R.id.btn_user_entcateg); //button account
+        button_account_ent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAccount2();
+            }
+        });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
@@ -104,6 +114,11 @@ public class Ent_Categories extends AppCompatActivity {
     }
     public void openCinema(){
         Intent intent = new Intent(this, Cinema.class);  //open cinema
+        startActivity(intent);
+    }
+
+    public void openAccount2(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
 

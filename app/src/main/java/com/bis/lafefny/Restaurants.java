@@ -11,6 +11,7 @@ public class Restaurants extends AppCompatActivity {
     private Button button_back;
     private Button button_home;
     private Button button_the_smokery;
+    private Button button_account_res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,14 @@ public class Restaurants extends AppCompatActivity {
                 openTheSmokery();
             }
         });
+
+        button_account_res = (Button) findViewById(R.id.btn_user_res); //button user account
+        button_account_res.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAccount8();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class);  //open back
@@ -49,6 +58,11 @@ public class Restaurants extends AppCompatActivity {
     }
     public void openTheSmokery(){
         Intent intent = new Intent(this, TheSmokery.class);  //open smokery
+        startActivity(intent);
+    }
+
+    public void openAccount8(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
 }
