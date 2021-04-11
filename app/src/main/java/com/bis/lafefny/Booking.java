@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -26,7 +27,13 @@ public class Booking extends AppCompatActivity {
    TextView title,ticketId,regularPrice,vipPrice;
    EditText comments_edittxt, regularcount_edittxt, vipCount_edittxt;
 
-   String source , randTicketId , startTime,startDate , vipCountString , regularCountString , commentString;
+   String source;
+    String randTicketId;
+    String startTime;
+    String startDate;
+    String vipCountString;
+    String regularCountString;
+    String commentString;
    int vipTicketPrice , regularTicketPrice , vipCount=0 , regularCount=0;
 
     @Override
@@ -106,11 +113,16 @@ public class Booking extends AppCompatActivity {
     }
 
     private boolean checkIfDataValid() {
-        vipCountString = vipCount_edittxt.getText().toString();
-        vipCount = Integer.parseInt(vipCountString);
+        if (!vipCount_edittxt.getText().toString().matches("")){
+            vipCountString = String.valueOf(vipCount_edittxt.getText());
+            vipCount = Integer.parseInt(vipCountString);
+        }
 
-        regularCountString = regularcount_edittxt.getText().toString();
-        regularCount = Integer.parseInt(regularCountString);
+        if (!regularcount_edittxt.getText().toString().matches("")){
+            regularCountString = regularcount_edittxt.getText().toString();
+            regularCount = Integer.parseInt(regularCountString);
+        }
+
 
         if (vipCount == 0 && regularCount ==0){
             Toast.makeText(this, "You should enter amount of tickets", Toast.LENGTH_SHORT).show();
