@@ -103,9 +103,11 @@ public class Payment extends AppCompatActivity {
                 totalPrice = (vipPrice*vipCount) + (regularPrice*regularCount) - promoResult;
                 payIntent.putExtra("DatabaseTicketId" , dbTicketId);
                 payIntent.putExtra("ticketId" , ticketId);
+                if (IsUserCreditCardExist()){
+                    SaveToDB();
+                    startActivity(payIntent);
+                }
 
-                SaveToDB();
-                startActivity(payIntent);
                 break;
         }
 
@@ -159,6 +161,30 @@ public class Payment extends AppCompatActivity {
         ticketMap.put("startTime" , startTime);
         ticketMap.put("discount" , Integer.toString(promoResult));
         ticketMap.put("totalPrice" , Integer.toString(totalPrice));
+    }
+
+    public boolean IsUserCreditCardExist(){
+        String cardNumber = cardNumber_txt.getText().toString();
+        String expiredDate = expiredDate_txt.getText().toString();
+        String cvv = cvv_txt.getText().toString();
+        String cardHolderName = cardHolderName_txt.getText().toString();
+
+        if (cardNumber.isEmpty()){
+            cardNumber_txt.setError("Enter Valid Card Number");
+            cardNumber_txt.requestFocus();
+        }else if(expiredDate.isEmpty()){
+            expiredDate_txt.requestFocus();
+            expiredDate_txt.setError("Enter Date");
+        }else if (cvv.isEmpty()){
+            cvv_txt.setError("Enter CVV");
+            cvv_txt.requestFocus();
+        }else if (cardHolderName.isEmpty()){
+            cardHolderName_txt.requestFocus();
+            cardHolderName_txt.setError("Enter Name");
+        }else {
+            return true;
+        }
+        return false;
     }
 
 
