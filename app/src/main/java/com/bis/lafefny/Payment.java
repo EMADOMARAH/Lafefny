@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ import java.util.Map;
 public class Payment extends AppCompatActivity {
 
     TextView source_txt , totalPrice_txt ,startTime_txt,startDate_txt , promo_txt;
+    EditText cardNumber_txt,expiredDate_txt,cvv_txt,cardHolderName_txt;
     private String ticketId ,comment , source , startTime,startDate , promo ;
     private int vipPrice,vipCount,regularPrice,regularCount , totalPrice, promoResult = 0;
 
@@ -57,6 +59,11 @@ public class Payment extends AppCompatActivity {
         startTime_txt = findViewById(R.id.txt_time);
         startDate_txt = findViewById(R.id.txt_date);
         promo_txt = findViewById(R.id.pt_promo);
+        //-------------------------------------------
+        cardNumber_txt = findViewById(R.id.pt_card_number);
+        expiredDate_txt = findViewById(R.id.pt_card_expiration_date);
+        cvv_txt = findViewById(R.id.pt_card_security);
+        cardHolderName_txt = findViewById(R.id.pt_card_holder_name);
     }
     private void GetDataFromIntent(){
         Bundle extraDataFromBooking = getIntent().getExtras();

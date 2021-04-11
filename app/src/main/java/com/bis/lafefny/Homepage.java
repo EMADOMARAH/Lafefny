@@ -33,7 +33,7 @@ public class Homepage extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homepage);
+        setContentView(R.layout.activity_main_homepage);
         Toast.makeText(getBaseContext(),"Process Success..",Toast.LENGTH_LONG);
 
 
@@ -50,7 +50,7 @@ public class Homepage extends AppCompatActivity{
         button_plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openPlans();
+                openPlans(v);
             }
         });
 
@@ -85,10 +85,7 @@ public class Homepage extends AppCompatActivity{
         Intent intent = new Intent(this, Ent_Categories.class); //open entertainment categories
         startActivity(intent);
     }
-    public void openPlans(){
-        Intent intent = new Intent(this, Plans.class); //open plans
-        startActivity(intent);
-    }
+
     public void openEvents(){
         Intent intent = new Intent(this, Events.class); //open events
         startActivity(intent);
@@ -110,5 +107,10 @@ public class Homepage extends AppCompatActivity{
         a.addCategory(Intent.CATEGORY_HOME);
         a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(a);
+    }
+
+    public void openPlans(View view) {
+        Intent intent = new Intent(this, Plans.class); //open plans
+        startActivity(intent);
     }
 }
