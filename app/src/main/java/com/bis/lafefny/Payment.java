@@ -66,7 +66,7 @@ public class Payment extends AppCompatActivity {
             vipCount     = extraDataFromBooking.getInt("vipCount");
             regularPrice = extraDataFromBooking.getInt("regularPrice");
             regularCount = extraDataFromBooking.getInt("regularCount");
-            comment      = extraDataFromBooking.getString("comment");
+            //comment      = extraDataFromBooking.getString("comment");
             source       = extraDataFromBooking.getString("source");
             startTime    = extraDataFromBooking.getString("startTime");
             startDate    = extraDataFromBooking.getString("startDate");
@@ -147,7 +147,7 @@ public class Payment extends AppCompatActivity {
         ticketMap.put("regularTicketCount" , Integer.toString(regularCount));
         ticketMap.put("vipTicketPrice" , Integer.toString(vipPrice));
         ticketMap.put("vipTicketCount" , Integer.toString(vipCount));
-        ticketMap.put("comment" ,comment );
+       // ticketMap.put("comment" ,comment );
         ticketMap.put("startDate" , startDate);
         ticketMap.put("startTime" , startTime);
         ticketMap.put("discount" , Integer.toString(promoResult));

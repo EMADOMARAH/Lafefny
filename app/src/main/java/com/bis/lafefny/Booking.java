@@ -74,7 +74,7 @@ public class Booking extends AppCompatActivity {
         ticketId = findViewById(R.id.txt_ticket_id_booking);
         regularPrice = findViewById(R.id.txt_ticket_regular_price_booking);
         vipPrice = findViewById(R.id.txt_ticket_vip_price_booking);
-        comments_edittxt = findViewById(R.id.pt_comment_booking);
+        //comments_edittxt = findViewById(R.id.pt_comment_booking);
         regularcount_edittxt = findViewById(R.id.txt_ticket_regular_quantity_booking);
         vipCount_edittxt = findViewById(R.id.txt_ticket_vip_quantity_booking);
     }
@@ -117,7 +117,7 @@ public class Booking extends AppCompatActivity {
             return false;
         }else {
 
-            commentString = comments_edittxt.getText().toString();
+            //commentString = comments_edittxt.getText().toString();
             return true;
         }
 
