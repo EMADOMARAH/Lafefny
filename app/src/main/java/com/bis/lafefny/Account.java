@@ -2,10 +2,16 @@ package com.bis.lafefny;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Account extends AppCompatActivity {
     private Button button_acc_profile;
@@ -17,10 +23,15 @@ public class Account extends AppCompatActivity {
     private Button button_acc_sign_out;
     private Button button_acc_home;
 
+    SharedPreferences authPreferences ;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
+
+        authPreferences = getSharedPreferences("Lafefny_App" ,Context.MODE_PRIVATE);
 
         button_acc_back = (Button) findViewById(R.id.btn_acc_back); //button back
         button_acc_back.setOnClickListener(new View.OnClickListener() {
@@ -62,21 +73,7 @@ public class Account extends AppCompatActivity {
             }
         });
 
-      //  button_acc_help = (Button) findViewById(R.id.btn_help); //button help
-      //  button_acc_help.setOnClickListener(new View.OnClickListener() {
-      //      @Override
-      //      public void onClick(View v) {
-       //         openhelp();
-       //     }
-       // });
 
-        button_acc_sign_out = (Button) findViewById(R.id.btn_sign_out); //button sign Out
-        button_acc_sign_out.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSignIn();
-            }
-        });
 
         button_acc_home = (Button) findViewById(R.id.btn_acc_home); //button home
         button_acc_home.setOnClickListener(new View.OnClickListener() {
@@ -110,13 +107,33 @@ public class Account extends AppCompatActivity {
         startActivity(intent);
     }
 
-  //  public void openhelp(){
-   //     Intent intent = new Intent(this, help.class);  //open help
-    //    startActivity(intent);
-   // }
 
     public void openSignIn(){
         Intent intent = new Intent(this, Sign_In.class);  //open sign in
         startActivity(intent);
+    }
+
+    public void AccountOnClick(View view) {
+        switch (view.getId()){
+            case R.id.btn_sign_out:
+                signOut();
+                break;
+        }
+    }
+
+    private void signOut() {
+        SharedPreferences.Editor editor = authPreferences.edit();
+        editor.clear();
+        editor.commit();
+        Toast.makeText(this, "HERE", Toast.LENGTH_SHORT).show();
+
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(getApplicationContext() , MainActivity2.class);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+        finishAffinity();
+
+
+
     }
 }

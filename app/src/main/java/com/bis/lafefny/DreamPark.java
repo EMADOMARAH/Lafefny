@@ -102,7 +102,7 @@ public class DreamPark extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext() , Booking.class);
                 intent.putExtra("vipPrice" , 560);
                 intent.putExtra("regularPrice" , 150);
-                intent.putExtra("source" , "Dream Park");
+                intent.putExtra("source" , "dreampark");
                 intent.putExtra("startTime" , "10:00 AM");
                 intent.putExtra("startDate" , "All Days");
                 startActivity(intent);

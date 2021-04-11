@@ -36,21 +36,21 @@ public class Sign_In extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        FirebaseUser fUser = FirebaseAuth.getInstance().getCurrentUser();
-        fUser.getIdToken(true)
-               .addOnCompleteListener(new OnCompleteListener<GetTokenResult>() {
-                   @Override
-                   public void onComplete(@NonNull Task<GetTokenResult> task) {
-                        if (task.isSuccessful()){
-                            uId = task.getResult().getToken();
-                            preferences.edit().putString("userId" , uId).apply();
-                            preferences.edit().commit();
-                            openHomepage();
-                        } else{
-                            System.out.println("No user Sign IN");
-                        }
-                   }
-               });
+//        FirebaseUser fUser = FirebaseAuth.getInstance().getCurrentUser();
+//        fUser.getIdToken(true)
+//               .addOnCompleteListener(new OnCompleteListener<GetTokenResult>() {
+//                   @Override
+//                   public void onComplete(@NonNull Task<GetTokenResult> task) {
+//                        if (task.isSuccessful()){
+//                            uId = task.getResult().getToken();
+//                            preferences.edit().putString("userId" , uId).apply();
+//                            preferences.edit().commit();
+//                            openHomepage();
+//                        } else{
+//                            System.out.println("No user Sign IN");
+//                        }
+//                   }
+//               });
     }
 
     @Override
@@ -89,6 +89,9 @@ public class Sign_In extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(AuthResult authResult) {
                                     // progressDialog.dismiss();
+                                    String Uid = authResult.getUser().getUid();
+                                    preferences.edit().putString("userId" , Uid).apply();
+                                    preferences.edit().commit();
                                     openHomepage();
                                     Toast.makeText(Sign_In.this, "Welcome BRO....", Toast.LENGTH_SHORT).show();
                                 }

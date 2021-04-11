@@ -29,6 +29,8 @@ public class MainActivity2 extends AppCompatActivity {
         if (preferences.contains("userId")){
             startActivity(new Intent(getApplicationContext() , Homepage.class));
             finish();
+        }else{
+            Toast.makeText(this, "No User Signed In", Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -8,15 +8,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bis.lafefny.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -27,11 +26,18 @@ public class Payment extends AppCompatActivity {
     TextView source_txt , totalPrice_txt ,startTime_txt,startDate_txt , promo_txt;
     EditText cardNumber_txt,expiredDate_txt,cvv_txt,cardHolderName_txt;
     private String ticketId ,comment , source , startTime,startDate , promo ;
-    private int vipPrice,vipCount,regularPrice,regularCount , totalPrice, promoResult = 0;
+    private int vipPrice;
+    private int vipCount;
+    private int regularPrice;
+    private int regularCount;
+    private int totalPrice;
+    private String promoDiscount_txt = "0",promoPlace_txt = "";
 
     String dbTicketId;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     Map<String, Object> ticketMap = new HashMap<>();
+
+    private DocumentReference promoDoRef;
 
     SharedPreferences authPreferences ;
 
@@ -96,11 +102,17 @@ public class Payment extends AppCompatActivity {
                 break;
             case R.id.btn_pay_now:
                 Intent payIntent = new Intent(this, Ticket.class);//open ticket
-                if (promo_txt.getText().toString() != null){
+                if (promo_txt.getText().toString() != null ){
                     promo = promo_txt.getText().toString();
                     CheckPromoCode(promo);
                 }
-                totalPrice = (vipPrice*vipCount) + (regularPrice*regularCount) - promoResult;
+
+                if (source ==promoPlace_txt.toString()){
+                    totalPrice = (vipPrice*vipCount) + (regularPrice*regularCount) - Integer.parseInt(promoDiscount_txt);
+                    Toast.makeText(this, "Valid Promo", Toast.LENGTH_SHORT).show();
+                }else{
+                    totalPrice = (vipPrice*vipCount) + (regularPrice*regularCount);
+                }
                 payIntent.putExtra("DatabaseTicketId" , dbTicketId);
                 payIntent.putExtra("ticketId" , ticketId);
                 if (IsUserCreditCardExist()){
@@ -110,20 +122,47 @@ public class Payment extends AppCompatActivity {
 
                 break;
         }
-
     }
 
     public void CheckPromoCode(String promoCode){
-        if (promoCode.matches("Lafefny66")){
-            promoResult = 30;
-            Toast.makeText(this, "30 LE Discount", Toast.LENGTH_SHORT).show();
-        }else if (promoCode.matches("Lafefny98")){
-            promoResult = 40;
-            Toast.makeText(this, "40 LE Discount", Toast.LENGTH_SHORT).show();
-        }else {
-            promoResult = 0;
-            Toast.makeText(this, "Unvalid Promocode", Toast.LENGTH_SHORT).show();
-        }
+        promoDoRef =db.document("promocodes/" + promoCode);
+        promoDoRef.get()
+                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        if (documentSnapshot.exists()){
+                            promoDiscount_txt = documentSnapshot.getString("discount");
+                            promoPlace_txt = documentSnapshot.getString("place");
+
+                            Toast.makeText(Payment.this, "vaild Promo", Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(Payment.this, "Unvalid Promocode", Toast.LENGTH_SHORT).show();
+                            promoDiscount_txt = "0";
+                            promoPlace_txt = "";
+                        }
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(Payment.this, "Error Ckicking Promo", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+
+
+//        if (promoCode.matches("Lafefny66")){
+//            discount_txt = 30;
+//            Toast.makeText(this, "30 LE Discount", Toast.LENGTH_SHORT).show();
+//        }else if (promoCode.matches("Lafefny98")){
+//            discount_txt = 40;
+//            Toast.makeText(this, "40 LE Discount", Toast.LENGTH_SHORT).show();
+//        }else if (){
+//
+//        } else {
+//            discount_txt = 0;
+//            Toast.makeText(this, "Unvalid Promocode", Toast.LENGTH_SHORT).show();
+//        }
     }
 
     public void SaveToDB(){
@@ -159,7 +198,7 @@ public class Payment extends AppCompatActivity {
        // ticketMap.put("comment" ,comment );
         ticketMap.put("startDate" , startDate);
         ticketMap.put("startTime" , startTime);
-        ticketMap.put("discount" , Integer.toString(promoResult));
+        ticketMap.put("discount" ,promoDiscount_txt);
         ticketMap.put("totalPrice" , Integer.toString(totalPrice));
     }
 

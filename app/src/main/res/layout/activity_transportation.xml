@@ -94,6 +94,7 @@
                 android:layout_marginStart="230dp"
                 android:layout_marginTop="6dp"
                 android:alpha="0.3"
+                android:onClick="TransportationOnClick"
                 android:backgroundTint="@color/cardview_shadow_start_color" />
 
             <TextView
@@ -144,6 +145,7 @@
                 android:layout_marginStart="230dp"
                 android:layout_marginTop="6dp"
                 android:alpha="0.3"
+                android:onClick="TransportationOnClick"
                 android:backgroundTint="@color/cardview_shadow_start_color" />
 
             <TextView
@@ -207,6 +209,7 @@
                 android:layout_marginStart="230dp"
                 android:layout_marginTop="6dp"
                 android:alpha="0.3"
+                android:onClick="TransportationOnClick"
                 android:backgroundTint="@color/cardview_shadow_start_color" />
 
             <TextView
@@ -257,6 +260,7 @@
                 android:layout_marginStart="230dp"
                 android:layout_marginTop="6dp"
                 android:alpha="0.3"
+                android:onClick="TransportationOnClick"
                 android:backgroundTint="@color/cardview_shadow_start_color" />
 
             <TextView

@@ -4,16 +4,30 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
+import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
 
 public class Ticket extends AppCompatActivity {
 
@@ -21,6 +35,9 @@ public class Ticket extends AppCompatActivity {
     private DocumentReference ticketDoRef;
 
     private String ticketId;
+
+    private RelativeLayout myScreen;
+
 
     private TextView ticketId_txt , placeName_txt , startDate_txt , startTime_txt , location_txt , regularCount_txt;
     private TextView vipCount_txt , totalPrice_txt , discount_txt;
@@ -73,6 +90,8 @@ public class Ticket extends AppCompatActivity {
         totalPrice_txt = findViewById(R.id.integer_ticket_total_payment);
         discount_txt = findViewById(R.id.integer_ticket_promotion);
 
+        myScreen = findViewById(R.id.AllScreen);
+
     }
     public void GetTicketIdFromOntent(){
         Bundle extraDataFromPayment = getIntent().getExtras();
@@ -81,17 +100,40 @@ public class Ticket extends AppCompatActivity {
         }
     }
 
+//    public void screenShot() throws IOException {
+//        Bitmap bitmap;
+//        View v1 = findViewById(R.id.AllScreen);// get ur root view id
+//        v1.setDrawingCacheEnabled(true);
+//        bitmap = Bitmap.createBitmap(v1.getDrawingCache());
+//        v1.setDrawingCacheEnabled(false);
+//        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+//        bitmap.compress(Bitmap.CompressFormat.JPEG, 40, bytes);
+//        File f = new File(Environment.getExternalStorageDirectory()
+//                + File.separator + "test.jpg");
+//        f.createNewFile();
+//        FileOutputStream fo = new FileOutputStream(f);
+//        fo.write(bytes.toByteArray());
+//        fo.close();
+//    }
 
-    public void TicketOnClick(View view) {
+
+    public void TicketOnClick(View view) throws IOException {
         switch (view.getId()){
-            case R.id.btn_done:
-                Intent doneIntent = new Intent(this, Homepage.class);  //open homepage
-                startActivity(doneIntent);
-                break;
+//            case R.id.btn_done:
+//                Intent doneIntent = new Intent(this, Homepage.class);  //open homepage
+//                startActivity(doneIntent);
+//                break;
             case R.id.btn_transportation:
                 Intent transIntent = new Intent(this, Transportation.class);  //open transportation
                 startActivity(transIntent);
                 break;
+//            case R.id.btn_done:
+//                try {
+//                    screenShot();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//                break;
         }
     }
 }

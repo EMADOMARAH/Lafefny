@@ -216,6 +216,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="810dp"
             android:layout_marginRight="-169dp"
+            android:onClick="AccountOnClick"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:backgroundTint="@color/Lafefny1"
             android:layout_toStartOf="@id/txt_sign_out"

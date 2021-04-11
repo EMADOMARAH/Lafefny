@@ -3,6 +3,7 @@ package com.bis.lafefny;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -75,4 +76,13 @@ public class AmusementPark extends AppCompatActivity {
     }
 
 
+    public void GetLocationClicked(View view) {
+        switch (view.getId()){
+            case R.id.txt_location_dreampark:
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("https://www.google.com/maps/place/Dream+Park/@29.9645914,31.0554225,16.5z/data=!4m5!3m4!1s0x14585047f0e3c811:0x7208480f9185410f!8m2!3d29.9647311!4d31.0576601"));
+                startActivity(intent);
+                break;
+        }
+    }
 }
