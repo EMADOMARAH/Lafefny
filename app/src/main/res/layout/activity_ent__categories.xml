@@ -22,20 +22,6 @@
             android:background="@drawable/btnborder" />
 
         <Button
-            android:id="@+id/btn_search_entcateg"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="66dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="9dp"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="4dp"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_baseline_search_24"
-            android:paddingRight="10dp" />
-
-        <Button
             android:id="@+id/btn_back_entcateg"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="45dp"

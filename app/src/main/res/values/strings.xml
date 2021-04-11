@@ -339,6 +339,14 @@
     <string name="_13_do_you_like_a_day_full_of_events_and_adventures">13.do you like a day full of events and adventures</string>
 
     <!-- nationality array -->
+    <string name="title_activity_home_page1">HomePage1</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_home">Home</string>
+
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
     <string-array name="nationality">
         <item>Egyptian</item>
         <item>Jordanian</item>
@@ -364,14 +372,6 @@
         <item>North American</item>
         <item>Other</item>
     </string-array>
-    <string name="title_activity_home_page1">HomePage1</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
 
 
 </resources>
