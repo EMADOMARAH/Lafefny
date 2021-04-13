@@ -249,7 +249,7 @@
                 android:drawableEnd="@drawable/ic_baseline_home_24" />
 
             <Button
-                android:id="@+id/btn_loc_booking"
+                android:id="@+id/btn_pre_booking"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
@@ -257,10 +257,12 @@
                 android:layout_below="@id/btn_emg"
                 android:layout_marginBottom="11dp"
                 android:layout_marginEnd="170dp"
-                android:layout_marginStart="140dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="143dp"
+                android:layout_marginTop="6dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location_on_24" />
+                android:onClick="BookingOnClick"
+                android:drawableTint="@color/Lafefny2"
+                android:drawableEnd="@android:drawable/btn_star" />
 
             <Button
                 android:id="@+id/btn_user_booking"

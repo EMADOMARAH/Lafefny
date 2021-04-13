@@ -89,10 +89,17 @@ public class Booking extends AppCompatActivity {
     public void BookingOnClick(View view) {
         switch (view.getId()){
             case R.id.btn_home1_booking:
-                Intent intent = new Intent(this, Homepage.class);  //open sginin
+                Intent intent = new Intent(this, Homepage.class);  //open homepage
                 startActivity(intent);
                 finish();
                 break;
+
+            case R.id.btn_pre_booking:
+                Intent intent2 = new Intent(this, preferences.class);  //open preferences
+                startActivity(intent2);
+                finish();
+                break;
+
             case R.id.btn_booking_booking:
                 if (checkIfDataValid()){
                     Intent i = new Intent(this, Payment.class);  //open home icon

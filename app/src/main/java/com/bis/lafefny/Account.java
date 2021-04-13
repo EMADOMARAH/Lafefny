@@ -22,6 +22,7 @@ public class Account extends AppCompatActivity {
     private Button button_acc_back;
     private Button button_acc_sign_out;
     private Button button_acc_home;
+    private Button button_acc_pre;
 
     SharedPreferences authPreferences ;
 
@@ -75,13 +76,22 @@ public class Account extends AppCompatActivity {
 
 
 
-        button_acc_home = (Button) findViewById(R.id.btn_acc_home); //button home
+        button_acc_home = (Button) findViewById(R.id.btn_acc_home);     //button home
         button_acc_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openHomepage();
             }
         });
+
+        button_acc_pre = (Button) findViewById(R.id.btn_acc_pre);     //button location
+        button_acc_pre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
+
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open home page
