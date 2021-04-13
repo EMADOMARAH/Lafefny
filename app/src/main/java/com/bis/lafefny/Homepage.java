@@ -20,7 +20,7 @@ import android.widget.Toast;
 import com.bis.lafefny.R;
 import com.google.android.material.navigation.NavigationView;
 
-public class Homepage extends AppCompatActivity{
+public class Homepage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     //Buttons
     private Button button_ent;
@@ -29,14 +29,25 @@ public class Homepage extends AppCompatActivity{
     private Button button_emg;
     private Button button_account_hp;
 
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_homepage);
-        Toast.makeText(getBaseContext(),"Process Success..",Toast.LENGTH_LONG);
 
+        initViews();
+        setSupportActionBar( toolbar);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.nav_drawer_open,R.string.nav_drawer_close);
 
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.nav_home);
         //Buttons
         button_ent = (Button) findViewById(R.id.btn_entertainment); //button amusement park
         button_ent.setOnClickListener(new View.OnClickListener() {
@@ -103,14 +114,42 @@ public class Homepage extends AppCompatActivity{
 
     @Override
     public void onBackPressed() {
-        Intent a = new Intent(Intent.ACTION_MAIN);
-        a.addCategory(Intent.CATEGORY_HOME);
-        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(a);
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }else {
+            Intent a = new Intent(Intent.ACTION_MAIN);
+            a.addCategory(Intent.CATEGORY_HOME);
+            a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(a);
+        }
+
     }
 
     public void openPlans(View view) {
         Intent intent = new Intent(this, Plans.class); //open plans
         startActivity(intent);
+    }
+
+    public void initViews(){
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+        toolbar = findViewById(R.id.home_page_tool_bar);
+    }
+
+    public void homePageOnClick(View view) {
+        switch (view.getId()){
+
+
+        }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+
+
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
     }
 }

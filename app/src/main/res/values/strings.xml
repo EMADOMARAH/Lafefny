@@ -347,6 +347,9 @@
 
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+
     <string-array name="nationality">
         <item>Egyptian</item>
         <item>Jordanian</item>
