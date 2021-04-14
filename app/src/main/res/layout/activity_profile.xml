@@ -39,7 +39,7 @@
             android:layout_alignParentTop="false"
             android:layout_alignParentEnd="false"
             android:layout_marginStart="130dp"
-            android:layout_marginTop="190dp"
+            android:layout_marginTop="150dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="serif"
             android:text="Malak99"
@@ -302,18 +302,15 @@
             android:layout_marginTop="-25dp"
             android:backgroundTint="@color/white"
             android:text="Edit Profile"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:fontFamily="serif"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/profile_footer"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_below="@id/btn_edit_profile"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_centerHorizontal="false"
-            android:layout_marginTop="1100dp"
-            android:layout_marginEnd="0dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/btnborder">
 
             <Button
