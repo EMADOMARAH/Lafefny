@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/background6">
+        android:background="@drawable/image_11">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -21,7 +21,6 @@
             android:layout_alignParentEnd="true"
             android:layout_marginStart="281dp"
             android:layout_marginEnd="5dp"
-            android:alpha="1"
             android:contentDescription="@string/todo"
             app:srcCompat="@drawable/logo2" />
 
