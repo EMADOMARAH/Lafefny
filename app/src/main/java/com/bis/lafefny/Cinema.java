@@ -12,6 +12,7 @@ public class Cinema extends AppCompatActivity  {
     private Button button_home_cinema;
     private Button button_account_cinema;
     private Button button_vox_cinema;
+    private Button button_pre_cinema;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,14 @@ public class Cinema extends AppCompatActivity  {
                 openAccount5();
             }
         });
+
+        button_pre_cinema = (Button) findViewById(R.id.btn_pre_cinema); //button preferences
+        button_pre_cinema.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class);  //open back
@@ -65,6 +74,10 @@ public class Cinema extends AppCompatActivity  {
 
     public void openAccount5(){
         Intent intent = new Intent(this, Account.class);  //open account
+        startActivity(intent);
+    }
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
 

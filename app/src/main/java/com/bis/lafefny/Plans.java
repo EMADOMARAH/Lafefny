@@ -86,6 +86,12 @@ public class Plans extends AppCompatActivity {
             case R.id.btn_romantic:
                 startActivity(new Intent(this, RomanticPlan.class));
                 break;
+            case R.id.btn_user_plan_categ:
+                startActivity(new Intent(this, Account.class));
+                break;
+            case R.id.btn_pre_plan_categ:
+                startActivity(new Intent(this, preferences.class));
+                break;
             case R.id.btn_family:
                 startActivity(new Intent(this, FamilyPlan.class));
                 break;

@@ -11,6 +11,7 @@ public class profile extends AppCompatActivity {
     private Button button_profile_back;
     private Button button_profile_home;
     private Button button_profile_acc;
+    private Button button_profile_pre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,14 @@ public class profile extends AppCompatActivity {
             }
         });
 
+        button_profile_pre = (Button) findViewById(R.id.btn_profile_pre); //button preferences
+        button_profile_pre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
+
 
     }
     public void openAccount(){
@@ -50,6 +59,11 @@ public class profile extends AppCompatActivity {
 
     public void openhomepage(){
         Intent intent = new Intent(this,Homepage.class);  //open home page
+        startActivity(intent);
+    }
+
+    public void openpreferences(){
+        Intent intent = new Intent(this,preferences.class);  //open preferences
         startActivity(intent);
     }
 }

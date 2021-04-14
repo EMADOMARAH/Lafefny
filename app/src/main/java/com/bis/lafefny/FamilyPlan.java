@@ -10,6 +10,7 @@ import android.widget.Button;
 public class FamilyPlan extends AppCompatActivity {
     private Button button_back;
     private Button button_home;
+    private Button button_pre_Fam;
     private Button button_egyp_museum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,13 @@ public class FamilyPlan extends AppCompatActivity {
                 openEgyptianMuseum();
             }
         });
+        button_pre_Fam = (Button) findViewById(R.id.btn_pre_fam); //button preferences
+        button_pre_Fam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
 
     }
     public void openPlans(){
@@ -52,6 +60,10 @@ public class FamilyPlan extends AppCompatActivity {
 
     public void openEgyptianMuseum(){
         Intent intent = new Intent(this, EgyptianMuseum.class);  //open EgyptianMuseum
+        startActivity(intent);
+    }
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
 }

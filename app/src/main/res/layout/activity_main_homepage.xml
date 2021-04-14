@@ -125,12 +125,14 @@
                             android:backgroundTint="@color/white"
                             style="@style/Widget.AppCompat.Button.Borderless"/>
                         <Button
-                            android:id="@+id/btn_loc_hp"
+                            android:id="@+id/btn_pre_hp"
                             android:layout_weight="1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="50dp"
-                            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                            android:layout_marginTop="-1dp"
+                            android:drawableTint="@color/Lafefny2"
+                            android:drawableLeft="@android:drawable/btn_star"
                             android:backgroundTint="@color/white"
                             style="@style/Widget.AppCompat.Button.Borderless"/>
                         <Button

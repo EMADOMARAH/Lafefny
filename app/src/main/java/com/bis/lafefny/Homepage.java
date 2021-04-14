@@ -27,6 +27,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
     //Buttons
     private Button button_ent;
+    private Button button_pre_HP;
     private Button button_event;
     private Button button_plan;
     private Button button_emg;
@@ -92,11 +93,23 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
             }
         });
 
+        button_pre_HP = (Button) findViewById(R.id.btn_pre_hp); //button preferences
+        button_pre_HP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
+
 
     }
 
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class); //open entertainment categories
+        startActivity(intent);
+    }
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class); //open preferences
         startActivity(intent);
     }
 

@@ -12,6 +12,7 @@ public class Questionnaire1 extends AppCompatActivity {
     private Button button_next;
     private Button button_skip;
     private Button button_questionnaire1_home;
+    private Button button_questionnaire1_pre;
     private Button button_questionnaire1_account;
 
 
@@ -24,6 +25,12 @@ public class Questionnaire1 extends AppCompatActivity {
         button_questionnaire1_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openHomepage(); }
+        });
+
+        button_questionnaire1_pre = (Button) findViewById(R.id.btn_questionnaire1_pre);           //button preferences
+        button_questionnaire1_pre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openpreferences(); }
         });
 
         button_next = (Button) findViewById(R.id.btn_next);           //button next
@@ -56,6 +63,10 @@ public class Questionnaire1 extends AppCompatActivity {
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
 

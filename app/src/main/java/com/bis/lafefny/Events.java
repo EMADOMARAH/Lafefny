@@ -10,6 +10,7 @@ import android.widget.Button;
 public class Events extends AppCompatActivity {
     private Button button_back;
     private Button button_home;
+    private Button button_pre;
     private Button button_sports;
     private Button button_book_fair;
     private Button button_sound_light;
@@ -55,6 +56,14 @@ public class Events extends AppCompatActivity {
                 openSoundLightEvent();
             }
         });
+        button_pre = (Button) findViewById(R.id.btn_pre_event); //button preferences
+        button_pre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
+
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
@@ -70,6 +79,10 @@ public class Events extends AppCompatActivity {
     }
     public void openSoundLightEvent(){
         Intent intent = new Intent(this, SoundLightEvent.class);  //open sound and light show
+        startActivity(intent);
+    }
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
 }

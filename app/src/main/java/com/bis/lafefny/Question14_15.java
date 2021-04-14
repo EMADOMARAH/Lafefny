@@ -12,6 +12,7 @@ public class Question14_15 extends AppCompatActivity {
     private Button button_home_QS8;
     private Button button_account_QS8;
     private Button button_close_QS8;
+    private Button button_pre_QS8;
     private Button button_preferences_QS8;
 
     @Override
@@ -40,6 +41,12 @@ public class Question14_15 extends AppCompatActivity {
 
         button_preferences_QS8 = (Button) findViewById(R.id.btn_go_to_preferences);           //button preferences
         button_preferences_QS8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openPreferences(); }
+        });
+
+        button_pre_QS8 = (Button) findViewById(R.id.btn_questionnaire8_pre);           //button preferences
+        button_pre_QS8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openPreferences(); }
         });
