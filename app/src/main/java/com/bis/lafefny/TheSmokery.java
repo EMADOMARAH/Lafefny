@@ -123,7 +123,7 @@ public class TheSmokery extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.btn_back_smokery:
-                startActivity(new Intent(getApplicationContext(), Restaurants.class));
+                onBackPressed();
                 break;
             case R.id.btn_transportation_smokery:
                 startActivity(new Intent(getApplicationContext(), Transportation.class));

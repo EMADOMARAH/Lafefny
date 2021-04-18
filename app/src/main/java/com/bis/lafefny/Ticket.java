@@ -65,13 +65,13 @@ public class Ticket extends AppCompatActivity {
                         if (documentSnapshot.exists()){
 
                             String place = documentSnapshot.getString("place");
-                            String movieNAme = "";
-                            movieNAme = " ( "+documentSnapshot.getString("movieName") + " ) ";
+                            String movieNAme ;
+                            movieNAme = documentSnapshot.getString("movieName") ;
                             ticketId_txt.setText(documentSnapshot.getString("ticketId"));
-                            if (movieNAme ==""){
+                            if (movieNAme == null){
                                 placeName_txt.setText(place);
                             }else {
-                                placeName_txt.setText(place +movieNAme);
+                                placeName_txt.setText(place +" ( "+movieNAme+ " ) ");
                             }
 
                             startDate_txt.setText(documentSnapshot.getString("startDate"));
