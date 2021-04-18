@@ -36,7 +36,7 @@ public class Ticket extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference ticketDoRef;
 
-    private String ticketId;
+    private String ticketId,cinemaName="";
 
     private SharedPreferences dreamParkPref;
     private SharedPreferences voxCinemaPref;
@@ -65,15 +65,16 @@ public class Ticket extends AppCompatActivity {
                         if (documentSnapshot.exists()){
 
                             String place = documentSnapshot.getString("place");
-                            String movieNAme ;
-                            movieNAme = documentSnapshot.getString("movieName") ;
+//                            String movieNAme ="" ;
+//                            movieNAme = documentSnapshot.getString("movieName") ;
+//                            cinemaName = documentSnapshot.getString("name");
                             ticketId_txt.setText(documentSnapshot.getString("ticketId"));
-                            if (movieNAme == null){
-                                placeName_txt.setText(place);
-                            }else {
-                                placeName_txt.setText(place +" ( "+movieNAme+ " ) ");
-                            }
-
+//                            if (cinemaName=="Vox Cinema" ){
+//                                placeName_txt.setText(place +" ( "+movieNAme+ " ) ");
+//                            }else {
+//
+//                            }
+                            placeName_txt.setText(place);
                             startDate_txt.setText(documentSnapshot.getString("startDate"));
                             startTime_txt.setText(documentSnapshot.getString("startTime"));
                             location_txt.setText(documentSnapshot.getString("location"));
