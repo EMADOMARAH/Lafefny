@@ -20,20 +20,7 @@
             android:layout_height="61dp"
             android:background="@drawable/btnborder7">
 
-            <Button
-                android:id="@+id/btn_filter_cinema"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="9dp"
-                android:layout_marginStart="330dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt4_24" />
-
-            <Button
+             <Button
                 android:id="@+id/btn_back_cinema"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"

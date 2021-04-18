@@ -86,7 +86,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="107dp"
             android:fontFamily="sans-serif"
-            android:text="Promocode: Lafefny98"
+            android:text="Promocode: Lafefny66"
             android:textAlignment="center"
             android:textColor="@color/Grey"
             android:textSize="20sp"
@@ -112,7 +112,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="143dp"
             android:fontFamily="serif"
-            android:text="For: VIP Restaurant"
+            android:text="For: Vox Cinema"
             android:textAlignment="center"
             android:textColor="@color/Grey"
             android:textSize="20sp" />
@@ -125,7 +125,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="180dp"
             android:fontFamily="serif"
-            android:text="EGP 40 discount"
+            android:text="EGP 30 discount"
             android:textAlignment="center"
             android:textColor="@color/Grey"
             android:textSize="20sp" />
@@ -160,7 +160,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="505dp"
             android:fontFamily="serif"
-            android:text="For: Dream Park"
+            android:text="For: FunTopia"
             android:textAlignment="center"
             android:textColor="@color/Grey"
             android:textSize="20sp" />
@@ -172,7 +172,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="545dp"
             android:fontFamily="serif"
-            android:text="EGP 25 discount"
+            android:text="EGP 20 discount"
             android:textAlignment="center"
             android:textColor="@color/Grey"
             android:textSize="20sp" />
@@ -195,7 +195,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="285dp"
             android:fontFamily="sans-serif"
-            android:text="Promocode: Lafefny66"
+            android:text="Promocode: Lafefny98"
             android:textAlignment="center"
             android:textColor="@color/Grey"
             android:textSize="20sp"
@@ -208,7 +208,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="320dp"
             android:fontFamily="serif"
-            android:text="For: Sound and Light show"
+            android:text="For: DreamPark"
             android:textAlignment="center"
             android:textColor="@color/Grey"
             android:textSize="20sp" />

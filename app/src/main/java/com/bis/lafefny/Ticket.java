@@ -45,6 +45,8 @@ public class Ticket extends AppCompatActivity {
 
     private TextView ticketId_txt , placeName_txt , startDate_txt , startTime_txt , location_txt , regularCount_txt;
     private TextView vipCount_txt , totalPrice_txt , discount_txt;
+
+    private Button btn_home;
    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +96,13 @@ public class Ticket extends AppCompatActivity {
                     }
                 });
 
+        btn_home = (Button) findViewById(R.id.btn_done); //button done
+        btn_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHomepage();
+            }
+        });
     }
 
     public void InitTicketViews(){
@@ -170,5 +179,9 @@ public class Ticket extends AppCompatActivity {
         SharedPreferences.Editor editor = file.edit();
         editor.clear();
         editor.commit();
+    }
+    public void openHomepage(){
+        Intent intent = new Intent(this, Homepage.class);  //open home page
+        startActivity(intent);
     }
 }
