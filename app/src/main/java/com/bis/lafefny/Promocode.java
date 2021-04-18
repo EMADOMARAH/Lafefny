@@ -21,13 +21,9 @@ public class Promocode extends AppCompatActivity {
         button_payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openPayment();
+                onBackPressed();
             }
         });
 
-    }
-    public void openPayment(){
-        Intent intent = new Intent(this, Payment.class);  //open promo icon
-        startActivity(intent);
     }
 }

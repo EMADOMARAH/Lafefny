@@ -6,12 +6,14 @@
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_baseline_home6_24"
         android:title="Home"
+        android:iconTint="@color/Lafefny2"
         />
 
     <item
         android:id="@+id/nav_promocode"
         android:icon="@drawable/coupon3"
         android:title="Promocode"
+        android:iconTint="@color/Lafefny2"
         />
 
     <item
@@ -61,6 +63,7 @@
         android:id="@+id/nav_sort"
         android:icon="@drawable/sort4"
         android:title="Sorting"
+        android:iconTint="@color/Lafefny2"
         />
 
     <item

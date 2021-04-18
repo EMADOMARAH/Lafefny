@@ -50,7 +50,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     //ProgressDialog progress ;
     Map<String, Object> user = new HashMap<>();
     //create filepath to upload profile image to sorage
-    private Uri filePath;;
+    private Uri filePath;
     //store the new user id
     private String uId;
     private  String profileimageneme;

@@ -59,7 +59,7 @@ public class Transportation extends AppCompatActivity {
                 break;
             case R.id.btn_airplane_ride:
                 Intent airplaneIntent = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("https://www.egyptair.com/en/pages/homepage.aspx"));
+                        Uri.parse("https://www.lookategypttours.com/"));
                 startActivity(airplaneIntent);
                 break;
 

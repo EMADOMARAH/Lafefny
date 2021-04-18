@@ -3,7 +3,9 @@ package com.bis.lafefny;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.os.Bundle;
@@ -36,7 +38,9 @@ public class Ticket extends AppCompatActivity {
 
     private String ticketId;
 
-    private RelativeLayout myScreen;
+    private SharedPreferences dreamParkPref;
+    private SharedPreferences voxCinemaPref;
+    private SharedPreferences funtopiaPref;
 
 
     private TextView ticketId_txt , placeName_txt , startDate_txt , startTime_txt , location_txt , regularCount_txt;
@@ -46,6 +50,9 @@ public class Ticket extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ticket);
+        this.dreamParkPref = this.getSharedPreferences("Dream_park_pref" , Context.MODE_PRIVATE);
+        this.voxCinemaPref = this.getSharedPreferences("vox_cinema_pref" , Context.MODE_PRIVATE);
+        this.funtopiaPref  = this.getSharedPreferences("funtopia_pref" , Context.MODE_PRIVATE);
 
         GetTicketIdFromOntent();
         InitTicketViews();
@@ -56,11 +63,20 @@ public class Ticket extends AppCompatActivity {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         if (documentSnapshot.exists()){
+
+                            String place = documentSnapshot.getString("place");
+                            String movieNAme = "";
+                            movieNAme = " ( "+documentSnapshot.getString("movieName") + " ) ";
                             ticketId_txt.setText(documentSnapshot.getString("ticketId"));
-                            placeName_txt.setText(documentSnapshot.getString("place"));
+                            if (movieNAme ==""){
+                                placeName_txt.setText(place);
+                            }else {
+                                placeName_txt.setText(place +movieNAme);
+                            }
+
                             startDate_txt.setText(documentSnapshot.getString("startDate"));
                             startTime_txt.setText(documentSnapshot.getString("startTime"));
-                            location_txt.setText(documentSnapshot.getString("place"));
+                            location_txt.setText(documentSnapshot.getString("location"));
                             regularCount_txt.setText(documentSnapshot.getString("regularTicketCount"));
                             vipCount_txt.setText(documentSnapshot.getString("vipTicketCount"));
                             totalPrice_txt.setText(documentSnapshot.getString("totalPrice"));
@@ -90,13 +106,13 @@ public class Ticket extends AppCompatActivity {
         totalPrice_txt = findViewById(R.id.integer_ticket_total_payment);
         discount_txt = findViewById(R.id.integer_ticket_promotion);
 
-        myScreen = findViewById(R.id.AllScreen);
+       //myScreen = findViewById(R.id.AllScreen);
 
     }
     public void GetTicketIdFromOntent(){
         Bundle extraDataFromPayment = getIntent().getExtras();
         if (extraDataFromPayment !=null){
-            ticketId     = extraDataFromPayment.getString("ticketId");
+            ticketId     = extraDataFromPayment.getString("ticketId" , "");
         }
     }
 
@@ -125,6 +141,7 @@ public class Ticket extends AppCompatActivity {
 //                break;
             case R.id.btn_transportation:
                 Intent transIntent = new Intent(this, Transportation.class);  //open transportation
+                transIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(transIntent);
                 break;
 //            case R.id.btn_done:
@@ -135,5 +152,22 @@ public class Ticket extends AppCompatActivity {
 //                }
 //                break;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        deletePref(dreamParkPref);
+        deletePref(voxCinemaPref);
+        deletePref(funtopiaPref);
+        Intent intent = new Intent(getApplicationContext(), Homepage.class);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    public void deletePref(SharedPreferences file){
+        SharedPreferences.Editor editor = file.edit();
+        editor.clear();
+        editor.commit();
     }
 }

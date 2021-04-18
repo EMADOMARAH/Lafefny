@@ -71,7 +71,7 @@
             app:tint="@color/Lafefny2" />
 
         <TextView
-            android:id="@+id/txt_name"
+            android:id="@+id/txt_name_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/profileimage"
@@ -91,7 +91,7 @@
             android:id="@+id/line3"
             android:layout_width="580dp"
             android:layout_height="120dp"
-            android:layout_below="@id/txt_name"
+            android:layout_below="@id/txt_name_pay"
             android:layout_marginStart="-35dp"
             android:layout_marginTop="-36dp"
             android:alpha="0.2"

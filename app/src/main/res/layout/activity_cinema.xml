@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/cinema_backgrund"
-    tools:context="com.bis.lafefny.AmusementPark"
+    tools:context="com.bis.lafefny.Cinema"
     tools:ignore="RelativeOverlap">
 
     <RelativeLayout
@@ -37,6 +37,7 @@
                 android:id="@+id/btn_back_cinema"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
+                android:onClick="CenimaOnClick"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#8F520C"
                 android:drawableEnd="@drawable/ic_baseline_arrow_back5_24" />
@@ -75,6 +76,7 @@
                 android:layout_marginStart="270dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
+                android:onClick="CenimaOnClick"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
                 android:textSize="11sp"
@@ -87,6 +89,7 @@
                 android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
+                android:onClick="CenimaOnClick"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
                 android:textSize="11sp" />
@@ -530,6 +533,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CenimaOnClick"
                 android:layout_below="@id/gaming_area_header"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home4_24"
@@ -545,6 +549,7 @@
                 android:layout_marginBottom="11dp"
                 android:layout_marginEnd="170dp"
                 android:layout_marginStart="100dp"
+                android:onClick="CenimaOnClick"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_location6_on_24" />
@@ -556,6 +561,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/gaming_area_header"
                 android:layout_marginStart="200dp"
+                android:onClick="CenimaOnClick"
                 android:layout_marginTop="2dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user4" />
@@ -567,6 +573,7 @@
                 android:layout_height="47dp"
                 android:layout_below="@id/gaming_area_header"
                 android:layout_marginStart="290dp"
+                android:onClick="CenimaOnClick"
                 android:layout_marginTop="3dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/sort2" />

@@ -4,7 +4,9 @@ package com.bis.lafefny;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +29,8 @@ public class DreamPark extends AppCompatActivity {
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference parkDoRef = db.document("entertainment/categories/parks/DreamPark");
+
+    private SharedPreferences dreamParkPref;
 
     @Override
     protected void onStart() {
@@ -69,6 +73,8 @@ public class DreamPark extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dream_park);
 
+        dreamParkPref = getSharedPreferences("Dream_park_pref" , Context.MODE_PRIVATE);
+
         initViews();
 
     }
@@ -100,16 +106,24 @@ public class DreamPark extends AppCompatActivity {
                 break;
             case R.id.btn_ticket_dreamP:
                 Intent intent = new Intent(getApplicationContext() , Booking.class);
-                intent.putExtra("vipPrice" , 560);
-                intent.putExtra("regularPrice" , 150);
-                intent.putExtra("source" , "dreampark");
-                intent.putExtra("startTime" , "10:00 AM");
-                intent.putExtra("startDate" , "All Days");
+                dreamParkPref.edit().putInt("vipPrice",560).apply();
+                dreamParkPref.edit().putInt("regularPrice",150).apply();
+                dreamParkPref.edit().putString("source","Dream Park").apply();
+                dreamParkPref.edit().putString("startTime" , "10:00 AM").apply();
+                dreamParkPref.edit().putString("startDate" , "All Days").apply();
+                dreamParkPref.edit().commit();
+
+                intent.putExtra("screen" , "dreampark");
                 startActivity(intent);
                 break;
         }
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        SharedPreferences.Editor editor = dreamParkPref.edit();
+        editor.clear();
+        editor.commit();
+        super.onBackPressed();
+    }
 }

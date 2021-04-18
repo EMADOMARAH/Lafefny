@@ -29,7 +29,7 @@
             android:contentDescription="@string/todo" />
 
         <TextView
-            android:id="@+id/txt_name"
+            android:id="@+id/txt_name_pay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="99dp"
@@ -256,7 +256,7 @@
         android:background="@color/white"
         android:fontFamily="serif"
         android:hint="@string/malak_heshamm"
-        android:inputType="text"
+        android:inputType="textNoSuggestions"
         android:paddingStart="10dp"
         android:textColor="@color/Grey"
         android:autofillHints="" />
@@ -285,7 +285,7 @@
         android:background="@color/white"
         android:fontFamily="serif"
         android:hint="@string/lafa98"
-        android:inputType="text"
+        android:inputType="textNoSuggestions"
         android:paddingStart="10dp"
         android:textColor="@color/Grey"
         android:autofillHints="" />

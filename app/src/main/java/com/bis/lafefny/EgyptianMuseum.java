@@ -3,7 +3,9 @@ package com.bis.lafefny;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +24,8 @@ public class EgyptianMuseum extends AppCompatActivity {
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference MuseumDoRef = db.document("entertainment/categories/tourism/EgyptianMuseum");
-
+    private SharedPreferences egyptianPref;
+    String location , openHourse;
 
     @Override
     protected void onStart() {
@@ -34,8 +37,10 @@ public class EgyptianMuseum extends AppCompatActivity {
                         if (documentSnapshot.exists()) {
                             egyName.setText(documentSnapshot.getString("name"));
                             egyDisc.setText(documentSnapshot.getString("description"));
-                            egyLocation.setText(documentSnapshot.getString("location"));
-                            egyOpenNormal.setText(documentSnapshot.getString("openNormal"));
+                            location = documentSnapshot.getString("location");
+                            egyLocation.setText(location);
+                            openHourse = documentSnapshot.getString("openNormal");
+                            egyOpenNormal.setText(openHourse);
                             egyOpenFriday1.setText(documentSnapshot.getString("openFriday1"));
                             egyOpenFriday2.setText(documentSnapshot.getString("openFriday2"));
                             egyTicketType1.setText(documentSnapshot.getString("ticket1"));
@@ -64,6 +69,8 @@ public class EgyptianMuseum extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_egyptian_museum);
+        egyptianPref =  getSharedPreferences("egyptian_museum_pref" , Context.MODE_PRIVATE);
+
 
         EgyptianMuseumInitViews();
 
@@ -88,16 +95,34 @@ public class EgyptianMuseum extends AppCompatActivity {
     public void EgyptionMuseumOnClick(View view) {
         switch (view.getId()) {
             case R.id.btn_back_egyM:
-                startActivity(new Intent(getApplicationContext(), Tourism_Area.class));
+                onBackPressed();
                 break;
             case R.id.btn_transportation_egyM:
                 startActivity(new Intent(getApplicationContext(), Transportation.class));
                 break;
             case R.id.btn_ticket_egyM:
-                startActivity(new Intent(getApplicationContext(), Booking.class));
+                Intent i = new Intent(getApplicationContext(), Booking.class);
+                saveMuseumDataToPref();
+                i.putExtra("screen" , "egyptianmuseum");
+                startActivity(i);
                 break;
         }
     }
 
+    private void saveMuseumDataToPref() {
+        egyptianPref.edit().putString("location" , location).apply();
+        egyptianPref.edit().putString("source" , "Egyptian Museum").apply();
+        egyptianPref.edit().putString("runningTime" , openHourse).apply();
+        egyptianPref.edit().putInt("regularPrice" , 30).apply();
+        egyptianPref.edit().putInt("vipPrice" , 160).apply();
+        egyptianPref.edit().commit();
+    }
 
+    @Override
+    public void onBackPressed() {
+        SharedPreferences.Editor editor = egyptianPref.edit();
+        editor.clear();
+        editor.commit();
+        super.onBackPressed();
+    }
 }
