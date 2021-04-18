@@ -12,6 +12,7 @@ public class Tourism_Area extends AppCompatActivity {
     private Button button_home;
     private Button button_egyptian_museum;
     private Button button_account_TA;
+    private Button button_pre_TA;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,14 @@ public class Tourism_Area extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openHomepage();
+            }
+        });
+
+        button_pre_TA = (Button) findViewById(R.id.btn_pre_tourism); //button preferences
+        button_pre_TA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
             }
         });
 
@@ -57,6 +66,11 @@ public class Tourism_Area extends AppCompatActivity {
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
     public void openEgyptianMuseum(){

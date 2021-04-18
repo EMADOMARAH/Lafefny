@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.Preference;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -20,10 +21,13 @@ import android.widget.Toast;
 import com.bis.lafefny.R;
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.prefs.Preferences;
+
 public class Homepage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     //Buttons
     private Button button_ent;
+    private Button button_pre_HP;
     private Button button_event;
     private Button button_plan;
     private Button button_emg;
@@ -89,11 +93,23 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
             }
         });
 
+        button_pre_HP = (Button) findViewById(R.id.btn_pre_hp); //button preferences
+        button_pre_HP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
+
 
     }
 
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class); //open entertainment categories
+        startActivity(intent);
+    }
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class); //open preferences
         startActivity(intent);
     }
 
@@ -139,17 +155,62 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     public void homePageOnClick(View view) {
         switch (view.getId()){
 
-
         }
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-
-
+            case R.id.nav_home:
+                Intent homeIntent = new Intent(this, Homepage.class);  //open homepage
+                startActivity(homeIntent);
+                break;
+            case R.id.nav_promocode:
+                Intent promoIntent = new Intent(this, Promocode.class);  //open promocode
+                startActivity(promoIntent);
+                break;
+            case R.id.nav_Acc:
+                Intent accIntent = new Intent(this, Account.class);  //open account
+                startActivity(accIntent);
+                break;
+//            case R.id.nav_About:
+//                Intent aboutIntent = new Intent(this, About.class);  //open about
+//                startActivity(aboutIntent);
+//                break;
+            case R.id.nav_PV:
+                Intent pvIntent = new Intent(this, ProvideData.class);  //open provide data
+                startActivity(pvIntent);
+                break;
+//            case R.id.nav_filter:
+//                Intent filterIntent = new Intent(this, Filter.class);  //open filter
+//                startActivity(filterIntent);
+//                break;
+            case R.id.nav_Questionnaire:
+                Intent QIntent = new Intent(this, Questionnaire1.class);  //open questionnaire
+                startActivity(QIntent);
+                break;
+            case R.id.nav_Preferences:
+                Intent PIntent = new Intent(this, Preferences.class);  //open preferences
+                startActivity(PIntent);
+                break;
+//            case R.id.nav_hotel:
+//                Intent hotelIntent = new Intent(this, Hotel.class);  //open Hotel
+//                startActivity(hotelIntent);
+//                break;
+//            case R.id.nav_sort:
+//                Intent sortIntent = new Intent(this, Sort.class);  //open sort
+//                startActivity(sortIntent);
+//                break;
+            case R.id.nav_Transportation:
+                Intent transpIntent = new Intent(this, Transportation.class);  //open Transportation
+                startActivity(transpIntent);
+                break;
+//            case R.id.nav_TG:
+//                Intent TGIntent = new Intent(this, TourGuide.class);  //open Tour guide
+//                startActivity(TGIntent);
+//                break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
-}
+    }

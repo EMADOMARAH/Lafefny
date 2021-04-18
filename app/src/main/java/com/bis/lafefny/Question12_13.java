@@ -12,6 +12,7 @@ public class Question12_13 extends AppCompatActivity {
     private Button button_next_QS7;
     private Button button_skip_QS7;
     private Button button_home_QS7;
+    private Button button_pre_QS7;
     private Button button_account_QS7;
 
     @Override
@@ -23,6 +24,12 @@ public class Question12_13 extends AppCompatActivity {
         button_home_QS7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openHomepage(); }
+        });
+
+        button_pre_QS7 = (Button) findViewById(R.id.btn_questionnaire7_pre);           //button preferences
+        button_pre_QS7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openpreferences(); }
         });
 
         button_back_QS7=(Button) findViewById(R.id.btn_questionnaire7_back);            //button back
@@ -51,6 +58,11 @@ public class Question12_13 extends AppCompatActivity {
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
     public void  openQuestion10_11(){

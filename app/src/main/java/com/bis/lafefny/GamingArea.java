@@ -10,6 +10,7 @@ import android.widget.Button;
 public class GamingArea extends AppCompatActivity {
     private Button button_back;
     private Button button_home;
+    private Button button_pre_GA;
     private Button button_funtopia;
     private Button button_account_GA;
     @Override
@@ -47,6 +48,14 @@ public class GamingArea extends AppCompatActivity {
                 openAccount6();
             }
         });
+
+        button_pre_GA = (Button) findViewById(R.id.btn_pre_ga); //button preferences
+        button_pre_GA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
     }
     public void openEnt_Categories(){
         Intent intent = new Intent(this, Ent_Categories.class);  //open back
@@ -62,6 +71,10 @@ public class GamingArea extends AppCompatActivity {
     }
     public void openAccount6(){
         Intent intent = new Intent(this, Account.class);  //open account
+        startActivity(intent);
+    }
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
 }

@@ -13,6 +13,7 @@ public class RomanticPlan extends AppCompatActivity {
     private Button button_smokery;
     private Button button_vox;
     private Button button_home;
+    private Button button_pre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +26,14 @@ public class RomanticPlan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openPlans();
+            }
+        });
+
+        button_pre = (Button) findViewById(R.id.btn_pre_rom); //button preferences
+        button_pre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
             }
         });
 
@@ -62,6 +71,11 @@ public class RomanticPlan extends AppCompatActivity {
     }
     public void openPlans(){
         Intent intent = new Intent(this, Plans.class);  //open back
+        startActivity(intent);
+    }
+
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
     public void openHomepage(){

@@ -12,7 +12,9 @@ import com.bis.lafefny.R;
 
 public class Transportation extends AppCompatActivity {
     private Button button_back; //button back
-    private Button button_back_icon; //button back icon
+    private Button button_home_icon; //button home icon
+    private Button button_pre_icon;   //button preferences icon
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,17 +28,29 @@ public class Transportation extends AppCompatActivity {
             }
         });
 
-        button_back_icon = (Button) findViewById(R.id.btn_home1_trans); //button back icon
-        button_back_icon.setOnClickListener(new View.OnClickListener() {
+        button_home_icon = (Button) findViewById(R.id.btn_home1_trans); //button back icon
+        button_home_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openHomepage();
+            }
+        });
+        button_pre_icon = (Button) findViewById(R.id.btn_pre_trans); //button preferences icon
+        button_pre_icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
             }
         });
 
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //button back
+        startActivity(intent);
+    }
+
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //button preferences
         startActivity(intent);
     }
 

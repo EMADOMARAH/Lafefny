@@ -10,6 +10,7 @@ import android.widget.Button;
 public class Sport_Events extends AppCompatActivity {
     private Button button_back_Sport;
     private Button button_home_Sport;
+    private Button button_pre_Sport;
     private Button button_running_Sport;
 
     @Override
@@ -31,6 +32,13 @@ public class Sport_Events extends AppCompatActivity {
                 openHomepage();
             }
         });
+        button_pre_Sport = (Button) findViewById(R.id.btn_pre_sport); //button preferences
+        button_pre_Sport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
 
         button_running_Sport = (Button) findViewById(R.id.btn_running); //button running event
         button_running_Sport.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +52,11 @@ public class Sport_Events extends AppCompatActivity {
     }
     public void openEvents(){
         Intent intent = new Intent(this, Events.class);  //button back
+        startActivity(intent);
+    }
+
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //button preferences
         startActivity(intent);
     }
     public void openHomepage(){

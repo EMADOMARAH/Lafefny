@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class ProvideData extends AppCompatActivity {
     private Button button_home_data;
+    private Button button_pre_data;
     private Button button_account_data;
     private Button button_questionnaire_data;
     private Button button_preference_data;
@@ -33,6 +34,12 @@ public class ProvideData extends AppCompatActivity {
 
         button_preference_data = (Button) findViewById(R.id.btn_preference);           //button preferences
         button_preference_data.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openPreferences(); }
+        });
+
+        button_pre_data = (Button) findViewById(R.id.btn_data_pre);           //button preferences
+        button_pre_data.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openPreferences(); }
         });

@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class preferences extends AppCompatActivity {
     private Button button_home_preferences;
+    private Button button_pre_preferences;
     private Button button_account_preferences;
     private Button button_close_preferences;
     private Button button_back_preferences;
@@ -51,9 +52,19 @@ public class preferences extends AppCompatActivity {
             public void onClick(View v) { openAccount9(); }
         });
 
+        button_pre_preferences = (Button) findViewById(R.id.btn_preferences_pre);           //button preferences
+        button_pre_preferences.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openpreferences(); }
+        });
+
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
     public void openProvideData(){
