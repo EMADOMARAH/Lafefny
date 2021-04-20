@@ -3,7 +3,9 @@ package com.bis.lafefny;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +30,8 @@ public class TheSmokery extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference TheSmokeryDoRef = db.document("entertainment/categories/restaurants/TheSmokery");
 
+    private SharedPreferences smokeryPref;
+    String location1,location2,location3 , location4,openHours;
 
     @Override
     protected void onStart() {
@@ -39,14 +43,19 @@ public class TheSmokery extends AppCompatActivity {
                         if (documentSnapshot.exists()){
                             resName.setText(documentSnapshot.getString("name"));
                             resDisc.setText(documentSnapshot.getString("description"));
-                            resLocation1.setText(documentSnapshot.getString("location1"));
-                            resLocation2.setText(documentSnapshot.getString("location2"));
-                            resLocation3.setText(documentSnapshot.getString("location3"));
-                            resLocation4.setText(documentSnapshot.getString("location4"));
+                            location1 = documentSnapshot.getString("location1");
+                            resLocation1.setText(location1);
+                            location2 = documentSnapshot.getString("location2");
+                            resLocation2.setText(location2);
+                            location3 = documentSnapshot.getString("location3");
+                            resLocation3.setText(location3);
+                            location4 = documentSnapshot.getString("location4");
+                            resLocation4.setText(location4);
                             resPhone1.setText(documentSnapshot.getString("phone1"));
                             resPhone2.setText(documentSnapshot.getString("phone2"));
                             resPhone3.setText(documentSnapshot.getString("phone3"));
-                            resOpen.setText(documentSnapshot.getString("openHours"));
+                            openHours = documentSnapshot.getString("openHours");
+                            resOpen.setText(openHours);
                             resCuisines1.setText(documentSnapshot.getString("cuisines1"));
                             resCuisines2.setText(documentSnapshot.getString("cuisines2"));
                             resCuisines3.setText(documentSnapshot.getString("cuisines3"));
@@ -82,6 +91,8 @@ public class TheSmokery extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_the_smokery);
+        smokeryPref =  getSharedPreferences("the_smokery_pref" , Context.MODE_PRIVATE);
+
 
         TheSmokeryInitViews();
 
@@ -129,9 +140,32 @@ public class TheSmokery extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), Transportation.class));
                 break;
             case R.id.btn_ticket_smokery:
-                startActivity(new Intent(getApplicationContext(), Booking.class));
+                Intent i =new Intent(getApplicationContext(), Booking.class);
+                saveSmokeryDataToPref();
+                i.putExtra("screen","thesmokery");
+                startActivity(i);
                 break;
         }
 
+    }
+
+    private void saveSmokeryDataToPref() {
+        smokeryPref.edit().putString("location1" , location1).apply();
+        smokeryPref.edit().putString("location2" , location2).apply();
+        smokeryPref.edit().putString("location3" , location3).apply();
+        smokeryPref.edit().putString("location4" , location4).apply();
+        smokeryPref.edit().putString("source" , "The Smokery").apply();
+        smokeryPref.edit().putString("runningTime" , openHours).apply();
+        smokeryPref.edit().putInt("regularPrice" , 50).apply();
+        smokeryPref.edit().putInt("vipPrice" , 100).apply();
+        smokeryPref.edit().commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        SharedPreferences.Editor editor = smokeryPref.edit();
+        editor.clear();
+        editor.commit();
+        super.onBackPressed();
     }
 }

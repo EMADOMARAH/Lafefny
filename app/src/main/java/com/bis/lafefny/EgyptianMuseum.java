@@ -54,7 +54,8 @@ public class EgyptianMuseum extends AppCompatActivity {
                             Toast.makeText(EgyptianMuseum.this, "DataBase is Empty", Toast.LENGTH_SHORT).show();
                         }
                     }
-                }).addOnFailureListener(new OnFailureListener() {
+                })
+                .addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(EgyptianMuseum.this, "Faild To Get Data", Toast.LENGTH_SHORT).show();

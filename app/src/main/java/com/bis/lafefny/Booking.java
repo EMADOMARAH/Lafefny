@@ -24,6 +24,7 @@ public class Booking extends AppCompatActivity {
     private SharedPreferences voxCinemaPref;
     private SharedPreferences funtopiaPref;
     private SharedPreferences egyptianPref;
+    private SharedPreferences smokeryPref;
     Map<String, Object> ticket = new HashMap<>();
 
     TextView title,ticketId,regularPrice,vipPrice;
@@ -44,6 +45,7 @@ public class Booking extends AppCompatActivity {
         voxCinemaPref = getSharedPreferences("vox_cinema_pref" , Context.MODE_PRIVATE);
         funtopiaPref  = getSharedPreferences("funtopia_pref" , Context.MODE_PRIVATE);
         egyptianPref  =  getSharedPreferences("egyptian_museum_pref" , Context.MODE_PRIVATE);
+        smokeryPref =  getSharedPreferences("the_smokery_pref" , Context.MODE_PRIVATE);
 
 
 
@@ -69,7 +71,10 @@ public class Booking extends AppCompatActivity {
                 regularTicketPrice = egyptianPref.getInt("regularPrice" , 30);
                 vipTicketPrice     = egyptianPref.getInt("vipPrice" , 160);
                 break;
-
+            case "thesmokery":
+                regularTicketPrice = smokeryPref.getInt("regularPrice" , 50);
+                vipTicketPrice     = smokeryPref.getInt("vipPrice" , 100);
+                break;
 
         }
 
@@ -123,6 +128,12 @@ public class Booking extends AppCompatActivity {
                             egyptianPref.edit().putInt("regularCount" , regularCount).apply();
                             egyptianPref.edit().putInt("vipCount" , vipCount).apply();
                             egyptianPref.edit().commit();
+                            break;
+                        case "thesmokery":
+                            smokeryPref.edit().putString("ticketId" , randTicketId).apply();
+                            smokeryPref.edit().putInt("regularCount" , regularCount).apply();
+                            smokeryPref.edit().putInt("vipCount" , vipCount).apply();
+                            smokeryPref.edit().commit();
                             break;
 
                         default:

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/restaurant_background"
-    tools:context="com.bis.lafefny.AmusementPark"
+    tools:context="com.bis.lafefny.Restaurants"
     tools:ignore="RelativeOverlap">
 
     <RelativeLayout
@@ -63,6 +63,7 @@
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
                 android:textSize="11sp"
+                android:onClick="RestaurantsOnClick"
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <Button

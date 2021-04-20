@@ -41,6 +41,7 @@ public class Ticket extends AppCompatActivity {
     private SharedPreferences dreamParkPref;
     private SharedPreferences voxCinemaPref;
     private SharedPreferences funtopiaPref;
+    private SharedPreferences egyptianPref;
 
 
     private TextView ticketId_txt , placeName_txt , startDate_txt , startTime_txt , location_txt , regularCount_txt;
@@ -55,6 +56,7 @@ public class Ticket extends AppCompatActivity {
         this.dreamParkPref = this.getSharedPreferences("Dream_park_pref" , Context.MODE_PRIVATE);
         this.voxCinemaPref = this.getSharedPreferences("vox_cinema_pref" , Context.MODE_PRIVATE);
         this.funtopiaPref  = this.getSharedPreferences("funtopia_pref" , Context.MODE_PRIVATE);
+        this.egyptianPref  =  getSharedPreferences("egyptian_museum_pref" , Context.MODE_PRIVATE);
 
         GetTicketIdFromOntent();
         InitTicketViews();
@@ -169,6 +171,7 @@ public class Ticket extends AppCompatActivity {
         deletePref(dreamParkPref);
         deletePref(voxCinemaPref);
         deletePref(funtopiaPref);
+        deletePref(egyptianPref);
         Intent intent = new Intent(getApplicationContext(), Homepage.class);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

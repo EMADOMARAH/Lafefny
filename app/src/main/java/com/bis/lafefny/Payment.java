@@ -49,6 +49,8 @@ public class Payment extends AppCompatActivity {
     private SharedPreferences dreamParkPref;
     private SharedPreferences voxCinemaPref;
     private SharedPreferences funtopiaPref;
+    private SharedPreferences egyptianPref;
+    private SharedPreferences smokeryPref;
 
 
 
@@ -62,6 +64,8 @@ public class Payment extends AppCompatActivity {
         this.dreamParkPref = this.getSharedPreferences("Dream_park_pref" , Context.MODE_PRIVATE);
         this.voxCinemaPref = this.getSharedPreferences("vox_cinema_pref" , Context.MODE_PRIVATE);
         this.funtopiaPref  = this.getSharedPreferences("funtopia_pref" , Context.MODE_PRIVATE);
+        this.egyptianPref  =  getSharedPreferences("egyptian_museum_pref" , Context.MODE_PRIVATE);
+        this.smokeryPref =  getSharedPreferences("the_smokery_pref" , Context.MODE_PRIVATE);
 
         this.initPaymentViews();
         this.GetSourceScreen();
@@ -100,6 +104,28 @@ public class Payment extends AppCompatActivity {
                 regularCount = this.funtopiaPref.getInt("regularCount" , 0);
                 vipPrice = this.funtopiaPref.getInt("vipPrice" , 300);
                 regularPrice = this.funtopiaPref.getInt("regularPrice",65);
+                break;
+            case "egyptianmuseum":
+                ticketId = egyptianPref.getString("ticketId" , "123");
+                source_txt.setText("Egyptian Museum");
+                this.startDate_txt.setText("All Days");
+                this.startTime_txt.setText(egyptianPref.getString("runningTime",""));
+                //---------------------Get Total Price Elements-----------------------------------------
+                vipCount = this.egyptianPref.getInt("vipCount" , 0);
+                regularCount = this.egyptianPref.getInt("regularCount" , 0);
+                vipPrice = this.egyptianPref.getInt("vipPrice" , 160);
+                regularPrice = this.egyptianPref.getInt("regularPrice",30);
+                break;
+            case "thesmokery":
+                ticketId = smokeryPref.getString("ticketId" , "123");
+                source_txt.setText("The Smokery");
+                this.startDate_txt.setText("All Days");
+                this.startTime_txt.setText(smokeryPref.getString("runningTime",""));
+                //---------------------Get Total Price Elements-----------------------------------------
+                vipCount = this.smokeryPref.getInt("vipCount" , 0);
+                regularCount = this.smokeryPref.getInt("regularCount" , 0);
+                vipPrice = this.smokeryPref.getInt("vipPrice" , 100);
+                regularPrice = this.smokeryPref.getInt("regularPrice",50);
                 break;
 
         }
@@ -228,6 +254,16 @@ public class Payment extends AppCompatActivity {
                 funtopiaPref.edit().putString("discountLocation" , promoLocation).apply();
                 funtopiaPref.edit().commit();
                 break;
+            case "egyptianmuseum":
+                egyptianPref.edit().putString("discount" , promoDiscountAmount).apply();
+                egyptianPref.edit().putString("discountLocation" , promoLocation).apply();
+                egyptianPref.edit().commit();
+                break;
+            case "thesmokery":
+                smokeryPref.edit().putString("discount" , promoDiscountAmount).apply();
+                smokeryPref.edit().putString("discountLocation" , promoLocation).apply();
+                smokeryPref.edit().commit();
+                break;
 
         }
     }
@@ -275,6 +311,35 @@ public class Payment extends AppCompatActivity {
                 this.ticketMap.put("startTime" , this.funtopiaPref.getString("runningTime" , ""));
                 this.ticketMap.put("totalPrice" , Integer.toString(this.totalPrice));
                 this.ticketMap.put("location" , funtopiaPref.getString("location" , ""));
+                this.ticketMap.put("discount" , this.promoDiscountAmount);
+                break;
+            case "egyptianmuseum":
+                ticketMap.put("ticketId" , this.egyptianPref.getString("ticketId", ""));
+                ticketMap.put("place" , egyptianPref.getString("source" , "Egyptian Museum"));
+                this.ticketMap.put("regularTicketPrice" , Integer.toString(this.egyptianPref.getInt("regularPrice" , 30)));
+                this.ticketMap.put("regularTicketCount" , Integer.toString(this.egyptianPref.getInt("regularCount" , 1)));
+                this.ticketMap.put("vipTicketPrice" , Integer.toString(this.egyptianPref.getInt("vipPrice" , 160)));
+                this.ticketMap.put("vipTicketCount" , Integer.toString(this.egyptianPref.getInt("vipCount" , 1)));
+                this.ticketMap.put("startDate" , "All Days");
+                this.ticketMap.put("startTime" , this.egyptianPref.getString("runningTime" , ""));
+                this.ticketMap.put("totalPrice" , Integer.toString(this.totalPrice));
+                this.ticketMap.put("location" , egyptianPref.getString("location" , ""));
+                this.ticketMap.put("discount" , this.promoDiscountAmount);
+                break;
+            case "thesmokery":
+                ticketMap.put("ticketId" , this.smokeryPref.getString("ticketId", ""));
+                ticketMap.put("place" , smokeryPref.getString("source" , "The Smokery"));
+                this.ticketMap.put("regularTicketPrice" , Integer.toString(this.smokeryPref.getInt("regularPrice" , 50)));
+                this.ticketMap.put("regularTicketCount" , Integer.toString(this.smokeryPref.getInt("regularCount" , 1)));
+                this.ticketMap.put("vipTicketPrice" , Integer.toString(this.smokeryPref.getInt("vipPrice" , 100)));
+                this.ticketMap.put("vipTicketCount" , Integer.toString(this.smokeryPref.getInt("vipCount" , 1)));
+                this.ticketMap.put("startDate" , "All Days");
+                this.ticketMap.put("startTime" , this.smokeryPref.getString("runningTime" , ""));
+                this.ticketMap.put("totalPrice" , Integer.toString(this.totalPrice));
+                this.ticketMap.put("location1" , smokeryPref.getString("location1" , ""));
+                this.ticketMap.put("location2" , smokeryPref.getString("location2" , ""));
+                this.ticketMap.put("location3" , smokeryPref.getString("location3" , ""));
+                this.ticketMap.put("location4" , smokeryPref.getString("location4" , ""));
                 this.ticketMap.put("discount" , this.promoDiscountAmount);
                 break;
 
