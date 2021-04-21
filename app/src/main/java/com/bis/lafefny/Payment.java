@@ -51,6 +51,9 @@ public class Payment extends AppCompatActivity {
     private SharedPreferences funtopiaPref;
     private SharedPreferences egyptianPref;
     private SharedPreferences smokeryPref;
+    private SharedPreferences runningPref;
+    private SharedPreferences cairoBookPref;
+    private SharedPreferences soundLightPref;
 
 
 
@@ -61,11 +64,17 @@ public class Payment extends AppCompatActivity {
         this.setContentView(R.layout.activity_payment);
 
         this.authPreferences = this.getSharedPreferences("Lafefny_App" , Context.MODE_PRIVATE);
+        //------------------------------ENTERTAINMENT------------------------------------------------
         this.dreamParkPref = this.getSharedPreferences("Dream_park_pref" , Context.MODE_PRIVATE);
         this.voxCinemaPref = this.getSharedPreferences("vox_cinema_pref" , Context.MODE_PRIVATE);
         this.funtopiaPref  = this.getSharedPreferences("funtopia_pref" , Context.MODE_PRIVATE);
         this.egyptianPref  =  getSharedPreferences("egyptian_museum_pref" , Context.MODE_PRIVATE);
         this.smokeryPref =  getSharedPreferences("the_smokery_pref" , Context.MODE_PRIVATE);
+        //--------------------------------EVENTS---------------------------------------------------
+        runningPref = getSharedPreferences("Running_Event_pref" , Context.MODE_PRIVATE);
+        cairoBookPref = getSharedPreferences("Cairo_Book_Fair_pref" , Context.MODE_PRIVATE);
+        soundLightPref = getSharedPreferences("Sound_Light_pref" , Context.MODE_PRIVATE);
+        //-----------------------------------------------------------------------------------------
 
         this.initPaymentViews();
         this.GetSourceScreen();
@@ -126,6 +135,39 @@ public class Payment extends AppCompatActivity {
                 regularCount = this.smokeryPref.getInt("regularCount" , 0);
                 vipPrice = this.smokeryPref.getInt("vipPrice" , 100);
                 regularPrice = this.smokeryPref.getInt("regularPrice",50);
+                break;
+            case "runningevent":
+                ticketId = runningPref.getString("ticketId" , "123");
+                source_txt.setText("Running Event");
+                this.startDate_txt.setText(runningPref.getString("startDate",""));
+                this.startTime_txt.setText(runningPref.getString("runningTime",""));
+                //---------------------Get Total Price Elements-----------------------------------------
+                vipCount = this.runningPref.getInt("vipCount" , 0);
+                regularCount = this.runningPref.getInt("regularCount" , 0);
+                vipPrice = this.runningPref.getInt("vipPrice" , 50);
+                regularPrice = this.runningPref.getInt("regularPrice",50);
+                break;
+            case "cairobookfair":
+                ticketId = cairoBookPref.getString("ticketId" , "123");
+                source_txt.setText("International Book Fair");
+                this.startDate_txt.setText(cairoBookPref.getString("startDate",""));
+                this.startTime_txt.setText(cairoBookPref.getString("runningTime",""));
+                //---------------------Get Total Price Elements-----------------------------------------
+                vipCount = this.cairoBookPref.getInt("vipCount" , 0);
+                regularCount = this.cairoBookPref.getInt("regularCount" , 0);
+                vipPrice = this.cairoBookPref.getInt("vipPrice" , 50);
+                regularPrice = this.cairoBookPref.getInt("regularPrice",50);
+                break;
+            case "soundandlight":
+                ticketId = soundLightPref.getString("ticketId" , "123");
+                source_txt.setText("Sound And Light Show");
+                this.startDate_txt.setText(soundLightPref.getString("startDate",""));
+                this.startTime_txt.setText(soundLightPref.getString("runningTime",""));
+                //---------------------Get Total Price Elements-----------------------------------------
+                vipCount = this.soundLightPref.getInt("vipCount" , 0);
+                regularCount = this.soundLightPref.getInt("regularCount" , 0);
+                vipPrice = this.soundLightPref.getInt("vipPrice" , 350);
+                regularPrice = this.soundLightPref.getInt("regularPrice",300);
                 break;
 
         }
@@ -264,6 +306,21 @@ public class Payment extends AppCompatActivity {
                 smokeryPref.edit().putString("discountLocation" , promoLocation).apply();
                 smokeryPref.edit().commit();
                 break;
+            case "runningevent":
+                runningPref.edit().putString("discount" , promoDiscountAmount).apply();
+                runningPref.edit().putString("discountLocation" , promoLocation).apply();
+                runningPref.edit().commit();
+                break;
+            case "cairobookfair":
+                cairoBookPref.edit().putString("discount" , promoDiscountAmount).apply();
+                cairoBookPref.edit().putString("discountLocation" , promoLocation).apply();
+                cairoBookPref.edit().commit();
+                break;
+            case "soundandlight":
+                soundLightPref.edit().putString("discount" , promoDiscountAmount).apply();
+                soundLightPref.edit().putString("discountLocation" , promoLocation).apply();
+                soundLightPref.edit().commit();
+                break;
 
         }
     }
@@ -340,6 +397,45 @@ public class Payment extends AppCompatActivity {
                 this.ticketMap.put("location2" , smokeryPref.getString("location2" , ""));
                 this.ticketMap.put("location3" , smokeryPref.getString("location3" , ""));
                 this.ticketMap.put("location4" , smokeryPref.getString("location4" , ""));
+                this.ticketMap.put("discount" , this.promoDiscountAmount);
+                break;
+            case "runningevent":
+                ticketMap.put("ticketId" , this.runningPref.getString("ticketId", ""));
+                ticketMap.put("place" , runningPref.getString("source" , "Running Event"));
+                this.ticketMap.put("regularTicketPrice" , Integer.toString(this.runningPref.getInt("regularPrice" , 50)));
+                this.ticketMap.put("regularTicketCount" , Integer.toString(this.runningPref.getInt("regularCount" , 1)));
+                this.ticketMap.put("vipTicketPrice" , Integer.toString(this.runningPref.getInt("vipPrice" , 50)));
+                this.ticketMap.put("vipTicketCount" , Integer.toString(this.runningPref.getInt("vipCount" , 1)));
+                this.ticketMap.put("startDate" , runningPref.getString("startDate" , ""));
+                this.ticketMap.put("startTime" , this.runningPref.getString("runningTime" , ""));
+                this.ticketMap.put("totalPrice" , Integer.toString(this.totalPrice));
+                this.ticketMap.put("location" , runningPref.getString("location" , ""));
+                this.ticketMap.put("discount" , this.promoDiscountAmount);
+                break;
+            case "cairobookfair":
+                ticketMap.put("ticketId" , this.cairoBookPref.getString("ticketId", ""));
+                ticketMap.put("place" , cairoBookPref.getString("source" , "International Book Fair"));
+                this.ticketMap.put("regularTicketPrice" , Integer.toString(this.cairoBookPref.getInt("regularPrice" , 5)));
+                this.ticketMap.put("regularTicketCount" , Integer.toString(this.cairoBookPref.getInt("regularCount" , 1)));
+                this.ticketMap.put("vipTicketPrice" , Integer.toString(this.cairoBookPref.getInt("vipPrice" , 5)));
+                this.ticketMap.put("vipTicketCount" , Integer.toString(this.cairoBookPref.getInt("vipCount" , 1)));
+                this.ticketMap.put("startDate" , cairoBookPref.getString("startDate" , ""));
+                this.ticketMap.put("startTime" , this.cairoBookPref.getString("runningTime" , ""));
+                this.ticketMap.put("totalPrice" , Integer.toString(this.totalPrice));
+                this.ticketMap.put("location" , cairoBookPref.getString("location" , ""));
+                this.ticketMap.put("discount" , this.promoDiscountAmount);
+                break;
+            case "soundandlight":
+                ticketMap.put("ticketId" , this.soundLightPref.getString("ticketId", ""));
+                ticketMap.put("place" , soundLightPref.getString("source" , "Sound And Light Show"));
+                this.ticketMap.put("regularTicketPrice" , Integer.toString(this.soundLightPref.getInt("regularPrice" , 300)));
+                this.ticketMap.put("regularTicketCount" , Integer.toString(this.soundLightPref.getInt("regularCount" , 1)));
+                this.ticketMap.put("vipTicketPrice" , Integer.toString(this.soundLightPref.getInt("vipPrice" , 350)));
+                this.ticketMap.put("vipTicketCount" , Integer.toString(this.soundLightPref.getInt("vipCount" , 1)));
+                this.ticketMap.put("startDate" , soundLightPref.getString("startDate" , ""));
+                this.ticketMap.put("startTime" , this.soundLightPref.getString("runningTime" , ""));
+                this.ticketMap.put("totalPrice" , Integer.toString(this.totalPrice));
+                this.ticketMap.put("location" , soundLightPref.getString("location" , ""));
                 this.ticketMap.put("discount" , this.promoDiscountAmount);
                 break;
 

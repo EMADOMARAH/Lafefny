@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/book_fair"
-    tools:context="com.bis.lafefny.DreamPark">
+    tools:context="com.bis.lafefny.CairoBookFair">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,6 +22,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/transportation"
+            android:onClick="CairoBookFairOnClick"
             android:textColor="#CF8B74"
             android:textSize="30sp" />
 
@@ -35,6 +36,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/ticket"
+            android:onClick="CairoBookFairOnClick"
             android:textColor="#CF8B74"
             android:textSize="30sp" />
 
@@ -79,6 +81,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
+                android:onClick="CairoBookFairOnClick"
                 android:backgroundTint="@color/Grey"
                 android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" />
 
@@ -143,6 +146,7 @@
             android:background="@drawable/btnborder6">
 
             <TextView
+                android:id="@+id/cairo_book_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -170,6 +174,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/cairo_book_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -196,6 +201,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/cairo_book_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -223,6 +229,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/cairo_book_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -263,6 +270,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp" />
             <TextView
+                android:id="@+id/cairo_book_organized_by"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"

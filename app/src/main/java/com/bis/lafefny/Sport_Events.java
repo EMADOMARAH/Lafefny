@@ -3,6 +3,7 @@ package com.bis.lafefny;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -66,5 +67,15 @@ public class Sport_Events extends AppCompatActivity {
     public void openRunningEvent(){
         Intent intent = new Intent(this, RunningEvent.class);  //open running event
         startActivity(intent);
+    }
+
+    public void SportsEventsOnClick(View view) {
+        switch (view.getId()){
+            case R.id.txt_location_running:
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("https://www.google.com/maps/place/Wadi+Degla+Protectorate/@29.9598739,31.330732,15z/data=!4m5!3m4!1s0x0:0xdaa75ea3a1e28aec!8m2!3d29.9598739!4d31.330732"));
+                startActivity(intent);
+                break;
+        }
     }
 }

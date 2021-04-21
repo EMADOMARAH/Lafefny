@@ -25,6 +25,12 @@ public class Booking extends AppCompatActivity {
     private SharedPreferences funtopiaPref;
     private SharedPreferences egyptianPref;
     private SharedPreferences smokeryPref;
+    private SharedPreferences runningPref;
+    private SharedPreferences cairoBookPref;
+    private SharedPreferences soundLightPref;
+
+
+
     Map<String, Object> ticket = new HashMap<>();
 
     TextView title,ticketId,regularPrice,vipPrice;
@@ -46,6 +52,9 @@ public class Booking extends AppCompatActivity {
         funtopiaPref  = getSharedPreferences("funtopia_pref" , Context.MODE_PRIVATE);
         egyptianPref  =  getSharedPreferences("egyptian_museum_pref" , Context.MODE_PRIVATE);
         smokeryPref =  getSharedPreferences("the_smokery_pref" , Context.MODE_PRIVATE);
+        runningPref = getSharedPreferences("Running_Event_pref" , Context.MODE_PRIVATE);
+        cairoBookPref = getSharedPreferences("Cairo_Book_Fair_pref" , Context.MODE_PRIVATE);
+        soundLightPref = getSharedPreferences("Sound_Light_pref" , Context.MODE_PRIVATE);
 
 
 
@@ -74,6 +83,18 @@ public class Booking extends AppCompatActivity {
             case "thesmokery":
                 regularTicketPrice = smokeryPref.getInt("regularPrice" , 50);
                 vipTicketPrice     = smokeryPref.getInt("vipPrice" , 100);
+                break;
+            case "runningevent":
+                regularTicketPrice = runningPref.getInt("regularPrice" , 50);
+                vipTicketPrice     = runningPref.getInt("vipPrice" , 50);
+                break;
+            case "cairobookfair":
+                regularTicketPrice = cairoBookPref.getInt("regularPrice" , 5);
+                vipTicketPrice     = cairoBookPref.getInt("vipPrice" , 5);
+                break;
+            case "soundandlight":
+                regularTicketPrice = cairoBookPref.getInt("regularPrice" , 300);
+                vipTicketPrice     = cairoBookPref.getInt("vipPrice" , 350);
                 break;
 
         }
@@ -134,6 +155,24 @@ public class Booking extends AppCompatActivity {
                             smokeryPref.edit().putInt("regularCount" , regularCount).apply();
                             smokeryPref.edit().putInt("vipCount" , vipCount).apply();
                             smokeryPref.edit().commit();
+                            break;
+                        case "runningevent":
+                            runningPref.edit().putString("ticketId" , randTicketId).apply();
+                            runningPref.edit().putInt("regularCount" , regularCount).apply();
+                            runningPref.edit().putInt("vipCount" , vipCount).apply();
+                            runningPref.edit().commit();
+                            break;
+                        case "cairobookfair":
+                            cairoBookPref.edit().putString("ticketId" , randTicketId).apply();
+                            cairoBookPref.edit().putInt("regularCount" , regularCount).apply();
+                            cairoBookPref.edit().putInt("vipCount" , vipCount).apply();
+                            cairoBookPref.edit().commit();
+                            break;
+                        case "soundandlight":
+                            soundLightPref.edit().putString("ticketId" , randTicketId).apply();
+                            soundLightPref.edit().putInt("regularCount" , regularCount).apply();
+                            soundLightPref.edit().putInt("vipCount" , vipCount).apply();
+                            soundLightPref.edit().commit();
                             break;
 
                         default:

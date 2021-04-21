@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sports_events_background"
-    tools:context="com.bis.lafefny.AmusementPark"
+    tools:context="com.bis.lafefny.Sport_Events"
     tools:ignore="RelativeOverlap">
 
     <RelativeLayout
@@ -89,6 +89,7 @@
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
+                android:onClick="SportsEventsOnClick"
                 android:textSize="11sp"
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 

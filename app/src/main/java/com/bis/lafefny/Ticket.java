@@ -42,6 +42,11 @@ public class Ticket extends AppCompatActivity {
     private SharedPreferences voxCinemaPref;
     private SharedPreferences funtopiaPref;
     private SharedPreferences egyptianPref;
+    private SharedPreferences smokeryPref;
+    private SharedPreferences runningPref;
+    private SharedPreferences cairoBookPref;
+    private SharedPreferences soundLightPref;
+
 
 
     private TextView ticketId_txt , placeName_txt , startDate_txt , startTime_txt , location_txt , regularCount_txt;
@@ -53,10 +58,18 @@ public class Ticket extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ticket);
+        //---------------------------------------------------------------------------------------------
         this.dreamParkPref = this.getSharedPreferences("Dream_park_pref" , Context.MODE_PRIVATE);
         this.voxCinemaPref = this.getSharedPreferences("vox_cinema_pref" , Context.MODE_PRIVATE);
         this.funtopiaPref  = this.getSharedPreferences("funtopia_pref" , Context.MODE_PRIVATE);
         this.egyptianPref  =  getSharedPreferences("egyptian_museum_pref" , Context.MODE_PRIVATE);
+        this.smokeryPref =  getSharedPreferences("the_smokery_pref" , Context.MODE_PRIVATE);
+        //--------------------------------EVENTS---------------------------------------------------
+        runningPref = getSharedPreferences("Running_Event_pref" , Context.MODE_PRIVATE);
+        cairoBookPref = getSharedPreferences("Cairo_Book_Fair_pref" , Context.MODE_PRIVATE);
+        soundLightPref = getSharedPreferences("Sound_Light_pref" , Context.MODE_PRIVATE);
+        //------------------------------------------------------------------------------------------
+
 
         GetTicketIdFromOntent();
         InitTicketViews();
@@ -172,6 +185,10 @@ public class Ticket extends AppCompatActivity {
         deletePref(voxCinemaPref);
         deletePref(funtopiaPref);
         deletePref(egyptianPref);
+        deletePref(smokeryPref);
+        deletePref(runningPref);
+        deletePref(cairoBookPref);
+        deletePref(soundLightPref);
         Intent intent = new Intent(getApplicationContext(), Homepage.class);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
