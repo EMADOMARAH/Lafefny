@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/family_plan_background"
-    tools:context="com.bis.lafefny.AmusementPark"
+    tools:context="com.bis.lafefny.FamilyPlan"
     tools:ignore="RelativeOverlap">
 
     <RelativeLayout
@@ -321,7 +321,7 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/txt_location_fun_topia_fam"
+                android:id="@+id/txt_location_museum_fam"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -329,6 +329,7 @@
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
+                android:onClick="FamilyPlanOnClick"
                 android:textSize="11sp"
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 

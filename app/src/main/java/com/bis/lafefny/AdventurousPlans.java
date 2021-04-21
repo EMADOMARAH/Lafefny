@@ -3,6 +3,7 @@ package com.bis.lafefny;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -66,5 +67,16 @@ public class AdventurousPlans extends AppCompatActivity {
     public void openpreferences(){
         Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
+    }
+
+    public void AdventureOnClick(View view) {
+        switch (view.getId()){
+            case R.id.txt_location_siwa_oasis:
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("https://www.google.com/maps/place/Siwa+Oasis,+Siwa,+Matrouh+Governorate/@29.2057953,25.4567976,12z/data=!3m1!4b1!4m5!3m4!1s0x147aaface8f3a523:0x6f335df8f19a074d!8m2!3d29.2031708!4d25.5195451"));
+                startActivity(intent);
+
+                break;
+        }
     }
 }

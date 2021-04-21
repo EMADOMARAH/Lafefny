@@ -46,6 +46,7 @@ public class Ticket extends AppCompatActivity {
     private SharedPreferences runningPref;
     private SharedPreferences cairoBookPref;
     private SharedPreferences soundLightPref;
+    private SharedPreferences siwaPref;
 
 
 
@@ -69,6 +70,7 @@ public class Ticket extends AppCompatActivity {
         cairoBookPref = getSharedPreferences("Cairo_Book_Fair_pref" , Context.MODE_PRIVATE);
         soundLightPref = getSharedPreferences("Sound_Light_pref" , Context.MODE_PRIVATE);
         //------------------------------------------------------------------------------------------
+        siwaPref = getSharedPreferences("siwa_pref" , Context.MODE_PRIVATE);
 
 
         GetTicketIdFromOntent();
@@ -189,6 +191,7 @@ public class Ticket extends AppCompatActivity {
         deletePref(runningPref);
         deletePref(cairoBookPref);
         deletePref(soundLightPref);
+        deletePref(siwaPref);
         Intent intent = new Intent(getApplicationContext(), Homepage.class);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

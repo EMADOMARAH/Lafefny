@@ -54,6 +54,7 @@ public class Payment extends AppCompatActivity {
     private SharedPreferences runningPref;
     private SharedPreferences cairoBookPref;
     private SharedPreferences soundLightPref;
+    private SharedPreferences siwaPref;
 
 
 
@@ -75,6 +76,7 @@ public class Payment extends AppCompatActivity {
         cairoBookPref = getSharedPreferences("Cairo_Book_Fair_pref" , Context.MODE_PRIVATE);
         soundLightPref = getSharedPreferences("Sound_Light_pref" , Context.MODE_PRIVATE);
         //-----------------------------------------------------------------------------------------
+        siwaPref = getSharedPreferences("siwa_pref" , Context.MODE_PRIVATE);
 
         this.initPaymentViews();
         this.GetSourceScreen();
@@ -168,6 +170,17 @@ public class Payment extends AppCompatActivity {
                 regularCount = this.soundLightPref.getInt("regularCount" , 0);
                 vipPrice = this.soundLightPref.getInt("vipPrice" , 350);
                 regularPrice = this.soundLightPref.getInt("regularPrice",300);
+                break;
+            case "siwa":
+                ticketId = siwaPref.getString("ticketId" , "123");
+                source_txt.setText("Siwa Oasis");
+                this.startDate_txt.setText(siwaPref.getString("startDate",""));
+                this.startTime_txt.setText(siwaPref.getString("runningTime",""));
+                //---------------------Get Total Price Elements-----------------------------------------
+                vipCount = this.siwaPref.getInt("vipCount" , 0);
+                regularCount = this.siwaPref.getInt("regularCount" , 0);
+                vipPrice = this.siwaPref.getInt("vipPrice" , 3900);
+                regularPrice = this.siwaPref.getInt("regularPrice",3300);
                 break;
 
         }
@@ -321,6 +334,11 @@ public class Payment extends AppCompatActivity {
                 soundLightPref.edit().putString("discountLocation" , promoLocation).apply();
                 soundLightPref.edit().commit();
                 break;
+            case "siwa":
+                siwaPref.edit().putString("discount" , promoDiscountAmount).apply();
+                siwaPref.edit().putString("discountLocation" , promoLocation).apply();
+                siwaPref.edit().commit();
+                break;
 
         }
     }
@@ -436,6 +454,19 @@ public class Payment extends AppCompatActivity {
                 this.ticketMap.put("startTime" , this.soundLightPref.getString("runningTime" , ""));
                 this.ticketMap.put("totalPrice" , Integer.toString(this.totalPrice));
                 this.ticketMap.put("location" , soundLightPref.getString("location" , ""));
+                this.ticketMap.put("discount" , this.promoDiscountAmount);
+                break;
+            case "siwa":
+                ticketMap.put("ticketId" , this.siwaPref.getString("ticketId", ""));
+                ticketMap.put("place" , siwaPref.getString("source" , "Siwa Oasis"));
+                this.ticketMap.put("regularTicketPrice" , Integer.toString(this.siwaPref.getInt("regularPrice" , 3300)));
+                this.ticketMap.put("regularTicketCount" , Integer.toString(this.siwaPref.getInt("regularCount" , 1)));
+                this.ticketMap.put("vipTicketPrice" , Integer.toString(this.siwaPref.getInt("vipPrice" , 3900)));
+                this.ticketMap.put("vipTicketCount" , Integer.toString(this.siwaPref.getInt("vipCount" , 1)));
+                this.ticketMap.put("startDate" , siwaPref.getString("startDate" , ""));
+                this.ticketMap.put("startTime" , this.siwaPref.getString("runningTime" , ""));
+                this.ticketMap.put("totalPrice" , Integer.toString(this.totalPrice));
+                this.ticketMap.put("location" , siwaPref.getString("location" , ""));
                 this.ticketMap.put("discount" , this.promoDiscountAmount);
                 break;
 

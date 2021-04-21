@@ -56,7 +56,7 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/txt_location_fun_topia"
+                android:id="@+id/txt_location_tourism_area"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"

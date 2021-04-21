@@ -86,7 +86,7 @@ public class Tourism_Area extends AppCompatActivity {
 
     public void TourismAreaOnClick(View view) {
         switch (view.getId()){
-            case R.id.txt_location_fun_topia:
+            case R.id.txt_location_tourism_area:
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                         Uri.parse("https://www.google.com/maps/place/The+Egyptian+Museum/@30.0475781,31.2314252,17z/data=!3m1!4b1!4m5!3m4!1s0x145841885535bec3:0x520da52b3a7a660f!8m2!3d30.0475781!4d31.2336139"));
                 startActivity(intent);

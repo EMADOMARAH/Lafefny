@@ -28,6 +28,7 @@ public class Booking extends AppCompatActivity {
     private SharedPreferences runningPref;
     private SharedPreferences cairoBookPref;
     private SharedPreferences soundLightPref;
+    private SharedPreferences siwaPref;
 
 
 
@@ -55,6 +56,7 @@ public class Booking extends AppCompatActivity {
         runningPref = getSharedPreferences("Running_Event_pref" , Context.MODE_PRIVATE);
         cairoBookPref = getSharedPreferences("Cairo_Book_Fair_pref" , Context.MODE_PRIVATE);
         soundLightPref = getSharedPreferences("Sound_Light_pref" , Context.MODE_PRIVATE);
+        siwaPref = getSharedPreferences("siwa_pref" , Context.MODE_PRIVATE);
 
 
 
@@ -93,8 +95,12 @@ public class Booking extends AppCompatActivity {
                 vipTicketPrice     = cairoBookPref.getInt("vipPrice" , 5);
                 break;
             case "soundandlight":
-                regularTicketPrice = cairoBookPref.getInt("regularPrice" , 300);
-                vipTicketPrice     = cairoBookPref.getInt("vipPrice" , 350);
+                regularTicketPrice = soundLightPref.getInt("regularPrice" , 300);
+                vipTicketPrice     = soundLightPref.getInt("vipPrice" , 350);
+                break;
+            case "siwa":
+                regularTicketPrice = siwaPref.getInt("regularPrice" , 3300);
+                vipTicketPrice     = siwaPref.getInt("vipPrice" , 3900);
                 break;
 
         }
@@ -174,6 +180,13 @@ public class Booking extends AppCompatActivity {
                             soundLightPref.edit().putInt("vipCount" , vipCount).apply();
                             soundLightPref.edit().commit();
                             break;
+                        case "siwa":
+                            siwaPref.edit().putString("ticketId" , randTicketId).apply();
+                            siwaPref.edit().putInt("regularCount" , regularCount).apply();
+                            siwaPref.edit().putInt("vipCount" , vipCount).apply();
+                            siwaPref.edit().commit();
+                            break;
+
 
                         default:
                             Toast.makeText(this, "Can't Know My Source Screen", Toast.LENGTH_SHORT).show();
