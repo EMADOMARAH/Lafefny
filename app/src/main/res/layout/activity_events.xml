@@ -47,8 +47,8 @@
 
         <Button
             android:id="@+id/btn_sports_events_event"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_below="@id/events"
@@ -59,7 +59,7 @@
             android:fontFamily="serif"
             android:gravity="center"
             android:lineSpacingExtra="10sp"
-            android:text="Sports Events"
+            android:text="Sporting Events"
             android:textAlignment="center"
             android:textColor="@color/Lafefny2"
             android:textSize="25sp"
@@ -79,10 +79,10 @@
             android:fontFamily="serif"
             android:gravity="center"
             android:lineSpacingExtra="10sp"
-            android:text="Sound n Light Show"
+            android:text="Sound and Light"
             android:textAlignment="center"
             android:textColor="@color/Lafefny2"
-            android:textSize="23sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <Button
@@ -99,10 +99,10 @@
             android:fontFamily="serif"
             android:gravity="center"
             android:lineSpacingExtra="10sp"
-            android:text="Cairo International Book Fair"
+            android:text="Cairo Book Fair"
             android:textAlignment="center"
             android:textColor="@color/Lafefny2"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <ImageView
