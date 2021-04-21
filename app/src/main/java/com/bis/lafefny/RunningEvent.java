@@ -108,7 +108,7 @@ public class RunningEvent extends AppCompatActivity {
     }
 
     private void SaveRunningDataToPref() {
-        runningPref.edit().putInt("vipPrice" , 50).apply();
+        runningPref.edit().putInt("vipPrice" , 0).apply();
         runningPref.edit().putInt("regularPrice",50).apply();
         runningPref.edit().putString("source","Running Event").apply();
         runningPref.edit().putString("runningTime" , openHourse).apply();

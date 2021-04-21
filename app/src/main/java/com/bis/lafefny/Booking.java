@@ -88,11 +88,11 @@ public class Booking extends AppCompatActivity {
                 break;
             case "runningevent":
                 regularTicketPrice = runningPref.getInt("regularPrice" , 50);
-                vipTicketPrice     = runningPref.getInt("vipPrice" , 50);
+                vipTicketPrice     = runningPref.getInt("vipPrice" , 0);
                 break;
             case "cairobookfair":
                 regularTicketPrice = cairoBookPref.getInt("regularPrice" , 5);
-                vipTicketPrice     = cairoBookPref.getInt("vipPrice" , 5);
+                vipTicketPrice     = cairoBookPref.getInt("vipPrice" , 0);
                 break;
             case "soundandlight":
                 regularTicketPrice = soundLightPref.getInt("regularPrice" , 300);
@@ -108,7 +108,12 @@ public class Booking extends AppCompatActivity {
         randTicketId = getRandomNumberString();
         ticketId.setText(randTicketId);
         regularPrice.setText(Integer.toString(regularTicketPrice));
-        vipPrice.setText(Integer.toString(vipTicketPrice));
+        if (sourceScreen.matches("cairobookfair") |sourceScreen.matches("runningevent") ){
+            vipPrice.setText("-");
+        }else {
+            vipPrice.setText(Integer.toString(vipTicketPrice));
+        }
+
 
     }
 

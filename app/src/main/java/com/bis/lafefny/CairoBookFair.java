@@ -101,7 +101,7 @@ public class CairoBookFair extends AppCompatActivity {
     }
 
     private void SaveCairoBookFairDataToPref() {
-        cairoBookPref.edit().putInt("vipPrice" , 5).apply();
+        cairoBookPref.edit().putInt("vipPrice" , 0).apply();
         cairoBookPref.edit().putInt("regularPrice",5).apply();
         cairoBookPref.edit().putString("source","International Book Fair").apply();
         cairoBookPref.edit().putString("runningTime" , time).apply();
