@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -27,6 +28,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
@@ -54,6 +56,7 @@ public class Ticket extends AppCompatActivity {
     private TextView vipCount_txt , totalPrice_txt , discount_txt;
 
     private Button btn_home;
+    View view ;
    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,6 +137,7 @@ public class Ticket extends AppCompatActivity {
         discount_txt = findViewById(R.id.integer_ticket_promotion);
 
        //myScreen = findViewById(R.id.AllScreen);
+        view = findViewById(R.id.AllScreen);
 
     }
     public void GetTicketIdFromOntent(){
@@ -143,29 +147,32 @@ public class Ticket extends AppCompatActivity {
         }
     }
 
-//    public void screenShot() throws IOException {
-//        Bitmap bitmap;
-//        View v1 = findViewById(R.id.AllScreen);// get ur root view id
-//        v1.setDrawingCacheEnabled(true);
-//        bitmap = Bitmap.createBitmap(v1.getDrawingCache());
-//        v1.setDrawingCacheEnabled(false);
-//        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-//        bitmap.compress(Bitmap.CompressFormat.JPEG, 40, bytes);
-//        File f = new File(Environment.getExternalStorageDirectory()
-//                + File.separator + "test.jpg");
-//        f.createNewFile();
-//        FileOutputStream fo = new FileOutputStream(f);
-//        fo.write(bytes.toByteArray());
-//        fo.close();
-//    }
+    private void getScreen(){
+        View v = view.getRootView();
+        v.setDrawingCacheEnabled(true);
+        Bitmap b = v.getDrawingCache();
+        String extr = Environment.getExternalStorageDirectory().toString();
+        File myPath = new File(extr, getString(R.string.free_tiket)+".jpg");
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(myPath);
+            b.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+            fos.flush();
+            fos.close();
+            MediaStore.Images.Media.insertImage( getContentResolver(), b, "Screen", "screen");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 
     public void TicketOnClick(View view) throws IOException {
         switch (view.getId()){
-//            case R.id.btn_done:
-//                Intent doneIntent = new Intent(this, Homepage.class);  //open homepage
-//                startActivity(doneIntent);
-//                break;
+            case R.id.btn_done:
+                getScreen();
+                break;
             case R.id.btn_transportation:
                 Intent transIntent = new Intent(this, Transportation.class);  //open transportation
                 transIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

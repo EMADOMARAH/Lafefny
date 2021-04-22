@@ -3,6 +3,7 @@ package com.bis.lafefny;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -57,15 +58,30 @@ public class Transportation extends AppCompatActivity {
     public void TransportationOnClick(View view) {
         switch (view.getId()){
             case R.id.btn_car_ride:
-                Intent uberCarIntent = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("https://www.uber.com/eg/en/"));
-                startActivity(uberCarIntent);
-                break;
             case R.id.btn_bus_ride:
-                Intent uberBusIntent = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("https://www.uber.com/en-EG/blog/introducing-uber-bus-a-new-way-to-commute/"));
-                startActivity(uberBusIntent);
+//                Intent uberCarIntent = new Intent(android.content.Intent.ACTION_VIEW,
+//                        Uri.parse("https://www.uber.com/eg/en/"));
+//                startActivity(uberCarIntent);
+                PackageManager pm = getPackageManager();
+                try {
+                    pm.getPackageInfo("com.ubercab", PackageManager.GET_ACTIVITIES);
+                    String uri = "uber://?action=setPickup&pickup=my_location";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(uri));
+                    startActivity(intent);
+                } catch (PackageManager.NameNotFoundException e) {
+                    try {
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.uber.com/eg/en/")));
+                    } catch (android.content.ActivityNotFoundException anfe) {
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=com.ubercab")));
+                    }
+                }
                 break;
+
+//                Intent uberBusIntent = new Intent(android.content.Intent.ACTION_VIEW,
+//                        Uri.parse("https://www.uber.com/en-EG/blog/introducing-uber-bus-a-new-way-to-commute/"));
+//                startActivity(uberBusIntent);
+//                break;
             case R.id.btn_steampship_ride:
                 Intent sreampship = new Intent(android.content.Intent.ACTION_VIEW,
                         Uri.parse("https://www.lookategypttours.com/"));

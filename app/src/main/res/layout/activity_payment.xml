@@ -32,7 +32,8 @@
             android:id="@+id/txt_name_pay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="145dp"
+            android:layout_gravity="center_horizontal"
+
             android:layout_marginTop="95dp"
             android:fontFamily="serif"
             android:text="@string/sound_and_light_show"
@@ -43,7 +44,7 @@
             android:id="@+id/txt_total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="170dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="125dp"
             android:fontFamily="serif"
             android:text="@string/_650_egp"
@@ -57,7 +58,8 @@
             android:layout_marginTop="85dp"
             android:alpha="0.2"
             android:background="@drawable/line"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            />
 
         <ImageView
             android:layout_width="match_parent"
@@ -109,8 +111,8 @@
             android:id="@+id/txt_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="110dp"
             android:layout_marginTop="175dp"
+            android:layout_marginStart="40dp"
             android:fontFamily="serif"
             android:text="@string/february_2_1999"
             android:textColor="@color/Grey"
@@ -119,7 +121,7 @@
             android:id="@+id/txt_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="220dp"
+            android:layout_marginStart="260dp"
             android:layout_marginTop="175dp"
             android:fontFamily="serif"
             android:text="@string/_09_03_pm"

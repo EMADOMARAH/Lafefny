@@ -349,6 +349,7 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="nav_drawer_open">Open navigation drawer</string>
     <string name="nav_drawer_close">Close navigation drawer</string>
+    <string name="free_tiket">ticket</string>
 
     <string-array name="nationality">
         <item>Egyptian</item>

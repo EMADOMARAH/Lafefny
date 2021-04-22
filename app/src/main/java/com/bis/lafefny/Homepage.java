@@ -10,6 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.view.MenuItem;
@@ -193,10 +194,11 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 Intent PIntent = new Intent(this, Preferences.class);  //open preferences
                 startActivity(PIntent);
                 break;
-//            case R.id.nav_hotel:
-//                Intent hotelIntent = new Intent(this, Hotel.class);  //open Hotel
-//                startActivity(hotelIntent);
-//                break;
+            case R.id.nav_hotel:
+                Intent i = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("https://www.trivago.com/"));
+                startActivity(i);
+                break;
 //            case R.id.nav_sort:
 //                Intent sortIntent = new Intent(this, Sort.class);  //open sort
 //                startActivity(sortIntent);
@@ -205,10 +207,11 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 Intent transpIntent = new Intent(this, Transportation.class);  //open Transportation
                 startActivity(transpIntent);
                 break;
-//            case R.id.nav_TG:
-//                Intent TGIntent = new Intent(this, TourGuide.class);  //open Tour guide
-//                startActivity(TGIntent);
-//                break;
+            case R.id.nav_TG:
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("https://www.lookategypttours.com/"));
+                startActivity(intent);
+                break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
