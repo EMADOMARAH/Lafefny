@@ -139,9 +139,9 @@ public class Account extends AppCompatActivity {
 
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(getApplicationContext() , MainActivity2.class);
-        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
-        finishAffinity();
+        //finishAffinity();
 
 
 

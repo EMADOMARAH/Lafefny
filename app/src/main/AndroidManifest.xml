@@ -47,14 +47,7 @@
         <activity android:name=".Restaurants" />
         <activity android:name=".Tourism_Area" />
         <activity android:name=".GamingArea" />
-        <activity android:name=".Ticket" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+        <activity android:name=".Ticket" />
         <activity android:name=".Promocode" />
         <activity android:name=".Payment" />
         <activity android:name=".Booking" />
@@ -70,7 +63,11 @@
         <activity android:name=".Sign_In" >
         </activity>
         <activity android:name=".MainActivity2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".MainActivity" />

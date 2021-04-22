@@ -158,13 +158,10 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
                 Toast.makeText(this, "Please accept terms and conditions", Toast.LENGTH_SHORT).show();
             }
 
-
-
-
-
     }
 
     private void storeUserDataToFireStore(){
+        uploadProfileImage();
         makeUserDataIntoMap();
         db.collection("users")
                 .add(user)
@@ -184,7 +181,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
                     }
                 });
 
-        uploadProfileImage();
+
 
     }
 
@@ -203,6 +200,8 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             //progressDialog.dismiss();
                             Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
+                            authPreferences.edit().putString("imgName" , profileimageneme).apply();
+                            authPreferences.edit().commit();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
