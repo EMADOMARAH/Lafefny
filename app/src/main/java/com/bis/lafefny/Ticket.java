@@ -2,15 +2,20 @@ package com.bis.lafefny;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.text.format.DateFormat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -32,6 +37,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
+import java.util.zip.DataFormatException;
 
 public class Ticket extends AppCompatActivity {
 
@@ -57,6 +63,7 @@ public class Ticket extends AppCompatActivity {
 
     private Button btn_home;
     View view ;
+    boolean doneClicked = false;
    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +83,7 @@ public class Ticket extends AppCompatActivity {
         siwaPref = getSharedPreferences("siwa_pref" , Context.MODE_PRIVATE);
 
 
+        verifyStoragePermission(this);
         GetTicketIdFromOntent();
         InitTicketViews();
 
@@ -116,13 +124,6 @@ public class Ticket extends AppCompatActivity {
                     }
                 });
 
-        btn_home = (Button) findViewById(R.id.btn_done); //button done
-        btn_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHomepage();
-            }
-        });
     }
 
     public void InitTicketViews(){
@@ -147,49 +148,87 @@ public class Ticket extends AppCompatActivity {
         }
     }
 
-    private void getScreen(){
-        View v = view.getRootView();
-        v.setDrawingCacheEnabled(true);
-        Bitmap b = v.getDrawingCache();
-        String extr = Environment.getExternalStorageDirectory().toString();
-        File myPath = new File(extr, getString(R.string.free_tiket)+".jpg");
-        FileOutputStream fos = null;
-        try {
-            fos = new FileOutputStream(myPath);
-            b.compress(Bitmap.CompressFormat.JPEG, 100, fos);
-            fos.flush();
-            fos.close();
-            MediaStore.Images.Media.insertImage( getContentResolver(), b, "Screen", "screen");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
+    private  File getScreen(View view , String fileName){
+       Date date = new Date();
+       CharSequence format = DateFormat.format("yyyy-mm-dd_hh:mm:ss" , date);
+
+       try {
+           String dirPath = Environment.getExternalStorageDirectory().toString() + "/LafefnyTickets";
+           File fileDir = new File(dirPath);
+           if (!fileDir.exists()){
+               fileDir = new File(dirPath);
+               fileDir.mkdir();
+           }
+           String path = dirPath+"/"+fileName+"-"+format+".jpeg";
+
+           view.setDrawingCacheEnabled(true);
+           Bitmap bitmap = Bitmap.createBitmap(view.getDrawingCache());
+           view.setDrawingCacheEnabled(false);
+
+           File imageFile = new File(path);
+
+           FileOutputStream fileOutputStream = new FileOutputStream(imageFile);
+           int quality =100;
+           bitmap.compress(Bitmap.CompressFormat.JPEG , quality,fileOutputStream);
+           fileOutputStream.flush();
+           fileOutputStream.close();
+           return imageFile;
+
+
+       }catch (FileNotFoundException e){
+           e.printStackTrace();
+           Toast.makeText(this,"1"+ e.toString(), Toast.LENGTH_SHORT).show();
+       } catch (IOException e) {
+           e.printStackTrace();
+           Toast.makeText(this,"2"+ e.toString(), Toast.LENGTH_SHORT).show();
+       }
+       return null;
+
+    }
+    private  final int REQUEST_EXTERNAL_STORAGE=1;
+    private  String[] PERMISSION_STORAGE = {
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.READ_EXTERNAL_STORAGE
+    };
+    private void verifyStoragePermission(Activity activity){
+        int permission = ActivityCompat.checkSelfPermission(activity,Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (permission != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(activity,
+                    PERMISSION_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE);
         }
     }
 
 
     public void TicketOnClick(View view) throws IOException {
         switch (view.getId()){
-            case R.id.btn_done:
-                getScreen();
-                break;
+//            case R.id.btn_done:
+//                getScreen();
+//                break;
             case R.id.btn_transportation:
                 Intent transIntent = new Intent(this, Transportation.class);  //open transportation
                 transIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                if (doneClicked ==false){
+                    getScreen(getWindow().getDecorView().getRootView(),"result");
+                    Toast.makeText(this, "Screen shot saved", Toast.LENGTH_SHORT).show();
+                }
                 startActivity(transIntent);
+
                 break;
-//            case R.id.btn_done:
-//                try {
-//                    screenShot();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//                break;
+            case R.id.btn_done:
+                getScreen(getWindow().getDecorView().getRootView(),"result");
+                doneClicked = true;
+                onBackPressed();
+                break;
         }
     }
 
     @Override
     public void onBackPressed() {
+        if (doneClicked ==false){
+            getScreen(getWindow().getDecorView().getRootView(),"result");
+            Toast.makeText(this, "Screen shot saved", Toast.LENGTH_SHORT).show();
+        }
         deletePref(dreamParkPref);
         deletePref(voxCinemaPref);
         deletePref(funtopiaPref);
