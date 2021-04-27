@@ -111,7 +111,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:contentDescription="@string/todo"
-                app:srcCompat="@drawable/running" />
+                app:srcCompat="@drawable/deglamarathon" />
 
             <ImageView
                 android:id="@+id/img_loc_running"
@@ -175,7 +175,7 @@
             android:id="@+id/swimming_background"
             android:layout_width="380dp"
             android:layout_height="150dp"
-            android:layout_below="@id/cycling_background"
+            android:layout_below="@id/triathlon2_background"
             android:layout_marginStart="16dp"
             android:layout_marginTop="67dp"
             android:background="@drawable/btnborder6">
@@ -209,7 +209,7 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/swiming"
+                android:background="@drawable/finswimming"
                 android:contentDescription="@string/todo" />
 
             <ImageView
@@ -319,7 +319,7 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/triathlon"
+                android:background="@drawable/yesyoga"
                 android:contentDescription="@string/todo" />
 
             <ImageView
@@ -360,20 +360,20 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/txt__triathlon"
+                android:id="@+id/txt__yesYoga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="50dp"
-                android:text="Sahl Hasheesh Endurance Festival"
+                android:text="Yes Yoga Day"
                 android:fontFamily="serif"
                 android:textColor="#33446A"
-                android:textSize="15sp" />
+                android:textSize="20sp" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/cycling_background"
+            android:id="@+id/triathlon2_background"
             android:layout_width="380dp"
             android:layout_height="150dp"
             android:layout_below="@id/running_background"
@@ -382,7 +382,7 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/btn_cycling"
+                android:id="@+id/btn_triathlon2"
                 android:layout_width="145dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="120dp"
@@ -393,7 +393,7 @@
                 android:textSize="11sp" />
 
             <Button
-                android:id="@+id/txt_location_cycling"
+                android:id="@+id/txt_location_triathlon2"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -405,16 +405,16 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <ImageView
-                android:id="@+id/img_cycling"
+                android:id="@+id/img_triathlon2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/cycling"
+                android:background="@drawable/ironman"
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_loc_cycling"
+                android:id="@+id/img_loc_triathlon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -423,7 +423,7 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_details_cycling"
+                android:id="@+id/img_details_triathlon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -432,17 +432,17 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_cycling"
+                android:id="@+id/txt_triathlon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
-                android:text="Cycling"
+                android:text="Triathlon"
                 android:textColor="#33446A"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_rating_cycling"
+                android:id="@+id/txt_rating_triathlon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
@@ -452,10 +452,8 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
 
-
-
             <TextView
-                android:id="@+id/txt_loc_cycling"
+                android:id="@+id/txt_loc_triathlon2"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="275dp"
@@ -464,7 +462,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/txt_details_cycling"
+                android:id="@+id/txt_details_triathlon2"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="129dp"
