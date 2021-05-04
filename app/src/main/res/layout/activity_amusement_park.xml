@@ -14,7 +14,7 @@
         <TextView
             android:id="@+id/amusementpark_header_amusPark"
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="65dp"
             android:background="@drawable/btnborder2" />
 
         <TextView
@@ -23,13 +23,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_marginEnd="87dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginTop="11dp"
             android:fontFamily="serif"
             android:text="@string/amusement_parks"
             android:textAlignment="center"
             android:textColor="@color/Purple"
-            android:textSize="27sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -38,7 +38,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/amusementpark_header_amusPark"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/btnborder2">
 
             <ImageView
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="38dp"
-                android:text="@string/_90_100"
+                android:text="92/100"
                 android:textColor="@color/Grey"
                 android:textSize="15sp"
                 app:drawableLeftCompat="@drawable/happyface" />
@@ -153,7 +153,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/fabyland_background_amusPark"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder2">
 
             <ImageView
@@ -212,7 +212,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="38dp"
-                android:text="@string/_90_100"
+                android:text="83/100"
                 android:textColor="@color/Grey"
                 android:textSize="15sp"
                 app:drawableLeftCompat="@drawable/happyface" />
@@ -267,7 +267,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/aquapark_Background_amusPark"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder2">
 
             <ImageView
@@ -326,7 +326,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="38dp"
-                android:text="@string/_90_100"
+                android:text="77/100"
                 android:textColor="@color/Grey"
                 android:textSize="15sp"
                 app:drawableLeftCompat="@drawable/happyface" />
@@ -381,7 +381,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/dreampark_Background_amusPark"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder2">
 
             <ImageView
@@ -489,15 +489,688 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/wonder_Background_amusPark"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/geroland_Background_amusPark"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_wonder"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/wonderland"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_wonder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wonder Land"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/txt_location_wonder"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_wonder"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_loc_wonder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_rating_wonder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="98/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_wonder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="Price Range: $"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey"
+                />
+
+            <Button
+                android:id="@+id/btn_wonder"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_details_wonder"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_details_wonder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/ezone_Background_amusPark"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/wonder_Background_amusPark"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_ezone"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ezone"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_ezone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Zone"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/txt_location_ezone"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_ezone"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_loc_ezone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_rating_ezone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="85/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_ezone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="Price Range: $$"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey" />
+
+            <Button
+                android:id="@+id/btn_ezone"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_details_ezone"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_details_ezone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/kidzania_Background_amusPark"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/ezone_Background_amusPark"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_kidzania"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/kidzania"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_kidzania"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kidZania"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/txt_location_kidzania"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_kidzania"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_loc_kidzania"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_rating_kidzania"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="80/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_kidzania"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="Price Range: $$"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey" />
+
+            <Button
+                android:id="@+id/btn_kidzania"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_details_kidzania"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_details_kidzania"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/BD_Background_amusPark"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/kidzania_Background_amusPark"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_BD"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bd"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_BD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BD Park"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/txt_location_BD"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_BD"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_loc_BD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_rating_BD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="88/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_BD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="Price Range: $$"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey" />
+
+            <Button
+                android:id="@+id/btn_BD"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_details_BD"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_details_BD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/horror_Background_amusPark"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/BD_Background_amusPark"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_horror"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/horrorpark"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_horror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horror Park"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/txt_location_horror"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_horror"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_loc_horror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_rating_horror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="93/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_horror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="Price Range: $$"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey" />
+
+            <Button
+                android:id="@+id/btn_horror"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_details_horror"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_details_horror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/zed_Background_amusPark"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/horror_Background_amusPark"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder2">
+
+            <ImageView
+                android:id="@+id/img_zed"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/zed"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_zed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zed Park"
+                android:layout_marginStart="125dp"
+                android:textSize="25sp"
+                android:textColor="@color/Purple"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/txt_location_zed"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_zed"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_loc_zed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location3_on_24"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_rating_zed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="97/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_zed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="Price Range: $$$"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textColor="@color/Grey" />
+
+            <Button
+                android:id="@+id/btn_zed"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txt_details_zed"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_details_zed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext"
+                android:contentDescription="@string/todo" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/footer_amusPark"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_below="@id/amusementpark_header_amusPark"
+            android:layout_below="@id/zed_Background_amusPark"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="980dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/btnborder2">
 
             <Button

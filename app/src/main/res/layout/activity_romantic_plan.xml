@@ -115,7 +115,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:contentDescription="@string/todo"
-                app:srcCompat="@drawable/smokery" />
+                app:srcCompat="@drawable/the_smokery" />
 
             <ImageView
                 android:id="@+id/img_loc_smokery_rom"
