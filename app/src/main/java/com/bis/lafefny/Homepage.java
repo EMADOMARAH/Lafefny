@@ -186,14 +186,14 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 //                Intent filterIntent = new Intent(this, Filter.class);  //open filter
 //                startActivity(filterIntent);
 //                break;
-            case R.id.nav_Questionnaire:
-                Intent QIntent = new Intent(this, Questionnaire1.class);  //open questionnaire
-                startActivity(QIntent);
-                break;
-            case R.id.nav_Preferences:
-                Intent PIntent = new Intent(this, Preferences.class);  //open preferences
-                startActivity(PIntent);
-                break;
+//            case R.id.nav_Questionnaire:
+//                Intent QIntent = new Intent(this, Questionnaire1.class);  //open questionnaire
+//                startActivity(QIntent);
+//                break;
+//            case R.id.nav_Preferences:
+//                Intent PIntent = new Intent(this, Preferences.class);  //open preferences
+//                startActivity(PIntent);
+//                break;
             case R.id.nav_hotel:
                 Intent i = new Intent(android.content.Intent.ACTION_VIEW,
                         Uri.parse("https://www.trivago.com/"));

@@ -74,9 +74,9 @@ public class Plans extends AppCompatActivity {
     public void onClickAll(View view) {
         switch (view.getId())
         {
-            case R.id.btn_back_plan_categ :
-                onBackPressed();
-                break;
+//            case R.id.btn_back_plan_categ :
+//                onBackPressed();
+//                break;
             case R.id.btn_home1_plan_categ_plan_categ :
                 startActivity(new Intent(this, Homepage.class));
                 break;

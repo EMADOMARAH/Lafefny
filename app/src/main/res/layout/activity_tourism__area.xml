@@ -20,13 +20,6 @@
             android:layout_height="61dp"
             android:background="@drawable/btnborder6">
 
-             <Button
-                android:id="@+id/btn_back_tourism"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="45dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F520C"
-                android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" />
 
             <TextView
                 android:id="@+id/txt_tourism_area"
@@ -144,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -259,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$$"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -373,7 +366,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -476,7 +469,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -521,7 +514,6 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
@@ -530,37 +522,25 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/gaming_area_header"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
                 android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
+                android:drawableEnd="@android:drawable/btn_star"
                 android:drawableTint="#CF8B74"
-                android:drawableEnd="@android:drawable/btn_star" />
+                />
 
             <Button
                 android:id="@+id/btn_user_tourism"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_profile_user6" />
+                android:drawableEnd="@drawable/ic_profile_user6"/>
 
-            <Button
-                android:id="@+id/btn_sort_tourism"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort4" />
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

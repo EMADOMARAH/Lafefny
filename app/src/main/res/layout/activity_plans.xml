@@ -22,15 +22,6 @@
             android:background="@drawable/btnborder" />
 
 
-        <Button
-            android:id="@+id/btn_back_plan_categ"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/Lafefny1"
-            android:drawableEnd="@drawable/ic_baseline_arrow_back_24"
-            android:onClick="onClickAll"
-            />
 
         <TextView
             android:id="@+id/txt_plans_plan_categ"
@@ -130,7 +121,6 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_family"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home_24"
                 android:onClick="onClickAll"/>
@@ -140,11 +130,8 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/btn_family"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
                 android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
                 android:drawableTint="@color/Lafefny2"
@@ -156,25 +143,11 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_family"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
-                android:onClick="onClickAll"
-                android:drawableEnd="@drawable/ic_profile_user" />
-
-            <Button
-                android:id="@+id/btn_filter_plan_categ"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btn_family"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="@color/white"
-                android:onClick="onClickAll"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt_24"
-                android:paddingRight="10dp" />
+                android:drawableEnd="@drawable/ic_profile_user"/>
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

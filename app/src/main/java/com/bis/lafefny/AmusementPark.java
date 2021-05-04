@@ -12,7 +12,7 @@ import com.bis.lafefny.R;
 
 public class AmusementPark extends AppCompatActivity {
 
-    private Button button_back; //button back
+//    private Button button_back; //button back
     private Button button_homepage; //button back icon
     private Button button_dream_park; //button dream park
     private Button button_account_amuspark;
@@ -23,13 +23,13 @@ public class AmusementPark extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_amusement_park);
 
-        button_back = (Button) findViewById(R.id.btn_back_amusPark); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEnt_Categories();
-            }
-        });
+//        button_back = (Button) findViewById(R.id.btn_back_amusPark); //button back
+//        button_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openEnt_Categories();
+//            }
+//        });
 
         button_dream_park = (Button) findViewById(R.id.btn_dreampark); //button dream park
         button_dream_park.setOnClickListener(new View.OnClickListener() {

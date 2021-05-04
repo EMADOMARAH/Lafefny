@@ -17,15 +17,6 @@
             android:layout_height="61dp"
             android:background="@drawable/btnborder2" />
 
-
-        <Button
-            android:id="@+id/btn_back_amusPark"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/Lafefny1"
-            android:drawableEnd="@drawable/ic_baseline_arrow_back2_24" />
-
         <TextView
             android:id="@+id/txt_amusement_amusPark"
             android:layout_width="wrap_content"
@@ -76,23 +67,22 @@
                 android:layout_marginStart="270dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
-                android:onClick="GetLocationClicked"
                 android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+
                 android:textSize="11sp"
-                android:shadowColor="@color/Grey" />
+                android:onClick="GetLocationClicked"/>
 
             <TextView
                 android:id="@+id/txt_loc_dreampark"
-                android:layout_width="84dp"
-                android:layout_height="25dp"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
+                android:fontFamily="serif"
                 android:text="@string/get_location"
                 android:textSize="15sp"
-
-                android:fontFamily="serif"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/img_loc_dreampark"
@@ -119,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$$"
                 android:layout_marginTop="68dp"
                 android:textSize="15sp"
                 android:textColor="@color/Grey"/>
@@ -232,7 +222,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$"
                 android:layout_marginTop="68dp"
                 android:textSize="15sp"
                 android:textColor="@color/Grey"
@@ -346,7 +336,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$"
                 android:layout_marginTop="68dp"
                 android:textSize="15sp"
                 android:textColor="@color/Grey"
@@ -429,7 +419,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$"
                 android:layout_marginTop="68dp"
                 android:textSize="15sp"
                 android:textColor="@color/Grey"/>
@@ -515,46 +505,33 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/amusementpark_header_amusPark"
+                android:layout_gravity="left"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_home2_24" />
+                android:drawableEnd="@drawable/ic_baseline_home2_24"  />
 
             <Button
                 android:id="@+id/btn_pre_amusPark"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/amusementpark_header_amusPark"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
                 android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
+                android:drawableEnd="@android:drawable/btn_star"
                 android:drawableTint="@color/Purple"
-                android:drawableEnd="@android:drawable/btn_star" />
+              />
 
             <Button
                 android:id="@+id/btn_user_amusPark"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/amusementpark_header_amusPark"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_profile_user2"
-                android:layout_marginTop="2dp"/>
-
-            <Button
-                android:id="@+id/btn_sort_amusPark"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_below="@id/amusementpark_header_amusPark"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort" />
+                android:drawableEnd="@drawable/ic_profile_user2" />
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

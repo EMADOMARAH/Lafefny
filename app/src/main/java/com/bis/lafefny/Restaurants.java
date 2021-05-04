@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Restaurants extends AppCompatActivity {
-    private Button button_back;
+//    private Button button_back;
     private Button button_home;
     private Button button_pre_res;
     private Button button_the_smokery;
@@ -19,13 +19,13 @@ public class Restaurants extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurants);
-        button_back = (Button) findViewById(R.id.btn_back_res); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEnt_Categories();
-            }
-        });
+//        button_back = (Button) findViewById(R.id.btn_back_res); //button back
+//        button_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openEnt_Categories();
+//            }
+//        });
 
         button_pre_res = (Button) findViewById(R.id.btn_pre_res); //button preferences
         button_pre_res.setOnClickListener(new View.OnClickListener() {

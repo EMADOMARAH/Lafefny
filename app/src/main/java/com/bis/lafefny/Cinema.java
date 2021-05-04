@@ -17,9 +17,9 @@ public class Cinema extends AppCompatActivity  {
 
     public void CenimaOnClick(View view) {
         switch (view.getId()){
-            case R.id.btn_back_cinema:
-                onBackPressed();
-                break;
+//            case R.id.btn_back_cinema:
+//                onBackPressed();
+//                break;
             case R.id.btn_vox:
                 startActivity(new Intent(this, VoxCinema.class));
                 break;

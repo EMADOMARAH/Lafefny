@@ -32,26 +32,7 @@
             android:layout_height="61dp"
             android:background="@drawable/btnborder7">
 
-            <Button
-                android:id="@+id/btn_filter_sport"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="9dp"
-                android:layout_marginStart="330dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt4_24" />
 
-            <Button
-                android:id="@+id/btn_back_sport"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="45dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F520C"
-                android:drawableEnd="@drawable/ic_baseline_arrow_back5_24" />
 
             <TextView
                 android:id="@+id/txt_sports_events"
@@ -95,14 +76,14 @@
 
             <Button
                 android:id="@+id/btn_running"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
-                android:textSize="11sp" />
+                android:textSize="11sp"  />
 
             <ImageView
                 android:id="@+id/img_running"
@@ -143,12 +124,14 @@
 
             <TextView
                 android:id="@+id/txt_get_loc_running"
-                android:layout_width="84dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
+                android:fontFamily="serif"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txt_rating_running"
@@ -165,9 +148,12 @@
                 android:id="@+id/txt_details_running"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -181,7 +167,6 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/txt_location_swimming"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -193,27 +178,24 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <Button
-                android:id="@+id/btn_swimming"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
-                android:textSize="11sp" />
+                android:textSize="11sp"  />
 
             <ImageView
-                android:id="@+id/img_swimming"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/finswimming"
+                android:background="@drawable/marathoncairo"
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_loc_swimming"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -222,7 +204,6 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_next_swimming"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -231,45 +212,44 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_swimming"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
-                android:text="Swimming"
+                android:text="Running"
                 android:textColor="#33446A"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_loc_swimming"
-                android:layout_width="84dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
+                android:fontFamily="serif"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
-
-
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_rating_swimming"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="50dp"
-                android:text="Finswimming Cup"
+                android:text="Marathon Cairo"
                 android:fontFamily="serif"
                 android:textColor="#33446A"
                 android:textSize="20sp" />
 
 
             <TextView
-                android:id="@+id/txt_details_swimming"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -283,7 +263,6 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/txt_location_triathlon"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -295,10 +274,9 @@
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
             <Button
-                android:id="@+id/btn_triathlon"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
@@ -306,24 +284,24 @@
                 android:textSize="11sp" />
 
             <TextView
-                android:id="@+id/txt_details_triathlon"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <ImageView
-                android:id="@+id/img_triathlon"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/yesyoga"
+                android:background="@drawable/halfmarathonalex"
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_loc_triathlon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -332,7 +310,6 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_next_triathlon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -341,7 +318,192 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_triathlon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Running"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:fontFamily="serif"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="50dp"
+                android:text="Half Marathon Alex "
+                android:fontFamily="serif"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/triathlon1_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/triathlon_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/yesyoga"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Triathlon"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:fontFamily="serif"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="50dp"
+                android:text="Yes Yoga Day"
+                android:fontFamily="serif"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/triathlon3_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/triathlon1_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ironman"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
@@ -351,21 +513,580 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_loc_triathlon"
-                android:layout_width="84dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
+                android:fontFamily="serif"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/txt__yesYoga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="50dp"
-                android:text="Yes Yoga Day"
+                android:text="Ironman 70.3 Egypt"
+                android:fontFamily="serif"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/triathlon4_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/triathlon3_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/finswimming"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Swimming"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:fontFamily="serif"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="50dp"
+                android:text="Finswimming World Cup"
+                android:fontFamily="serif"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/triathlon5_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/triathlon4_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/octobercyclers"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Cycling"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:fontFamily="serif"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="50dp"
+                android:text="October Cyclers"
+                android:fontFamily="serif"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/triathlon6_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/triathlon5_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cairobike"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Cycling"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:fontFamily="serif"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="50dp"
+                android:text="Cairo Bike"
+                android:fontFamily="serif"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/triathlon7_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/triathlon6_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/starbike"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Cycling"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:fontFamily="serif"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="50dp"
+                android:text="StarBike"
+                android:fontFamily="serif"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/triathlon8_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/triathlon7_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/toughmudder"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Adventure"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:fontFamily="serif"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="50dp"
+                android:text="Tough Mudder"
+                android:fontFamily="serif"
+                android:textColor="#33446A"
+                android:textSize="20sp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/triathlo11_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/triathlon8_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/elfit"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="CrossFit"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:fontFamily="serif"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="50dp"
+                android:text="ELFIT Championship"
                 android:fontFamily="serif"
                 android:textColor="#33446A"
                 android:textSize="20sp" />
@@ -382,18 +1103,16 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/btn_triathlon2"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
-                android:textSize="11sp" />
+                android:textSize="11sp"  />
 
             <Button
-                android:id="@+id/txt_location_triathlon2"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -401,20 +1120,17 @@
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
-                android:textSize="11sp"
-                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+                android:textSize="11sp" />
 
             <ImageView
-                android:id="@+id/img_triathlon2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/ironman"
+                android:background="@drawable/pyramidshalfmarathon"
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_loc_triathlon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="345dp"
@@ -423,7 +1139,6 @@
                 android:contentDescription="@string/todo" />
 
             <ImageView
-                android:id="@+id/img_details_triathlon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="235dp"
@@ -432,42 +1147,43 @@
                 android:contentDescription="@string/todo" />
 
             <TextView
-                android:id="@+id/txt_triathlon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
-                android:text="Triathlon"
+                android:text="Running"
                 android:textColor="#33446A"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_rating_triathlon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="50dp"
-                android:text="Ironman 70.3 Egypt"
+                android:text="Pyramids Half Marathon"
                 android:fontFamily="serif"
                 android:textColor="#33446A"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txt_loc_triathlon2"
-                android:layout_width="84dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
+                android:fontFamily="serif"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/txt_details_triathlon2"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -475,12 +1191,9 @@
             android:id="@+id/footer_sport"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_below="@id/sports_events_header"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="980dp"
+            android:layout_marginTop="2750dp"
             android:background="@drawable/btnborder7">
 
             <Button
@@ -488,7 +1201,6 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home4_24" />
 
@@ -497,37 +1209,24 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/gaming_area_header"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
                 android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
+                android:drawableEnd="@android:drawable/btn_star"
                 android:drawableTint="#33446A"
-                android:drawableEnd="@android:drawable/btn_star" />
+               />
 
             <Button
                 android:id="@+id/btn_user_sport"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user4" />
-
-            <Button
-                android:id="@+id/btn_sort_sport"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort2" />
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

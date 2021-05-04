@@ -161,9 +161,9 @@ public class SoundLightEvent extends AppCompatActivity {
 
     public void SoundNLightOnClick(View view) {
         switch (view.getId()){
-            case R.id.btn_back_SLshow:
-                onBackPressed();
-                break;
+//            case R.id.btn_back_SLshow:
+//                onBackPressed();
+//                break;
             case R.id.btn_transportation_SLshow:
                 startActivity(new Intent(this, Transportation.class));
                 break;

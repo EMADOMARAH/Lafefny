@@ -90,9 +90,9 @@ public class RunningEvent extends AppCompatActivity {
 
     public void RunningEventOnClick(View view) {
         switch (view.getId()){
-            case R.id.btn_back_run:
-                onBackPressed();
-                break;
+//            case R.id.btn_back_run:
+//                onBackPressed();
+//                break;
             case R.id.btn_book_run:
                 Intent i =new Intent(this, Booking.class);
                 SaveRunningDataToPref();

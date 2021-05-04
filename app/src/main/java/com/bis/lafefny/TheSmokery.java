@@ -112,7 +112,7 @@ public class TheSmokery extends AppCompatActivity {
         resPhone3    = findViewById(R.id.the_smokery_phone3);
         resOpen      = findViewById(R.id.the_smokery_open);
         resWebsite   = findViewById(R.id.the_smokery_site);
-        resEmail     = findViewById(R.id.the_smokery_email);
+//        resEmail     = findViewById(R.id.the_smokery_email);
         resCuisines1 = findViewById(R.id.the_smokery_cuisines1);
         resCuisines2 = findViewById(R.id.the_smokery_cuisines2);
         resCuisines3 = findViewById(R.id.the_smokery_cuisines3);
@@ -134,9 +134,9 @@ public class TheSmokery extends AppCompatActivity {
     public void TheSmokeryOnClick(View view) {
 
         switch (view.getId()) {
-            case R.id.btn_back_smokery:
-                onBackPressed();
-                break;
+//            case R.id.btn_back_smokery:
+//                onBackPressed();
+//                break;
             case R.id.btn_transportation_smokery:
                 startActivity(new Intent(getApplicationContext(), Transportation.class));
                 break;

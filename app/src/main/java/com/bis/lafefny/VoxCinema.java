@@ -124,9 +124,9 @@ public class VoxCinema extends AppCompatActivity {
     public void VoxCinemaOnClick(View view) {
         switch (view.getId())
         {
-            case R.id.btn_back_vox:
-                onBackPressed();
-                break;
+//            case R.id.btn_back_vox:
+//                onBackPressed();
+//                break;
             case R.id.btn_transportation_vox:
                 startActivity(new Intent(getApplicationContext() , Transportation.class));
                 break;

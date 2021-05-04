@@ -22,14 +22,6 @@
             android:background="@drawable/btnborder" />
 
 
-        <Button
-            android:id="@+id/btn_back_event"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/Lafefny1"
-            android:drawableEnd="@drawable/ic_baseline_arrow_back_24" />
-
         <TextView
             android:id="@+id/txt_events_event"
             android:layout_width="391dp"
@@ -132,7 +124,6 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_cairo_international_book_fair_event"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home_24" />
 
@@ -141,38 +132,24 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/btn_cairo_international_book_fair_event"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
                 android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
+                android:drawableEnd="@android:drawable/btn_star"
                 android:drawableTint="@color/Lafefny2"
-                android:drawableEnd="@android:drawable/btn_star" />
+             />
 
             <Button
                 android:id="@+id/btn_user_event"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_cairo_international_book_fair_event"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user" />
-
-            <Button
-                android:id="@+id/btn_filter_event"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btn_cairo_international_book_fair_event"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt_24"
-                android:paddingRight="10dp" />
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

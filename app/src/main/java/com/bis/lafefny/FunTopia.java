@@ -108,9 +108,9 @@ public class FunTopia extends AppCompatActivity {
     public void FunTopiaOnClick(View view) {
         switch (view.getId())
         {
-            case R.id.btn_back_ft:
-                    onBackPressed();
-                break;
+//            case R.id.btn_back_ft:
+//                    onBackPressed();
+//                break;
             case R.id.btn_transportation_ft:
                 startActivity(new Intent(getApplicationContext() , Transportation.class));
                 break;

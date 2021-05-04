@@ -32,13 +32,13 @@ public class SiwaOasis_AdvPlan2 extends AppCompatActivity {
         setContentView(R.layout.activity_siwa_oasis__adv_plan2);
         initSiwaOasisFullProgeamViews();
         getDataFromFireBase();
-        button_back_siwa2 = (Button) findViewById(R.id.btn_back_siwa_prog); //button back
-        button_back_siwa2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+//        button_back_siwa2 = (Button) findViewById(R.id.btn_back_siwa_prog); //button back
+//        button_back_siwa2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onBackPressed();
+//            }
+//        });
 
 
     }

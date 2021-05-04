@@ -10,7 +10,7 @@ import android.widget.Button;
 public class Question6_7 extends AppCompatActivity {
     private Button button_back_QS4;
     private Button button_next_QS4;
-    private Button button_skip_QS4;
+//    private Button button_skip_QS4;
     private Button button_home_QS4;
     private Button button_pre_QS4;
     private Button button_account_QS4;
@@ -38,11 +38,11 @@ public class Question6_7 extends AppCompatActivity {
             public void onClick(View v) { openQuestion8_9(); }
         });
 
-        button_skip_QS4 = (Button) findViewById(R.id.btn_questionnaire4_skip);           //button skip
-        button_skip_QS4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { openQuestion8_9(); }
-        });
+//        button_skip_QS4 = (Button) findViewById(R.id.btn_questionnaire4_skip);           //button skip
+//        button_skip_QS4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) { openQuestion8_9(); }
+//        });
 
         button_back_QS4=(Button) findViewById(R.id.btn_questionnaire4_back);            //button back
         button_back_QS4.setOnClickListener(new View.OnClickListener() {

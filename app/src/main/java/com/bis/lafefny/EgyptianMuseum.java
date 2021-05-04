@@ -95,9 +95,9 @@ public class EgyptianMuseum extends AppCompatActivity {
 
     public void EgyptionMuseumOnClick(View view) {
         switch (view.getId()) {
-            case R.id.btn_back_egyM:
-                onBackPressed();
-                break;
+//            case R.id.btn_back_egyM:
+//                onBackPressed();
+//                break;
             case R.id.btn_transportation_egyM:
                 startActivity(new Intent(getApplicationContext(), Transportation.class));
                 break;

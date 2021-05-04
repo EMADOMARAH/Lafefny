@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class AdventurousPlans extends AppCompatActivity {
-    private Button button_back;
+//    private Button button_back;
     private Button button_siwa;
     private Button button_home;
     private Button button_AP_pre;
@@ -19,13 +19,13 @@ public class AdventurousPlans extends AppCompatActivity {
         setContentView(R.layout.activity_adventurous_plans);
 
 
-        button_back = (Button) findViewById(R.id.btn_back_adv); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPlans();
-            }
-        });
+//        button_back = (Button) findViewById(R.id.btn_back_adv); //button back
+//        button_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openPlans();
+//            }
+//        });
         button_siwa = (Button) findViewById(R.id.btn_siwa_oasis); //button siwa
         button_siwa.setOnClickListener(new View.OnClickListener() {
             @Override

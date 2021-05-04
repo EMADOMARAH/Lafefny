@@ -40,17 +40,7 @@
         android:title="Filtering"
         />
 
-    <item
-        android:id="@+id/nav_Questionnaire"
-        android:icon="@drawable/ic_baseline_home6_24"
-        android:title="Questionnaire "
-        />
 
-    <item
-        android:id="@+id/nav_Preferences"
-        android:icon="@drawable/ic_baseline_star_24"
-        android:title="Preferences"
-        />
 
     <item
         android:id="@+id/nav_hotel"

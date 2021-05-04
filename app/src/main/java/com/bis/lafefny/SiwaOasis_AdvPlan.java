@@ -103,9 +103,9 @@ public class SiwaOasis_AdvPlan extends AppCompatActivity {
 
     public void SiwaOasisOnClick(View view) {
         switch (view.getId()){
-            case R.id.btn_back_siwa_intro:
-                onBackPressed();
-                break;
+//            case R.id.btn_back_siwa_intro:
+//                onBackPressed();
+//                break;
             case R.id.btn_oasis_more_details:
                 startActivity( new Intent(this, SiwaOasis_AdvPlan2.class));
                 break;

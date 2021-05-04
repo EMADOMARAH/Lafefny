@@ -84,9 +84,9 @@ public class CairoBookFair extends AppCompatActivity {
 
     public void CairoBookFairOnClick(View view) {
         switch (view.getId()){
-            case R.id.btn_back_cbf:
-                onBackPressed();
-                break;
+//            case R.id.btn_back_cbf:
+//                onBackPressed();
+//                break;
             case R.id.btn_ticket_cbf:
                 Intent i =new Intent(this, Booking.class);
                 SaveCairoBookFairDataToPref();

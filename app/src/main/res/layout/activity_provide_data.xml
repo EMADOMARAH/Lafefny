@@ -20,28 +20,9 @@
             android:layout_marginEnd="0dp"
             android:background="@drawable/btnborder">
 
-        <Button
-            android:id="@+id/btn_data_search"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="98dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="9dp"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_baseline_search_24"
-            android:paddingRight="10dp" /> <!-- edit in margin again  -->
 
-        <Button
-            android:id="@+id/btn_data_back"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/Lafefny1"
-            android:layout_marginTop="-5dp"
-            android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" /> <!-- edit in margin again  -->
+
+
 
             <TextView
                 android:id="@+id/txt_Preferences"
@@ -79,7 +60,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
-                android:text="@string/if_you_haven_t_already_taken_the_questionnaire_and_preferences_forms_please_procced_to_the_next_step_of_taking_them_in_order_to_be_able_to_use_the_filtering_option"
+                android:text="Lafefny offers two different ways to get the perfect recommendations based on what you desire. Please feel free to take either of these two forms to be able to customize your suggestions. Note that each provide different results as both of them are based on different criteria."
                 android:textAlignment="center"
                 android:textColor="@color/Lafefny2"
                 android:textSize="30sp" />
@@ -125,7 +106,6 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_questionnaire"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
@@ -134,36 +114,23 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/btn_questionnaire"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
                 android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
-                android:drawableTint="#CF8B74"
-                android:drawableEnd="@android:drawable/btn_star" />
+                android:drawableEnd="@android:drawable/btn_star"
+                android:drawableTint="#CF8B74"/>
             <Button
                 android:id="@+id/btn_data_user"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_preference"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user6" />
 
-            <Button
-                android:id="@+id/btn_data_sort"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_below="@id/btn_preference"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort4" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     </RelativeLayout>

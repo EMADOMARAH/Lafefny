@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Emergency extends AppCompatActivity {
     private Button button_Emg_homepage;
-    private Button button_Emg_back;
+//    private Button button_Emg_back;
     private Button button_Emg_account;
     private Button button_Emg_pre;
 
@@ -26,13 +26,13 @@ public class Emergency extends AppCompatActivity {
             }
         });
 
-        button_Emg_back = (Button) findViewById(R.id.btn_back2);  //button back
-        button_Emg_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHomepage();
-            }
-        });
+//        button_Emg_back = (Button) findViewById(R.id.btn_back2);  //button back
+//        button_Emg_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openHomepage();
+//            }
+//        });
 
 
         button_Emg_account = (Button) findViewById(R.id.btn_emg_user);  //button account icon

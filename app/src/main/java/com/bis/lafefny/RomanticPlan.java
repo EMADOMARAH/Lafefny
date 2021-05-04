@@ -18,7 +18,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class RomanticPlan extends AppCompatActivity {
-    private Button button_back;
+//    private Button button_back;
     private Button button_funtopia;
     private Button button_smokery;
     private Button button_vox;
@@ -40,13 +40,13 @@ public class RomanticPlan extends AppCompatActivity {
 
 
 
-        button_back = (Button) findViewById(R.id.btn_back_rom); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+//        button_back = (Button) findViewById(R.id.btn_back_rom); //button back
+//        button_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onBackPressed();
+//            }
+//        });
 
         button_pre = (Button) findViewById(R.id.btn_pre_rom); //button preferences
         button_pre.setOnClickListener(new View.OnClickListener() {

@@ -19,7 +19,7 @@ public class Account extends AppCompatActivity {
     private Button button_acc_preferences;
     private Button button_acc_questionnaire;
   //  private Button button_acc_help;
-    private Button button_acc_back;
+//    private Button button_acc_back;
     private Button button_acc_sign_out;
     private Button button_acc_home;
     private Button button_acc_pre;
@@ -34,13 +34,13 @@ public class Account extends AppCompatActivity {
 
         authPreferences = getSharedPreferences("Lafefny_App" ,Context.MODE_PRIVATE);
 
-        button_acc_back = (Button) findViewById(R.id.btn_acc_back); //button back
-        button_acc_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHomepage();
-            }
-        });
+//        button_acc_back = (Button) findViewById(R.id.btn_acc_back); //button back
+//        button_acc_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openHomepage();
+//            }
+//        });
 
         button_acc_profile = (Button) findViewById(R.id.btn_go_to_profile); //button profile
         button_acc_profile.setOnClickListener(new View.OnClickListener() {

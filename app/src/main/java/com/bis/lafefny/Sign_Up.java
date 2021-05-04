@@ -333,7 +333,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         add_img_btn = findViewById(R.id.btn_addphoto);                  //image
         profile_image = findViewById(R.id.profileimage);
 
-        checkboxagree = findViewById(R.id.checkboxagree);
+//        checkboxagree = findViewById(R.id.checkboxagree);
     }
 
 

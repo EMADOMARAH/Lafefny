@@ -98,14 +98,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="serif"
                 android:text="@string/emergency"
                 android:textAlignment="center"
                 android:textColor="@color/Lafefny2"
                 android:textSize="30sp"
-                android:textStyle="bold"
-                android:layout_marginTop="60dp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="serif"/>
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

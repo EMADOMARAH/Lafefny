@@ -13,7 +13,7 @@ public class ProvideData extends AppCompatActivity {
     private Button button_account_data;
     private Button button_questionnaire_data;
     private Button button_preference_data;
-    private Button button_back_data;
+//    private Button button_back_data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +44,11 @@ public class ProvideData extends AppCompatActivity {
             public void onClick(View v) { openPreferences(); }
         });
 
-        button_back_data = (Button) findViewById(R.id.btn_data_back);           //button back
-        button_back_data.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { openHomepage(); }
-        });
+//        button_back_data = (Button) findViewById(R.id.btn_data_back);           //button back
+//        button_back_data.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) { openHomepage(); }
+//        });
 
         button_account_data = (Button) findViewById(R.id.btn_data_user);           //button user account
         button_account_data.setOnClickListener(new View.OnClickListener() {

@@ -33,7 +33,7 @@ import java.io.InputStream;
 
 
 public class profile extends AppCompatActivity {
-    private Button button_profile_back;
+//    private Button button_profile_back;
     private Button button_profile_home;
     private Button button_profile_acc;
     private Button button_profile_pre;
@@ -63,13 +63,13 @@ public class profile extends AppCompatActivity {
 
         initProfileViews();
 
-        button_profile_back = (Button) findViewById(R.id.btn_back_profile); //button back
-        button_profile_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+//        button_profile_back = (Button) findViewById(R.id.btn_back_profile); //button back
+//        button_profile_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onBackPressed();
+//            }
+//        });
 
         button_profile_home = (Button) findViewById(R.id.btn_profile_home); //button home
         button_profile_home.setOnClickListener(new View.OnClickListener() {

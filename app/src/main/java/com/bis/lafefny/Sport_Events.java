@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Sport_Events extends AppCompatActivity {
-    private Button button_back_Sport;
+//    private Button button_back_Sport;
     private Button button_home_Sport;
     private Button button_pre_Sport;
     private Button button_running_Sport;
@@ -18,13 +18,13 @@ public class Sport_Events extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport__events);
-        button_back_Sport = (Button) findViewById(R.id.btn_back_sport); //button back
-        button_back_Sport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEvents();
-            }
-        });
+//        button_back_Sport = (Button) findViewById(R.id.btn_back_sport); //button back
+//        button_back_Sport.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openEvents();
+//            }
+//        });
 
         button_home_Sport = (Button) findViewById(R.id.btn_home1_sport); //button homepage
         button_home_Sport.setOnClickListener(new View.OnClickListener() {

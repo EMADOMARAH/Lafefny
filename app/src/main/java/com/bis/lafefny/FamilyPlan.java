@@ -18,7 +18,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class FamilyPlan extends AppCompatActivity {
-    private Button button_back;
+//    private Button button_back;
     private Button button_home;
     private Button button_pre_Fam;
     private Button button_egyp_museum;
@@ -39,13 +39,13 @@ public class FamilyPlan extends AppCompatActivity {
         getDataFromFireBase();
 
 
-        button_back = (Button) findViewById(R.id.btn_back_fam); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+//        button_back = (Button) findViewById(R.id.btn_back_fam); //button back
+//        button_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onBackPressed();
+//            }
+//        });
 
         button_home = (Button) findViewById(R.id.btn_home1_fam); //button homepage
         button_home.setOnClickListener(new View.OnClickListener() {

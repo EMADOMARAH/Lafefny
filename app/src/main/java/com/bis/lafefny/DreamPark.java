@@ -98,9 +98,9 @@ public class DreamPark extends AppCompatActivity {
     public void DreamParkOnClick(View view) {
         switch (view.getId())
         {
-            case R.id.btn_back_dreamP:
-                startActivity(new Intent(getApplicationContext() , AmusementPark.class));
-                break;
+//            case R.id.btn_back_dreamP:
+//                startActivity(new Intent(getApplicationContext() , AmusementPark.class));
+//                break;
             case R.id.btn_transportation_dreamP:
                 startActivity(new Intent(getApplicationContext() , Transportation.class));
                 break;
