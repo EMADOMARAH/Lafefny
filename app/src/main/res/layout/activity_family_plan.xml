@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/family_plan_background"
-    tools:context="com.bis.lafefny.AmusementPark"
+    tools:context="com.bis.lafefny.FamilyPlan"
     tools:ignore="RelativeOverlap">
 
     <RelativeLayout
@@ -20,28 +20,7 @@
             android:layout_height="61dp"
             android:background="@drawable/btnborder6">
 
-            <Button
-                android:id="@+id/btn_filter_fam"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="9dp"
-                android:layout_marginStart="330dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt6_24" />
-
-            <Button
-                android:id="@+id/btn_back_fam"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="45dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F520C"
-                android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" />
-
-            <TextView
+                            <TextView
                 android:id="@+id/txt_family"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,8 +64,9 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginStart="15dp"
+                android:textAlignment="center"
                 android:layout_marginTop="45dp"
-                android:lineSpacingExtra="3dp"
+                android:lineSpacingExtra="4dp"
                 android:text="@string/_90_100"
                 android:textColor="#CF8B74"
                 android:textSize="15sp" />
@@ -105,14 +85,14 @@
 
             <Button
                 android:id="@+id/btn_stereo_fam"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
-                android:textSize="11sp" />
+                android:textSize="11sp"/>
 
             <Button
                 android:id="@+id/txt_location_stereo_fam"
@@ -180,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -188,18 +168,23 @@
                 android:id="@+id/txt_loc_stereo_fam"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txt_details_stereo_fam"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -214,14 +199,14 @@
 
             <Button
                 android:id="@+id/btn_bounceinc_fam"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
-                android:textSize="11sp" />
+                android:textSize="11sp"/>
 
             <Button
                 android:id="@+id/txt_location_bounceinc_fam"
@@ -289,7 +274,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -297,18 +282,23 @@
                 android:id="@+id/txt_loc_bounceinc_fam"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_details_bounceinc_fam"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -321,7 +311,7 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/txt_location_fun_topia_fam"
+                android:id="@+id/txt_location_museum_fam"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
@@ -329,14 +319,14 @@
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
-                android:textSize="11sp"
-                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+                android:onClick="FamilyPlanOnClick"
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/btn_egyptian_museum_fam"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
@@ -384,10 +374,12 @@
                 android:id="@+id/txt_get_loc_egyptian_museum_fam"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txt_rating_egyptian_museum_fam"
@@ -406,7 +398,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -414,9 +406,12 @@
                 android:id="@+id/txt_details_egyptian_museum_fam"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
@@ -438,45 +433,31 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
             <Button
-                android:id="@+id/btn_loc_fam"
+                android:id="@+id/btn_pre_fam"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/gaming_area_header"
+               android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
+                android:drawableEnd="@android:drawable/btn_star"
+                android:drawableTint="#CF8B74"/>
 
             <Button
                 android:id="@+id/btn_use_famr"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user6" />
-
-            <Button
-                android:id="@+id/btn_sort_fam"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort4" />
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

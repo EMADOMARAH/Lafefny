@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.bis.lafefny.R;
 
 public class Ent_Categories extends AppCompatActivity {
-    private Button button_home;
+//    private Button button_home;
     private Button button_home_icon;
     private Button button_park;
     private Button button_gaming_area;
@@ -18,19 +18,20 @@ public class Ent_Categories extends AppCompatActivity {
     private Button button_restaurant;
     private Button button_cinema;
     private Button button_account_ent;
+    private Button button_pre_ent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ent__categories);
 
-        button_home = (Button) findViewById(R.id.btn_back_entcateg); //button homepage
-        button_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHomepage();
-            }
-        });
+//        button_home = (Button) findViewById(R.id.btn_back_entcateg); //button homepage
+//        button_home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openHomepage();
+//            }
+//        });
 
         button_park = (Button) findViewById(R.id.btn_amusement_park_entcateg); //button amusement park
         button_park.setOnClickListener(new View.OnClickListener() {
@@ -87,6 +88,14 @@ public class Ent_Categories extends AppCompatActivity {
                 openAccount2();
             }
         });
+
+        button_pre_ent = (Button) findViewById(R.id.btn_pre_entcateg); //button preferences
+        button_pre_ent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openpreferences();
+            }
+        });
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
@@ -119,6 +128,11 @@ public class Ent_Categories extends AppCompatActivity {
 
     public void openAccount2(){
         Intent intent = new Intent(this, Account.class);  //open account
+        startActivity(intent);
+    }
+
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
 

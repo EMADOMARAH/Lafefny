@@ -94,6 +94,7 @@
                 android:layout_marginStart="230dp"
                 android:layout_marginTop="6dp"
                 android:alpha="0.3"
+                android:onClick="TransportationOnClick"
                 android:backgroundTint="@color/cardview_shadow_start_color" />
 
             <TextView
@@ -144,6 +145,7 @@
                 android:layout_marginStart="230dp"
                 android:layout_marginTop="6dp"
                 android:alpha="0.3"
+                android:onClick="TransportationOnClick"
                 android:backgroundTint="@color/cardview_shadow_start_color" />
 
             <TextView
@@ -207,6 +209,7 @@
                 android:layout_marginStart="230dp"
                 android:layout_marginTop="6dp"
                 android:alpha="0.3"
+                android:onClick="TransportationOnClick"
                 android:backgroundTint="@color/cardview_shadow_start_color" />
 
             <TextView
@@ -257,6 +260,7 @@
                 android:layout_marginStart="230dp"
                 android:layout_marginTop="6dp"
                 android:alpha="0.3"
+                android:onClick="TransportationOnClick"
                 android:backgroundTint="@color/cardview_shadow_start_color" />
 
             <TextView
@@ -296,7 +300,7 @@
                 android:drawableEnd="@drawable/ic_baseline_home3_24" />
 
             <Button
-                android:id="@+id/btn_loc_trans"
+                android:id="@+id/btn_pre_trans"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
@@ -305,9 +309,10 @@
                 android:layout_marginBottom="11dp"
                 android:layout_marginEnd="170dp"
                 android:layout_marginStart="140dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location4_on_24" />
+                android:drawableTint="#33446A"
+                android:drawableEnd="@android:drawable/btn_star" />
 
             <Button
                 android:id="@+id/btn_user_trans"

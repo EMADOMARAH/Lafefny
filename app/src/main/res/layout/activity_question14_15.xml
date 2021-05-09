@@ -217,44 +217,31 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_questionnaire8_close"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
             <Button
-                android:id="@+id/btn_questionnaire8_loc"
+                android:id="@+id/btn_questionnaire8_pre"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/btn_questionnaire8_close"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
+                android:drawableEnd="@android:drawable/btn_star"
+                android:drawableTint="#CF8B74"/>
             <Button
                 android:id="@+id/btn_questionnaire8_user"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_go_to_preferences"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user6" />
 
-            <Button
-                android:id="@+id/btn_questionnaire8_sort"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_below="@id/btn_go_to_preferences"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort4" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     </RelativeLayout>

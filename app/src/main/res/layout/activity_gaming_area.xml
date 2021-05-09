@@ -36,26 +36,7 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/btn_filter_ga"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="9dp"
-                android:layout_marginStart="330dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt4_24" />
 
-            <Button
-                android:id="@+id/btn_back_ga"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="45dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F520C"
-                android:drawableEnd="@drawable/ic_baseline_arrow_back5_24" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
@@ -66,7 +47,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/gaming_area_header"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -146,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="38dp"
-                android:text="@string/_90_100"
+                android:text="96/100"
                 android:textColor="@color/Grey"
                 android:textSize="15sp"
                 app:drawableLeftCompat="@drawable/happyface2" />
@@ -157,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -180,7 +161,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/bounceinc_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -271,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -294,7 +275,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/skyegypt_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -385,7 +366,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -408,7 +389,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/fun_topia_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -477,7 +458,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="38dp"
-                android:text="@string/_90_100"
+                android:text="92/100"
                 android:textColor="@color/Grey"
                 android:textSize="15sp"
                 app:drawableLeftCompat="@drawable/happyface2" />
@@ -488,7 +469,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -517,15 +498,697 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/virtual_room_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/escape_room_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/btn_virtual_room"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/txt_location_virtual_room"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <ImageView
+                android:id="@+id/img_virtual_room"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/virtualroom"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_loc_virtual_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_details_virtual_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_virtual_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="The Virtual Room Egypt"
+                android:textColor="#33446A"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_rating_virtual_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="78/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface2" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_virtual_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="Price Range: $$"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_virtual_room"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_details_virtual_room"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/breakout_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/virtual_room_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/btn_breakout"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/txt_location_breakout"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <ImageView
+                android:id="@+id/img_breakout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/breakout_escape_room"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_loc_breakout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_details_breakout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_breakout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Breakout Room Escape"
+                android:textColor="#33446A"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_rating_breakout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="70/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface2" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_breakout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="Price Range: $$"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_breakout"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_details_breakout"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/escape_games_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/breakout_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/btn_escape_games"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/txt_location_escape_games"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <ImageView
+                android:id="@+id/img_escape_games"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/escape_games_cairo"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_loc_escape_games"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_details_escape_games"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_escape_games"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Escape Games Cairo"
+                android:textColor="#33446A"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_rating_escape_games"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="72/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface2" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_escape_games"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="Price Range: $"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_escape_games"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_details_escape_games"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/game_valley_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/mindmaze_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/btn_game_valley"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/txt_location_game_valley"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <ImageView
+                android:id="@+id/img_game_valley"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/game_valley"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_loc_game_valley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_details_game_valley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_game_valley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Game Valley"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_rating_game_valley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="66/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface2" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_game_valley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="Price Range: $$"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_game_valley"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_details_game_valley"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/mindmaze_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/escape_games_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/btn_mindmaze"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/txt_location_mindmaze"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <ImageView
+                android:id="@+id/img_mindmaze"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mind_maze"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_loc_mindmaze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_details_mindmaze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_mindmaze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Mindmaze Egypt"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_rating_mindmaze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="86/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface2" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_mindmaze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="Price Range: $"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_mindmaze"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_details_mindmaze"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/sherlocked_background"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/game_valley_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btnborder6">
+
+            <Button
+                android:id="@+id/btn_sherlocked"
+                android:layout_width="90dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/txt_location_sherlocked"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="94dp"
+                android:alpha="0.1"
+                android:backgroundTint="@color/Grey"
+                android:shadowColor="@color/Grey"
+                android:textSize="11sp"
+                app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
+
+            <ImageView
+                android:id="@+id/img_sherlocked"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sherlocked"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_loc_sherlocked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="345dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/ic_baseline_location5_on_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/img_details_sherlocked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/clicknext2"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_sherlocked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:text="Sherlocked Egypt"
+                android:textColor="#33446A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_rating_sherlocked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="38dp"
+                android:text="84/100"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/happyface2" />
+
+            <TextView
+                android:id="@+id/txt_rating_count_sherlocked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="68dp"
+                android:text="Price Range: $$"
+                android:textColor="@color/Grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_loc_sherlocked"
+                android:layout_width="84dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/get_location"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_details_sherlocked"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="109dp"
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/footer_ga"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_below="@id/gaming_area_header"
+            android:layout_below="@id/sherlocked_background"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="980dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/btnborder7">
 
             <Button
@@ -533,45 +1196,32 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home4_24" />
 
             <Button
-                android:id="@+id/btn_loc_ga"
+                android:id="@+id/btn_pre_ga"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/gaming_area_header"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location6_on_24" />
+                android:drawableEnd="@android:drawable/btn_star"
+                android:drawableTint="#33446A"
+                />
 
             <Button
                 android:id="@+id/btn_user_ga"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user4" />
-
-            <Button
-                android:id="@+id/btn_sort_ga"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort2" />
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/romantic_plan"
-    tools:context="com.bis.lafefny.AmusementPark"
+    tools:context="com.bis.lafefny.RomanticPlan"
     tools:ignore="RelativeOverlap">
 
     <RelativeLayout
@@ -20,26 +20,7 @@
             android:layout_height="61dp"
             android:background="@drawable/btnborder6">
 
-            <Button
-                android:id="@+id/btn_filter_rom"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="9dp"
-                android:layout_marginStart="330dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt6_24" />
 
-            <Button
-                android:id="@+id/btn_back_rom"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="45dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F520C"
-                android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" />
 
             <TextView
                 android:id="@+id/txt_romantic"
@@ -79,14 +60,15 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_desc"
+                android:id="@+id/txt_desc_romantic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="45dp"
-                android:lineSpacingExtra="3dp"
+                android:lineSpacingExtra="4dp"
+                android:textAlignment="center"
                 android:text="@string/_90_100"
                 android:textColor="#CF8B74"
                 android:textSize="15sp" />
@@ -117,14 +99,14 @@
 
             <Button
                 android:id="@+id/btn_smokery_rom"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
-                android:textSize="11sp" />
+                android:textSize="11sp"/>
 
             <ImageView
                 android:id="@+id/img_smokery_rom"
@@ -133,7 +115,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:contentDescription="@string/todo"
-                app:srcCompat="@drawable/smokery" />
+                app:srcCompat="@drawable/the_smokery" />
 
             <ImageView
                 android:id="@+id/img_loc_smokery_rom"
@@ -167,10 +149,12 @@
                 android:id="@+id/txt_get_loc_smokery_rom"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txt_rating_smokery_rom"
@@ -189,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$$"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -197,9 +181,12 @@
                 android:id="@+id/txt_details_smokery_rom"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -226,14 +213,14 @@
 
             <Button
                 android:id="@+id/btn_vox_rom"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
-                android:textSize="11sp" />
+                android:textSize="11sp"  />
 
             <ImageView
                 android:id="@+id/img_vox_rom"
@@ -276,10 +263,12 @@
                 android:id="@+id/txt_get_loc_vox_rom"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_rating_vox_rom"
@@ -298,7 +287,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -306,9 +295,12 @@
                 android:id="@+id/txt_details_vox_rom"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -322,12 +314,13 @@
             android:background="@drawable/btnborder6">
 
             <Button
-                android:id="@+id/txt_location_fun_topia_rom"
+                android:id="@+id/txt_location_fun_topia_romantic"
                 android:layout_width="105dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="270dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
+                android:onClick="RomanticOnClick"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
                 android:textSize="11sp"
@@ -335,9 +328,9 @@
 
             <Button
                 android:id="@+id/btn_fun_topia_rom"
-                android:layout_width="145dp"
+                android:layout_width="90dp"
                 android:layout_height="51dp"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
@@ -385,10 +378,12 @@
                 android:id="@+id/txt_get_loc_fun_topia_rom"
                 android:layout_width="84dp"
                 android:layout_height="25dp"
-                android:layout_marginStart="275dp"
+                android:layout_marginStart="280dp"
                 android:layout_marginTop="109dp"
                 android:text="@string/get_location"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_rating_fun_topia_rom"
@@ -407,7 +402,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="68dp"
-                android:text="@string/_16949_ratings"
+                android:text="Price Range: $$"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
 
@@ -415,9 +410,12 @@
                 android:id="@+id/txt_details_fun_topia_rom"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="129dp"
+                android:layout_marginStart="175dp"
                 android:layout_marginTop="109dp"
-                android:text="@string/view_all_details" />
+                android:text="@string/view_all_details"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -438,45 +436,31 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
             <Button
-                android:id="@+id/btn_loc_rom"
+                android:id="@+id/btn_pre_rom"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/gaming_area_header"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
+                android:drawableEnd="@android:drawable/btn_star"
+                android:drawableTint="#CF8B74"/>
 
             <Button
                 android:id="@+id/btn_user_rom"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user6" />
-
-            <Button
-                android:id="@+id/btn_sort_rom"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_below="@id/gaming_area_header"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort4" />
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

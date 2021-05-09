@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.bis.lafefny.Payment"
     android:background="#E6DFE0">
+
 <RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -14,23 +15,12 @@
         android:layout_width="match_parent"
         android:layout_height="330dp"
         android:id="@+id/booking_background">
-        <Button
-            android:id="@+id/btn_search_pay"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="66dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="9dp"
-            android:layout_marginStart="335dp"
-           android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_baseline_search_24"
-            android:paddingEnd="10dp" />
+
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="165dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="75dp"
             android:alpha="0.2"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
@@ -39,10 +29,10 @@
             android:contentDescription="@string/todo" />
 
         <TextView
-            android:id="@+id/txt_name"
+            android:id="@+id/txt_name_pay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="99dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="95dp"
             android:fontFamily="serif"
             android:text="@string/sound_and_light_show"
@@ -53,7 +43,7 @@
             android:id="@+id/txt_total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="125dp"
             android:fontFamily="serif"
             android:text="@string/_650_egp"
@@ -119,18 +109,19 @@
             android:id="@+id/txt_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="175dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="170dp"
             android:fontFamily="serif"
             android:text="@string/february_2_1999"
             android:textColor="@color/Grey"
             android:textSize="19sp" />
+
         <TextView
             android:id="@+id/txt_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="240dp"
-            android:layout_marginTop="175dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
             android:fontFamily="serif"
             android:text="@string/_09_03_pm"
             android:textColor="@color/Grey"
@@ -237,7 +228,7 @@
         android:background="@color/white"
         android:fontFamily="serif"
         android:hint="@string/x_x_x_x_x_x"
-        android:inputType="number"
+        android:inputType="numberPassword"
         android:paddingStart="10dp"
         android:textColor="@color/Grey"
         android:autofillHints="" />
@@ -266,7 +257,7 @@
         android:background="@color/white"
         android:fontFamily="serif"
         android:hint="@string/malak_heshamm"
-        android:inputType="text"
+        android:inputType="textNoSuggestions"
         android:paddingStart="10dp"
         android:textColor="@color/Grey"
         android:autofillHints="" />
@@ -279,7 +270,7 @@
         android:layout_marginStart="29dp"
         android:layout_marginTop="426dp"
         android:fontFamily="serif"
-        android:text="@string/promocode"
+        android:text="Promocode"
         android:textColor="@color/Lafefny2"
         android:textSize="25sp"
         android:textStyle="italic"
@@ -295,7 +286,7 @@
         android:background="@color/white"
         android:fontFamily="serif"
         android:hint="@string/lafa98"
-        android:inputType="text"
+        android:inputType="textNoSuggestions"
         android:paddingStart="10dp"
         android:textColor="@color/Grey"
         android:autofillHints="" />

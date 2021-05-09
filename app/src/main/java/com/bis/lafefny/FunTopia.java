@@ -3,7 +3,9 @@ package com.bis.lafefny;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,9 +24,13 @@ public class FunTopia extends AppCompatActivity {
     private TextView funNotices1,funNotices2,funNotices3;
     private TextView funKids1,funKids2,funKids3;
 
+    String location,contact,openHourse;
+    int regularPrice,vipPrice;
+
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference gamingDoRef = db.document("entertainment/categories/gaming/FunTopia");
 
+    private SharedPreferences funtopiaPref;
 
     @Override
     protected void onStart() {
@@ -34,12 +40,15 @@ public class FunTopia extends AppCompatActivity {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         if (documentSnapshot.exists()){
+                            location = documentSnapshot.getString("location");
                             funTitle.setText(documentSnapshot.getString("name"));
                             funDesc1.setText(documentSnapshot.getString("desc1"));
                             funDesc2.setText(documentSnapshot.getString("desc2"));
-                            funLocation.setText(documentSnapshot.getString("location"));
-                            funPhone.setText(documentSnapshot.getString("phone"));
-                            funOpeningHours.setText(documentSnapshot.getString("open"));
+                            funLocation.setText(location.toString());
+                            contact = documentSnapshot.getString("phone");
+                            funPhone.setText(contact);
+                            openHourse = documentSnapshot.getString("open");
+                            funOpeningHours.setText(openHourse.toString());
                             funSafe1.setText(documentSnapshot.getString("safety1"));
                             funSafe2.setText(documentSnapshot.getString("safety2"));
                             funSafe3.setText(documentSnapshot.getString("safety3"));
@@ -71,6 +80,8 @@ public class FunTopia extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fun_topia);
 
+        funtopiaPref =  getSharedPreferences("funtopia_pref" , Context.MODE_PRIVATE);
+
         FunTopiaInitilViews();
     }
 
@@ -97,15 +108,37 @@ public class FunTopia extends AppCompatActivity {
     public void FunTopiaOnClick(View view) {
         switch (view.getId())
         {
-            case R.id.btn_back_ft:
-                startActivity(new Intent(getApplicationContext(), GamingArea.class));
-                break;
+//            case R.id.btn_back_ft:
+//                    onBackPressed();
+//                break;
             case R.id.btn_transportation_ft:
                 startActivity(new Intent(getApplicationContext() , Transportation.class));
                 break;
             case R.id.btn_ticket_ft:
-                startActivity(new Intent(getApplicationContext() , Booking.class));
+                Intent intent = new Intent(getApplicationContext() , Booking.class);
+                saveFuntopiaDataToPref();
+                intent.putExtra("screen" , "funtopia");
+                startActivity(intent);
                 break;
         }
+    }
+
+    private void saveFuntopiaDataToPref() {
+        funtopiaPref.edit().putString("location" , location).apply();
+        funtopiaPref.edit().putString("contact" , contact).apply();
+        funtopiaPref.edit().putString("source" , "Fun Topia").apply();
+        funtopiaPref.edit().putString("runningTime" , openHourse).apply();
+        funtopiaPref.edit().putInt("regularPrice" , 65).apply();
+        funtopiaPref.edit().putInt("vipPrice" , 300).apply();
+        funtopiaPref.edit().commit();
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        SharedPreferences.Editor editor = funtopiaPref.edit();
+        editor.clear();
+        editor.commit();
+        super.onBackPressed();
     }
 }

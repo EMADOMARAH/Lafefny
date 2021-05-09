@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bis.lafefny">
+    package="com.bis.lafefny" >
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
 
     <application
+        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:hardwareAccelerated="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo2"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo2"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Lafefny">
+        android:theme="@style/Theme.Lafefny" >
         <activity android:name=".Emergency" />
+        <activity android:name=".Account" />
+        <activity android:name=".profile" />
         <activity android:name=".Question14_15" />
         <activity android:name=".Question12_13" />
         <activity android:name=".Question10_11" />
@@ -21,7 +27,7 @@
         <activity android:name=".Question2_3" />
         <activity android:name=".Questionnaire1" />
         <activity android:name=".ProvideData" />
-        <activity android:name=".preferences"/>
+        <activity android:name=".preferences" />
         <activity android:name=".FamilyPlan" />
         <activity android:name=".SiwaOasis_AdvPlan2" />
         <activity android:name=".SiwaOasis_AdvPlan" />
@@ -53,15 +59,17 @@
 
         </activity>
         <activity android:name=".Sign_Up" />
-        <activity android:name=".Sign_In" >
 
-        </activity>
-        <activity android:name=".MainActivity2" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Sign_In"/> >
+
+        <activity android:name=".MainActivity2">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
         <activity android:name=".MainActivity" />
 
     </application>

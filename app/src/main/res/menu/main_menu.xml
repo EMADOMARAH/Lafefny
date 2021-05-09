@@ -1,71 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_baseline_home6_24"
-            android:title="Home" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home6_24"
+        android:title="Home"
+        android:iconTint="@color/Lafefny2"
+        />
 
-        <item
-            android:id="@+id/nav_cycle"
-            android:icon="@drawable/ic_baseline_home5_24"
-            android:title="Cycle" />
+    <item
+        android:id="@+id/nav_promocode"
+        android:icon="@drawable/coupon3"
+        android:title="Promocode"
+        android:iconTint="@color/Lafefny2"
+        />
+
+    <item
+        android:id="@+id/nav_Acc"
+        android:icon="@drawable/ic_profile_user6"
+        android:title="Account"
+        />
+
+    <item
+        android:id="@+id/nav_About"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="About"
+        />
+
+    <item
+        android:id="@+id/nav_PV"
+        android:icon="@drawable/ic_marking"
+        android:title="Provide Data"
+        />
+
+    <item
+        android:id="@+id/nav_filter"
+        android:icon="@drawable/ic_baseline_filter_alt6_24"
+        android:title="Filtering"
+        />
 
 
-        <item
-            android:id="@+id/nav_bus"
-            android:icon="@drawable/ic_baseline_home4_24"
-            android:title="Bus" />
 
-        <item
-            android:id="@+id/nav_plane"
-            android:icon="@drawable/ic_baseline_home3_24"
-            android:title="Plane" />
+    <item
+        android:id="@+id/nav_hotel"
+        android:icon="@drawable/ic_hotel"
+        android:iconTint="@color/Lafefny2"
+        android:title="Hotels' Details"
+        />
 
-    </group>
+    <item
+        android:id="@+id/nav_sort"
+        android:icon="@drawable/sort4"
+        android:title="Sorting"
+        android:iconTint="@color/Lafefny2"
+        />
 
-    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_Transportation"
+        android:icon="@drawable/ic_baseline_directions_car_24"
+        android:title="Transportation"
+        />
 
-        <item android:title="Profle">
+    <item
+        android:id="@+id/nav_TG"
+        android:icon="@drawable/ic_tour_guide"
+        android:iconTint="@color/Lafefny2"
+        android:title="Tour Guide"
+        />
 
-            <menu>
-
-                <item
-                    android:id="@+id/nav_login"
-                    android:icon="@drawable/ic_baseline_home6_24"
-                    android:title="Login" />
-
-                <item
-                    android:id="@+id/nav_logout"
-                    android:icon="@drawable/logout_icon"
-                    android:title="Logout" />
-
-                <item
-                    android:id="@+id/nav_profile"
-                    android:icon="@drawable/ic_baseline_home6_24"
-                    android:title="profile" />
-
-            </menu>
-
-        </item>
-
-    </group>
-
-    <item android:title="Communicate">
-        <menu>
-
-            <item
-                android:id="@+id/nav_share"
-                android:title="share"
-                android:icon="@drawable/ic_baseline_home6_24"/>
-            <item
-                android:id="@+id/nav_rate"
-                android:title="Rate Us"
-                android:icon="@drawable/ic_baseline_home6_24"/>
-
-        </menu>
-
-    </item>
 
 </menu>

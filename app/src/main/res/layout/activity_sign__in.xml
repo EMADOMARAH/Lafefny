@@ -9,7 +9,7 @@
 
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="830dp"
+    android:layout_height="660dp"
     tools:context="com.bis.lafefny.Sign_In">
 
     <ImageView
@@ -91,66 +91,7 @@
         android:layout_marginStart="20dp"
         android:textSize="25sp"/>
 
-    <CheckBox
-        android:id="@+id/checkboxremember"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="520dp"
-        android:layout_marginLeft="30dp"
-        android:button="@drawable/checkbox2"
-        android:fontFamily="serif"
-        android:textColor="@color/Lafefny2"
-        android:textSize="15sp"
-        />
-    <TextView
-        android:id="@+id/txt_remember_me"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/pt_passwords_in"
-        android:layout_marginTop="24dp"
-        android:text="Remember Me"
-        android:fontFamily="serif"
-        android:textColor="@color/Lafefny2"
-        android:layout_marginStart="55dp"
-        android:textSize="20sp"/>
 
-
-    <TextView
-        android:id="@+id/txt_forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/pt_passwords_in"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="95dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="264dp"
-        android:fontFamily="serif"
-        android:text="Forgot your password?"
-        android:textColor="@color/Lafefny2"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-
-    <TextView
-        android:id="@+id/txt_connect_with"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/pt_passwords_in"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="57dp"
-        android:layout_marginStart="119dp"
-        android:layout_marginTop="153dp"
-        android:fontFamily="serif"
-        android:text="Or Connect with"
-        android:textAlignment="center"
-        android:textColor="@color/Lafefny2"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/pt_passwords_in"
@@ -175,40 +116,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="80dp"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="33dp"
         android:backgroundTint="@color/white"
         android:fontFamily="sans-serif"
         android:text="@string/sign_inn"
         android:textColor="@color/Lafefny2"
         android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/btn_facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/btn_signin2"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="63dp"
-        android:backgroundTint="#3B5998"
-        android:fontFamily="sans-serif"
-        android:text="Facebook"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
-
-    <Button
-        android:id="@+id/btn_google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/btn_signin2"
-        android:layout_marginStart="214dp"
-        android:layout_marginTop="63dp"
-        android:backgroundTint="#FF3E30"
-        android:fontFamily="sans-serif"
-        android:text="Google +"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
 
     <Button
         android:id="@+id/btn_back"

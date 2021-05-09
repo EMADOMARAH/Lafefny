@@ -50,7 +50,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     //ProgressDialog progress ;
     Map<String, Object> user = new HashMap<>();
     //create filepath to upload profile image to sorage
-    private Uri filePath;;
+    private Uri filePath;
     //store the new user id
     private String uId;
     private  String profileimageneme;
@@ -66,6 +66,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     EditText nationalityEditText;
     Spinner spinner;
 
+    CheckBox checkboxagree;
     String firstName,lastName,userName,email,password,confirmPassword,mobile,dateOfBirth,nationality,gender;
     boolean allDataChecked = false;
 
@@ -146,16 +147,21 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
 
     public void SignUpMethod(View view) {
 
-        getDataFromViews();
-        checkForDataExist();
-        if (allDataChecked == true){
-            createNewUser();
-            storeUserDataToFireStore();
-        }
+            getDataFromViews();
+            if (checkboxagree.isChecked()){
+                checkForDataExist();
+                if (allDataChecked == true){
+                    createNewUser();
+                    storeUserDataToFireStore();
+                }
+            }else {
+                Toast.makeText(this, "Please accept terms and conditions", Toast.LENGTH_SHORT).show();
+            }
 
     }
 
     private void storeUserDataToFireStore(){
+        uploadProfileImage();
         makeUserDataIntoMap();
         db.collection("users")
                 .add(user)
@@ -175,7 +181,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
                     }
                 });
 
-        uploadProfileImage();
+
 
     }
 
@@ -194,6 +200,8 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             //progressDialog.dismiss();
                             Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
+                            authPreferences.edit().putString("imgName" , profileimageneme).apply();
+                            authPreferences.edit().commit();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
@@ -267,7 +275,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         }else if (!confirmPassword.equals(password)){
             confirmEditText.requestFocus();
             confirmEditText.setError("Password Don't Match");
-        }else if (mobile.isEmpty()){
+        }else if (mobile.isEmpty() | mobile.length() !=11 ){
             mobileEditText.requestFocus();
             mobileEditText.setError("Enter Valid mobile number");
         }else if (dateOfBirth.isEmpty()){
@@ -292,6 +300,9 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         dateOfBirth=dateOBEditText.getText().toString().trim();
         nationality=spinner.getSelectedItem().toString();
         getUserGender();
+
+
+
     }
 
     public  void  getUserGender(){
@@ -321,6 +332,8 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
 
         add_img_btn = findViewById(R.id.btn_addphoto);                  //image
         profile_image = findViewById(R.id.profileimage);
+
+//        checkboxagree = findViewById(R.id.checkboxagree);
     }
 
 

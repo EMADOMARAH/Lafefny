@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_siwa"
-    tools:context="com.bis.lafefny.AmusementPark"
+    tools:context="com.bis.lafefny.SiwaOasis_AdvPlan"
     tools:ignore="RelativeOverlap">
 
     <RelativeLayout
@@ -24,6 +24,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/ticket"
+            android:onClick="SiwaOasisOnClick"
             android:textColor="#A97A44"
             android:textSize="30sp" />
 
@@ -36,6 +37,7 @@
             android:layout_marginTop="15dp"
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
+            android:onClick="SiwaOasisOnClick"
             android:text="Tour Guide"
             android:textColor="#A97A44"
             android:textSize="30sp" />
@@ -51,6 +53,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/transportation"
+            android:onClick="SiwaOasisOnClick"
             android:textColor="#A97A44"
             android:textSize="30sp" />
 
@@ -60,26 +63,8 @@
             android:layout_height="61dp"
             android:background="@drawable/btnborder9">
 
-            <Button
-                android:id="@+id/btn_filter_siwa_intro"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="9dp"
-                android:layout_marginStart="340dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt9_24" />
 
-            <Button
-                android:id="@+id/btn_back_siwa_intro"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="45dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F520C"
-                android:drawableEnd="@drawable/ic_baseline_arrow_back10_24" />
+
 
             <TextView
                 android:id="@+id/txt_siwa_oasis"
@@ -163,6 +148,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_price1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -189,6 +175,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_price2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -214,6 +201,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_price3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -240,6 +228,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_price4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -267,6 +256,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_price5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -321,6 +311,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_req1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -347,6 +338,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_req2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -372,6 +364,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_req3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -428,6 +421,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_info1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -455,6 +449,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_info2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -510,6 +505,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_program1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -536,6 +532,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_program2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -561,6 +558,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/siwa_program3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
@@ -580,6 +578,7 @@
                 android:backgroundTint="@color/white"
                 android:text="View Full Program"
                 android:textSize="15sp"
+                android:onClick="SiwaOasisOnClick"
                 android:layout_marginTop="155dp"
                 android:layout_marginLeft="150dp"
                 android:textColor="#5D5A5A"

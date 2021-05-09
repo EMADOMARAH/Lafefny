@@ -21,31 +21,7 @@
             android:layout_marginTop="0dp"
             android:background="@drawable/btnborder" />
 
-        <Button
-            android:id="@+id/btn_search_plan_categ"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="66dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="9dp"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="4dp"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_baseline_search_24"
-            android:paddingRight="10dp"
-            android:onClick="onClickAll"
-            />
 
-        <Button
-            android:id="@+id/btn_back_plan_categ"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/Lafefny1"
-            android:drawableEnd="@drawable/ic_baseline_arrow_back_24"
-            android:onClick="onClickAll"
-            />
 
         <TextView
             android:id="@+id/txt_plans_plan_categ"
@@ -145,46 +121,33 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_family"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_home_24" />
+                android:drawableEnd="@drawable/ic_baseline_home_24"
+                android:onClick="onClickAll"/>
 
             <Button
-                android:id="@+id/btn_loc_plan_categ"
+                android:id="@+id/btn_pre_plan_categ"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/btn_family"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location_on_24" />
+                android:drawableTint="@color/Lafefny2"
+                android:drawableEnd="@android:drawable/btn_star"
+                android:onClick="onClickAll"/>
 
             <Button
                 android:id="@+id/btn_user_plan_categ"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_family"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_profile_user" />
-
-            <Button
-                android:id="@+id/btn_filter_plan_categ"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="66dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btn_family"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_filter_alt_24"
-                android:paddingRight="10dp" />
+                android:drawableEnd="@drawable/ic_profile_user"/>
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

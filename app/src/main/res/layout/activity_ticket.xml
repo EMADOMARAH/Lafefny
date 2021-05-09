@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ticket">
+    tools:context=".Ticket"
+    android:background="@color/Lafefny1"
+    >
 
     <RelativeLayout
+        android:id="@+id/AllScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -20,7 +23,7 @@
             android:fontFamily="serif"
             android:text="DONE"
             android:onClick="TicketOnClick"
-            android:textColor="#8A3665"
+            android:textColor="@color/Lafefny2"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -36,29 +39,9 @@
             android:layout_width="332dp"
             android:layout_height="165dp"
             android:layout_below="@id/txt_ticket_id"
-            android:layout_marginLeft="45dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/backgroundd" />
-
-        <ImageView
-            android:layout_width="580dp"
-            android:layout_height="800dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/img_background"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="22dp"
-            android:alpha="0.1"
-            android:background="@drawable/ovalticket"
-            android:backgroundTint="@color/Purple" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_below="@id/img_background"
-            android:layout_marginLeft="240dp"
-            android:layout_marginTop="550dp"
-            android:background="@drawable/barcode" />
-
+            app:srcCompat="@drawable/logo2"/>
 
 
         <TextView
@@ -69,7 +52,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="serif"
             android:text="Ticket"
-            android:textColor="#8A3665"
+            android:textColor="@color/Lafefny2"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -81,7 +64,7 @@
             android:layout_marginTop="60dp"
             android:fontFamily="serif"
             android:text="Ticket ID"
-            android:textColor="#8A3665"
+            android:textColor="@color/Lafefny2"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -100,12 +83,15 @@
             android:id="@+id/txt_ticket_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="95dp"
-            android:layout_marginTop="380dp"
+            android:layout_below="@+id/img_background"
+            android:layout_marginTop="25dp"
             android:fontFamily="serif"
             android:text="Sound and Light Show"
-            android:textColor="#8A3665"
-            android:textSize="20sp" />
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/Lafefny2"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txt_ticket_hosted_by"
@@ -125,10 +111,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_ticket_hosted_by"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="serif"
             android:text="Date and Time"
-            android:textColor="#8A3665"
+            android:textColor="@color/Lafefny2"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -165,7 +151,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:text="Location"
-            android:textColor="#8A3665"
+            android:textColor="@color/Lafefny2"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -191,7 +177,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:text="No. of Tickets"
-            android:textColor="#8A3665"
+            android:textColor="@color/Lafefny2"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -252,7 +238,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:text="Total Payment"
-            android:textColor="#8A3665"
+            android:textColor="@color/Lafefny2"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -277,7 +263,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:text="Promotion"
-            android:textColor="#8A3665"
+            android:textColor="@color/Lafefny2"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -295,29 +281,30 @@
 
         <TextView
             android:id="@+id/disclaimer"
-            android:layout_width="250dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/integer_ticket_promotion"
-            android:layout_marginStart="85dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="85dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="35dp"
             android:fontFamily="serif"
             android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1"
             android:text="* Disclaimer --> ticket expires in 6 days based on the type ofm service this ticket belongs to."
             android:textColor="@color/Grey"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
         <Button
             android:id="@+id/btn_transportation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/disclaimer"
             android:layout_marginStart="105dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="30dp"
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="Get a ride"
             android:onClick="TicketOnClick"
-            android:textColor="@color/Purple"
+            android:textColor="@color/Lafefny2"
             android:textSize="25sp"
             android:textStyle="bold"/>
 

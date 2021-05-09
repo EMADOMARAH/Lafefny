@@ -22,22 +22,12 @@
             android:background="@drawable/btnborder">
 
 
-            <Button
-                android:id="@+id/menu2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="-30dp"
-                android:layout_marginTop="3dp"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:backgroundTint="@color/black"
-                android:drawableEnd="@drawable/ic_baseline_menu2_24"/>
-
             <TextView
                 android:id="@+id/txt_emergency"
-                android:layout_width="380dp"
+                android:layout_width="386dp"
                 android:layout_height="54dp"
-                android:layout_alignParentTop="false"
                 android:layout_alignParentEnd="false"
+                android:layout_alignParentTop="false"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="1dp"
                 android:fontFamily="serif"
@@ -283,36 +273,27 @@
                 android:drawableEnd="@drawable/ic_baseline_home6_24" />
 
             <Button
-                android:id="@+id/btn_emg_loc"
+                android:id="@+id/btn_emg_pre"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location9_on_24" />
+                android:drawableEnd="@android:drawable/btn_star"
+                android:drawableTint="#CF8B74" />
             <Button
                 android:id="@+id/btn_emg_user"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="200dp"
+                android:layout_gravity="right"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_profile_user6" />
+                android:drawableEnd="@drawable/ic_profile_user6"  />
 
-            <Button
-                android:id="@+id/btn_emg_sort"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort4" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     </RelativeLayout>

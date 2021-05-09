@@ -10,8 +10,9 @@ import android.widget.Button;
 public class Questionnaire1 extends AppCompatActivity {
     private Button button_questionnaire1_back;
     private Button button_next;
-    private Button button_skip;
+//    private Button button_skip;
     private Button button_questionnaire1_home;
+    private Button button_questionnaire1_pre;
     private Button button_questionnaire1_account;
 
 
@@ -26,17 +27,23 @@ public class Questionnaire1 extends AppCompatActivity {
             public void onClick(View v) { openHomepage(); }
         });
 
+        button_questionnaire1_pre = (Button) findViewById(R.id.btn_questionnaire1_pre);           //button preferences
+        button_questionnaire1_pre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openpreferences(); }
+        });
+
         button_next = (Button) findViewById(R.id.btn_next);           //button next
         button_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openQuestion2_3(); }
         });
 
-        button_skip = (Button) findViewById(R.id.btn_skip);           //button skip
-        button_skip.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { openQuestion2_3(); }
-        });
+//        button_skip = (Button) findViewById(R.id.btn_skip);           //button skip
+//        button_skip.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) { openQuestion2_3(); }
+//        });
 
         button_questionnaire1_back=(Button) findViewById(R.id.btn_questionnaire1_back);            //button back
         button_questionnaire1_back.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +63,10 @@ public class Questionnaire1 extends AppCompatActivity {
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
     }
 

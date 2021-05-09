@@ -3,13 +3,15 @@ package com.bis.lafefny;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class Restaurants extends AppCompatActivity {
-    private Button button_back;
+//    private Button button_back;
     private Button button_home;
+    private Button button_pre_res;
     private Button button_the_smokery;
     private Button button_account_res;
 
@@ -17,11 +19,19 @@ public class Restaurants extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurants);
-        button_back = (Button) findViewById(R.id.btn_back_res); //button back
-        button_back.setOnClickListener(new View.OnClickListener() {
+//        button_back = (Button) findViewById(R.id.btn_back_res); //button back
+//        button_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openEnt_Categories();
+//            }
+//        });
+
+        button_pre_res = (Button) findViewById(R.id.btn_pre_res); //button preferences
+        button_pre_res.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openEnt_Categories();
+                openpreferences();
             }
         });
 
@@ -52,6 +62,11 @@ public class Restaurants extends AppCompatActivity {
         Intent intent = new Intent(this, Ent_Categories.class);  //open back
         startActivity(intent);
     }
+
+    public void openpreferences(){
+        Intent intent = new Intent(this, preferences.class);  //open preferences
+        startActivity(intent);
+    }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
         startActivity(intent);
@@ -64,5 +79,15 @@ public class Restaurants extends AppCompatActivity {
     public void openAccount8(){
         Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
+    }
+
+    public void RestaurantsOnClick(View view) {
+        switch (view.getId()){
+            case R.id.txt_location_smokery:
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("https://www.google.com/maps/search/the+smokery/@30.0428723,31.0839895,11z/data=!3m1!4b1"));
+                startActivity(intent);
+                break;
+        }
     }
 }
