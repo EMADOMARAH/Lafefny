@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/sound_light_show_header"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder10">
 
             <TextView
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/desc2_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder10">
 
             <TextView
@@ -166,7 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/desc3_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder10">
 
 
@@ -202,7 +202,7 @@
                 android:id="@+id/day1_lang1_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="23dp"
+                android:layout_marginStart="26dp"
                 android:layout_marginTop="85dp"
                 android:text="All Languages"
                 android:textAlignment="center"
@@ -240,7 +240,7 @@
                 android:id="@+id/day1_lang2_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="43dp"
+                android:layout_marginStart="28dp"
                 android:layout_marginTop="175dp"
                 android:text="Arabic"
                 android:textAlignment="center"
@@ -261,25 +261,13 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/desc5_background"
-            android:layout_width="150dp"
+            android:layout_width="149dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/desc3_background"
             android:layout_marginStart="245dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder10">
 
-
-            <TextView
-                android:id="@+id/day2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:text="Wednesday"
-                android:drawableLeft="@drawable/ic_baseline_calendar_today3_24"
-                android:textAlignment="center"
-                android:textColor="@color/Grey"
-                android:textSize="19sp" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -287,6 +275,14 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/line_png_27963"
                 android:backgroundTint="@color/Grey" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/line_png_27963"
+                android:backgroundTint="@color/Grey" />
+
             <TextView
                 android:id="@+id/day2_time1_txt"
                 android:layout_width="wrap_content"
@@ -297,6 +293,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/day2_lang1_txt"
                 android:layout_width="wrap_content"
@@ -307,6 +304,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/day2_price1_txt"
                 android:layout_width="wrap_content"
@@ -318,12 +316,17 @@
                 android:textColor="@color/Grey"
                 android:textSize="16sp" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="77dp"
-                android:layout_marginTop="105dp"
-                android:background="@drawable/line_png_27963"
-                android:backgroundTint="@color/Grey" />
+            <TextView
+                android:id="@+id/day2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today3_24"
+                android:text="Wednesday"
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="19sp" />
 
             <TextView
                 android:id="@+id/day2_time2_txt"
@@ -335,6 +338,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/day2_lang2_txt"
                 android:layout_width="wrap_content"
@@ -345,17 +349,18 @@
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/day2_price2_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:layout_marginStart="43dp"
                 android:layout_marginTop="205dp"
                 android:text="300 EGP"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
-                android:textSize="16sp"
-                android:layout_marginBottom="15dp"/>
+                android:textSize="16sp" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -364,7 +369,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/desc5_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder10">
 
 
@@ -463,7 +468,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/desc5_background"
             android:layout_marginStart="245dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder10">
 
 
@@ -537,7 +542,7 @@
                 android:id="@+id/day4_lang2_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="23dp"
+                android:layout_marginStart="53dp"
                 android:layout_marginTop="175dp"
                 android:text="All Languages"
                 android:textAlignment="center"
@@ -547,7 +552,7 @@
                 android:id="@+id/day4_price2_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="43dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="205dp"
                 android:text="300 EGP"
                 android:textAlignment="center"
@@ -561,7 +566,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/desc"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder10">
 
 
