@@ -1183,47 +1183,7 @@
                 android:textColor="#33446A"
                 android:textSize="20sp" />
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/footer_sport"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginTop="190dp"
-                android:background="@drawable/btnborder7">
 
-                <Button
-                    android:id="@+id/btn_home1_sport"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:drawableEnd="@drawable/ic_baseline_home4_24" />
-
-                <Button
-                    android:id="@+id/btn_pre_sport"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="wrap_content"
-                    android:layout_height="39dp"
-                    android:layout_marginBottom="11dp"
-                    android:layout_marginStart="150dp"
-                    android:layout_marginTop="7dp"
-                    android:backgroundTint="@color/white"
-                    android:drawableEnd="@android:drawable/btn_star"
-                    android:drawableTint="#33446A" />
-
-                <Button
-                    android:id="@+id/btn_user_sport"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="2dp"
-                    android:backgroundTint="@color/white"
-                    android:drawableEnd="@drawable/ic_profile_user4" />
-
-
-            </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -1318,6 +1278,50 @@
                 android:textSize="15sp"
                 android:fontFamily="serif"
                 android:textStyle="bold" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer_sport"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/triathlo13_background"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btnborder7">
+
+            <Button
+                android:id="@+id/btn_home1_sport"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_home4_24" />
+
+            <Button
+                android:id="@+id/btn_pre_sport"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginBottom="11dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@android:drawable/btn_star"
+                android:drawableTint="#33446A" />
+
+            <Button
+                android:id="@+id/btn_user_sport"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_profile_user4" />
+
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
