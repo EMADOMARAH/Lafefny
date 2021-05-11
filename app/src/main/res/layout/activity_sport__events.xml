@@ -58,7 +58,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/txt_upcoming"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -163,7 +163,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/triathlon2_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -259,7 +259,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/swimming_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -354,7 +354,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -446,7 +446,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon1_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -540,7 +540,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon3_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -635,7 +635,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon4_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -728,7 +728,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon5_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -821,7 +821,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon6_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -914,7 +914,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon7_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -1007,7 +1007,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon8_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -1099,7 +1099,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/running_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -1191,9 +1191,10 @@
             android:id="@+id/footer_sport"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_below="@+id/triathlo11_background"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="2750dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/btnborder7">
 
             <Button

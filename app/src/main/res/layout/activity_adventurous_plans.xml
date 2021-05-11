@@ -45,7 +45,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/adventure_header_adv"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -160,7 +160,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/blue_hole_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -275,7 +275,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/ras_mohammed_camping_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -389,7 +389,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/siwa_oasis_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -501,12 +501,10 @@
             android:id="@+id/footer_adv"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_below="@id/adventure_header_adv"
+            android:layout_below="@id/hot_air_balloons_background"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="980dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/btnborder6">
 
             <Button
