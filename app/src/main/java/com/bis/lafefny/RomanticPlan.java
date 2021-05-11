@@ -24,6 +24,7 @@ public class RomanticPlan extends AppCompatActivity {
     private Button button_vox;
     private Button button_home;
     private Button button_pre;
+    private Button button_account_romantic;
 
     TextView txt_romantic,txt_desc_romantic;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -87,6 +88,14 @@ public class RomanticPlan extends AppCompatActivity {
                 openVoxCinema();
             }
         });
+
+        button_account_romantic = (Button) findViewById(R.id.btn_user_rom); //button account
+        button_account_romantic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openaccount();
+            }
+        });
     }
 
     private void getDataFromFireBase() {
@@ -115,6 +124,12 @@ public class RomanticPlan extends AppCompatActivity {
         Intent intent = new Intent(this, Plans.class);  //open back
         startActivity(intent);
     }
+
+    public void openaccount(){
+        Intent intent = new Intent(this, Account.class);  //open account
+        startActivity(intent);
+    }
+
 
     public void openpreferences(){
         Intent intent = new Intent(this, preferences.class);  //open preferences

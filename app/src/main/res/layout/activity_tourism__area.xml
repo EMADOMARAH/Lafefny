@@ -45,7 +45,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/tourism_area_header"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button

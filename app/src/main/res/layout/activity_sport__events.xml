@@ -58,7 +58,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/txt_upcoming"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -163,7 +163,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/triathlon2_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -259,7 +259,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/swimming_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -354,7 +354,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -446,7 +446,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon1_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -540,7 +540,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon3_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -635,7 +635,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon4_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -728,7 +728,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon5_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -821,7 +821,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon6_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -914,7 +914,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon7_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -1007,7 +1007,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/triathlon8_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -1068,7 +1068,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="125dp"
-                android:text="Adventure"
+                android:text="CrossFit"
                 android:textColor="#33446A"
                 android:textSize="25sp"
                 android:textStyle="bold" />
@@ -1094,105 +1094,12 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/triathlo13_background"
-            android:layout_width="380dp"
-            android:layout_height="150dp"
-            android:layout_below="@+id/triathlo11_background"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
-            android:background="@drawable/btnborder6">
-
-            <Button
-                android:layout_width="105dp"
-                android:layout_height="51dp"
-                android:layout_marginStart="270dp"
-                android:layout_marginTop="94dp"
-                android:alpha="0.1"
-                android:backgroundTint="@color/Grey"
-                android:shadowColor="@color/Grey"
-                android:textSize="11sp" />
-
-            <Button
-                android:layout_width="90dp"
-                android:layout_height="51dp"
-                android:layout_marginStart="170dp"
-                android:layout_marginTop="94dp"
-                android:alpha="0.1"
-                android:backgroundTint="@color/Grey"
-                android:shadowColor="@color/Grey"
-                android:textSize="11sp" />
-
-            <TextView
-                android:layout_width="109dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="175dp"
-                android:layout_marginTop="109dp"
-                android:text="@string/view_all_details"
-                android:textSize="15sp"
-                android:fontFamily="serif"
-                android:textStyle="bold"/>
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/crossfit"
-                android:contentDescription="@string/todo" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="345dp"
-                android:layout_marginTop="105dp"
-                android:background="@drawable/ic_baseline_location5_on_24"
-                android:contentDescription="@string/todo" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="235dp"
-                android:layout_marginTop="108dp"
-                android:background="@drawable/clicknext2"
-                android:contentDescription="@string/todo" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="125dp"
-                android:text="Adventure"
-                android:textColor="#33446A"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="86dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="280dp"
-                android:layout_marginTop="109dp"
-                android:fontFamily="serif"
-                android:text="@string/get_location"
-                android:textSize="15sp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="127dp"
-                android:layout_marginTop="50dp"
-                android:text="CrossFit"
-                android:fontFamily="serif"
-                android:textColor="#33446A"
-                android:textSize="20sp" />
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/triathlon2_background"
             android:layout_width="380dp"
             android:layout_height="150dp"
             android:layout_below="@id/running_background"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder6">
 
             <Button
@@ -1284,9 +1191,10 @@
             android:id="@+id/footer_sport"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_below="@+id/triathlo11_background"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="3000dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/btnborder7">
 
             <Button
