@@ -23,6 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -48,11 +49,17 @@ public class Question6_7 extends AppCompatActivity {
     Map<String, Object> place = new HashMap<>();
 
     DocumentReference pre;
+    SharedPreferences authPreferences ;
+
+    String userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question6_7);
+
+        authPreferences = getSharedPreferences("Lafefny_App" , Context.MODE_PRIVATE);
+        userId = authPreferences.getString("userId" , "");
 
         Qanswers = getSharedPreferences("QAnswer" , Context.MODE_PRIVATE);
         Q6 = (RadioGroup) findViewById(R.id.Ques6_group);
@@ -85,7 +92,8 @@ public class Question6_7 extends AppCompatActivity {
         button_back_QS4=(Button) findViewById(R.id.btn_questionnaire4_back);            //button back
         button_back_QS4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { openQuestion4_5(); }
+            public void onClick(View v) { onBackPressed();
+            }
 
         });
 

@@ -102,7 +102,7 @@ public class Recomended extends AppCompatActivity {
                                String placeImage = documentSnapshot.getString("img");
 
 
-                               recomededModel = new RecomededModel("R.drawable.logo2", placeCategory,placeName);
+                               recomededModel = new RecomededModel(placeImage, placeCategory,placeName);
 
                                recomendedList.add(recomededModel);
                                System.out.println("recomendlistSize : " + recomendedList.size());

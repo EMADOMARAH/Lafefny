@@ -61,7 +61,7 @@ public class Questionnaire1 extends AppCompatActivity {
         button_questionnaire1_back=(Button) findViewById(R.id.btn_questionnaire1_back);            //button back
         button_questionnaire1_back.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { openProvideData(); }
+            public void onClick(View v) { onBackPressed(); }
 
         });
 

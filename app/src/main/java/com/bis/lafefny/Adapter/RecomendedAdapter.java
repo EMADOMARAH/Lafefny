@@ -36,8 +36,8 @@ public class RecomendedAdapter extends RecyclerView.Adapter<RecomendedAdapter.Re
         holder.placeName.setText(recomededModel.getName());
         holder.placeCategory.setText(recomededModel.getCategory());
         Picasso.get()
-                .load("https://firebasestorage.googleapis.com/v0/b/lafefny.appspot.com/o/placesImages%2Ftest.jpg?alt=media&token=6ad8dd34-0b71-4ed3-b275-76a35e29acc8")
-                .placeholder(R.drawable.familyplan)
+                .load(recomededModel.getImage())
+                .noPlaceholder()
                 .into(holder.placeImg);
     }
 
