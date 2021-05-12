@@ -35,11 +35,11 @@ public class Sport_Events extends AppCompatActivity {
             }
         });
 
-        button_home_Sport = (Button) findViewById(R.id.btn_home1_sport); //button homepage
-        button_home_Sport.setOnClickListener(new View.OnClickListener() {
+        button_pre_Sport = (Button) findViewById(R.id.btn_pre_sport); //button preferences
+        button_pre_Sport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openHomepage();
+                openpreferences();
             }
         });
 
