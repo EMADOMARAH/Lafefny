@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/help_page"
+    tools:context=".Help">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Lafefny2"
+            android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" />
+
+
+        <TextView
+            android:id="@+id/txt_helpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="serif"
+            android:text="Ahlan! How can                           we help?"
+            android:textColor="@color/Grey"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="225dp"
+            android:layout_height="116dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="-6dp"
+            android:layout_marginEnd="-50dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/txt_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="serif"
+            android:text="Browse Topics"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/search_help"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_helpp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/btnborder"
+            android:drawableLeft="@drawable/search2"
+            android:ems="10"
+            android:hint="Search the help center...."
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/lafefny_about"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_help"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btnborder6">
+
+            <TextView
+                android:id="@+id/txt_laf_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="About Lafefny"
+                android:textColor="@color/Grey"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_laf_aboutt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="stop! we are here"
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_laf_abouttt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Welcome Welecome welcome!"
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="18sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/lafefny_promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lafefny_about"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btnborder6">
+
+
+            <TextView
+                android:id="@+id/txt_laf_promo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Promotions"
+                android:textColor="@color/Grey"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_laf_promoo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Here you'll find information of all the promotions that are currently rummimg on lafefny"
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="18sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/lafefny_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lafefny_promo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="465dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btnborder6">
+
+
+            <TextView
+                android:id="@+id/txt_laf_acountt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="My Account"
+                android:textColor="@color/Grey"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_laf_acounttt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Everything you want to know about using app, your reservation, addresses, payment methods and more."
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="18sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/lafefny_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lafefny_account"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="600dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btnborder6">
+
+
+            <TextView
+                android:id="@+id/txt_laf_searchh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Search"
+                android:textColor="@color/Grey"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_laf_searchhh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Step right in, if you are looking for a place or playing with our fancy filtering mechanism"
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="18sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/lafefny_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lafefny_search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="740dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btnborder6">
+
+
+            <TextView
+                android:id="@+id/txt_laf_paymentt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Payment"
+                android:textColor="@color/Grey"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_laf_paymenttt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Interested in payment methods available on Lafefny, card security or PayPal pay? then this is for you."
+                android:textAlignment="center"
+                android:textColor="@color/Grey"
+                android:textSize="18sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

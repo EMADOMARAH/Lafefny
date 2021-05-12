@@ -121,7 +121,7 @@ public class Sign_In extends AppCompatActivity {
     void initViews() {
         back_btn = (Button) findViewById(R.id.btn_back); //back btn
         signIn_btn = (Button) findViewById(R.id.btn_signin2); //sign In
-        emailEditText = findViewById(R.id.pt_email_in);
+        emailEditText = findViewById(R.id.search_help);
         passwordEditText = findViewById(R.id.pt_passwords_in);
 
 

@@ -35,6 +35,9 @@ public class Cinema extends AppCompatActivity  {
             case R.id.btn_user_cinema:
                 startActivity(new Intent(this, Account.class));
                 break;
+            case R.id.btn_pre_cinema:
+                startActivity(new Intent(this, preferences.class));
+                break;
 
         }
     }

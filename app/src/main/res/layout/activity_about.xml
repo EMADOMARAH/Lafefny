@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lafefny_about"
+    tools:context=".About">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lafefny_about"
+        android:drawableCenter="@drawable/ic_baseline_go_center_arrow_24">
+
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Lafefny2"
+            android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" />
+
+
+        <TextView
+            android:id="@+id/txt_About"
+            android:layout_width="391dp"
+            android:layout_height="54dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="About Lafefny"
+            android:textAlignment="center"
+            android:textColor="@color/Lafefny2"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/txt_About"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.3"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/logo2"/>
+
+
+
+        <TextView
+            android:id="@+id/About_text"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_About"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:lineSpacingMultiplier="1.5"
+            android:text="Offering various entertainment ideas and locations that matches users’ preferences and desires with cutting throat prices and deals. We offer services, events, and reservations like no other when it comes to the benefits that we provide exclusively to Lafefny’s family"
+            android:textAlignment="center"
+            android:textColor="@color/Lafefny2"
+            android:textSize="25sp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footer_hp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/About_text"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="680dp"
+            android:background="@drawable/btnborder">
+
+            <Button
+                android:id="@+id/btn_home1_hp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/About"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_home_24" />
+
+            <Button
+                android:id="@+id/btn_loc_hp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/About"
+                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_location_on_24" />
+
+            <Button
+                android:id="@+id/btn_user_hp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/About"
+                android:layout_marginStart="300dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_profile_user" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+     </RelativeLayout>
+
+</ScrollView>
+
