@@ -93,7 +93,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.3"
-                android:text="1. Do you prefer a place in your area (2-8 km away)?"
+                android:text="1.Would you prefer outdoors or indoors"
                 android:textAlignment="textStart"
                 android:textColor="@color/Lafefny2"
                 android:textSize="25sp" />
@@ -114,7 +114,7 @@
                     android:layout_marginTop="70dp"
                     android:fontFamily="serif"
                     android:textSize="18sp"
-                    android:text="Agree"
+                    android:text="Outdoors"
                     android:textColor="@color/Lafefny2"
                     android:textColorHint="@color/Lafefny2" />
 
@@ -126,7 +126,7 @@
                     android:layout_marginStart="20dp"
                     android:textSize="18sp"
                     android:fontFamily="serif"
-                    android:text="Disagree"
+                    android:text="Indoors"
                     android:textColor="@color/Lafefny2" />
 
 

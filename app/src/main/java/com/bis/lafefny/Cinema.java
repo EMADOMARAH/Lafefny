@@ -25,8 +25,9 @@ public class Cinema extends AppCompatActivity  {
                 break;
             case R.id.txt_location_vox:
                 Intent voxLocation = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("https://www.google.com/search?q=vox%20cinema%20location&oq=vox+cenima+location&aqs=edge..69i57j0i13j0i13i30l2j0i22i30j0i5i13i30l2.6487j0j4&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:1&tbm=lcl&sxsrf=ALeKk02GhQIjO-VSKJRXokh4dzfpMQ2nuw:1618313718001&rflfq=1&num=10&rldimm=6822194390240675982&lqi=ChN2b3ggY2luZW1hIGxvY2F0aW9uSOvq2ZqFsICACFogCgp2b3ggY2luZW1hEAAQARgAGAEiCnZveCBjaW5lbWGSAQ1tb3ZpZV90aGVhdGVy&phdesc=Sn3gZtF5Smg&ved=2ahUKEwi_oa-ykPvvAhV0sXEKHeEGAscQvS4wAHoECAgQJg&rlst=f#rlfi=hd:;si:;mv:[[30.088468899999995,31.3837675],[29.964886799999995,30.997308300000004]]"));
+                        Uri.parse("https://www.google.com/maps/place/Vox+cinema/@30.0818484,31.3630643,15z/data=!4m5!3m4!1s0x0:0x5ead4da702f5488e!8m2!3d30.0818484!4d31.3630643"));
                 startActivity(voxLocation);
+
                 break;
             case R.id.btn_home1_cinema:
                 startActivity(new Intent(getApplicationContext(), Homepage.class));

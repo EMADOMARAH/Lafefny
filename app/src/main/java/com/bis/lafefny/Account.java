@@ -1,5 +1,6 @@
 package com.bis.lafefny;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -8,10 +9,16 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Account extends AppCompatActivity {
     private Button button_acc_profile;
@@ -24,7 +31,11 @@ public class Account extends AppCompatActivity {
     private Button button_acc_home;
     private Button button_acc_pre;
 
+    TextView hi;
+
     SharedPreferences authPreferences ;
+    DocumentReference userInfo;
+    String firstName;
 
 
     @Override
@@ -33,6 +44,7 @@ public class Account extends AppCompatActivity {
         setContentView(R.layout.activity_account);
 
         authPreferences = getSharedPreferences("Lafefny_App" ,Context.MODE_PRIVATE);
+        hi = findViewById(R.id.txt_hi);
 
 //        button_acc_back = (Button) findViewById(R.id.btn_acc_back); //button back
 //        button_acc_back.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +53,25 @@ public class Account extends AppCompatActivity {
 //                openHomepage();
 //            }
 //        });
+        String userId = authPreferences.getString("userId" , "");
+        System.out.println(userId);
+        userInfo = FirebaseFirestore.getInstance().document("users/"+userId);
+        userInfo.get()
+                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        firstName = documentSnapshot.getString("firstName");
+                        hi.setText("Hi " + firstName + ",");
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(Account.this, "Failed To Conect", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
 
         button_acc_profile = (Button) findViewById(R.id.btn_go_to_profile); //button profile
         button_acc_profile.setOnClickListener(new View.OnClickListener() {

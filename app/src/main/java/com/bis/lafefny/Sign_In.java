@@ -93,7 +93,7 @@ public class Sign_In extends AppCompatActivity {
                                     preferences.edit().putString("userId" , Uid).apply();
                                     preferences.edit().commit();
                                     openHomepage();
-                                    Toast.makeText(Sign_In.this, "Welcome BRO....", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Sign_In.this, "Welcome BRO...."+Uid, Toast.LENGTH_SHORT).show();
                                 }
                             })
                             .addOnFailureListener(new OnFailureListener() {

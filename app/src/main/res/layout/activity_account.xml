@@ -47,7 +47,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="35dp"
             android:fontFamily="serif"
-            android:text="Hi Malak,"
+            android:text="Hi ,"
             android:textAlignment="gravity"
             android:textColor="@color/Lafefny2"
             android:textSize="35sp"

@@ -3,6 +3,7 @@ package com.bis.lafefny;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,13 +27,7 @@ public class Emergency extends AppCompatActivity {
             }
         });
 
-//        button_Emg_back = (Button) findViewById(R.id.btn_back2);  //button back
-//        button_Emg_back.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openHomepage();
-//            }
-//        });
+
 
 
         button_Emg_account = (Button) findViewById(R.id.btn_emg_user);  //button account icon
@@ -65,5 +60,28 @@ public class Emergency extends AppCompatActivity {
     public void openpreferences(){
         Intent intent = new Intent(this, preferences.class);  //open preferences
         startActivity(intent);
+    }
+
+    public void EmergencyOnClick(View view) {
+        switch (view.getId()){
+            case R.id.btn_call:
+                Intent intent1 = new Intent(Intent.ACTION_DIAL);
+                intent1.setData(Uri.parse("tel:122"));
+                startActivity(intent1);
+                break;
+
+            case R.id.btn_call2:
+                Intent intent2 = new Intent(Intent.ACTION_DIAL);
+                intent2.setData(Uri.parse("tel:123"));
+                startActivity(intent2);
+                break;
+
+            case R.id.btn_call3:
+
+                Intent intent3 = new Intent(Intent.ACTION_DIAL);
+                intent3.setData(Uri.parse("tel:180"));
+                startActivity(intent3);
+                break;
+        }
     }
 }

@@ -21,8 +21,10 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -66,7 +68,6 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
     EditText nationalityEditText;
     Spinner spinner;
 
-    CheckBox checkboxagree;
     String firstName,lastName,userName,email,password,confirmPassword,mobile,dateOfBirth,nationality,gender;
     boolean allDataChecked = false;
 
@@ -145,14 +146,15 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
 
     }
 
+
     public void SignUpMethod(View view) {
 
             getDataFromViews();
-            if (checkboxagree.isChecked()){
+            if (agreeCheckBox.isChecked()){
                 checkForDataExist();
                 if (allDataChecked == true){
                     createNewUser();
-                    storeUserDataToFireStore();
+
                 }
             }else {
                 Toast.makeText(this, "Please accept terms and conditions", Toast.LENGTH_SHORT).show();
@@ -164,12 +166,11 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         uploadProfileImage();
         makeUserDataIntoMap();
         db.collection("users")
-                .add(user)
-                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                .document(uId)
+                .set(user)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
-                    public void onSuccess(DocumentReference documentReference) {
-                      //  Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                        uId = documentReference.getId();
+                    public void onSuccess(Void aVoid) {
                         authPreferences.edit().putString("userId" , uId).apply();
                         authPreferences.edit().commit();
                     }
@@ -227,7 +228,7 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         user.put("lastName" , lastName);
         user.put("userName" , userName);
         user.put("email" , email);
-        //user.put("password" , password);
+        user.put("password" , password);
         user.put("mobile" , mobile);
         user.put("dateOfBirth" , dateOfBirth);
         user.put("nationality" , nationality);
@@ -237,9 +238,11 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
 
     private void createNewUser(){
         mAuth.createUserWithEmailAndPassword(email , password)
-                .addOnSuccessListener(this, new OnSuccessListener<AuthResult>() {
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onSuccess(AuthResult authResult) {
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        uId = task.getResult().getUser().getUid();
+                        storeUserDataToFireStore();
                         Toast.makeText(Sign_Up.this, "New member to our family", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getApplicationContext() , Homepage.class));
                         finish();
@@ -339,6 +342,11 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
 
     public void backScreen(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity2.class));
+
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
 }

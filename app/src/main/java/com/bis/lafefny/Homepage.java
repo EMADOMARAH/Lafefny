@@ -110,7 +110,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         startActivity(intent);
     }
     public void openpreferences(){
-        Intent intent = new Intent(this, preferences.class); //open preferences
+        Intent intent = new Intent(this, Questionnaire1.class); //open preferences
         startActivity(intent);
     }
 

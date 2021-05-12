@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -117,6 +118,12 @@ public class SiwaOasis_AdvPlan extends AppCompatActivity {
                 SaveRunningDataToPref();
                 intent.putExtra("screen" , "siwa");
                 startActivity(intent);
+                break;
+
+            case R.id.btn_tour_guide_siwa_intro:
+                Intent intent1 = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("https://www.lookategypttours.com/"));
+                startActivity(intent1);
                 break;
         }
     }

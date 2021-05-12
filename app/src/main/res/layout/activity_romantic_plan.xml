@@ -94,6 +94,7 @@
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
                 android:shadowColor="@color/Grey"
+                android:onClick="RomanticOnClick"
                 android:textSize="11sp"
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />
 
@@ -207,6 +208,7 @@
                 android:layout_marginTop="94dp"
                 android:alpha="0.1"
                 android:backgroundTint="@color/Grey"
+               android:onClick="RomanticOnClick"
                 android:shadowColor="@color/Grey"
                 android:textSize="11sp"
                 app:drawableStartCompat="@drawable/ic_baseline_location3_on_24" />

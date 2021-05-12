@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bis.lafefny" >
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bis.lafefny"
+    >
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:hardwareAccelerated="false"
         android:icon="@drawable/logo2"
         android:label="@string/app_name"
         android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/logo2"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Lafefny" >
+        android:theme="@style/Theme.Lafefny"
+        >
+        <activity android:name=".EditProfile"></activity>
+        <activity android:name=".Recomended" />
         <activity android:name=".Emergency" />
         <activity android:name=".Account" />
         <activity android:name=".profile" />
@@ -55,23 +60,17 @@
         <activity android:name=".DreamPark" />
         <activity android:name=".AmusementPark" />
         <activity android:name=".Ent_Categories" />
-        <activity android:name=".Homepage" >
-
-        </activity>
+        <activity android:name=".Homepage" />
         <activity android:name=".Sign_Up" />
-
-        <activity android:name=".Sign_In"/> >
-
+        <activity android:name=".Sign_In" />
         <activity android:name=".MainActivity2">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity" />
-
     </application>
 
 </manifest>

@@ -80,7 +80,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.3"
-                android:text="2. Do you not mind to travel to another province ?"
+                android:text="2.Would you prefer to relax or hype places?"
                 android:textAlignment="textStart"
                 android:textColor="@color/Lafefny2"
                 android:textSize="22sp" />
@@ -100,7 +100,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="70dp"
                     android:fontFamily="serif"
-                    android:text="Agree"
+                    android:text="Relaxed places"
                     android:textColor="@color/Lafefny2"
                     android:textColorHint="@color/Lafefny2"
                     android:textSize="18sp" />
@@ -112,7 +112,7 @@
                     android:layout_below="@id/radio_agree2"
                     android:layout_marginStart="20dp"
                     android:fontFamily="serif"
-                    android:text="Disagree"
+                    android:text="Hyper Places"
                     android:textColor="@color/Lafefny2"
                     android:textSize="18sp" />
 
@@ -140,7 +140,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.3"
-                android:text="3. Do you prefer to eat in an outdoor place or a closed one “indoor” ?"
+                android:text="3.Would you prefer historical or modern areas?"
                 android:textAlignment="textStart"
                 android:textColor="@color/Lafefny2"
                 android:textSize="22sp" />
@@ -154,14 +154,14 @@
 
                 <RadioButton
                     android:id="@+id/radio_agree3"
-                    android:layout_width="165dp"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/txt_Question3"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="70dp"
                     android:fontFamily="serif"
                     android:textSize="18sp"
-                    android:text="Agree"
+                    android:text="Historical areas"
                     android:textColor="@color/Lafefny2"
                     android:textColorHint="@color/Lafefny2" />
 
@@ -173,7 +173,7 @@
                     android:layout_marginStart="20dp"
                     android:textSize="18sp"
                     android:fontFamily="serif"
-                    android:text="Disagree"
+                    android:text="Modern Areas"
                     android:textColor="@color/Lafefny2" />
 
             </RadioGroup>

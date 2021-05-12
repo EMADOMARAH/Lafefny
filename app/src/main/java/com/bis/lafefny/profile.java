@@ -37,6 +37,7 @@ public class profile extends AppCompatActivity {
     private Button button_profile_home;
     private Button button_profile_acc;
     private Button button_profile_pre;
+    Button btn_edit_profile;
 
 
     TextView userName,fullName,birthdate,phone,email,nationality, gender;
@@ -94,6 +95,16 @@ public class profile extends AppCompatActivity {
                 openpreferences();
             }
         });
+
+        btn_edit_profile = findViewById(R.id.btn_edit_profile);
+        btn_edit_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext() , EditProfile.class));
+            }
+        });
+
+
 
         GetScreenData();
         LoadImage();

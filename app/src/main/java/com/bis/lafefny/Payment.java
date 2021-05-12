@@ -484,11 +484,17 @@ public class Payment extends AppCompatActivity {
         if (cardNumber.isEmpty()){
             this.cardNumber_txt.setError("Enter Valid Card Number");
             this.cardNumber_txt.requestFocus();
-        }else if(expiredDate.isEmpty()){
+        }else if(cardNumber.length() !=16){
+            this.cardNumber_txt.setError("Card number must be 16 digits");
+            this.cardNumber_txt.requestFocus();
+        } else if(expiredDate.isEmpty()){
             this.expiredDate_txt.requestFocus();
             this.expiredDate_txt.setError("Enter Date");
         }else if (cvv.isEmpty()){
             this.cvv_txt.setError("Enter CVV");
+            this.cvv_txt.requestFocus();
+        }else if (cvv.length() !=3){
+            this.cvv_txt.setError("CVV must be 3 digits");
             this.cvv_txt.requestFocus();
         }else if (cardHolderName.isEmpty()){
             this.cardHolderName_txt.requestFocus();

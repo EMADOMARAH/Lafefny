@@ -37,6 +37,7 @@
             android:backgroundTint="@color/white"
             android:fontFamily="serif"
             android:text="@string/transportation"
+            android:onClick="TheSmokeryOnClick"
             android:textColor="#CF8B74"
             android:textSize="30sp" />
 
