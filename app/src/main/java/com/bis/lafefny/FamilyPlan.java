@@ -22,6 +22,7 @@ public class FamilyPlan extends AppCompatActivity {
     private Button button_home;
     private Button button_pre_Fam;
     private Button button_egyp_museum;
+    private Button button_account_FP;
 
     TextView txt_family,txt_desc;
 
@@ -52,6 +53,14 @@ public class FamilyPlan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openHomepage();
+            }
+        });
+
+        button_account_FP = (Button) findViewById(R.id.btn_use_famr); //button user account
+        button_account_FP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openaccount();
             }
         });
 
@@ -97,6 +106,11 @@ public class FamilyPlan extends AppCompatActivity {
 
     public void openPlans(){
         Intent intent = new Intent(this, Plans.class);  //open back
+        startActivity(intent);
+    }
+
+    public void openaccount(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
     public void openHomepage(){

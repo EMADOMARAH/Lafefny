@@ -14,6 +14,7 @@ public class Events extends AppCompatActivity {
     private Button button_sports;
     private Button button_book_fair;
     private Button button_sound_light;
+    private Button button_account_events;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,9 +65,22 @@ public class Events extends AppCompatActivity {
             }
         });
 
+        button_account_events = (Button) findViewById(R.id.btn_user_event); //button user account
+        button_account_events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openaccount();
+            }
+        });
+
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open homepage
+        startActivity(intent);
+    }
+
+    public void openaccount(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
     public void openSport_Events(){

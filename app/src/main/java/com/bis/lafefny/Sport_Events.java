@@ -13,6 +13,7 @@ public class Sport_Events extends AppCompatActivity {
     private Button button_home_Sport;
     private Button button_pre_Sport;
     private Button button_running_Sport;
+    private Button button_account_sports_events;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +34,20 @@ public class Sport_Events extends AppCompatActivity {
                 openHomepage();
             }
         });
+
         button_pre_Sport = (Button) findViewById(R.id.btn_pre_sport); //button preferences
         button_pre_Sport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openpreferences();
+            }
+        });
+
+        button_account_sports_events = (Button) findViewById(R.id.btn_user_sport); //button account
+        button_account_sports_events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openaccount();
             }
         });
 
@@ -53,6 +63,11 @@ public class Sport_Events extends AppCompatActivity {
     }
     public void openEvents(){
         Intent intent = new Intent(this, Events.class);  //button back
+        startActivity(intent);
+    }
+
+    public void openaccount(){
+        Intent intent = new Intent(this, Account.class);  //button account
         startActivity(intent);
     }
 

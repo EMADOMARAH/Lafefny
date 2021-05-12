@@ -38,7 +38,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/amusementpark_header_amusPark"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btnborder2">
 
             <ImageView

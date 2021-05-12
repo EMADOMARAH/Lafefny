@@ -13,6 +13,7 @@ public class AdventurousPlans extends AppCompatActivity {
     private Button button_siwa;
     private Button button_home;
     private Button button_AP_pre;
+    private Button button_account_Adv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,14 @@ public class AdventurousPlans extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openSiwaOasis_AdvPlan();
+            }
+        });
+
+        button_account_Adv = (Button) findViewById(R.id.btn_user_adv); //button user account
+        button_account_Adv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openaccount();
             }
         });
 
@@ -66,6 +75,11 @@ public class AdventurousPlans extends AppCompatActivity {
 
     public void openpreferences(){
         Intent intent = new Intent(this, preferences.class);  //open preferences
+        startActivity(intent);
+    }
+
+    public void openaccount(){
+        Intent intent = new Intent(this, Account.class);  //open account
         startActivity(intent);
     }
 
