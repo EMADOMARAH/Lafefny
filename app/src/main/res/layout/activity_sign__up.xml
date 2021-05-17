@@ -296,6 +296,7 @@
             android:background="@drawable/btnborder"
             android:ems="10"
             android:hint="@string/_2_2_1999"
+            android:maxLength="10"
             android:inputType="date"
             android:padding="10dp"
             android:textColor="@color/black" />

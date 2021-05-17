@@ -21,7 +21,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class SiwaOasis_AdvPlan extends AppCompatActivity {
 
-    TextView name__txt,description_txt,program1_txt,program2_txt,program3_txt,price1_txt,price2_txt,price3_txt,price4_txt,price5_txt;
+    TextView name__txt,description_txt,program1_txt,program2_txt,program3_txt,price1_txt,price2_txt;
     TextView req1_txt,req2_txt,req3_txt,info1_txt,info2_txt;
 
     int vipPrice,regularPrice;
@@ -57,9 +57,6 @@ public class SiwaOasis_AdvPlan extends AppCompatActivity {
                             program3_txt.setText(documentSnapshot.getString("program3"));
                             price1_txt.setText(documentSnapshot.getString("tripPrices1"));
                             price2_txt.setText(documentSnapshot.getString("tripPrices2"));
-                            price3_txt.setText(documentSnapshot.getString("tripPrices3"));
-                            price4_txt.setText(documentSnapshot.getString("tripPrices4"));
-                            price5_txt.setText(documentSnapshot.getString("tripPrices5"));
                             req1_txt.setText(documentSnapshot.getString("tripRequirements1"));
                             req2_txt.setText(documentSnapshot.getString("tripRequirements2"));
                             req3_txt.setText(documentSnapshot.getString("tripRequirements3"));
@@ -91,9 +88,6 @@ public class SiwaOasis_AdvPlan extends AppCompatActivity {
         program3_txt = findViewById(R.id.siwa_program3);
         price1_txt = findViewById(R.id.siwa_price1);
         price2_txt = findViewById(R.id.siwa_price2);
-        price3_txt = findViewById(R.id.siwa_price3);
-        price4_txt = findViewById(R.id.siwa_price4);
-        price5_txt = findViewById(R.id.siwa_price5);
         req1_txt = findViewById(R.id.siwa_req1);
         req2_txt = findViewById(R.id.siwa_req2);
         req3_txt = findViewById(R.id.siwa_req3);

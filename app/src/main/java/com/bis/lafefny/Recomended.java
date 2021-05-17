@@ -89,7 +89,6 @@ public class Recomended extends AppCompatActivity {
     }
     private void getAllRecomended() {
         places = db.collection("places");
-        System.out.println("Shit :" + recomededId.size());
         for (int i = 0 ; i<recomededId.size() ; i++){
             String item = recomededId.get(i);
             places.document(recomededId.get(i)).get()

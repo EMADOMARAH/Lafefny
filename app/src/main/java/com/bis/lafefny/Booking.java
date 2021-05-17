@@ -65,6 +65,7 @@ public class Booking extends AppCompatActivity {
 
         GetSourceScreen();
 
+        //get vip and regular prices from cache memory
         switch (sourceScreen){
             case "dreampark":
                 regularTicketPrice = dreamParkPref.getInt("regularPrice" , 150);
@@ -107,6 +108,7 @@ public class Booking extends AppCompatActivity {
 
         randTicketId = getRandomNumberString();
         ticketId.setText(randTicketId);
+
         regularPrice.setText(Integer.toString(regularTicketPrice));
         if (sourceScreen.matches("cairobookfair") |sourceScreen.matches("runningevent") ){
             vipPrice.setText("-");
@@ -197,9 +199,10 @@ public class Booking extends AppCompatActivity {
                             Toast.makeText(this, "Can't Know My Source Screen", Toast.LENGTH_SHORT).show();
                     }
 
+                    i.putExtra("screen" , sourceScreen);
+                    startActivity(i);
                 }
-                i.putExtra("screen" , sourceScreen);
-                startActivity(i);
+
 
                 break;
             default:

@@ -152,7 +152,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:text="One Person / Single Room --> 3300 EGP"
+                android:text="Regular --> 3300 EGP"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:paddingLeft="4dp"
@@ -179,7 +179,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:text="One Person / Double Room --> 3500 EGP"
+                android:text="Vip --> 3900 EGP"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:paddingLeft="4dp"
@@ -187,88 +187,10 @@
                 android:paddingTop="88dp"
                 android:textColor="@color/Grey"
                 android:textSize="15sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:drawableLeft="@drawable/ic_baseline_circle3_24"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="120dp"
-                android:textColor="#33446A"
-                android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/siwa_price3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:text="One Person / Triple Room --> 3900 EGP"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="123dp"
-                android:textColor="@color/Grey"
-                android:textSize="15sp"
-                android:layout_marginBottom="15dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:drawableLeft="@drawable/ic_baseline_circle3_24"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="155dp"
-                android:textColor="#33446A"
-                android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/siwa_price4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:text="Children up tp six years --> Free"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="158dp"
-                android:textColor="@color/Grey"
-                android:textSize="15sp"
-                android:layout_marginBottom="15dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:drawableLeft="@drawable/ic_baseline_circle3_24"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="190dp"
-                android:textColor="#33446A"
-                android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/siwa_price5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginStart="35dp"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.5"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:paddingTop="193dp"
-                android:text="Children from Six to Twelve years have 50% off"
-                android:textColor="@color/Grey"
-                android:textSize="15sp" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 

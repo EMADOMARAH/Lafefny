@@ -33,25 +33,6 @@ public class Sign_In extends AppCompatActivity {
 
     SharedPreferences preferences;
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-//        FirebaseUser fUser = FirebaseAuth.getInstance().getCurrentUser();
-//        fUser.getIdToken(true)
-//               .addOnCompleteListener(new OnCompleteListener<GetTokenResult>() {
-//                   @Override
-//                   public void onComplete(@NonNull Task<GetTokenResult> task) {
-//                        if (task.isSuccessful()){
-//                            uId = task.getResult().getToken();
-//                            preferences.edit().putString("userId" , uId).apply();
-//                            preferences.edit().commit();
-//                            openHomepage();
-//                        } else{
-//                            System.out.println("No user Sign IN");
-//                        }
-//                   }
-//               });
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,8 +54,6 @@ public class Sign_In extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-//                System.out.println("Email : " + email);
-//                System.out.println("Password : " + emailEditText.getText().toString());
                 if (emailEditText.length() < 3) {
                     emailEditText.requestFocus();
                     emailEditText.setError("Enter Valid Email");
@@ -82,8 +61,6 @@ public class Sign_In extends AppCompatActivity {
                     passwordEditText.requestFocus();
                     passwordEditText.setError("Enter Valid Password");
                 } else {
-                    // progressDialog.setTitle("Welcome Home...");
-                    //progressDialog.show();
                     mAuth.signInWithEmailAndPassword(emailEditText.getText().toString(), passwordEditText.getText().toString())
                             .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                                 @Override

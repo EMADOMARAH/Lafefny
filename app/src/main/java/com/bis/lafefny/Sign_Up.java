@@ -247,7 +247,8 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
                         startActivity(new Intent(getApplicationContext() , Homepage.class));
                         finish();
                     }
-                }).addOnFailureListener(this, new OnFailureListener() {
+                })
+                .addOnFailureListener(this, new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(Sign_Up.this, e.toString(), Toast.LENGTH_SHORT).show();
@@ -287,6 +288,9 @@ public class Sign_Up extends AppCompatActivity implements AdapterView.OnItemSele
         }else  if (gender.isEmpty()){
             radioGroup.requestFocus();
             Toast.makeText(this, "Choose Gender", Toast.LENGTH_SHORT).show();
+        }else  if (filePath == null){
+            profile_image.requestFocus();
+            Toast.makeText(this, "Enter Image Please", Toast.LENGTH_SHORT).show();
         }else{
             allDataChecked =true ;
         }
