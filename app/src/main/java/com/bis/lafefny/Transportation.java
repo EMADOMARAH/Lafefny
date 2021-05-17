@@ -64,7 +64,7 @@ public class Transportation extends AppCompatActivity {
 //                startActivity(uberCarIntent);
                 PackageManager pm = getPackageManager();
                 try {
-                    pm.getPackageInfo("com.ubercab", PackageManager.GET_ACTIVITIES);
+                    pm.getPackageInfo("com.ubercab", PackageManager.GET_ACTIVITIES); // uber domain
                     String uri = "uber://?action=setPickup&pickup=my_location";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(uri));
