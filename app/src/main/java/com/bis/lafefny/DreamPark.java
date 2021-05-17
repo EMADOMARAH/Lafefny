@@ -73,7 +73,7 @@ public class DreamPark extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dream_park);
 
-        dreamParkPref = getSharedPreferences("Dream_park_pref" , Context.MODE_PRIVATE);
+        dreamParkPref = getSharedPreferences("Dream_park_pref" , Context.MODE_PRIVATE); // (1) dream park cache file, This file is empty
 
         initViews();
 
@@ -104,7 +104,7 @@ public class DreamPark extends AppCompatActivity {
             case R.id.btn_transportation_dreamP:
                 startActivity(new Intent(getApplicationContext() , Transportation.class));
                 break;
-            case R.id.btn_ticket_dreamP:
+            case R.id.btn_ticket_dreamP: // in case Ticket button was clicked in dream park scree, get the previously created cache file. and put the follwoing info.
                 Intent intent = new Intent(getApplicationContext() , Booking.class);
                 dreamParkPref.edit().putInt("vipPrice",560).apply();
                 dreamParkPref.edit().putInt("regularPrice",150).apply();
