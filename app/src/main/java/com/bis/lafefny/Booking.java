@@ -20,6 +20,10 @@ import java.util.Random;
 public class Booking extends AppCompatActivity {
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
+    // -------------------- Shared Preferences (cache memory) --------------------------
+    // created cache memory for a certain purpose then deleted afterwords when they are no longer needed
+    // below are types of caches created from different screens, that hold information
+    // Step (1)
     private SharedPreferences dreamParkPref;
     private SharedPreferences voxCinemaPref;
     private SharedPreferences funtopiaPref;
@@ -32,18 +36,21 @@ public class Booking extends AppCompatActivity {
 
 
 
-    Map<String, Object> ticket = new HashMap<>();
+    Map<String, Object> ticket = new HashMap<>(); //create a map called ticket, since the info here must be called in the ticket screen, so this map holds all of the information from here, to payment info to ticket
 
-    TextView title,ticketId,regularPrice,vipPrice;
+    TextView title,ticketId,regularPrice,vipPrice; // connect the screen with the database (team db)
     EditText comments_edittxt, regularcount_edittxt, vipCount_edittxt;
 
-    String sourceScreen;
-    String randTicketId;
+    String sourceScreen; // A variable that holds the previous screen that booking screen was opened from. That is because we keep sending info between different screens in a certain order. So, an intent was sent determining what screen was booking opened from. Hence, the different cache files created.
+    String randTicketId; // A variable holding random ticket ID, since we want to automatically generate random ticket ID.
 
     String vipCountString;
     String regularCountString;
     int  vipCount=0 , regularCount=0 , vipTicketPrice ,regularTicketPrice;
 
+    // Step (2)
+    // -------------- cache files --------------------------------------
+    // call cache files in onCreate method
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,13 +66,15 @@ public class Booking extends AppCompatActivity {
         siwaPref = getSharedPreferences("siwa_pref" , Context.MODE_PRIVATE);
 
 
-
+// Step (4)
+// ------------------------ Switch case on Source screen -------------------------
 
         InitBookingViews();
 
-        GetSourceScreen();
+        GetSourceScreen(); // to know from where i came from (which screen)
 
-        //get vip and regular prices from cache memory
+        // Get vip and regular prices from cache memory
+
         switch (sourceScreen){
             case "dreampark":
                 regularTicketPrice = dreamParkPref.getInt("regularPrice" , 150);
@@ -106,9 +115,12 @@ public class Booking extends AppCompatActivity {
 
         }
 
+
         randTicketId = getRandomNumberString();
         ticketId.setText(randTicketId);
 
+        // Step (6)
+        // ------------- places w/o VIP tickets -----------------
         regularPrice.setText(Integer.toString(regularTicketPrice));
         if (sourceScreen.matches("cairobookfair") |sourceScreen.matches("runningevent") ){
             vipPrice.setText("-");
@@ -118,7 +130,6 @@ public class Booking extends AppCompatActivity {
 
 
     }
-
 
     public void BookingOnClick(View view) {
         switch (view.getId()){
@@ -133,12 +144,13 @@ public class Booking extends AppCompatActivity {
                 startActivity(intent2);
                 finish();
                 break;
-
+// Step (7)
+// ----------------------- On clicking SEND YOUR BOOKING BUTTON ----------------------------
             case R.id.btn_booking_booking:
-                Intent i = new Intent(getApplicationContext(), Payment.class);//open home icon
-                if (checkIfDataValid()){
+                Intent i = new Intent(getApplicationContext(), Payment.class);//open payment screen
+                if (checkIfDataValid()){ // created method
 
-                    switch (sourceScreen){
+                    switch (sourceScreen){ // store three values
                         case "dreampark":
                             dreamParkPref.edit().putString("ticketId" , randTicketId).apply();
                             dreamParkPref.edit().putInt("regularCount" , regularCount).apply();
@@ -199,10 +211,9 @@ public class Booking extends AppCompatActivity {
                             Toast.makeText(this, "Can't Know My Source Screen", Toast.LENGTH_SHORT).show();
                     }
 
-                    i.putExtra("screen" , sourceScreen);
-                    startActivity(i);
                 }
-
+                i.putExtra("screen" , sourceScreen); // 3shan a3rf 7ata b3d ma akml b3d el booking , ana knt gaya mneen fel asl
+                startActivity(i); // da eli hay48l el activity w yro7 3al payment. BS el cache file haykon zad eli fat da.
 
                 break;
             default:
@@ -211,8 +222,10 @@ public class Booking extends AppCompatActivity {
         }
     }
 
+    // Step (8)
+    // ---------------- get ticket count ----------------------------
     private boolean checkIfDataValid() {
-        if (!vipCount_edittxt.getText().toString().matches("")){
+        if (!vipCount_edittxt.getText().toString().matches("")){ //retrieve value in vipCount_editText, convert it into string. If not null, put its value in vipCountString, then convert the string into  integer in a variable called regularCount.
             vipCountString = String.valueOf(vipCount_edittxt.getText());
             vipCount = Integer.parseInt(vipCountString);
         }
@@ -223,16 +236,19 @@ public class Booking extends AppCompatActivity {
         }
 
 
-        if (vipCount == 0 && regularCount ==0){
+        if (vipCount == 0 && regularCount ==0){ // validation rule to ensure that either one or both of them have inputted data by the user. Otherwise, show message to the user.
             Toast.makeText(this, "You should enter amount of tickets", Toast.LENGTH_SHORT).show();
             return false;
         }else {
 
             //commentString = comments_edittxt.getText().toString();
-            return true;
+            return true; // lao kol eli fat tmm w at72a2, haynfz el booking.Otherwise, nothing will happen
         }
 
     }
+
+    // Step (5)
+    // --------------------- Generate random ticket ID ------------------------
 
     public  String getRandomNumberString() {
         // It will generate 6 digit random Number.
@@ -253,7 +269,8 @@ public class Booking extends AppCompatActivity {
         regularcount_edittxt = findViewById(R.id.txt_ticket_regular_quantity_booking);
         vipCount_edittxt = findViewById(R.id.txt_ticket_vip_quantity_booking);
     }
-
+    // Step (3)
+// -------------------- Source Screen -----------------------------
     private void GetSourceScreen() {
         Bundle extraData = getIntent().getExtras();
         if (extraData !=null){
@@ -262,3 +279,4 @@ public class Booking extends AppCompatActivity {
     }
 
 }
+
