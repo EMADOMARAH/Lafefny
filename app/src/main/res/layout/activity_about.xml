@@ -17,13 +17,13 @@
             android:id="@+id/txt_About"
             android:layout_width="391dp"
             android:layout_height="54dp"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="15dp"
-            android:fontFamily="serif"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gabriela"
             android:text="About Lafefny"
             android:textAlignment="center"
             android:textColor="@color/Lafefny2"
-            android:textSize="35sp"
+            android:textSize="40sp"
             android:textStyle="bold" />
 
 
@@ -52,8 +52,8 @@
               android:layout_width="362dp"
               android:layout_height="wrap_content"
               android:layout_below="@+id/txt_About"
-              android:layout_marginStart="13dp"
-              android:layout_marginTop="25dp"
+              android:layout_marginStart="11dp"
+              android:layout_marginTop="18dp"
               android:fontFamily="serif"
               android:lineSpacingMultiplier="1.5"
               android:text="Offering various entertainment ideas and locations that matches users’ preferences and desires with cutting throat prices and deals. We offer services, events, and reservations like no other when it comes to the benefits that we provide exclusively to Lafefny’s family"
@@ -79,31 +79,30 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/About"
+                android:layout_gravity="left"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_home_24" />
 
             <Button
-                android:id="@+id/btn_loc_hp"
+                android:id="@+id/btn_pre_hp"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@+id/About"
+                android:layout_marginStart="150dp"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="140dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_location_on_24" />
+                android:drawableEnd="@android:drawable/btn_star"
+                android:drawableTint="@color/Lafefny2"/>
 
             <Button
                 android:id="@+id/btn_user_hp"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/About"
-                android:layout_marginStart="300dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user" />
 
