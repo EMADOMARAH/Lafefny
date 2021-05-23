@@ -21,19 +21,6 @@
             android:layout_marginEnd="0dp"
             android:background="@drawable/btnborder">
 
-            <Button
-                android:id="@+id/btn_prefe_search"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="98dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="9dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/ic_baseline_search_24"
-                android:paddingEnd="10dp" />
 
             <Button
                 android:id="@+id/btn_prefe_back"
@@ -48,8 +35,8 @@
                 android:id="@+id/txt_Preferences"
                 android:layout_width="391dp"
                 android:layout_height="54dp"
-                android:layout_alignParentTop="false"
                 android:layout_alignParentEnd="false"
+                android:layout_alignParentTop="false"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="1dp"
                 android:fontFamily="serif"
@@ -63,7 +50,7 @@
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/preference_ques1"
             android:layout_width="385dp"
-            android:layout_height="wrap_content"
+            android:layout_height="630dp"
             android:layout_below="@id/header_preferences"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
@@ -76,11 +63,11 @@
                 android:id="@+id/txt_located"
                 android:layout_width="375dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
+                android:gravity="center"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
-                android:text="@string/where_are_you_located"
+                android:text="Where would you like to hang out?"
                 android:textAlignment="gravity"
                 android:textColor="@color/Lafefny2"
                 android:textSize="20sp" />
@@ -222,11 +209,11 @@
                 android:id="@+id/txt_category"
                 android:layout_width="375dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:gravity="center"
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
-                android:text="@string/what_category_that_you_belong_to"
+                android:text="What user category do you belong to?"
                 android:textAlignment="gravity"
                 android:textColor="@color/Lafefny2"
                 android:textSize="20sp" />
@@ -305,11 +292,11 @@
                 android:id="@+id/txt_budget"
                 android:layout_width="375dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+               android:gravity="center"
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
-                android:text="@string/what_s_your_budget_range"
+                android:text="What is your desired budget range (per person)?"
                 android:textAlignment="gravity"
                 android:textColor="@color/Lafefny2"
                 android:textSize="20sp" />
@@ -326,7 +313,7 @@
                     android:layout_width="165dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="60dp"
                     android:fontFamily="serif"
                     android:text="@string/less_than_160"
                     android:textColor="@color/Lafefny2"
@@ -363,30 +350,20 @@
             </RadioGroup>
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
+
         <Button
             android:id="@+id/btn_close"
             android:layout_width="wrap_content"
             android:layout_height="75dp"
             android:layout_below="@id/preference_ques3"
-            android:textColor="@color/Lafefny2"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="38dp"
             android:backgroundTint="@color/white"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="20dp"
-            android:text="@string/save_and_close" />
-
-        <Button
-            android:id="@+id/btn_go_to_questionnaire"
-            android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:layout_below="@id/preference_ques3"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_toEndOf="@id/btn_close"
-            android:backgroundTint="@color/white"
-            android:text="@string/save_and_procced_to_questionnaire"
+            android:fontFamily="serif"
+            android:text="Submit"
             android:textColor="@color/Lafefny2"
-            android:textSize="12sp" />
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/preferences_footer"
@@ -397,7 +374,7 @@
             android:layout_below="@id/btn_close"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="1930dp"
+            android:layout_marginTop="1550dp"
             android:background="@drawable/btnborder">
 
             <Button
@@ -414,11 +391,9 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/btn_go_to_questionnaire"
+                android:layout_below="@id/btn_close"
                 android:layout_marginBottom="11dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginStart="100dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginTop="7dp"
                 android:backgroundTint="@color/white"
                 android:drawableTint="#CF8B74"
@@ -428,22 +403,13 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_go_to_questionnaire"
-                android:layout_marginStart="200dp"
+                android:layout_below="@id/btn_close"
+                android:layout_marginStart="300dp"
                 android:layout_marginTop="2dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/ic_profile_user6" />
 
-            <Button
-                android:id="@+id/btn_preferences_sort"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_below="@id/btn_go_to_questionnaire"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="3dp"
-                android:backgroundTint="@color/white"
-                android:drawableEnd="@drawable/sort4" />
+
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 

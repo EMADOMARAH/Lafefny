@@ -3,10 +3,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_baseline_home6_24"
-        android:title="Home"
-        android:iconTint="@color/Lafefny2"
+        android:id="@+id/nav_Acc"
+        android:icon="@drawable/ic_profile_user6"
+        android:title="Account"
+        />
+
+    <item
+        android:id="@+id/nav_PV"
+        android:icon="@drawable/ic_marking"
+        android:title="Questionnaire"
+        />
+
+    <item
+        android:id="@+id/nav_filter"
+        android:icon="@drawable/ic_baseline_filter_alt6_24"
+        android:title="Filtering"
         />
 
     <item
@@ -17,29 +28,17 @@
         />
 
     <item
-        android:id="@+id/nav_Acc"
-        android:icon="@drawable/ic_profile_user6"
-        android:title="Account"
+        android:id="@+id/nav_Transportation"
+        android:icon="@drawable/ic_baseline_directions_car_24"
+        android:title="Transportation"
         />
+
 
     <item
         android:id="@+id/nav_About"
         android:icon="@android:drawable/ic_menu_info_details"
         android:title="About"
         />
-
-    <item
-        android:id="@+id/nav_PV"
-        android:icon="@drawable/ic_marking"
-        android:title="Provide Data"
-        />
-
-    <item
-        android:id="@+id/nav_filter"
-        android:icon="@drawable/ic_baseline_filter_alt6_24"
-        android:title="Filtering"
-        />
-
 
 
     <item
@@ -49,18 +48,6 @@
         android:title="Hotels' Details"
         />
 
-    <item
-        android:id="@+id/nav_sort"
-        android:icon="@drawable/sort4"
-        android:title="Sorting"
-        android:iconTint="@color/Lafefny2"
-        />
-
-    <item
-        android:id="@+id/nav_Transportation"
-        android:icon="@drawable/ic_baseline_directions_car_24"
-        android:title="Transportation"
-        />
 
     <item
         android:id="@+id/nav_TG"

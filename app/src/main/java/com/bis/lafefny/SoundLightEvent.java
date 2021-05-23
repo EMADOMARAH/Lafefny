@@ -21,10 +21,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class SoundLightEvent extends AppCompatActivity {
 
     TextView title_txt,description1_txt,description2_txt,regTicketPrice_txt,vipTicketPrice_txt;
-    TextView day1_txt,day1_time1_txt,day1_time2_txt,day1_lang1_txt,day1_lang2_txt,day1_price1_txt,day1_price2_txt;
-    TextView day2_txt,day2_time1_txt,day2_time2_txt,day2_lang1_txt,day2_lang2_txt,day2_price1_txt,day2_price2_txt;
-    TextView day3_txt,day3_time1_txt,day3_time2_txt,day3_lang1_txt,day3_lang2_txt,day3_price1_txt,day3_price2_txt;
-    TextView day4_txt,day4_time1_txt,day4_time2_txt,day4_lang1_txt,day4_lang2_txt,day4_price1_txt,day4_price2_txt;
+    TextView day1_txt,day1_time1_txt,day1_time2_txt,day1_lang1_txt,day1_lang2_txt,day1_price1_txt;
+    TextView day2_txt,day2_time1_txt,day2_time2_txt,day2_lang1_txt,day2_lang2_txt,day2_price1_txt;
+    TextView day3_txt,day3_time1_txt,day3_time2_txt,day3_lang1_txt,day3_lang2_txt,day3_price1_txt;
+    TextView day4_txt,day4_time1_txt,day4_time2_txt,day4_lang1_txt,day4_lang2_txt,day4_price1_txt;
 
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -63,7 +63,7 @@ public class SoundLightEvent extends AppCompatActivity {
                             day1_price1_txt.setText(documentSnapshot.getString("day1price1") + " EGP");
                             day1_time2_txt.setText(documentSnapshot.getString("day1time2"));
                             day1_lang2_txt.setText(documentSnapshot.getString("day1lang2"));
-                            day1_price2_txt.setText(documentSnapshot.getString("day1price2") + " EGP");
+//                            day1_price2_txt.setText(documentSnapshot.getString("day1price2") + " EGP");
                             //----------------------------------------------------------------------------------
                             day2_txt.setText(documentSnapshot.getString("day2"));
                             day2_time1_txt.setText(documentSnapshot.getString("day2time1"));
@@ -71,7 +71,7 @@ public class SoundLightEvent extends AppCompatActivity {
                             day2_price1_txt.setText(documentSnapshot.getString("day2price1") + " EGP");
                             day2_time2_txt.setText(documentSnapshot.getString("day2time2"));
                             day2_lang2_txt.setText(documentSnapshot.getString("day2lang2"));
-                            day2_price2_txt.setText(documentSnapshot.getString("day2price2") + " EGP");
+//                            day2_price2_txt.setText(documentSnapshot.getString("day2price2") + " EGP");
                             //----------------------------------------------------------------------------------
                             day3_txt.setText(documentSnapshot.getString("day3"));
                             day3_time1_txt.setText(documentSnapshot.getString("day3time1"));
@@ -79,7 +79,7 @@ public class SoundLightEvent extends AppCompatActivity {
                             day3_price1_txt.setText(documentSnapshot.getString("day3price1") + " EGP");
                             day3_time2_txt.setText(documentSnapshot.getString("day3time2"));
                             day3_lang2_txt.setText(documentSnapshot.getString("day3lang2"));
-                            day3_price2_txt.setText(documentSnapshot.getString("day3price2") + " EGP");
+//                            day3_price2_txt.setText(documentSnapshot.getString("day3price2") + " EGP");
                             //----------------------------------------------------------------------------------
                             day4_txt.setText(documentSnapshot.getString("day4"));
                             day4_time1_txt.setText(documentSnapshot.getString("day4time1"));
@@ -87,7 +87,7 @@ public class SoundLightEvent extends AppCompatActivity {
                             day4_price1_txt.setText(documentSnapshot.getString("day4price1") + " EGP");
                             day4_time2_txt.setText(documentSnapshot.getString("day4time2"));
                             day4_lang2_txt.setText(documentSnapshot.getString("day4lang2"));
-                            day4_price2_txt.setText(documentSnapshot.getString("day4price2") + " EGP");
+//                            day4_price2_txt.setText(documentSnapshot.getString("day4price2") + " EGP");
                         }else {
                             Toast.makeText(SoundLightEvent.this, "Database Empty", Toast.LENGTH_SHORT).show();
                         }
@@ -117,7 +117,7 @@ public class SoundLightEvent extends AppCompatActivity {
         day1_lang1_txt  = findViewById(R.id.day1_lang1_txt);
         day1_lang2_txt  = findViewById(R.id.day1_lang2_txt);
         day1_price1_txt = findViewById(R.id.day1_price1_txt);
-        day1_price2_txt = findViewById(R.id.day1_price2_txt);
+//        day1_price2_txt = findViewById(R.id.day1_price2_txt);
         //------------------------------------------------------------
         day2_txt        = findViewById(R.id.day2);
         day2_time1_txt  = findViewById(R.id.day2_time1_txt);
@@ -125,7 +125,7 @@ public class SoundLightEvent extends AppCompatActivity {
         day2_lang1_txt  = findViewById(R.id.day2_lang1_txt);
         day2_lang2_txt  = findViewById(R.id.day2_lang2_txt);
         day2_price1_txt = findViewById(R.id.day2_price1_txt);
-        day2_price2_txt = findViewById(R.id.day2_price2_txt);
+//        day2_price2_txt = findViewById(R.id.day2_price2_txt);
         //------------------------------------------------------------
         day3_txt        = findViewById(R.id.day3);
         day3_time1_txt  = findViewById(R.id.day3_time1_txt);
@@ -133,7 +133,7 @@ public class SoundLightEvent extends AppCompatActivity {
         day3_lang1_txt  = findViewById(R.id.day3_lang1_txt);
         day3_lang2_txt  = findViewById(R.id.day3_lang2_txt);
         day3_price1_txt = findViewById(R.id.day3_price1_txt);
-        day3_price2_txt = findViewById(R.id.day3_price2_txt);
+//        day3_price2_txt = findViewById(R.id.day3_price2_txt);
         //------------------------------------------------------------
         day4_txt        = findViewById(R.id.day4);
         day4_time1_txt  = findViewById(R.id.day4_time1_txt);
@@ -141,7 +141,7 @@ public class SoundLightEvent extends AppCompatActivity {
         day4_lang1_txt  = findViewById(R.id.day4_lang1_txt);
         day4_lang2_txt  = findViewById(R.id.day4_lang2_txt);
         day4_price1_txt = findViewById(R.id.day4_price1_txt);
-        day4_price2_txt = findViewById(R.id.day4_price2_txt);
+//        day4_price2_txt = findViewById(R.id.day4_price2_txt);
         //------------------------------------------------------------
 
 

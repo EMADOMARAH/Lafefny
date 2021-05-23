@@ -21,19 +21,7 @@
         android:layout_marginEnd="0dp"
         android:background="@drawable/btnborder">
 
-        <Button
-            android:id="@+id/btn_questionnaire2_search"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="98dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="310dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="9dp"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_baseline_search_24"
-            android:paddingEnd="10dp" />
+
 
         <Button
             android:id="@+id/btn_questionnaire2_back"
@@ -81,9 +69,10 @@
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.3"
                 android:text="2.Would you prefer to relax or hype places?"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
+                android:layout_marginEnd="10dp"
                 android:textColor="@color/Lafefny2"
-                android:textSize="22sp" />
+                android:textSize="25sp" />
 
             <RadioGroup
                 android:id="@+id/Ques2_group"
@@ -139,11 +128,12 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
+                android:layout_marginEnd="10dp"
                 android:lineSpacingMultiplier="1.3"
                 android:text="3.Would you prefer historical or modern areas?"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="@color/Lafefny2"
-                android:textSize="22sp" />
+                android:textSize="25sp" />
 
             <RadioGroup
                 android:id="@+id/Ques3_group"
@@ -158,7 +148,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/txt_Question3"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="70dp"
+                    android:layout_marginTop="40dp"
                     android:fontFamily="serif"
                     android:textSize="18sp"
                     android:text="Historical areas"
@@ -182,16 +172,19 @@
 
         <Button
             android:id="@+id/btn_questionnaire2_next"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
             android:layout_below="@id/question3"
+
+            android:layout_width="124dp"
+            android:layout_height="55dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginStart="300dp"
+            android:layout_marginStart="293dp"
             android:layout_marginTop="15dp"
-                   android:backgroundTint="@color/white"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
             android:text="Next"
             android:textColor="@color/Lafefny2"
-            android:textSize="12sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/questionnaire2_footer"

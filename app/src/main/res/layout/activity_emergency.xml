@@ -57,7 +57,7 @@
             android:layout_width="362dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:layout_below="@+id/txt_emg"
             android:fontFamily="serif"
             android:lineSpacingMultiplier="1.5"
@@ -94,7 +94,7 @@
                 android:layout_marginTop="45dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
-                android:text="Policy"
+                android:text="Police"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="30sp"
@@ -109,6 +109,7 @@
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:text="122"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -124,7 +125,10 @@
                 android:layout_marginStart="60dp"
                 android:onClick="EmergencyOnClick"
                 android:textSize="14sp"
+                android:fontFamily="serif"
                 android:text="Call Now" />
+
+
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -173,6 +177,7 @@
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:text="123"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -188,6 +193,7 @@
                 android:layout_marginStart="60dp"
                 android:onClick="EmergencyOnClick"
                 android:textSize="14sp"
+                android:fontFamily="serif"
                 android:text="Call Now" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -237,6 +243,7 @@
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
                 android:text="180"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -252,6 +259,7 @@
                 android:onClick="EmergencyOnClick"
                 android:layout_marginStart="59dp"
                 android:textSize="14sp"
+                android:fontFamily="serif"
                 android:text="Call Now" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 

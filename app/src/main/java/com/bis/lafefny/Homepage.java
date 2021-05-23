@@ -51,8 +51,8 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView.setNavigationItemSelectedListener(this);
-        navigationView.setCheckedItem(R.id.nav_home);
+//        navigationView.setNavigationItemSelectedListener(this);
+//        navigationView.setCheckedItem(R.id.nav_home);
         //Buttons
         button_ent = (Button) findViewById(R.id.btn_entertainment); //button amusement park
         button_ent.setOnClickListener(new View.OnClickListener() {
@@ -162,10 +162,10 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.nav_home:
-                Intent homeIntent = new Intent(this, Homepage.class);  //open homepage
-                startActivity(homeIntent);
-                break;
+//            case R.id.nav_home:
+//                Intent homeIntent = new Intent(this, Homepage.class);  //open homepage
+//                startActivity(homeIntent);
+//                break;
             case R.id.nav_promocode:
                 Intent promoIntent = new Intent(this, Promocode.class);  //open promocode
                 startActivity(promoIntent);
@@ -179,7 +179,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 //                startActivity(aboutIntent);
 //                break;
             case R.id.nav_PV:
-                Intent pvIntent = new Intent(this, ProvideData.class);  //open provide data
+                Intent pvIntent = new Intent(this, Questionnaire1.class);  //open provide data
                 startActivity(pvIntent);
                 break;
 //            case R.id.nav_filter:
