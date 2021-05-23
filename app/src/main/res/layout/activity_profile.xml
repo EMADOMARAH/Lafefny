@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/image_11">
+        android:background="@drawable/image_new2">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -29,12 +29,10 @@
             android:id="@+id/txt_user_of_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="false"
-            android:layout_alignParentEnd="false"
-            android:layout_marginStart="130dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="150dp"
-            android:layout_marginEnd="10dp"
             android:fontFamily="serif"
+            android:gravity="center_horizontal"
             android:text="Malak99"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -46,7 +44,7 @@
             android:layout_width="110dp"
             android:layout_height="79dp"
             android:layout_below="@id/txt_user_of_user"
-            android:layout_marginStart="140dp"
+            android:layout_marginStart="145dp"
             android:layout_marginTop="35dp"
             android:contentDescription="@string/todo"
             app:srcCompat="@drawable/ic_profile_user6" />
@@ -254,7 +252,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="-10dp"
             android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_femenine"
+            app:srcCompat="@drawable/ic_gender"
             app:tint="@color/Lafefny2" />
 
         <TextView
@@ -294,9 +292,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="-25dp"
             android:backgroundTint="@color/white"
+            android:fontFamily="serif"
             android:text="Edit Profile"
-            android:textColor="@color/black"
-            android:fontFamily="serif"/>
+            android:textColor="@color/black" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/profile_footer"
@@ -320,8 +318,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
                 android:layout_marginStart="150dp"
-                android:layout_marginBottom="11dp"
                 android:layout_marginTop="7dp"
+                android:layout_marginBottom="11dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@android:drawable/btn_star"
                 android:drawableTint="#CF8B74" />

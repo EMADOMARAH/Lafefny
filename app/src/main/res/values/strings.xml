@@ -348,6 +348,14 @@
     <string name="nav_drawer_open">Open navigation drawer</string>
     <string name="nav_drawer_close">Close navigation drawer</string>
     <string name="free_tiket">ticket</string>
+    <string name="browse_topics">Browse Topics</string>
+    <string name="payment">Payment</string>
+    <string name="step_right_in_if_you_are_looking_for_a_place_or_playing_with_our_fancy_filtering_mechanism">Step right in, if you are looking for a place or playing with our fancy filtering mechanism</string>
+    <string name="search">Search</string>
+    <string name="everything_you_want_to_know_about_using_app_your_reservation_addresses_payment_methods_and_more">Everything you want to know about using app, your reservation, addresses, payment methods and more.</string>
+    <string name="my_account">My Account</string>
+    <string name="here_you_ll_find_information_of_all_the_promotions_that_are_currently_rummimg_on_lafefny">Here you\'ll find information of all the promotions that are currently rummimg on lafefny</string>
+    <string name="search_the_help_center">Search the help center....</string>
 
     <string-array name="nationality">
         <item>Egyptian</item>

@@ -174,10 +174,10 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 Intent accIntent = new Intent(this, Account.class);  //open account
                 startActivity(accIntent);
                 break;
-//            case R.id.nav_About:
-//                Intent aboutIntent = new Intent(this, About.class);  //open about
-//                startActivity(aboutIntent);
-//                break;
+           case R.id.nav_About:
+               Intent aboutIntent = new Intent(this, About.class);  //open about
+                startActivity(aboutIntent);
+               break;
             case R.id.nav_PV:
                 Intent pvIntent = new Intent(this, Questionnaire1.class);  //open provide data
                 startActivity(pvIntent);

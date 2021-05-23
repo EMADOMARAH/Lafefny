@@ -25,7 +25,7 @@ public class Account extends AppCompatActivity {
     private Button button_acc_promocode;
     private Button button_acc_preferences;
     private Button button_acc_questionnaire;
-  //  private Button button_acc_help;
+    private Button button_acc_help;
 //    private Button button_acc_back;
     private Button button_acc_sign_out;
     private Button button_acc_home;
@@ -123,9 +123,22 @@ public class Account extends AppCompatActivity {
             }
         });
 
+        button_acc_help = (Button) findViewById(R.id.btn_help);     //button help
+        button_acc_help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openhelp();
+            }
+        });
+
     }
     public void openHomepage(){
         Intent intent = new Intent(this, Homepage.class);  //open home page
+        startActivity(intent);
+    }
+
+    public void openhelp(){
+        Intent intent = new Intent(this, Help.class);  //open help
         startActivity(intent);
     }
     public void openprofile(){

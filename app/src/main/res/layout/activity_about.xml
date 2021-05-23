@@ -4,32 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lafefny_about"
-    tools:context=".About">
+    android:background="@drawable/image_new2"
+    tools:ignore="RelativeOverlap"
+    tools:context="com.bis.lafefny.About">
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/lafefny_about"
-        >
-
-
-        <Button
-            android:id="@+id/btn_back"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/Lafefny2"
-            android:drawableEnd="@drawable/ic_baseline_arrow_back9_24" />
+        android:layout_height="wrap_content">
 
 
         <TextView
             android:id="@+id/txt_About"
             android:layout_width="391dp"
             android:layout_height="54dp"
-            android:layout_alignParentTop="false"
-            android:layout_alignParentEnd="false"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="13dp"
             android:layout_marginTop="15dp"
             android:fontFamily="serif"
             android:text="About Lafefny"
@@ -38,41 +26,52 @@
             android:textSize="35sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_below="@+id/txt_About"
-            android:layout_centerHorizontal="true"
-            android:alpha="0.3"
-            android:layout_marginTop="180dp"
-            android:background="@drawable/logo2"/>
 
-
-
-        <TextView
-            android:id="@+id/About_text"
-            android:layout_width="362dp"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/about"
+            android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_About"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
-            android:fontFamily="serif"
-            android:lineSpacingMultiplier="1.5"
-            android:text="Offering various entertainment ideas and locations that matches users’ preferences and desires with cutting throat prices and deals. We offer services, events, and reservations like no other when it comes to the benefits that we provide exclusively to Lafefny’s family"
-            android:textAlignment="center"
-            android:textColor="@color/Lafefny2"
-            android:textSize="25sp" />
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/btnborder13">
+
+          <ImageView
+              android:layout_width="300dp"
+              android:layout_height="300dp"
+              android:layout_below="@+id/txt_About"
+              android:layout_centerHorizontal="true"
+              android:layout_gravity="center"
+              android:alpha="0.3"
+              android:layout_marginTop="20dp"
+              android:background="@drawable/logo2"/>
+
+
+          <TextView
+              android:id="@+id/About_text"
+              android:layout_width="362dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/txt_About"
+              android:layout_marginStart="13dp"
+              android:layout_marginTop="25dp"
+              android:fontFamily="serif"
+              android:lineSpacingMultiplier="1.5"
+              android:text="Offering various entertainment ideas and locations that matches users’ preferences and desires with cutting throat prices and deals. We offer services, events, and reservations like no other when it comes to the benefits that we provide exclusively to Lafefny’s family"
+              android:textAlignment="center"
+              android:textColor="@color/Lafefny2"
+              android:textSize="30sp" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/footer_hp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_below="@+id/About_text"
+            android:layout_below="@id/about"
             android:layout_centerHorizontal="false"
             android:layout_marginEnd="0dp"
-            android:layout_marginTop="680dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/btnborder">
 
             <Button
