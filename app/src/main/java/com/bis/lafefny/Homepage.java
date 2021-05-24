@@ -51,7 +51,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-//        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(this);
 //        navigationView.setCheckedItem(R.id.nav_home);
         //Buttons
         button_ent = (Button) findViewById(R.id.btn_entertainment); //button amusement park
@@ -110,7 +110,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         startActivity(intent);
     }
     public void openpreferences(){
-        Intent intent = new Intent(this, Questionnaire1.class); //open preferences
+        Intent intent = new Intent(this, preferences.class); //open preferences
         startActivity(intent);
     }
 
@@ -190,10 +190,10 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 //                Intent QIntent = new Intent(this, Questionnaire1.class);  //open questionnaire
 //                startActivity(QIntent);
 //                break;
-//            case R.id.nav_Preferences:
-//                Intent PIntent = new Intent(this, Preferences.class);  //open preferences
-//                startActivity(PIntent);
-//                break;
+            case R.id.nav_Preferences:
+                Intent PIntent = new Intent(this, preferences.class);  //open preferences
+                startActivity(PIntent);
+                break;
             case R.id.nav_hotel:
                 Intent i = new Intent(android.content.Intent.ACTION_VIEW,
                         Uri.parse("https://www.trivago.com/"));

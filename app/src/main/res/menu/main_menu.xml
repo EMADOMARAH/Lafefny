@@ -15,9 +15,9 @@
         />
 
     <item
-        android:id="@+id/nav_filter"
-        android:icon="@drawable/ic_baseline_filter_alt6_24"
-        android:title="Filtering"
+        android:id="@+id/nav_Preferences"
+        android:icon="@drawable/star"
+        android:title="Preferences"
         />
 
     <item

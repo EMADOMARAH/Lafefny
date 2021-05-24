@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/siwa_oasis_header"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/btnborder10">
 
             <TextView
@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/desc2_background_siwa_intro"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/btnborder10">
 
             <TextView
@@ -172,7 +172,8 @@
                 android:paddingRight="4dp"
                 android:paddingTop="85dp"
                 android:textColor="#33446A"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:layout_marginBottom="15dp"/>
 
             <TextView
                 android:id="@+id/siwa_price2"
@@ -200,7 +201,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/desc3_background_siwa_intro"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/btnborder10">
 
             <TextView
@@ -309,7 +310,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/desc5_background_siwa_intro"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/btnborder10">
 
 
@@ -395,7 +396,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/desc_siwa_intro"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/btnborder10">
             <TextView
                 android:id="@+id/txt_desc2"

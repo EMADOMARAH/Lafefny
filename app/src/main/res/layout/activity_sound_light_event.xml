@@ -511,17 +511,18 @@
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/day4_lang2_txt"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="53dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="51dp"
                 android:layout_marginTop="175dp"
                 android:text="All Languages"
                 android:textAlignment="center"
                 android:textColor="@color/Grey"
-                android:textSize="16sp"
-                android:layout_marginBottom="15dp"/>
+                android:textSize="16sp" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
         <com.google.android.material.bottomnavigation.BottomNavigationView
