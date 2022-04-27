@@ -60,7 +60,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
                 android:lineSpacingMultiplier="1.5"
-                android:text="Lafefny offers two different ways to get the perfect recommendations based on what you desire. Please feel free to take either of these two forms to be able to customize your suggestions. Note that each provide different results as both of them are based on different criteria."
+                android:text="Traveller offers two different ways to get the perfect recommendations based on what you desire. Please feel free to take either of these two forms to be able to customize your suggestions. Note that each provide different results as both of them are based on different criteria."
                 android:textAlignment="center"
                 android:textColor="@color/Lafefny2"
                 android:textSize="30sp" />

@@ -11,10 +11,12 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="320dp"
-        android:foregroundGravity="center_horizontal"
         android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
         android:contentDescription="@string/welcome"
-        app:srcCompat="@drawable/welclogo" />
+        android:foregroundGravity="center_horizontal"
+        app:srcCompat="@drawable/welclogo"
+        />
 
     <TextView
         android:id="@+id/txt_welc"
